@@ -83,7 +83,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function VersusSchema({ locale, slug, title }: { locale: string; slug: string; title: string }) {
+function VersusSchema({
+  locale, slug, title, description, lead,
+}: { locale: string; slug: string; title: string; description: string; lead: string }) {
   const url = `${SITE_URL}/${locale}/vs/${slug}`;
   const breadcrumb = {
     '@context': 'https://schema.org',
@@ -94,8 +96,29 @@ function VersusSchema({ locale, slug, title }: { locale: string; slug: string; t
       { '@type': 'ListItem', position: 3, name: title, item: url },
     ],
   };
+  // Article schema — qualifies the page for Google's article-with-image rich
+  // result + adds freshness signals via datePublished / dateModified.
+  const article = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    headline: title,
+    description,
+    articleBody: lead,
+    inLanguage: locale,
+    datePublished: '2024-02-01',
+    dateModified: new Date().toISOString().slice(0, 10),
+    author: { '@id': `${SITE_URL}/#organization` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    image: `${SITE_URL}/og-image.png`,
+  };
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }} />
+    </>
   );
 }
 
@@ -123,11 +146,19 @@ export default async function VersusPage({ params }: PageProps) {
   const tCmp = await getTranslations({ locale: params.locale, namespace: 'compare' });
   const themLabel = COMP_LABEL[competitor];
   const title = t(`${key}.title`);
+  const description = t(`${key}.seoDescription`);
+  const lead = t(`${key}.lead`);
   const rows = ROWS_FOR[competitor];
 
   return (
     <>
-      <VersusSchema locale={params.locale} slug={competitor} title={title} />
+      <VersusSchema
+        locale={params.locale}
+        slug={competitor}
+        title={title}
+        description={description}
+        lead={lead}
+      />
 
       <section className="relative pt-20 pb-12 sm:pt-28 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-20" aria-hidden="true" />

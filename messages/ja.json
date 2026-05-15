@@ -497,7 +497,15 @@
       "legendary": "Top 1% rewards. Hard to earn, harder to keep.",
       "mythic": "Tournament-finals exclusive. Wear it like a crown.",
       "exclusive": "Country-locked. Fly your flag in the arena."
-    }
+    },
+    "seoTitleAlt1": "Unlock {name} — {rarity} Snake Online skin",
+    "seoTitleAlt2": "{name}: a {rarity} skin for Snake Online players",
+    "seoTitleAlt3": "Wear the {name} skin in Snake Online (free, .io)",
+    "seoTitleAlt4": "How to get the {name} snake skin · {rarity}",
+    "seoDescriptionAlt1": "{name} is a {rarity} tier collectible in Snake Online. Get the unlock guide, screenshots, related skins, and play free in any browser.",
+    "seoDescriptionAlt2": "Show off the {name} skin in Snake Online — a {rarity} tier design. Includes how to unlock, lore, and a curated gallery of related skins.",
+    "seoDescriptionAlt3": "Looking for the {name} snake skin? Snake Online lists every {rarity} skin with unlock conditions, screenshots, and skill-based earning paths.",
+    "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
   },
   "versus": {
     "eyebrow": "VS COMPARISON",

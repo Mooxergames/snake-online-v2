@@ -24,8 +24,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!skin) return {};
 
   const t = await getTranslations({ locale: params.locale, namespace: 'skinPage' });
-  const title = t('seoTitle', { name: skin.name, rarity: t(`rarity.${skin.rarity}`) });
-  const description = t('seoDescription', { name: skin.name, rarity: t(`rarity.${skin.rarity}`) });
+  const rarityLabel = t(`rarity.${skin.rarity}`);
+
+  // Five title + five description templates. We pick deterministically per skin
+  // (skin.metaTemplate) so each of the 166 detail pages gets a meaningfully
+  // different SERP snippet — avoids the "all titles look identical" duplicate
+  // signal that demotes programmatic pages.
+  const titleTemplates = [
+    t('seoTitle',         { name: skin.name, rarity: rarityLabel }),
+    t('seoTitleAlt1',     { name: skin.name, rarity: rarityLabel }),
+    t('seoTitleAlt2',     { name: skin.name, rarity: rarityLabel }),
+    t('seoTitleAlt3',     { name: skin.name, rarity: rarityLabel }),
+    t('seoTitleAlt4',     { name: skin.name, rarity: rarityLabel }),
+  ];
+  const descTemplates = [
+    t('seoDescription',     { name: skin.name, rarity: rarityLabel }),
+    t('seoDescriptionAlt1', { name: skin.name, rarity: rarityLabel }),
+    t('seoDescriptionAlt2', { name: skin.name, rarity: rarityLabel }),
+    t('seoDescriptionAlt3', { name: skin.name, rarity: rarityLabel }),
+    t('seoDescriptionAlt4', { name: skin.name, rarity: rarityLabel }),
+  ];
+  const title = titleTemplates[skin.metaTemplate] ?? titleTemplates[0];
+  const description = descTemplates[skin.metaTemplate] ?? descTemplates[0];
   const path = `/skins/${skin.slug}`;
   const languages: Record<string, string> = {};
   for (const l of locales) languages[l] = `${SITE_URL}/${l}${path}`;

@@ -11,6 +11,9 @@ export interface Skin {
   isCountry: boolean;
   description: string;
   obtainHint: string;
+  /** Deterministic 0..4 — used to rotate metadata templates so titles/descriptions
+   *  on programmatic skin pages don't all look identical to Google's duplicate-content classifier. */
+  metaTemplate: number;
 }
 
 const COUNTRY_NAMES: Record<string, string> = {
@@ -68,6 +71,14 @@ function slugify(name: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
+// Deterministic 0..4 from an id, so the same skin always picks the same template
+// (stable URLs, stable SERP snippets).
+function templateBucket(id: string): number {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
+  return Math.abs(h) % 5;
+}
+
 function buildSkin(id: string): Skin {
   if (id.startsWith('CSNAKE_')) {
     const code = id.replace('CSNAKE_', '');
@@ -82,6 +93,7 @@ function buildSkin(id: string): Skin {
       isCountry: true,
       description: `The ${country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.`,
       obtainHint: `Awarded automatically when you connect from ${country}, or unlocked permanently by winning any country tournament.`,
+      metaTemplate: templateBucket(id),
     };
   }
   if (id.startsWith('FSNAKE_')) {
@@ -104,6 +116,7 @@ function buildSkin(id: string): Skin {
           : rarity === 'epic'
             ? 'Unlocked at 50 trophy threshold and above.'
             : 'Available from the starting roster.',
+      metaTemplate: templateBucket(id),
     };
   }
   return {
@@ -114,6 +127,7 @@ function buildSkin(id: string): Skin {
     isCountry: false,
     description: id,
     obtainHint: 'Available in the default roster.',
+    metaTemplate: templateBucket(id),
   };
 }
 
