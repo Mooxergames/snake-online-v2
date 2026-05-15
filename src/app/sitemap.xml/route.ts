@@ -1,7 +1,9 @@
 import { locales } from '@/lib/locales';
 import { getBlogSlugs } from '@/lib/blog';
+import { getAllSkins } from '@/lib/skins';
 
-const ROUTES = ['', '/play', '/downloads', '/snakes', '/game-ranking', '/community', '/news', '/about', '/contact', '/support', '/legal/privacy', '/legal/terms', '/legal/parents', '/legal/data-protection'];
+const ROUTES = ['', '/play', '/downloads', '/snakes', '/game-ranking', '/community', '/news', '/about', '/contact', '/support', '/how-to-play', '/legal/privacy', '/legal/terms', '/legal/parents', '/legal/data-protection'];
+const VERSUS = ['wormzone-io', 'slither-io'];
 
 export const dynamic = 'force-static';
 export const revalidate = 3600;
@@ -37,9 +39,13 @@ export async function GET() {
   const blogSlugs = getBlogSlugs('en');
   const blogBlocks = blogSlugs.map(slug => urlBlock(base, `/news/${slug}`, lastmod, 'monthly', 0.6));
 
+  const skinBlocks = getAllSkins().map(s => urlBlock(base, `/skins/${s.slug}`, lastmod, 'monthly', 0.55));
+
+  const versusBlocks = VERSUS.map(c => urlBlock(base, `/vs/${c}`, lastmod, 'monthly', 0.65));
+
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[...pageBlocks, ...blogBlocks].join('\n')}
+${[...pageBlocks, ...versusBlocks, ...skinBlocks, ...blogBlocks].join('\n')}
 </urlset>`;
 
   return new Response(xml, {
