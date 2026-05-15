@@ -1,0 +1,12 @@
+{
+  "name": "Snake Online",
+  "short_name": "Snake Online",
+  "description": "Multiplayer snake battle royale .io game",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070A",
+  "theme_color": "#FF9500",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

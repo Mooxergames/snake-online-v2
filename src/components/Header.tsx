@@ -1,0 +1,128 @@
+'use client';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
+import Logo from './Logo';
+import SocialIcons from './SocialIcons';
+import { cn } from '@/lib/utils';
+
+export default function Header({ locale }: { locale: string }) {
+  const t = useTranslations('nav');
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const links = [
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/snakes`, label: t('snakes') },
+    { href: `/${locale}/game-ranking`, label: t('ranking') },
+    { href: `/${locale}/downloads`, label: 'Downloads' },
+    { href: `/${locale}/community`, label: t('community') },
+    { href: `/${locale}/news`, label: t('news') },
+    { href: `/${locale}/about`, label: t('about') },
+  ];
+
+  return (
+    <header
+      className={cn(
+        'sticky top-0 z-50 w-full transition-all duration-300',
+        scrolled ? 'bg-bg/85 backdrop-blur-xl border-b border-border shadow-[0_8px_32px_rgba(0,0,0,0.4)]' : 'bg-bg/40 backdrop-blur-sm'
+      )}
+    >
+      {/* Top utility bar */}
+      <div className="hidden md:block border-b border-border/60 bg-bg-elevated/40">
+        <div className="container-wide flex h-9 items-center justify-between text-xs">
+          <div className="flex items-center gap-4 text-text-tertiary">
+            <span className="inline-flex items-center gap-1.5">
+              <span className="size-1.5 rounded-full bg-venom-500 animate-pulse" />
+              5M+ players online globally
+            </span>
+            <span className="hidden lg:inline opacity-60">·</span>
+            <a href="mailto:hello@snakeonline.io" className="hidden lg:inline hover:text-text-secondary transition-colors">hello@snakeonline.io</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <SocialIcons size={13} />
+          </div>
+        </div>
+      </div>
+
+      {/* Main nav */}
+      <div className="container-wide flex h-16 items-center justify-between gap-4">
+        <Link href={`/${locale}`} className="flex items-center gap-2.5 group" aria-label="Snake Online home">
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-brand-500/20 blur-md group-hover:bg-brand-500/40 transition-colors" />
+            <Logo className="relative h-9 w-9 transition-transform group-hover:rotate-6 group-hover:scale-110" />
+          </div>
+          <span className="font-display font-bold text-lg tracking-tight">
+            <span className="gradient-text">Snake</span>
+            <span className="text-text-primary"> Online</span>
+          </span>
+        </Link>
+
+        <nav className="hidden lg:flex items-center gap-1">
+          {links.map(l => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className="px-3.5 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-full hover:bg-white/5 transition-colors"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher locale={locale} />
+          <Link href={`/${locale}/play`} className="btn-primary !px-5 !py-2.5 !text-sm hidden sm:inline-flex">
+            {t('playNow')}
+          </Link>
+          <button
+            type="button"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            className="lg:hidden p-2 rounded-full hover:bg-white/5"
+            onClick={() => setOpen(v => !v)}
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
+      </div>
+
+      {open && (
+        <div id="mobile-nav" className="lg:hidden border-t border-border bg-bg/95 backdrop-blur-xl">
+          <nav className="container-wide py-4 flex flex-col gap-1">
+            {links.map(l => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="px-4 py-3 rounded-xl text-text-primary hover:bg-white/5 font-medium"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <Link
+              href={`/${locale}/play`}
+              onClick={() => setOpen(false)}
+              className="btn-primary mt-2 w-full"
+            >
+              {t('playNow')}
+            </Link>
+            <div className="pt-3 mt-2 border-t border-border flex justify-center">
+              <SocialIcons size={18} />
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}

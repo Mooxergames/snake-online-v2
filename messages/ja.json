@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "siteName": "Snake Online",
+    "tagline": "滑る。戦略。生存。",
+    "defaultTitle": "Snake Online — マルチプレイヤー蛇バトルロイヤル",
+    "defaultDescription": "Snake Online をプレイ：究極のマルチプレイヤー蛇 .io ゲーム。何千人ものプレイヤーと戦い、レアスキンを集め、世界ランキングを駆け上がろう。iOS、Android、Web で無料。",
+    "pages": {
+      "home": {
+        "title": "Snake Online — マルチプレイヤー蛇バトルロイヤル",
+        "description": "何千人もの実在プレイヤーをリアルタイムで出し抜こう。200以上の伝説スキン。iOS、Android、Web で無料。"
+      },
+      "play": {
+        "title": "Snake Online をプレイ — ブラウザで無料",
+        "description": "アリーナへ直行。インストール不要、登録不要。リアルタイムのマルチプレイヤー蛇バトルをブラウザで、永久無料。"
+      },
+      "downloads": {
+        "title": "Snake Online ダウンロード — iOS、Android、Windows、Mac",
+        "description": "あらゆるプラットフォームで Snake Online を。iPhone、iPad、Android、Windows、macOS のネイティブアプリ。クロスプログレス。永久無料。"
+      },
+      "snakes": {
+        "title": "蛇スキン — 200以上のハンドクラフトキャラクター",
+        "description": "6 段階のレア度を持つ 200 以上のハンドクラフトスキンを発見。国旗、ネオン、神話、伝説のデザインであなたの蛇をユニークに。"
+      },
+      "gameRanking": {
+        "title": "グローバルランキング — Snake Online トッププレイヤー",
+        "description": "Snake Online の世界最強プレイヤーのライブグローバルランキング。毎時更新。リーダーボードを駆け上がり、王座を手に入れよう。"
+      },
+      "community": {
+        "title": "Snake Online コミュニティ — 蛇ネーションに参加",
+        "description": "500 万人のプレイヤー。Discord、トーナメント、コンテンツクリエイター。グローバルな Snake Online コミュニティとつながり、アリーナの未来を形作ろう。"
+      },
+      "news": {
+        "title": "ニュースとアップデート — パッチノートと物語",
+        "description": "最新パッチノート、新スキン、バランス調整、舞台裏の物語、Snake Online スタジオからの開発者アップデート。"
+      },
+      "about": {
+        "title": "Snake Online スタジオについて",
+        "description": "Snake Online の背後にあるチームと物語 — 180 か国 500 万人がプレイするマルチプレイヤー蛇バトルロイヤル。"
+      },
+      "contact": {
+        "title": "Snake Online お問い合わせ — プレス、パートナー、サポート",
+        "description": "Snake Online チームにご連絡ください。プレス、ビジネスパートナー、バグ報告、あるいは挨拶でも — すべて読んでいます。"
+      },
+      "support": {
+        "title": "Snake Online サポート — ヘルプセンター",
+        "description": "よくある質問の答えを探す、問題を解決する、アカウントを復元する、サポートに直接連絡する。私たちはあなたをサポートします。"
+      }
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "play": "Play",
+    "snakes": "Snakes",
+    "ranking": "Ranking",
+    "community": "Community",
+    "news": "News",
+    "about": "About",
+    "support": "Support",
+    "contact": "Contact",
+    "playNow": "Play Now",
+    "download": "Download"
+  },
+  "hero": {
+    "eyebrow": "MULTIPLAYER SNAKE BATTLE ROYALE",
+    "title": "The arena where snakes\nbecome legends.",
+    "subtitle": "Outsmart thousands of real players in real time. Collect 200+ legendary skins. Conquer global leaderboards.",
+    "ctaPrimary": "Play Free Now",
+    "ctaSecondary": "Watch Trailer",
+    "stat1": {
+      "value": "5M+",
+      "label": "Players Worldwide"
+    },
+    "stat2": {
+      "value": "200+",
+      "label": "Unique Skins"
+    },
+    "stat3": {
+      "value": "4.7★",
+      "label": "App Store Rating"
+    },
+    "stat4": {
+      "value": "180+",
+      "label": "Countries"
+    }
+  },
+  "features": {
+    "title": "Engineered for the\nmodern arena.",
+    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "items": [
+      {
+        "title": "Real-Time Multiplayer",
+        "description": "Sub-100ms latency servers in 12 regions. Your reflexes are the only ceiling."
+      },
+      {
+        "title": "200+ Legendary Skins",
+        "description": "From neon serpents to mythic dragons. Collect, evolve, and flex your style."
+      },
+      {
+        "title": "Global Leaderboards",
+        "description": "Compete in regional and worldwide rankings. Updated every hour."
+      },
+      {
+        "title": "Daily Tournaments",
+        "description": "Free entry. Real prizes. New brackets every 24 hours."
+      },
+      {
+        "title": "Cross-Platform",
+        "description": "One account. iOS, Android, Web. Your progress travels with you."
+      },
+      {
+        "title": "Friends & Clans",
+        "description": "Build your crew. Squad up. Dominate together."
+      }
+    ]
+  },
+  "snakes": {
+    "title": "Meet the snakes.",
+    "subtitle": "Hundreds of hand-crafted characters across six rarity tiers.",
+    "tiers": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic",
+      "exclusive": "Exclusive"
+    },
+    "viewAll": "View all snakes"
+  },
+  "ranking": {
+    "title": "Global Leaderboard",
+    "subtitle": "The best snake players in the world. Updated hourly.",
+    "tabs": {
+      "global": "Global",
+      "local": "By Country"
+    },
+    "columns": {
+      "rank": "Rank",
+      "player": "Player",
+      "trophies": "Trophies",
+      "bestScore": "Best Score",
+      "kills": "Kills",
+      "country": "Country"
+    },
+    "empty": "Rankings are warming up. Check back in a moment.",
+    "selectCountry": "Select a country",
+    "lastUpdated": "Last updated"
+  },
+  "play": {
+    "title": "Pick your platform.",
+    "subtitle": "Free forever. No download required for web.",
+    "web": "Play in Browser",
+    "ios": "Download on the App Store",
+    "android": "Get it on Google Play"
+  },
+  "community": {
+    "title": "Join the snake nation.",
+    "subtitle": "5 million players. One arena. Endless stories.",
+    "discord": "Join Discord",
+    "twitter": "Follow on X",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "youtube": "YouTube"
+  },
+  "news": {
+    "title": "News & Updates",
+    "subtitle": "Patch notes, lore, and behind-the-scenes from the studio.",
+    "readMore": "Read article",
+    "noneYet": "First posts dropping soon."
+  },
+  "about": {
+    "title": "Built by gamers, for gamers.",
+    "lead": "Snake Online started as a love letter to the games we grew up with — and became the .io battle arena we always wanted to play.",
+    "mission": {
+      "title": "Our mission",
+      "body": "Make competitive multiplayer feel effortless on any device, in any language, anywhere on Earth."
+    },
+    "values": {
+      "title": "What we stand for",
+      "items": [
+        {
+          "title": "Fair Play",
+          "body": "Zero pay-to-win. Every skin is cosmetic. Skill decides the leaderboard."
+        },
+        {
+          "title": "Player First",
+          "body": "We ship updates the community asks for — not the ones spreadsheets demand."
+        },
+        {
+          "title": "Performance",
+          "body": "60 FPS on a 5-year-old phone. Because lag is unacceptable."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get in touch.",
+    "subtitle": "Press, partnerships, or just a hello — we read everything.",
+    "email": "Email us",
+    "supportLink": "Need help with the game? Visit Support →"
+  },
+  "support": {
+    "title": "Support Center",
+    "subtitle": "Answers, guides, and a real human if you need one.",
+    "categories": {
+      "account": "Account & Login",
+      "purchase": "Purchases & Refunds",
+      "gameplay": "Gameplay",
+      "technical": "Technical Issues"
+    },
+    "contactSupport": "Contact Support"
+  },
+  "cta": {
+    "bannerTitle": "Your throne is one game away.",
+    "bannerSubtitle": "Join 5 million players. Free, forever.",
+    "playFree": "Play Free Now"
+  },
+  "footer": {
+    "tagline": "The world's most-played snake battle arena.",
+    "sections": {
+      "game": "Game",
+      "company": "Company",
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "links": {
+      "play": "Play Now",
+      "snakes": "Snake Showcase",
+      "ranking": "Leaderboard",
+      "news": "News",
+      "about": "About Us",
+      "contact": "Contact",
+      "community": "Community",
+      "support": "Support",
+      "press": "Press Kit",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "parents": "Parents Guide",
+      "data": "Data Protection"
+    },
+    "copyright": "© {year} Snake Online. All rights reserved.",
+    "madeWith": "Crafted with obsessive care."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated"
+    },
+    "parents": {
+      "title": "Parents Guide",
+      "lastUpdated": "Last updated"
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "retry": "Try again",
+    "language": "Language",
+    "selectLanguage": "Select language"
+  },
+  "gamePlayer": {
+    "preStart": {
+      "activePlayers": "現在 {count} 人がアリーナでプレイ中",
+      "title": "滑る準備はできた？",
+      "subtitle": "ボタンを押すだけ。フルスクリーンで起動。インストール不要。初戦は広告なし。",
+      "cta": "今すぐプレイ — フルスクリーン",
+      "mobilePrompt": "スマホでもプレイ:",
+      "platforms": "iOS · Android · Windows",
+      "stats": {
+        "players": "プレイヤー",
+        "fps": "固定",
+        "latency": "遅延"
+      }
+    },
+    "loading": {
+      "title": "アリーナを読み込み中…",
+      "subtitle": "最寄りのサーバーに接続中"
+    },
+    "error": {
+      "title": "ウェブ版をここで読み込めませんでした",
+      "subtitle": "ブラウザまたはネットワークが埋め込みゲームをブロックしました。新しいタブで開くか、ネイティブアプリをご利用ください。",
+      "ctaTab": "新しいタブで開く",
+      "ctaDownload": "アプリをダウンロード"
+    },
+    "iframeTitle": "Snake Online",
+    "controls": {
+      "fullscreenEnter": "フルスクリーンにする",
+      "fullscreenExit": "フルスクリーンを終了",
+      "close": "ゲームを閉じる"
+    }
+  },
+  "heroLeaderboard": {
+    "title": "ライブランキング",
+    "updatedAt": "1時間ごとに更新",
+    "viewAll": "すべて見る",
+    "trophyLabel": "トロフィー",
+    "stats": {
+      "players": "プレイヤー",
+      "skins": "スキン",
+      "countries": "国"
+    }
+  },
+  "contactForm": {
+    "title": "メッセージを送る",
+    "submit": "送信",
+    "labels": {
+      "name": "名前",
+      "email": "メール",
+      "subject": "件名",
+      "message": "メッセージ"
+    },
+    "subjects": {
+      "general": "一般",
+      "bugReport": "不具合報告",
+      "feedback": "フィードバック",
+      "partnership": "提携",
+      "press": "プレス"
+    }
+  },
+  "appBadges": {
+    "appStore": "ダウンロード",
+    "playStore": "入手"
+  }
+}

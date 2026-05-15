@@ -1,0 +1,2 @@
+Place a 1200x630 JPG/PNG at /og-image.jpg for social cards.
+Recommended: Snake Online logo + tagline + hero snake render on dark gradient.

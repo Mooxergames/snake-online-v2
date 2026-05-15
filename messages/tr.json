@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "siteName": "Snake Online",
+    "tagline": "Süzül. Strateji kur. Hayatta kal.",
+    "defaultTitle": "Snake Online — Çok Oyunculu Yılan Savaş Arenası",
+    "defaultDescription": "Snake Online oyna: gerçek zamanlı çok oyunculu yılan .io oyunu. Binlerce oyuncuyla savaş, nadir skinler topla, küresel sıralamalara çık. iOS, Android ve Web'de ücretsiz.",
+    "pages": {
+      "home": {
+        "title": "Snake Online — Çok Oyunculu Yılan Savaş Arenası",
+        "description": "Binlerce gerçek oyuncuyu gerçek zamanlı alt et. 200+ efsanevi skin. iOS, Android ve Web'de ücretsiz."
+      },
+      "play": {
+        "title": "Snake Online Oyna — Tarayıcıda Ücretsiz",
+        "description": "Doğrudan arenaya atla. Kurulum yok, kayıt yok. Tarayıcında gerçek zamanlı çok oyunculu yılan savaşları, sonsuza dek ücretsiz."
+      },
+      "downloads": {
+        "title": "Snake Online İndir — iOS, Android, Windows, Mac",
+        "description": "Snake Online'ı her platformda edin. iPhone, iPad, Android, Windows ve macOS için yerel uygulamalar. Her yerde aynı ilerleme. Sonsuza dek ücretsiz."
+      },
+      "snakes": {
+        "title": "Yılan Skinleri — 200+ El Yapımı Karakter",
+        "description": "Altı nadirlik kademesinde 200'den fazla el yapımı yılan skini keşfet. Bayrak, neon, mitik ve efsanevi tasarımlarla yılanını eşsiz yap."
+      },
+      "gameRanking": {
+        "title": "Küresel Sıralama — En İyi Snake Online Oyuncuları",
+        "description": "Dünyanın en iyi Snake Online oyuncularının canlı küresel sıralaması. Saatlik güncelleme. Liderlik tablosuna tırman, tahtını al."
+      },
+      "community": {
+        "title": "Snake Online Topluluğu — Yılan Ulusuna Katıl",
+        "description": "5 milyon oyuncu. Discord, turnuvalar, içerik üreticileri. Küresel Snake Online topluluğuyla bağlantı kur ve arenanın geleceğini şekillendir."
+      },
+      "news": {
+        "title": "Haberler ve Güncellemeler — Yama Notları ve Hikayeler",
+        "description": "En son yama notları, yeni skin sürümleri, denge değişiklikleri, perde arkası hikayeleri ve Snake Online stüdyosundan geliştirici güncellemeleri."
+      },
+      "about": {
+        "title": "Snake Online Stüdyosu Hakkında",
+        "description": "180 ülkede 5 milyon kişinin oynadığı çok oyunculu yılan battle royale Snake Online'ın arkasındaki ekip ve hikaye."
+      },
+      "contact": {
+        "title": "Snake Online İletişim — Basın, Ortaklık, Destek",
+        "description": "Snake Online ekibiyle iletişime geç. Basın talepleri, iş ortaklıkları, hata raporları veya sadece bir merhaba — hepsini okuyoruz."
+      },
+      "support": {
+        "title": "Snake Online Destek — Yardım Merkezi",
+        "description": "Sık sorulan soruların cevaplarını bul, sorunları gider, hesabını kurtar veya doğrudan destekle iletişime geç. Yardım için buradayız."
+      }
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "play": "Oyna",
+    "snakes": "Yılanlar",
+    "ranking": "Sıralama",
+    "community": "Topluluk",
+    "news": "Haberler",
+    "about": "Hakkımızda",
+    "support": "Destek",
+    "contact": "İletişim",
+    "playNow": "Şimdi Oyna",
+    "download": "İndir"
+  },
+  "hero": {
+    "eyebrow": "ÇOK OYUNCULU YILAN BATTLE ROYALE",
+    "title": "Yılanların efsaneye\ndönüştüğü arena.",
+    "subtitle": "Binlerce gerçek oyuncuyu gerçek zamanda alt et. 200+ efsanevi skin topla. Küresel liderlik tablosunu fethet.",
+    "ctaPrimary": "Hemen Ücretsiz Oyna",
+    "ctaSecondary": "Fragmanı İzle",
+    "stat1": {
+      "value": "5M+",
+      "label": "Dünya Genelinde Oyuncu"
+    },
+    "stat2": {
+      "value": "200+",
+      "label": "Eşsiz Skin"
+    },
+    "stat3": {
+      "value": "4.7★",
+      "label": "App Store Puanı"
+    },
+    "stat4": {
+      "value": "180+",
+      "label": "Ülke"
+    }
+  },
+  "features": {
+    "title": "Modern arena için\ntasarlandı.",
+    "subtitle": "Her sistem, her kare, her yılan — seni durdurulamaz hissettirmek için.",
+    "items": [
+      {
+        "title": "Gerçek Zamanlı Çok Oyunculu",
+        "description": "12 bölgede 100ms altı sunucular. Tek sınır reflekslerin."
+      },
+      {
+        "title": "200+ Efsanevi Skin",
+        "description": "Neon yılanlardan mistik ejderhalara. Topla, geliştir, stilini göster."
+      },
+      {
+        "title": "Küresel Sıralamalar",
+        "description": "Bölgesel ve dünya çapında yarış. Her saat güncellenir."
+      },
+      {
+        "title": "Günlük Turnuvalar",
+        "description": "Ücretsiz katılım. Gerçek ödüller. Her 24 saatte yeni eleme."
+      },
+      {
+        "title": "Çapraz Platform",
+        "description": "Tek hesap. iOS, Android, Web. İlerlemen seninle."
+      },
+      {
+        "title": "Arkadaşlar ve Klanlar",
+        "description": "Ekibini kur. Birleş. Birlikte hükmet."
+      }
+    ]
+  },
+  "snakes": {
+    "title": "Yılanlarla tanış.",
+    "subtitle": "Altı nadirlik seviyesinde yüzlerce el yapımı karakter.",
+    "tiers": {
+      "common": "Sıradan",
+      "rare": "Nadir",
+      "epic": "Epik",
+      "legendary": "Efsanevi",
+      "mythic": "Mitik",
+      "exclusive": "Özel"
+    },
+    "viewAll": "Tüm yılanları gör"
+  },
+  "ranking": {
+    "title": "Küresel Liderlik Tablosu",
+    "subtitle": "Dünyanın en iyi yılan oyuncuları. Saatlik güncellenir.",
+    "tabs": {
+      "global": "Küresel",
+      "local": "Ülkeye Göre"
+    },
+    "columns": {
+      "rank": "Sıra",
+      "player": "Oyuncu",
+      "trophies": "Kupa",
+      "bestScore": "En İyi Skor",
+      "kills": "Öldürme",
+      "country": "Ülke"
+    },
+    "empty": "Sıralamalar ısınıyor. Birazdan tekrar bak.",
+    "selectCountry": "Ülke seç",
+    "lastUpdated": "Son güncelleme"
+  },
+  "play": {
+    "title": "Platformunu seç.",
+    "subtitle": "Sonsuza dek ücretsiz. Web için indirmeye gerek yok.",
+    "web": "Tarayıcıda Oyna",
+    "ios": "App Store'dan İndir",
+    "android": "Google Play'den Al"
+  },
+  "community": {
+    "title": "Yılan ulusuna katıl.",
+    "subtitle": "5 milyon oyuncu. Tek arena. Sonsuz hikaye.",
+    "discord": "Discord'a Katıl",
+    "twitter": "X'te Takip Et",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "youtube": "YouTube"
+  },
+  "news": {
+    "title": "Haberler ve Güncellemeler",
+    "subtitle": "Yama notları, hikaye ve stüdyodan kulis.",
+    "readMore": "Yazıyı oku",
+    "noneYet": "İlk yazılar yakında geliyor."
+  },
+  "about": {
+    "title": "Oyuncular tarafından, oyuncular için.",
+    "lead": "Snake Online, büyürken oynadığımız oyunlara bir aşk mektubu olarak başladı — ve oynamak istediğimiz .io arenasına dönüştü.",
+    "mission": {
+      "title": "Misyonumuz",
+      "body": "Rekabetçi çok oyunculuyu her cihazda, her dilde, dünyanın her yerinde zahmetsiz hissettir."
+    },
+    "values": {
+      "title": "Neye inanıyoruz",
+      "items": [
+        {
+          "title": "Adil Oyun",
+          "body": "Sıfır pay-to-win. Her skin kozmetik. Sıralamayı yetenek belirler."
+        },
+        {
+          "title": "Önce Oyuncu",
+          "body": "Topluluğun istediği güncellemeleri yayınlarız — tabloların değil."
+        },
+        {
+          "title": "Performans",
+          "body": "5 yıllık telefonda 60 FPS. Çünkü gecikme kabul edilemez."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Bize ulaş.",
+    "subtitle": "Basın, ortaklık veya sadece merhaba — hepsini okuyoruz.",
+    "email": "E-posta gönder",
+    "supportLink": "Oyunla ilgili yardım mı? Destek'e git →"
+  },
+  "support": {
+    "title": "Destek Merkezi",
+    "subtitle": "Cevaplar, rehberler ve gerektiğinde gerçek bir insan.",
+    "categories": {
+      "account": "Hesap ve Giriş",
+      "purchase": "Satın Alma ve İade",
+      "gameplay": "Oynanış",
+      "technical": "Teknik Sorunlar"
+    },
+    "contactSupport": "Destek ile İletişim"
+  },
+  "cta": {
+    "bannerTitle": "Tahtın bir oyun ötede.",
+    "bannerSubtitle": "5 milyon oyuncuya katıl. Sonsuza dek ücretsiz.",
+    "playFree": "Hemen Ücretsiz Oyna"
+  },
+  "footer": {
+    "tagline": "Dünyanın en çok oynanan yılan savaş arenası.",
+    "sections": {
+      "game": "Oyun",
+      "company": "Şirket",
+      "resources": "Kaynaklar",
+      "legal": "Yasal"
+    },
+    "links": {
+      "play": "Şimdi Oyna",
+      "snakes": "Yılan Vitrini",
+      "ranking": "Liderlik Tablosu",
+      "news": "Haberler",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "community": "Topluluk",
+      "support": "Destek",
+      "press": "Basın Kiti",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Hizmet Şartları",
+      "parents": "Veli Rehberi",
+      "data": "Veri Koruması"
+    },
+    "copyright": "© {year} Snake Online. Tüm hakları saklıdır.",
+    "madeWith": "Tutkuyla hazırlandı."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "lastUpdated": "Son güncelleme"
+    },
+    "terms": {
+      "title": "Hizmet Şartları",
+      "lastUpdated": "Son güncelleme"
+    },
+    "parents": {
+      "title": "Veli Rehberi",
+      "lastUpdated": "Son güncelleme"
+    },
+    "dataProtection": {
+      "title": "Veri Koruması",
+      "lastUpdated": "Son güncelleme"
+    }
+  },
+  "common": {
+    "loading": "Yükleniyor…",
+    "error": "Bir şeyler ters gitti.",
+    "retry": "Tekrar dene",
+    "language": "Dil",
+    "selectLanguage": "Dil seç"
+  },
+  "gamePlayer": {
+    "preStart": {
+      "activePlayers": "{count} oyuncu şu anda arenada",
+      "title": "Süzülmeye hazır mısın?",
+      "subtitle": "Düğmeye bas. Oyun tam ekran açılır. Kurulum yok. İlk maçta reklam yok.",
+      "cta": "Hemen Oyna — Tam Ekran",
+      "mobilePrompt": "Ya da telefonundan oyna:",
+      "platforms": "iOS · Android · Windows",
+      "stats": {
+        "players": "Oyuncu",
+        "fps": "Sabit",
+        "latency": "Gecikme"
+      }
+    },
+    "loading": {
+      "title": "Arena yükleniyor…",
+      "subtitle": "En yakın sunucuya bağlanılıyor"
+    },
+    "error": {
+      "title": "Web sürümü burada yüklenemedi",
+      "subtitle": "Tarayıcın veya ağın gömülü oyunu engelledi. Yeni sekmede aç ya da en iyi deneyim için yerel uygulamayı indir.",
+      "ctaTab": "Yeni sekmede aç",
+      "ctaDownload": "Uygulamaları indir"
+    },
+    "iframeTitle": "Snake Online",
+    "controls": {
+      "fullscreenEnter": "Tam ekrana geç",
+      "fullscreenExit": "Tam ekrandan çık",
+      "close": "Oyunu kapat"
+    }
+  },
+  "heroLeaderboard": {
+    "title": "Canlı Sıralama",
+    "updatedAt": "Saatlik güncellenir",
+    "viewAll": "Tüm sıralamalar",
+    "trophyLabel": "kupa",
+    "stats": {
+      "players": "Oyuncu",
+      "skins": "Görünüm",
+      "countries": "Ülke"
+    }
+  },
+  "contactForm": {
+    "title": "Bize yazı bırak",
+    "submit": "Mesajı gönder",
+    "labels": {
+      "name": "Ad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj"
+    },
+    "subjects": {
+      "general": "Genel",
+      "bugReport": "Hata Bildirimi",
+      "feedback": "Geri Bildirim",
+      "partnership": "İş Birliği",
+      "press": "Basın"
+    }
+  },
+  "appBadges": {
+    "appStore": "İndir",
+    "playStore": "Şuradan al"
+  }
+}
