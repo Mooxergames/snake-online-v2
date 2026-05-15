@@ -44,6 +44,10 @@
       "support": {
         "title": "Soporte Snake Online — Centro de Ayuda",
         "description": "Encuentra respuestas a preguntas comunes, soluciona problemas, recupera tu cuenta o contacta a soporte directamente. Estamos aquí para ayudarte."
+      },
+      "howToPlay": {
+        "title": "How to Play Snake Online — Complete Beginner's Guide (2026)",
+        "description": "Learn how to play Snake Online in 5 minutes. Controls, scoring, boost mechanics, coil-trap tactics, leaderboard strategy. Free to play in any browser."
       }
     }
   },
@@ -66,6 +70,7 @@
     "subtitle": "Supera a miles de jugadores reales en tiempo real. Colecciona 200+ skins legendarias. Conquista los rankings globales.",
     "ctaPrimary": "Jugar gratis ahora",
     "ctaSecondary": "Ver tráiler",
+    "instantPlay": "0s",
     "stat1": {
       "value": "5M+",
       "label": "Jugadores en el mundo"
@@ -81,7 +86,9 @@
     "stat4": {
       "value": "180+",
       "label": "Países"
-    }
+    },
+    "titleLead": "La arena donde las serpientes se",
+    "titleAccent": "vuelven leyenda."
   },
   "features": {
     "title": "Diseñado para la\narena moderna.",
@@ -301,6 +308,7 @@
     "updatedAt": "Actualizado cada hora",
     "viewAll": "Ver todos",
     "trophyLabel": "trofeos",
+    "liveOnline": "en línea ahora",
     "stats": {
       "players": "Jugadores",
       "skins": "Skins",
@@ -327,5 +335,236 @@
   "appBadges": {
     "appStore": "Descargar en",
     "playStore": "Disponible en"
+  },
+  "marquee": {
+    "label": "200+ Hand-Crafted Skins"
+  },
+  "bento": {
+    "eyebrow": "WHY SNAKE ONLINE",
+    "title": "Engineered for the\nmodern arena.",
+    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "items": {
+      "realtime": {
+        "title": "Real Real-Time Multiplayer",
+        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
+        "metric": "ms latency",
+        "regions": "12 global regions · 99.95% uptime"
+      },
+      "skins": {
+        "title": "Hand-crafted Skins",
+        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+      },
+      "leaderboards": {
+        "title": "Global Leaderboards",
+        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+      },
+      "country": {
+        "title": "180+ Country Skins",
+        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+      },
+      "tournaments": {
+        "title": "Daily Tournaments",
+        "body": "Free entry. Real prizes. New brackets every 24 hours."
+      },
+      "crossplay": {
+        "title": "True Cross-Play",
+        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+      },
+      "fairplay": {
+        "title": "Zero Pay-to-Win",
+        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+      },
+      "community": {
+        "title": "5M+ Snake Nation",
+        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+      }
+    }
+  },
+  "compare": {
+    "eyebrow": "HEAD-TO-HEAD",
+    "title": "Snake Online vs the rest.",
+    "subtitle": "We rebuilt the .io snake genre from the ground up. Here's what changed.",
+    "us": "Snake Online",
+    "them": "Worms Zone .io",
+    "feature": "Feature",
+    "disclaimer": "Comparison based on publicly available information from worms.zone and the Worms Zone mobile app, captured May 2026. Worms Zone is a trademark of its respective owners.",
+    "rows": {
+      "realtime": {
+        "title": "Real-time multiplayer",
+        "note": "Live opponents, not bots"
+      },
+      "skins": {
+        "title": "Number of skins",
+        "note": "Hand-crafted designs"
+      },
+      "languages": {
+        "title": "Supported languages",
+        "note": "Native SEO + hreflang"
+      },
+      "leaderboard": {
+        "title": "Public global leaderboard",
+        "note": "Updated hourly"
+      },
+      "schema": {
+        "title": "SEO structured data",
+        "note": "Schema.org JSON-LD"
+      },
+      "crossplay": {
+        "title": "Cross-platform progression",
+        "note": "One account, all devices"
+      },
+      "tournaments": {
+        "title": "Daily tournaments",
+        "note": "Free entry, real prizes"
+      },
+      "offline": {
+        "title": "Offline AI play",
+        "note": "We focus on real-time PvP"
+      }
+    },
+    "cellYes": "Sí",
+    "cellNo": "No"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Answers to everything.",
+    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "items": {
+      "whatIsIt": {
+        "q": "What is Snake Online?",
+        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+      },
+      "isItFree": {
+        "q": "Is Snake Online really free?",
+        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+      },
+      "doINeedToDownload": {
+        "q": "Do I need to download anything?",
+        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+      },
+      "howManySkins": {
+        "q": "How many snake skins are there?",
+        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+      },
+      "isItMultiplayer": {
+        "q": "Is it true real-time multiplayer (not bots)?",
+        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+      },
+      "whichDevices": {
+        "q": "Which devices does it run on?",
+        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+      },
+      "howToWin": {
+        "q": "How do I get bigger faster?",
+        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+      },
+      "vsWormzone": {
+        "q": "How is Snake Online different from Worms Zone?",
+        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+      },
+      "vsSlither": {
+        "q": "How is it different from Slither.io?",
+        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+      },
+      "progressSync": {
+        "q": "Does my progress sync across devices?",
+        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+      }
+    }
+  },
+  "skinPage": {
+    "seoTitle": "{name} Snake Skin — {rarity} | Snake Online",
+    "seoDescription": "Unlock the {name} snake skin in Snake Online. A {rarity} tier skin with lore, unlock guide, and gallery. Free multiplayer .io snake battle royale.",
+    "breadcrumbSnakes": "Snake Skins",
+    "howToUnlock": "How to unlock",
+    "rarityLabel": "Rarity tier",
+    "playToUnlock": "Play to unlock",
+    "viewAll": "All skins",
+    "relatedTitle": "Similar skins",
+    "browseAll": "Browse all 200+ skins",
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic",
+      "exclusive": "Exclusive"
+    },
+    "rarityNote": {
+      "common": "Starter roster — available to every player.",
+      "rare": "Earned through early-game progression.",
+      "epic": "Unlocked at sustained mid-game performance.",
+      "legendary": "Top 1% rewards. Hard to earn, harder to keep.",
+      "mythic": "Tournament-finals exclusive. Wear it like a crown.",
+      "exclusive": "Country-locked. Fly your flag in the arena."
+    },
+    "seoTitleAlt1": "Unlock {name} — {rarity} Snake Online skin",
+    "seoTitleAlt2": "{name}: a {rarity} skin for Snake Online players",
+    "seoTitleAlt3": "Wear the {name} skin in Snake Online (free, .io)",
+    "seoTitleAlt4": "How to get the {name} snake skin · {rarity}",
+    "seoDescriptionAlt1": "{name} is a {rarity} tier collectible in Snake Online. Get the unlock guide, screenshots, related skins, and play free in any browser.",
+    "seoDescriptionAlt2": "Show off the {name} skin in Snake Online — a {rarity} tier design. Includes how to unlock, lore, and a curated gallery of related skins.",
+    "seoDescriptionAlt3": "Looking for the {name} snake skin? Snake Online lists every {rarity} skin with unlock conditions, screenshots, and skill-based earning paths.",
+    "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
+  },
+  "versus": {
+    "eyebrow": "VS COMPARISON",
+    "playFreeNow": "Play Snake Online free",
+    "viewAllSkins": "Browse 200+ snake skins",
+    "wormzone": {
+      "title": "Snake Online vs Worms Zone .io",
+      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
+      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
+      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
+      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+    },
+    "slither": {
+      "title": "Snake Online vs Slither.io",
+      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
+      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
+      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
+      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+    }
+  },
+  "howToPlay": {
+    "eyebrow": "BEGINNER GUIDE",
+    "title": "How to play Snake Online.",
+    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
+    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
+    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
+    "playNow": "Play free now",
+    "browseSkins": "Browse skins",
+    "readyTitle": "Ready to slither?",
+    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "steps": {
+      "enter": {
+        "title": "Hit Play — you're in the arena instantly.",
+        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+      },
+      "move": {
+        "title": "Steer with your mouse or thumb.",
+        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+      },
+      "eat": {
+        "title": "Eat orbs to grow.",
+        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+      },
+      "boost": {
+        "title": "Boost burns mass — use it wisely.",
+        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+      },
+      "coil": {
+        "title": "Coil-trap to kill.",
+        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+      },
+      "survive": {
+        "title": "Survive the perimeter first.",
+        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+      },
+      "climb": {
+        "title": "Climb the global leaderboard.",
+        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+      }
+    }
   }
 }

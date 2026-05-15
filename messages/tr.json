@@ -44,6 +44,10 @@
       "support": {
         "title": "Snake Online Destek — Yardım Merkezi",
         "description": "Sık sorulan soruların cevaplarını bul, sorunları gider, hesabını kurtar veya doğrudan destekle iletişime geç. Yardım için buradayız."
+      },
+      "howToPlay": {
+        "title": "How to Play Snake Online — Complete Beginner's Guide (2026)",
+        "description": "Learn how to play Snake Online in 5 minutes. Controls, scoring, boost mechanics, coil-trap tactics, leaderboard strategy. Free to play in any browser."
       }
     }
   },
@@ -66,6 +70,7 @@
     "subtitle": "Binlerce gerçek oyuncuyu gerçek zamanda alt et. 200+ efsanevi skin topla. Küresel liderlik tablosunu fethet.",
     "ctaPrimary": "Hemen Ücretsiz Oyna",
     "ctaSecondary": "Fragmanı İzle",
+    "instantPlay": "0sn",
     "stat1": {
       "value": "5M+",
       "label": "Dünya Genelinde Oyuncu"
@@ -81,6 +86,144 @@
     "stat4": {
       "value": "180+",
       "label": "Ülke"
+    },
+    "titleLead": "Yılanların efsaneye",
+    "titleAccent": "dönüştüğü arena."
+  },
+  "marquee": {
+    "label": "200+ Özenle Tasarlanmış Skin"
+  },
+  "bento": {
+    "eyebrow": "NEDEN SNAKE ONLINE",
+    "title": "Modern arena için\ntasarlandı.",
+    "subtitle": "Her sistem, her kare, her yılan — seni durdurulamaz hissettirmek için.",
+    "items": {
+      "realtime": {
+        "title": "Gerçek Zamanlı Çok Oyunculu",
+        "body": "Bot değil, binlerce gerçek oyuncuya karşı savaş. 12 bölgedeki edge sunucular her sarmal ve kesimi tam senkron tutar.",
+        "metric": "ms gecikme",
+        "regions": "12 küresel bölge · %99.95 erişilebilirlik"
+      },
+      "skins": {
+        "title": "Özenle Hazırlanmış Skinler",
+        "body": "Altı nadirlik kademesi. Ülke bayrakları, mitik ejderhalar, neon yılanlar. Pay-to-win yok — kazananı yetenek belirler."
+      },
+      "leaderboards": {
+        "title": "Küresel Liderlik Tablosu",
+        "body": "Ülke bazlı ve global sıralamalar saatte bir güncellenir. İlk %1'e tırman, tahtını al."
+      },
+      "country": {
+        "title": "180+ Ülke Skini",
+        "body": "Renklerini taşı. Dünyadaki her bayrak giyilebilir bir skin — seninkini sahaya çıkar."
+      },
+      "tournaments": {
+        "title": "Günlük Turnuvalar",
+        "body": "Ücretsiz katılım. Gerçek ödüller. 24 saatte bir yeni eşleşme."
+      },
+      "crossplay": {
+        "title": "Gerçek Cross-Play",
+        "body": "Tek hesap. iOS, Android, Web. İlerlemen, skinlerin ve sıralamadaki yerin seninle gelir."
+      },
+      "fairplay": {
+        "title": "Sıfır Pay-to-Win",
+        "body": "Sadece kozmetik. Liderlik tablosunu cüzdan değil refleks belirler."
+      },
+      "community": {
+        "title": "5M+ Yılan Topluluğu",
+        "body": "Discord, turnuvalar, içerik üreticileri. .io dünyasının en büyük yılan topluluğu."
+      }
+    }
+  },
+  "compare": {
+    "eyebrow": "KAFA KAFAYA",
+    "title": "Snake Online vs diğerleri.",
+    "subtitle": "Snake .io türünü sıfırdan yeniden inşa ettik. İşte fark.",
+    "us": "Snake Online",
+    "them": "Worms Zone .io",
+    "feature": "Özellik",
+    "disclaimer": "Karşılaştırma, Mayıs 2026'da worms.zone ve Worms Zone mobil uygulamasından alınan kamuya açık bilgilere dayanmaktadır. Worms Zone, sahibinin ticari markasıdır.",
+    "rows": {
+      "realtime": {
+        "title": "Gerçek zamanlı çok oyunculu",
+        "note": "Bot değil, canlı rakipler"
+      },
+      "skins": {
+        "title": "Skin sayısı",
+        "note": "Özenle tasarlanmış"
+      },
+      "languages": {
+        "title": "Desteklenen diller",
+        "note": "Yerel SEO + hreflang"
+      },
+      "leaderboard": {
+        "title": "Açık küresel sıralama",
+        "note": "Saatlik güncellenir"
+      },
+      "schema": {
+        "title": "SEO yapılandırılmış veri",
+        "note": "Schema.org JSON-LD"
+      },
+      "crossplay": {
+        "title": "Platformlar arası ilerleme",
+        "note": "Tek hesap, tüm cihazlar"
+      },
+      "tournaments": {
+        "title": "Günlük turnuvalar",
+        "note": "Ücretsiz katılım, gerçek ödüller"
+      },
+      "offline": {
+        "title": "Çevrimdışı AI modu",
+        "note": "Biz gerçek zamanlı PvP'ye odaklanıyoruz"
+      }
+    },
+    "cellYes": "Var",
+    "cellNo": "Yok"
+  },
+  "faq": {
+    "eyebrow": "SSS",
+    "title": "Her şeyin cevabı.",
+    "subtitle": "Gerçek oyunculardan gerçek sorular. Sorunun burada yoksa destek ekibimize yaz — her mesajı okuyoruz.",
+    "items": {
+      "whatIsIt": {
+        "q": "Snake Online nedir?",
+        "a": "Snake Online, ücretsiz gerçek zamanlı çok oyunculu .io yılan battle royale oyunudur. Rakipleri sarmal at, küreciklerini topla, küresel sıralamada yüksel. 200+ koleksiyonluk skin, 180+ ülke liderlik tablosu — iOS, Android ve modern web tarayıcılarında."
+      },
+      "isItFree": {
+        "q": "Snake Online gerçekten ücretsiz mi?",
+        "a": "Evet. Sonsuza dek ücretsiz, tarayıcıda oynamak için kayıt gerekmez. Paywall yok, pay-to-win avantajı yok — skinler tamamen kozmetik ve çoğu oyun içinde kazanılabilir."
+      },
+      "doINeedToDownload": {
+        "q": "İndirmem gerekiyor mu?",
+        "a": "Web için hayır — Play'e bas ve saniyeler içinde arenadasın. Mobil için App Store ve Google Play'de ücretsiz native uygulamalar var, aynı cross-progression ile."
+      },
+      "howManySkins": {
+        "q": "Kaç tane yılan skini var?",
+        "a": "200'den fazla, altı nadirlik kademesinde özenle tasarlanmış skin: Common, Rare, Epic, Legendary, Mythic ve Exclusive. Her ay yeni sezon — ve 180+ ülke için özel bayrak skinleri dahil."
+      },
+      "isItMultiplayer": {
+        "q": "Gerçekten gerçek zamanlı çok oyunculu mu (bot değil)?",
+        "a": "Evet. Arenadaki her yılan gerçek bir insan. 12 küresel bölgede edge sunucularımız var — sub-100ms gecikme ile sarmal ve kesimler anlık hissedilir."
+      },
+      "whichDevices": {
+        "q": "Hangi cihazlarda çalışıyor?",
+        "a": "Modern tarayıcılar (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android telefon ve tablet. Tek hesap hepsinde senkron."
+      },
+      "howToWin": {
+        "q": "Nasıl daha hızlı büyürüm?",
+        "a": "Saldırganlık değil, sabır ve konum kazanır. Kenarda kal, kill'lerden küre topla, sadece hedefin düz hatta sabit olduğu sarmalları başlat. Boost kütle yakar — sadece kill kapamak veya kaçmak için kullan."
+      },
+      "vsWormzone": {
+        "q": "Snake Online Worms Zone'dan nasıl farklı?",
+        "a": "Worms Zone büyük oranda AI botlara karşı tek oyunculu, sadece İngilizce, halka açık liderlik tablosu veya web sürümü yok. Snake Online insanlara karşı gerçek zamanlı çok oyunculu, 14 dil desteği, canlı küresel liderlik tablosu ve mobil-cross-progression ile tarayıcıda native çalışır."
+      },
+      "vsSlither": {
+        "q": "Slither.io'dan nasıl farklı?",
+        "a": "Snake Online, Slither'ın sezgisel kontrollerini korur ama ekler: 200+ koleksiyon skini (Slither ~50), 180+ ülke liderlik tablosu, günlük turnuvalar, saatlik güncellenen halka açık sıralamalar ve tam çapraz platform ilerleme. Sadece yetenek — pay-to-win yok."
+      },
+      "progressSync": {
+        "q": "İlerlemem cihazlar arasında senkron mu?",
+        "a": "Evet. Bir kez giriş yap, kupaların, skinlerin, arkadaşların ve turnuva kayıtların iOS, Android ve web arasında otomatik takip eder."
+      }
     }
   },
   "features": {
@@ -301,6 +444,7 @@
     "updatedAt": "Saatlik güncellenir",
     "viewAll": "Tüm sıralamalar",
     "trophyLabel": "kupa",
+    "liveOnline": "şu an çevrimiçi",
     "stats": {
       "players": "Oyuncu",
       "skins": "Görünüm",
@@ -327,5 +471,100 @@
   "appBadges": {
     "appStore": "İndir",
     "playStore": "Şuradan al"
+  },
+  "skinPage": {
+    "seoTitle": "{name} Yılan Skini — {rarity} | Snake Online",
+    "seoTitleAlt1": "{name} skinini aç — {rarity} Snake Online görünümü",
+    "seoTitleAlt2": "{name}: Snake Online oyuncuları için {rarity} skin",
+    "seoTitleAlt3": "Snake Online'da {name} skinini kuşan (ücretsiz, .io)",
+    "seoTitleAlt4": "{name} yılan skinini nasıl açarsın · {rarity}",
+    "seoDescription": "Snake Online'da {name} yılan skinini aç. {rarity} kademesinde, açılış rehberi ve galeriyle. Ücretsiz çok oyunculu .io yılan battle royale.",
+    "seoDescriptionAlt1": "{name}, Snake Online'da {rarity} kademesi bir koleksiyon skinidir. Açılış rehberi, ekran görüntüleri ve ilgili skinleri burada — tarayıcıda ücretsiz oyna.",
+    "seoDescriptionAlt2": "{name} skinini Snake Online'da sergile — {rarity} kademe tasarım. Nasıl açılır, hikayesi ve benzer skinlerin galerisi bu sayfada.",
+    "seoDescriptionAlt3": "{name} yılan skini mi arıyorsun? Snake Online her {rarity} skini açılış şartı, ekran görüntüsü ve yetenek-bazlı kazanım yoluyla listeliyor.",
+    "seoDescriptionAlt4": "{name} ({rarity}) — Snake Online'ın 200+ özenle hazırlanmış skininden biri. Oynayarak ücretsiz kazanılır. Benzer skinleri ve açılış rehberini gör.",
+    "breadcrumbSnakes": "Yılan Skinleri",
+    "howToUnlock": "How to unlock",
+    "rarityLabel": "Rarity tier",
+    "playToUnlock": "Play to unlock",
+    "viewAll": "All skins",
+    "relatedTitle": "Similar skins",
+    "browseAll": "Browse all 200+ skins",
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic",
+      "exclusive": "Exclusive"
+    },
+    "rarityNote": {
+      "common": "Starter roster — available to every player.",
+      "rare": "Earned through early-game progression.",
+      "epic": "Unlocked at sustained mid-game performance.",
+      "legendary": "Top 1% rewards. Hard to earn, harder to keep.",
+      "mythic": "Tournament-finals exclusive. Wear it like a crown.",
+      "exclusive": "Country-locked. Fly your flag in the arena."
+    }
+  },
+  "versus": {
+    "eyebrow": "VS COMPARISON",
+    "playFreeNow": "Play Snake Online free",
+    "viewAllSkins": "Browse 200+ snake skins",
+    "wormzone": {
+      "title": "Snake Online vs Worms Zone .io",
+      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
+      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
+      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
+      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+    },
+    "slither": {
+      "title": "Snake Online vs Slither.io",
+      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
+      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
+      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
+      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+    }
+  },
+  "howToPlay": {
+    "eyebrow": "BEGINNER GUIDE",
+    "title": "How to play Snake Online.",
+    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
+    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
+    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
+    "playNow": "Play free now",
+    "browseSkins": "Browse skins",
+    "readyTitle": "Ready to slither?",
+    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "steps": {
+      "enter": {
+        "title": "Hit Play — you're in the arena instantly.",
+        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+      },
+      "move": {
+        "title": "Steer with your mouse or thumb.",
+        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+      },
+      "eat": {
+        "title": "Eat orbs to grow.",
+        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+      },
+      "boost": {
+        "title": "Boost burns mass — use it wisely.",
+        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+      },
+      "coil": {
+        "title": "Coil-trap to kill.",
+        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+      },
+      "survive": {
+        "title": "Survive the perimeter first.",
+        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+      },
+      "climb": {
+        "title": "Climb the global leaderboard.",
+        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+      }
+    }
   }
 }

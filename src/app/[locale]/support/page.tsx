@@ -1,7 +1,7 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
-import FAQ from '@/components/FAQ';
+import FAQAccordion from '@/components/FAQAccordion';
 import { User, CreditCard, Gamepad2, Wrench, MessageCircle, Mail } from 'lucide-react';
 import type { Metadata } from 'next';
 import { buildPageMetadata } from '@/lib/seo';
@@ -63,7 +63,7 @@ export default async function SupportPage({ params: { locale } }: { params: { lo
               <Mail size={16} /> Email support
             </Link>
           </div>
-          <FAQ items={faqs} />
+          <FAQAccordion items={faqs} idPrefix="support-faq" />
         </div>
 
         {/* Talk to a human */}

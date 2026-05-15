@@ -21,10 +21,12 @@ export default function AppBadges({ variant = 'default', className = '' }: { var
     <div className={`inline-flex flex-wrap items-center gap-2 ${className}`}>
       <a
         href={APPLE_URL}
-        target="_blank" rel="noopener"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Download Snake Online on the App Store (opens in a new tab)"
         className={`inline-flex items-center gap-2 rounded-xl bg-white text-bg font-semibold transition hover:scale-[1.02] hover:shadow-lg hover:shadow-white/10 ${sz}`}
       >
-        <Apple size={mini ? 14 : 18} />
+        <Apple size={mini ? 14 : 18} aria-hidden="true" />
         <span className="leading-none">
           <span className="block text-[9px] opacity-70 -mb-0.5">{t('appStore')}</span>
           App Store
@@ -32,7 +34,9 @@ export default function AppBadges({ variant = 'default', className = '' }: { var
       </a>
       <a
         href={PLAY_URL}
-        target="_blank" rel="noopener"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Get Snake Online on Google Play (opens in a new tab)"
         className={`inline-flex items-center gap-2 rounded-xl bg-bg-elevated border border-border-strong text-text-primary font-semibold transition hover:scale-[1.02] hover:border-brand-500/50 ${sz}`}
       >
         <PlayIcon size={mini ? 14 : 18} />

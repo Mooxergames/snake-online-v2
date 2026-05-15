@@ -2,10 +2,23 @@ node_modules
 .next
 out
 dist
+
+# Local secrets — copy from .env.example
 .env
 .env.local
 .env.*.local
+
+# Build artefacts
 *.log
 .DS_Store
 .vercel
 next-env.d.ts
+
+# Playwright
+/playwright-report
+/test-results
+/playwright/.cache
+
+# Editor
+.idea
+.vscode/launch.json
