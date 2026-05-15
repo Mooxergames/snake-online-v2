@@ -16,7 +16,14 @@ export const springs = {
 };
 
 // Reusable variants
+// Tuned to Apple HIG content-reveal timing: 550ms with snappy ease-out.
+// For longer cinematic page-load reveals, use `heroFadeUp` instead.
 export const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: easing.snappy } },
+};
+
+export const heroFadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easing.smooth } },
 };

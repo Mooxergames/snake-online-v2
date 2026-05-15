@@ -59,6 +59,7 @@ export default function FAQ() {
               >
                 <button
                   type="button"
+                  id={`faq-trigger-${i}`}
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-start gap-4 text-left p-5 sm:p-6 hover:bg-white/[0.02] transition-colors"
                   aria-expanded={isOpen}
@@ -70,7 +71,8 @@ export default function FAQ() {
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.3, ease: easing.smooth }}
-                    className="shrink-0 mt-1 size-9 rounded-full liquid-glass-strong flex items-center justify-center text-brand-300"
+                    className="shrink-0 mt-1 size-9 rounded-full liquid-glass-strong flex items-center justify-center text-brand-300 group-hover/q:bg-brand-500/15"
+                    aria-hidden="true"
                   >
                     <Plus size={18} />
                   </motion.span>
@@ -79,10 +81,15 @@ export default function FAQ() {
                   {isOpen && (
                     <motion.div
                       id={`faq-panel-${i}`}
+                      role="region"
+                      aria-labelledby={`faq-trigger-${i}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: easing.smooth }}
+                      transition={{
+                        height: { duration: 0.35, ease: easing.smooth },
+                        opacity: { duration: 0.18, ease: 'easeOut' },
+                      }}
                       className="overflow-hidden"
                     >
                       <div className="px-5 sm:px-6 pb-6 text-text-secondary text-pretty whitespace-pre-line">

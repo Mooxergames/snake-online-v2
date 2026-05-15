@@ -24,7 +24,11 @@ export default function MagneticButton<E extends ElementType = 'button'>({
   function handleMove(e: React.MouseEvent) {
     const el = ref.current;
     if (!el) return;
+    if (typeof window === 'undefined') return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Skip magnetic translation on touch / coarse-pointer devices: the pull is invisible
+    // and the resulting click-target shift can frustrate motor-impaired users.
+    if (!window.matchMedia('(hover: hover)').matches) return;
     const rect = el.getBoundingClientRect();
     const relX = e.clientX - rect.left - rect.width / 2;
     const relY = e.clientY - rect.top - rect.height / 2;

@@ -16,7 +16,7 @@ export default function CTABanner({ locale }: { locale: string }) {
       <motion.div
         initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.7 }}
-        className="relative overflow-hidden rounded-3xl border border-border bg-bg-elevated p-10 sm:p-16 text-center"
+        className="relative overflow-hidden rounded-3xl liquid-glass-strong shadow-card-lifted p-10 sm:p-16 text-center"
       >
         <div
           className="absolute inset-0 opacity-90 pointer-events-none"

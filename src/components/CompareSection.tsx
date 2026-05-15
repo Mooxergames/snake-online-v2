@@ -21,15 +21,26 @@ const ROWS: Row[] = [
   { key: 'offline',     us: false, them: true },
 ];
 
-function Cell({ value }: { value: boolean | string }) {
+function Cell({ value, yesLabel, noLabel }: { value: boolean | string; yesLabel: string; noLabel: string }) {
   if (typeof value === 'boolean') {
+    const label = value ? yesLabel : noLabel;
     return value ? (
-      <span className="inline-flex size-7 items-center justify-center rounded-full bg-venom-500/15 ring-1 ring-venom-500/40 text-venom-400">
-        <Check size={16} strokeWidth={2.5} />
+      <span
+        role="img"
+        aria-label={label}
+        className="inline-flex size-7 items-center justify-center rounded-full bg-venom-500/15 ring-1 ring-venom-500/40 text-venom-400"
+      >
+        <Check size={16} strokeWidth={2.5} aria-hidden="true" />
+        <span className="sr-only">{label}</span>
       </span>
     ) : (
-      <span className="inline-flex size-7 items-center justify-center rounded-full bg-rose-500/10 ring-1 ring-rose-500/30 text-rose-400">
-        <X size={16} strokeWidth={2.5} />
+      <span
+        role="img"
+        aria-label={label}
+        className="inline-flex size-7 items-center justify-center rounded-full bg-rose-500/10 ring-1 ring-rose-500/30 text-rose-400"
+      >
+        <X size={16} strokeWidth={2.5} aria-hidden="true" />
+        <span className="sr-only">{label}</span>
       </span>
     );
   }
@@ -66,33 +77,42 @@ export default function CompareSection() {
           viewport={inView}
           className="mt-14 mx-auto max-w-4xl"
         >
-          <div className="rounded-3xl liquid-glass-strong overflow-hidden">
-            {/* Header */}
-            <div className="grid grid-cols-[1fr_120px_120px] sm:grid-cols-[1fr_160px_160px] gap-2 px-5 sm:px-8 py-5 border-b border-border">
-              <div className="text-xs uppercase tracking-wider text-text-tertiary self-end">{t('feature')}</div>
-              <div className="text-center">
+          {/* ARIA grid pattern: gives SR users row/column relationships without forcing
+              a real <table> (which would fight CSS grid layout). */}
+          <div
+            role="table"
+            aria-label={t('title')}
+            className="rounded-3xl liquid-glass-strong overflow-hidden"
+          >
+            <div
+              role="row"
+              className="grid grid-cols-[1fr_120px_120px] sm:grid-cols-[1fr_160px_160px] gap-2 px-5 sm:px-8 py-5 border-b border-border"
+            >
+              <div role="columnheader" className="text-xs uppercase tracking-wider text-text-tertiary self-end">{t('feature')}</div>
+              <div role="columnheader" className="text-center">
                 <div className="inline-flex items-center gap-2 text-brand-300 font-display text-sm font-semibold">
-                  <span className="size-2 rounded-full bg-venom-500 animate-pulse" />
+                  <span className="size-2 rounded-full bg-venom-500 animate-pulse" aria-hidden="true" />
                   {t('us')}
                 </div>
               </div>
-              <div className="text-center text-text-tertiary font-display text-sm">{t('them')}</div>
+              <div role="columnheader" className="text-center text-text-tertiary font-display text-sm">{t('them')}</div>
             </div>
 
             {ROWS.map((row, i) => (
               <motion.div
                 key={row.key}
+                role="row"
                 variants={fadeUp}
-                className={`grid grid-cols-[1fr_120px_120px] sm:grid-cols-[1fr_160px_160px] gap-2 px-5 sm:px-8 py-4 items-center ${
-                  i % 2 === 0 ? 'bg-white/[0.015]' : ''
+                className={`grid grid-cols-[1fr_120px_120px] sm:grid-cols-[1fr_160px_160px] gap-2 px-5 sm:px-8 py-4 items-center transition-colors hover:bg-brand-500/5 ${
+                  i % 2 === 0 ? 'bg-white/[0.035]' : ''
                 }`}
               >
-                <div>
+                <div role="rowheader">
                   <div className="font-medium text-sm text-text-primary">{t(`rows.${row.key}.title`)}</div>
                   <div className="mt-0.5 text-xs text-text-tertiary hidden sm:block">{t(`rows.${row.key}.note`)}</div>
                 </div>
-                <div className="text-center"><Cell value={row.us} /></div>
-                <div className="text-center"><Cell value={row.them} /></div>
+                <div role="cell" className="text-center"><Cell value={row.us} yesLabel={t('cellYes')} noLabel={t('cellNo')} /></div>
+                <div role="cell" className="text-center"><Cell value={row.them} yesLabel={t('cellYes')} noLabel={t('cellNo')} /></div>
               </motion.div>
             ))}
           </div>

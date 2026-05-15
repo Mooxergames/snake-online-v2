@@ -86,7 +86,9 @@
     "stat4": {
       "value": "180+",
       "label": "Ülke"
-    }
+    },
+    "titleLead": "Yılanların efsaneye",
+    "titleAccent": "dönüştüğü arena."
   },
   "marquee": {
     "label": "200+ Özenle Tasarlanmış Skin"
@@ -173,7 +175,9 @@
         "title": "Çevrimdışı AI modu",
         "note": "Biz gerçek zamanlı PvP'ye odaklanıyoruz"
       }
-    }
+    },
+    "cellYes": "Var",
+    "cellNo": "Yok"
   },
   "faq": {
     "eyebrow": "SSS",

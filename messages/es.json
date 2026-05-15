@@ -86,7 +86,9 @@
     "stat4": {
       "value": "180+",
       "label": "Países"
-    }
+    },
+    "titleLead": "La arena donde las serpientes se",
+    "titleAccent": "vuelven leyenda."
   },
   "features": {
     "title": "Diseñado para la\narena moderna.",
@@ -419,7 +421,9 @@
         "title": "Offline AI play",
         "note": "We focus on real-time PvP"
       }
-    }
+    },
+    "cellYes": "Sí",
+    "cellNo": "No"
   },
   "faq": {
     "eyebrow": "FAQ",

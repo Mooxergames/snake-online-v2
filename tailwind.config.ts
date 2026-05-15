@@ -26,7 +26,10 @@ const config: Config = {
         text: {
           primary: '#F5F7FA',
           secondary: '#A6ADBB',
-          tertiary: '#6B7280',
+          // Bumped from #6B7280 (~4.47:1) to pass WCAG AA 4.5:1 on #06070A.
+          tertiary: '#8A93A3',
+          // Reserved for explicitly-disabled or low-emphasis surface decorations only.
+          // Does NOT pass 4.5:1; never use for body copy. Lint-flag if it appears as text.
           muted: '#4B5263',
         },
         brand: {

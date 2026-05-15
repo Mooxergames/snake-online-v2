@@ -86,7 +86,9 @@
     "stat4": {
       "value": "180+",
       "label": "Länder"
-    }
+    },
+    "titleLead": "Die Arena, in der Schlangen",
+    "titleAccent": "zu Legenden werden."
   },
   "features": {
     "title": "Entwickelt für die\nmoderne Arena.",
@@ -419,7 +421,9 @@
         "title": "Offline AI play",
         "note": "We focus on real-time PvP"
       }
-    }
+    },
+    "cellYes": "Ja",
+    "cellNo": "Nein"
   },
   "faq": {
     "eyebrow": "FAQ",

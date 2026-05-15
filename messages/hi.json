@@ -86,7 +86,9 @@
       "value": "180+",
       "label": "Countries"
     },
-    "instantPlay": "0s"
+    "instantPlay": "0s",
+    "titleLead": "वो अरीना जहाँ साँप",
+    "titleAccent": "दिग्गज बनते हैं।"
   },
   "features": {
     "title": "Engineered for the\nmodern arena.",
@@ -419,7 +421,9 @@
         "title": "Offline AI play",
         "note": "We focus on real-time PvP"
       }
-    }
+    },
+    "cellYes": "हाँ",
+    "cellNo": "नहीं"
   },
   "faq": {
     "eyebrow": "FAQ",

@@ -40,23 +40,24 @@ export default function BentoFeatures() {
           viewport={inView}
           className="mt-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[minmax(180px,auto)]"
         >
-          {/* Tile 1 — Real-time multiplayer (2x2 hero tile) */}
+          {/* Tile 1 — Real-time multiplayer (2x2 hero tile, scaled-up typography
+              so it visually dominates its 1x1 siblings per HIG bento ratios). */}
           <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-2">
-            <TiltCard className="liquid-glass rounded-3xl p-7 h-full relative overflow-hidden group">
+            <TiltCard className="liquid-glass rounded-3xl p-7 sm:p-8 h-full relative overflow-hidden group">
               <div
                 className="absolute -right-10 -top-10 size-64 rounded-full blur-3xl opacity-50 transition-opacity group-hover:opacity-80"
                 style={{ background: 'radial-gradient(circle, rgba(255,149,0,0.4), transparent 65%)' }}
                 aria-hidden="true"
               />
               <div className="relative">
-                <div className="size-12 rounded-2xl bg-brand-500/15 ring-1 ring-brand-500/30 flex items-center justify-center mb-5">
-                  <Zap size={22} className="text-brand-300" />
+                <div className="size-14 rounded-2xl bg-brand-500/15 ring-1 ring-brand-500/30 flex items-center justify-center mb-6">
+                  <Zap size={26} className="text-brand-300" aria-hidden="true" />
                 </div>
-                <h3 className="font-display text-2xl font-semibold">{t('items.realtime.title')}</h3>
-                <p className="mt-3 text-text-secondary text-pretty">{t('items.realtime.body')}</p>
+                <h3 className="font-display text-display-md font-semibold text-balance">{t('items.realtime.title')}</h3>
+                <p className="mt-4 text-base sm:text-lg text-text-secondary text-pretty max-w-md">{t('items.realtime.body')}</p>
 
-                <div className="mt-6 inline-flex items-baseline gap-3 rounded-2xl liquid-glass-strong px-4 py-3">
-                  <span className="font-display text-4xl font-bold gradient-text tabular-nums">
+                <div className="mt-7 inline-flex items-baseline gap-3 rounded-2xl liquid-glass-strong px-5 py-3.5">
+                  <span className="font-display text-4xl sm:text-5xl font-bold gradient-text tabular-nums">
                     &lt;<CountUp end={100} duration={1.8} />
                   </span>
                   <span className="text-sm text-text-secondary">{t('items.realtime.metric')}</span>

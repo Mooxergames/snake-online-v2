@@ -17,10 +17,11 @@ const HERO_SNAKES = [
   'FSNAKE_01', 'FSNAKE_05', 'FSNAKE_12', 'FSNAKE_16', 'FSNAKE_22',
 ].filter(id => (snakes as string[]).includes(id));
 
+// Two floaters at the screen edges only — three was over-busy and the middle one stole
+// fixation from the H1 (per HIG review).
 const FLOATERS = [
-  { id: HERO_SNAKES[0], top: '6%',  left: '4%',  size: 96,  dur: 14, delay: 0,   rot: -8 },
+  { id: HERO_SNAKES[0], top: '8%',  left: '3%',  size: 96,  dur: 14, delay: 0,   rot: -8 },
   { id: HERO_SNAKES[2], top: '60%', left: '2%',  size: 104, dur: 16, delay: 0.6, rot: -16 },
-  { id: HERO_SNAKES[5], top: '32%', left: '20%', size: 84,  dur: 17, delay: 0.9, rot: 14 },
 ];
 
 const PREVIEW_RANK = [
@@ -58,11 +59,13 @@ export default function Hero({ locale }: { locale: string }) {
   }, []);
 
   useEffect(() => {
-    // Simulated live drift on the "players online now" pill — keeps the page feeling alive.
+    // Simulated live drift on the "players online now" pill.
+    // Updated every 12s (rather than 4s) to reduce noise for screen-reader users —
+    // paired with aria-live="polite" the announcement cadence stays sane.
     // A real WebSocket / SSE feed can replace this later.
     const id = setInterval(() => {
       setOnlineNow(v => Math.max(40000, v + Math.floor(Math.random() * 200) - 80));
-    }, 4000);
+    }, 12000);
     return () => clearInterval(id);
   }, []);
 
@@ -80,7 +83,9 @@ export default function Hero({ locale }: { locale: string }) {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <iframe
             src="https://player.vimeo.com/video/911471666?app_id=122963&byline=0&badge=0&portrait=0&title=0&background=1&muted=1&autoplay=1&loop=1&dnt=1"
-            title=""
+            title="Decorative gameplay background loop"
+            aria-hidden="true"
+            tabIndex={-1}
             allow="autoplay; fullscreen; picture-in-picture"
             loading="lazy"
             onLoad={() => setVideoLoaded(true)}
@@ -108,17 +113,11 @@ export default function Hero({ locale }: { locale: string }) {
 
       <div className="absolute inset-0 grid-bg opacity-30" aria-hidden="true" />
       <div className="absolute inset-0 bg-grid-fade" aria-hidden="true" />
-      {!showVideo && <GradientMesh intensity="normal" />}
 
-      <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-        <div
-          className={`absolute inset-0 ${showVideo ? 'opacity-45 mix-blend-screen' : 'opacity-60'}`}
-          style={{
-            background:
-              'radial-gradient(ellipse 70% 55% at 75% 35%, rgba(255,149,0,0.32), transparent 60%), radial-gradient(ellipse 55% 45% at 20% 70%, rgba(255,59,138,0.28), transparent 60%), radial-gradient(ellipse 40% 40% at 85% 85%, rgba(164,85,255,0.22), transparent 60%)',
-          }}
-        />
-      </div>
+      {/* Only one ambient color layer at a time. With video: Vimeo provides the color.
+          Without video: the animated GradientMesh provides it. Avoids the previous
+          5-layer pile-up that washed the H1. */}
+      {!showVideo && <GradientMesh intensity="normal" />}
 
       <div className="absolute inset-0 z-[1] pointer-events-none" aria-hidden="true">
         {showFloaters && FLOATERS.filter(f => f.id).map((f, i) => (
@@ -162,20 +161,28 @@ export default function Hero({ locale }: { locale: string }) {
           transition={{ duration: 0.8, ease: easing.smooth }}
           className="lg:col-span-7"
         >
-          <div className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold liquid-glass">
-            <span className="relative flex size-2">
+          <div className="chip-live">
+            <span className="relative flex size-2" aria-hidden="true">
               <span className="absolute inset-0 rounded-full bg-venom-500 animate-ping opacity-75" />
               <span className="relative size-2 rounded-full bg-venom-500" />
             </span>
             <span className="text-text-secondary uppercase tracking-wider">{t('eyebrow')}</span>
-            <span className="text-text-tertiary">·</span>
-            <span className="font-mono text-venom-400 tabular-nums">
+            <span className="text-text-tertiary" aria-hidden="true">·</span>
+            <span
+              className="font-mono text-venom-400 tabular-nums"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               <CountUp end={onlineNow} format={n => Math.floor(n).toLocaleString()} duration={1.4} /> {tLb('liveOnline')}
             </span>
           </div>
 
-          <h1 className="mt-6 font-display text-display-2xl text-balance whitespace-pre-line">
-            <span className="gradient-text">{t('title')}</span>
+          {/* Solid anchor word + gradient accent — gives the H1 a fixation point.
+              The lead carries semantics; the accent carries the brand chroma. */}
+          <h1 className="mt-6 font-display text-display-2xl text-balance">
+            <span className="text-text-primary">{t('titleLead')}</span>
+            <br />
+            <span className="gradient-text">{t('titleAccent')}</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl text-pretty">{t('subtitle')}</p>
 
@@ -197,10 +204,12 @@ export default function Hero({ locale }: { locale: string }) {
             <AppBadges />
           </div>
 
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-px rounded-2xl liquid-glass overflow-hidden max-w-3xl">
+          {/* Stat strip — divider lines instead of opaque inner fills so the glass
+              effect stays honest (no internal "fake table" pillars). */}
+          <dl className="mt-12 grid grid-cols-2 sm:grid-cols-4 rounded-2xl liquid-glass overflow-hidden max-w-3xl divide-x divide-y sm:divide-y-0 divide-border">
             {stats.map(s => (
-              <div key={s.label} className="bg-bg-elevated/60 px-5 py-6 text-center">
-                <div className="font-display text-2xl sm:text-3xl font-bold gradient-text tabular-nums">
+              <div key={s.label} className="px-5 py-6 text-center">
+                <dd className="font-display text-2xl sm:text-3xl font-bold gradient-text tabular-nums">
                   <CountUp
                     end={s.value}
                     suffix={s.suffix}
@@ -208,11 +217,11 @@ export default function Hero({ locale }: { locale: string }) {
                     format={s.format}
                     duration={2.2}
                   />
-                </div>
-                <div className="mt-1 text-xs text-text-tertiary uppercase tracking-wider">{s.label}</div>
+                </dd>
+                <dt className="mt-1 text-xs text-text-tertiary uppercase tracking-wider">{s.label}</dt>
               </div>
             ))}
-          </div>
+          </dl>
         </motion.div>
 
         {/* RIGHT — live leaderboard preview card */}
@@ -223,7 +232,9 @@ export default function Hero({ locale }: { locale: string }) {
           className="hidden lg:block lg:col-span-5"
         >
           <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-br from-brand-500/30 via-magenta-500/20 to-purple-500/20 rounded-3xl blur-2xl" />
+            {/* Outer chroma bloom — half-intensity vs v1; liquid-glass-strong already
+                carries plenty of presence on its own. */}
+            <div className="absolute -inset-2 bg-gradient-to-br from-brand-500/15 via-magenta-500/10 to-purple-500/10 rounded-3xl blur-2xl" aria-hidden="true" />
             <div className="relative liquid-glass-strong rounded-3xl p-6 shadow-card-lifted">
               <div className="flex items-center justify-between mb-5">
                 <div className="flex items-center gap-2">

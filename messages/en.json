@@ -86,7 +86,9 @@
     "stat4": {
       "value": "180+",
       "label": "Countries"
-    }
+    },
+    "titleLead": "The arena where snakes\nbecome",
+    "titleAccent": "legends."
   },
   "marquee": {
     "label": "200+ Hand-Crafted Skins"
@@ -143,16 +145,20 @@
     "relatedTitle": "Similar skins",
     "browseAll": "Browse all 200+ skins",
     "rarity": {
-      "common": "Common", "rare": "Rare", "epic": "Epic",
-      "legendary": "Legendary", "mythic": "Mythic", "exclusive": "Exclusive"
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic",
+      "exclusive": "Exclusive"
     },
     "rarityNote": {
-      "common":     "Starter roster — available to every player.",
-      "rare":       "Earned through early-game progression.",
-      "epic":       "Unlocked at sustained mid-game performance.",
-      "legendary":  "Top 1% rewards. Hard to earn, harder to keep.",
-      "mythic":     "Tournament-finals exclusive. Wear it like a crown.",
-      "exclusive":  "Country-locked. Fly your flag in the arena."
+      "common": "Starter roster — available to every player.",
+      "rare": "Earned through early-game progression.",
+      "epic": "Unlocked at sustained mid-game performance.",
+      "legendary": "Top 1% rewards. Hard to earn, harder to keep.",
+      "mythic": "Tournament-finals exclusive. Wear it like a crown.",
+      "exclusive": "Country-locked. Fly your flag in the arena."
     }
   },
   "versus": {
@@ -185,13 +191,34 @@
         "metric": "ms latency",
         "regions": "12 global regions · 99.95% uptime"
       },
-      "skins": { "title": "Hand-crafted Skins", "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides." },
-      "leaderboards": { "title": "Global Leaderboards", "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne." },
-      "country": { "title": "180+ Country Skins", "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle." },
-      "tournaments": { "title": "Daily Tournaments", "body": "Free entry. Real prizes. New brackets every 24 hours." },
-      "crossplay": { "title": "True Cross-Play", "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you." },
-      "fairplay": { "title": "Zero Pay-to-Win", "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet." },
-      "community": { "title": "5M+ Snake Nation", "body": "Discord, tournaments, content creators. The biggest snake community in the .io world." }
+      "skins": {
+        "title": "Hand-crafted Skins",
+        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+      },
+      "leaderboards": {
+        "title": "Global Leaderboards",
+        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+      },
+      "country": {
+        "title": "180+ Country Skins",
+        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+      },
+      "tournaments": {
+        "title": "Daily Tournaments",
+        "body": "Free entry. Real prizes. New brackets every 24 hours."
+      },
+      "crossplay": {
+        "title": "True Cross-Play",
+        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+      },
+      "fairplay": {
+        "title": "Zero Pay-to-Win",
+        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+      },
+      "community": {
+        "title": "5M+ Snake Nation",
+        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+      }
     }
   },
   "compare": {
@@ -203,15 +230,41 @@
     "feature": "Feature",
     "disclaimer": "Comparison based on publicly available information from worms.zone and the Worms Zone mobile app, captured May 2026. Worms Zone is a trademark of its respective owners.",
     "rows": {
-      "realtime":    { "title": "Real-time multiplayer",        "note": "Live opponents, not bots" },
-      "skins":       { "title": "Number of skins",              "note": "Hand-crafted designs" },
-      "languages":   { "title": "Supported languages",          "note": "Native SEO + hreflang" },
-      "leaderboard": { "title": "Public global leaderboard",    "note": "Updated hourly" },
-      "schema":      { "title": "SEO structured data",          "note": "Schema.org JSON-LD" },
-      "crossplay":   { "title": "Cross-platform progression",   "note": "One account, all devices" },
-      "tournaments": { "title": "Daily tournaments",            "note": "Free entry, real prizes" },
-      "offline":     { "title": "Offline AI play",              "note": "We focus on real-time PvP" }
-    }
+      "realtime": {
+        "title": "Real-time multiplayer",
+        "note": "Live opponents, not bots"
+      },
+      "skins": {
+        "title": "Number of skins",
+        "note": "Hand-crafted designs"
+      },
+      "languages": {
+        "title": "Supported languages",
+        "note": "Native SEO + hreflang"
+      },
+      "leaderboard": {
+        "title": "Public global leaderboard",
+        "note": "Updated hourly"
+      },
+      "schema": {
+        "title": "SEO structured data",
+        "note": "Schema.org JSON-LD"
+      },
+      "crossplay": {
+        "title": "Cross-platform progression",
+        "note": "One account, all devices"
+      },
+      "tournaments": {
+        "title": "Daily tournaments",
+        "note": "Free entry, real prizes"
+      },
+      "offline": {
+        "title": "Offline AI play",
+        "note": "We focus on real-time PvP"
+      }
+    },
+    "cellYes": "Yes",
+    "cellNo": "No"
   },
   "faq": {
     "eyebrow": "FAQ",

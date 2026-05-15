@@ -82,14 +82,26 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const dir = localeMeta[locale as Locale].dir;
 
+  // Skip-link label per locale (with English fallback). Lives outside the
+  // NextIntlClientProvider so it always renders even if i18n setup throws.
+  const skipLabel = ({
+    en: 'Skip to main content', tr: 'Ana içeriğe atla', de: 'Zum Hauptinhalt springen',
+    es: 'Saltar al contenido principal', fr: 'Aller au contenu principal',
+    it: 'Vai al contenuto principale', pt: 'Pular para o conteúdo',
+    ru: 'Перейти к основному содержанию', ja: 'メインコンテンツへスキップ',
+    ko: '본문으로 건너뛰기', zh: '跳到主要内容', ar: 'تخطّي إلى المحتوى الرئيسي',
+    hi: 'मुख्य सामग्री पर जाएँ', id: 'Lewati ke konten utama',
+  } as Record<string, string>)[locale] || 'Skip to main content';
+
   return (
     <html lang={locale} dir={dir} className={`${inter.variable} ${sora.variable}`}>
       <body className="min-h-screen bg-bg text-text-primary antialiased">
+        <a href="#main" className="skip-link">{skipLabel}</a>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <SchemaOrg locale={locale} />
           <SmoothScrollProvider>
             <Header locale={locale} />
-            <main className="min-h-screen">{children}</main>
+            <main id="main" className="min-h-screen">{children}</main>
             <Footer locale={locale} />
           </SmoothScrollProvider>
         </NextIntlClientProvider>

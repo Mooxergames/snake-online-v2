@@ -62,26 +62,32 @@ function SkinSchema({ skin, locale }: { skin: Skin; locale: string }) {
       { '@type': 'ListItem', position: 3, name: skin.name, item: url },
     ],
   };
-  const product = {
+  // CreativeWork tied back to the parent VideoGame entity.
+  // We deliberately do NOT emit a Product/Offer here: Google flags Product schema
+  // with $0 offers as low-quality and disqualifies them from rich results.
+  // Instead we declare each skin as a CreativeWork that's `isPartOf` the game,
+  // which keeps the entity graph clean and inherits ratings from the game.
+  const creativeWork = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': 'CreativeWork',
+    '@id': url,
     name: `${skin.name} Snake Skin`,
+    alternateName: skin.id,
     description: skin.description,
     image: snakeImg(skin.id),
-    brand: { '@type': 'Brand', name: 'Snake Online' },
-    category: skin.isCountry ? 'Country Skin' : 'Fantasy Skin',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url,
-    },
+    inLanguage: locale,
+    creator: { '@id': `${SITE_URL}/#organization` },
+    isPartOf: { '@id': `${SITE_URL}/#game` },
+    genre: skin.isCountry ? 'Country Skin' : 'Fantasy Skin',
+    keywords: [
+      skin.name, skin.rarity, 'snake skin', 'Snake Online',
+      ...(skin.isCountry && skin.country ? [skin.country] : []),
+    ].join(', '),
   };
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(creativeWork) }} />
     </>
   );
 }
@@ -112,10 +118,10 @@ export default async function SkinPage({ params }: PageProps) {
         <div className="container-wide relative">
           <nav className="mb-8 flex items-center gap-2 text-sm text-text-tertiary" aria-label="Breadcrumb">
             <Link href={`/${params.locale}`} className="hover:text-text-primary transition-colors">Home</Link>
-            <span>/</span>
+            <span aria-hidden="true">/</span>
             <Link href={`/${params.locale}/snakes`} className="hover:text-text-primary transition-colors">{t('breadcrumbSnakes')}</Link>
-            <span>/</span>
-            <span className="text-text-primary">{skin.name}</span>
+            <span aria-hidden="true">/</span>
+            <span className="text-text-primary" aria-current="page">{skin.name}</span>
           </nav>
 
           <div className="grid lg:grid-cols-12 gap-10 items-center">
@@ -132,6 +138,9 @@ export default async function SkinPage({ params }: PageProps) {
                 <img
                   src={snakeImg(skin.id)}
                   alt={`${skin.name} snake skin in Snake Online`}
+                  width={800}
+                  height={800}
+                  fetchPriority="high"
                   className="relative w-4/5 h-4/5 object-contain"
                   style={{ filter: 'drop-shadow(0 24px 48px rgba(255,149,0,0.45))' }}
                 />

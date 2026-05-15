@@ -86,7 +86,9 @@
       "value": "180+",
       "label": "Countries"
     },
-    "instantPlay": "0s"
+    "instantPlay": "0s",
+    "titleLead": "A arena onde as cobras",
+    "titleAccent": "viram lendas."
   },
   "features": {
     "title": "Engineered for the\nmodern arena.",
@@ -419,7 +421,9 @@
         "title": "Offline AI play",
         "note": "We focus on real-time PvP"
       }
-    }
+    },
+    "cellYes": "Sim",
+    "cellNo": "Não"
   },
   "faq": {
     "eyebrow": "FAQ",
