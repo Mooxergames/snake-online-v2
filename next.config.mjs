@@ -19,11 +19,12 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
   },
-  async rewrites() {
-    return [
-      { source: '/cdn/:path*', destination: `${BACKEND_API_BASE}/public/:path*` },
-    ];
-  },
+  // Skin / arena PNGs live in /public/{snakes,backgrounds,baits}.
+  // The /cdn/* rewrite previously proxied to backend.snakeonlines.com but the
+  // origin returns 525 (SSL handshake failure); the rewrite is no longer needed
+  // since assets are now same-origin static files.
+  // The /api/rankings/* routes still talk to BACKEND_API_BASE via direct fetch
+  // inside the route handlers — see src/app/api/rankings/*.
   async headers() {
     return [
       {
@@ -42,9 +43,10 @@ const nextConfig = {
         ],
       },
       {
-        source: '/cdn/:path*',
+        // Static assets in /public — long-cache headers for browsers + edge CDN.
+        source: '/:folder(snakes|backgrounds|baits|avatars|flags|powerUps)/:file*',
         headers: [
-          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800' },
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
     ];
