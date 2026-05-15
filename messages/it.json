@@ -81,7 +81,8 @@
     "stat4": {
       "value": "180+",
       "label": "Countries"
-    }
+    },
+    "instantPlay": "0s"
   },
   "features": {
     "title": "Engineered for the\nmodern arena.",
@@ -305,7 +306,8 @@
       "players": "Giocatori",
       "skins": "Skin",
       "countries": "Paesi"
-    }
+    },
+    "liveOnline": "online now"
   },
   "contactForm": {
     "title": "Scrivici un messaggio",
@@ -327,5 +329,139 @@
   "appBadges": {
     "appStore": "Scarica su",
     "playStore": "Disponibile su"
+  },
+  "marquee": {
+    "label": "200+ Hand-Crafted Skins"
+  },
+  "bento": {
+    "eyebrow": "WHY SNAKE ONLINE",
+    "title": "Engineered for the\nmodern arena.",
+    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "items": {
+      "realtime": {
+        "title": "Real Real-Time Multiplayer",
+        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
+        "metric": "ms latency",
+        "regions": "12 global regions · 99.95% uptime"
+      },
+      "skins": {
+        "title": "Hand-crafted Skins",
+        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+      },
+      "leaderboards": {
+        "title": "Global Leaderboards",
+        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+      },
+      "country": {
+        "title": "180+ Country Skins",
+        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+      },
+      "tournaments": {
+        "title": "Daily Tournaments",
+        "body": "Free entry. Real prizes. New brackets every 24 hours."
+      },
+      "crossplay": {
+        "title": "True Cross-Play",
+        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+      },
+      "fairplay": {
+        "title": "Zero Pay-to-Win",
+        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+      },
+      "community": {
+        "title": "5M+ Snake Nation",
+        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+      }
+    }
+  },
+  "compare": {
+    "eyebrow": "HEAD-TO-HEAD",
+    "title": "Snake Online vs the rest.",
+    "subtitle": "We rebuilt the .io snake genre from the ground up. Here's what changed.",
+    "us": "Snake Online",
+    "them": "Worms Zone .io",
+    "feature": "Feature",
+    "disclaimer": "Comparison based on publicly available information from worms.zone and the Worms Zone mobile app, captured May 2026. Worms Zone is a trademark of its respective owners.",
+    "rows": {
+      "realtime": {
+        "title": "Real-time multiplayer",
+        "note": "Live opponents, not bots"
+      },
+      "skins": {
+        "title": "Number of skins",
+        "note": "Hand-crafted designs"
+      },
+      "languages": {
+        "title": "Supported languages",
+        "note": "Native SEO + hreflang"
+      },
+      "leaderboard": {
+        "title": "Public global leaderboard",
+        "note": "Updated hourly"
+      },
+      "schema": {
+        "title": "SEO structured data",
+        "note": "Schema.org JSON-LD"
+      },
+      "crossplay": {
+        "title": "Cross-platform progression",
+        "note": "One account, all devices"
+      },
+      "tournaments": {
+        "title": "Daily tournaments",
+        "note": "Free entry, real prizes"
+      },
+      "offline": {
+        "title": "Offline AI play",
+        "note": "We focus on real-time PvP"
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Answers to everything.",
+    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "items": {
+      "whatIsIt": {
+        "q": "What is Snake Online?",
+        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+      },
+      "isItFree": {
+        "q": "Is Snake Online really free?",
+        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+      },
+      "doINeedToDownload": {
+        "q": "Do I need to download anything?",
+        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+      },
+      "howManySkins": {
+        "q": "How many snake skins are there?",
+        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+      },
+      "isItMultiplayer": {
+        "q": "Is it true real-time multiplayer (not bots)?",
+        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+      },
+      "whichDevices": {
+        "q": "Which devices does it run on?",
+        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+      },
+      "howToWin": {
+        "q": "How do I get bigger faster?",
+        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+      },
+      "vsWormzone": {
+        "q": "How is Snake Online different from Worms Zone?",
+        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+      },
+      "vsSlither": {
+        "q": "How is it different from Slither.io?",
+        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+      },
+      "progressSync": {
+        "q": "Does my progress sync across devices?",
+        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+      }
+    }
   }
 }

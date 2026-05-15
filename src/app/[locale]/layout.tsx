@@ -7,6 +7,7 @@ import { locales, localeMeta, type Locale } from '@/lib/locales';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaOrg from '@/components/SchemaOrg';
+import SmoothScrollProvider from '@/components/motion/SmoothScrollProvider';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
@@ -86,9 +87,11 @@ export default async function LocaleLayout({
       <body className="min-h-screen bg-bg text-text-primary antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <SchemaOrg locale={locale} />
-          <Header locale={locale} />
-          <main className="min-h-screen">{children}</main>
-          <Footer locale={locale} />
+          <SmoothScrollProvider>
+            <Header locale={locale} />
+            <main className="min-h-screen">{children}</main>
+            <Footer locale={locale} />
+          </SmoothScrollProvider>
         </NextIntlClientProvider>
       </body>
     </html>

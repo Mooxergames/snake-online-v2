@@ -1,6 +1,10 @@
 import Hero from '@/components/Hero';
-import FeatureGrid from '@/components/FeatureGrid';
+import SkinMarqueeStrip from '@/components/SkinMarqueeStrip';
+import BentoFeatures from '@/components/BentoFeatures';
 import SnakeShowcase from '@/components/SnakeShowcase';
+import CompareSection from '@/components/CompareSection';
+import FAQ from '@/components/FAQ';
+import FAQSchema from '@/components/FAQSchema';
 import CTABanner from '@/components/CTABanner';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
@@ -14,9 +18,13 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
   unstable_setRequestLocale(locale);
   return (
     <>
+      <FAQSchema locale={locale} />
       <Hero locale={locale} />
-      <FeatureGrid />
+      <SkinMarqueeStrip />
+      <BentoFeatures />
       <SnakeShowcase locale={locale} />
+      <CompareSection />
+      <FAQ />
       <CTABanner locale={locale} />
     </>
   );

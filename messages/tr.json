@@ -66,6 +66,7 @@
     "subtitle": "Binlerce gerçek oyuncuyu gerçek zamanda alt et. 200+ efsanevi skin topla. Küresel liderlik tablosunu fethet.",
     "ctaPrimary": "Hemen Ücretsiz Oyna",
     "ctaSecondary": "Fragmanı İzle",
+    "instantPlay": "0sn",
     "stat1": {
       "value": "5M+",
       "label": "Dünya Genelinde Oyuncu"
@@ -81,6 +82,95 @@
     "stat4": {
       "value": "180+",
       "label": "Ülke"
+    }
+  },
+  "marquee": {
+    "label": "200+ Özenle Tasarlanmış Skin"
+  },
+  "bento": {
+    "eyebrow": "NEDEN SNAKE ONLINE",
+    "title": "Modern arena için\ntasarlandı.",
+    "subtitle": "Her sistem, her kare, her yılan — seni durdurulamaz hissettirmek için.",
+    "items": {
+      "realtime": {
+        "title": "Gerçek Zamanlı Çok Oyunculu",
+        "body": "Bot değil, binlerce gerçek oyuncuya karşı savaş. 12 bölgedeki edge sunucular her sarmal ve kesimi tam senkron tutar.",
+        "metric": "ms gecikme",
+        "regions": "12 küresel bölge · %99.95 erişilebilirlik"
+      },
+      "skins": { "title": "Özenle Hazırlanmış Skinler", "body": "Altı nadirlik kademesi. Ülke bayrakları, mitik ejderhalar, neon yılanlar. Pay-to-win yok — kazananı yetenek belirler." },
+      "leaderboards": { "title": "Küresel Liderlik Tablosu", "body": "Ülke bazlı ve global sıralamalar saatte bir güncellenir. İlk %1'e tırman, tahtını al." },
+      "country": { "title": "180+ Ülke Skini", "body": "Renklerini taşı. Dünyadaki her bayrak giyilebilir bir skin — seninkini sahaya çıkar." },
+      "tournaments": { "title": "Günlük Turnuvalar", "body": "Ücretsiz katılım. Gerçek ödüller. 24 saatte bir yeni eşleşme." },
+      "crossplay": { "title": "Gerçek Cross-Play", "body": "Tek hesap. iOS, Android, Web. İlerlemen, skinlerin ve sıralamadaki yerin seninle gelir." },
+      "fairplay": { "title": "Sıfır Pay-to-Win", "body": "Sadece kozmetik. Liderlik tablosunu cüzdan değil refleks belirler." },
+      "community": { "title": "5M+ Yılan Topluluğu", "body": "Discord, turnuvalar, içerik üreticileri. .io dünyasının en büyük yılan topluluğu." }
+    }
+  },
+  "compare": {
+    "eyebrow": "KAFA KAFAYA",
+    "title": "Snake Online vs diğerleri.",
+    "subtitle": "Snake .io türünü sıfırdan yeniden inşa ettik. İşte fark.",
+    "us": "Snake Online",
+    "them": "Worms Zone .io",
+    "feature": "Özellik",
+    "disclaimer": "Karşılaştırma, Mayıs 2026'da worms.zone ve Worms Zone mobil uygulamasından alınan kamuya açık bilgilere dayanmaktadır. Worms Zone, sahibinin ticari markasıdır.",
+    "rows": {
+      "realtime":    { "title": "Gerçek zamanlı çok oyunculu", "note": "Bot değil, canlı rakipler" },
+      "skins":       { "title": "Skin sayısı",                  "note": "Özenle tasarlanmış" },
+      "languages":   { "title": "Desteklenen diller",           "note": "Yerel SEO + hreflang" },
+      "leaderboard": { "title": "Açık küresel sıralama",        "note": "Saatlik güncellenir" },
+      "schema":      { "title": "SEO yapılandırılmış veri",     "note": "Schema.org JSON-LD" },
+      "crossplay":   { "title": "Platformlar arası ilerleme",   "note": "Tek hesap, tüm cihazlar" },
+      "tournaments": { "title": "Günlük turnuvalar",            "note": "Ücretsiz katılım, gerçek ödüller" },
+      "offline":     { "title": "Çevrimdışı AI modu",            "note": "Biz gerçek zamanlı PvP'ye odaklanıyoruz" }
+    }
+  },
+  "faq": {
+    "eyebrow": "SSS",
+    "title": "Her şeyin cevabı.",
+    "subtitle": "Gerçek oyunculardan gerçek sorular. Sorunun burada yoksa destek ekibimize yaz — her mesajı okuyoruz.",
+    "items": {
+      "whatIsIt": {
+        "q": "Snake Online nedir?",
+        "a": "Snake Online, ücretsiz gerçek zamanlı çok oyunculu .io yılan battle royale oyunudur. Rakipleri sarmal at, küreciklerini topla, küresel sıralamada yüksel. 200+ koleksiyonluk skin, 180+ ülke liderlik tablosu — iOS, Android ve modern web tarayıcılarında."
+      },
+      "isItFree": {
+        "q": "Snake Online gerçekten ücretsiz mi?",
+        "a": "Evet. Sonsuza dek ücretsiz, tarayıcıda oynamak için kayıt gerekmez. Paywall yok, pay-to-win avantajı yok — skinler tamamen kozmetik ve çoğu oyun içinde kazanılabilir."
+      },
+      "doINeedToDownload": {
+        "q": "İndirmem gerekiyor mu?",
+        "a": "Web için hayır — Play'e bas ve saniyeler içinde arenadasın. Mobil için App Store ve Google Play'de ücretsiz native uygulamalar var, aynı cross-progression ile."
+      },
+      "howManySkins": {
+        "q": "Kaç tane yılan skini var?",
+        "a": "200'den fazla, altı nadirlik kademesinde özenle tasarlanmış skin: Common, Rare, Epic, Legendary, Mythic ve Exclusive. Her ay yeni sezon — ve 180+ ülke için özel bayrak skinleri dahil."
+      },
+      "isItMultiplayer": {
+        "q": "Gerçekten gerçek zamanlı çok oyunculu mu (bot değil)?",
+        "a": "Evet. Arenadaki her yılan gerçek bir insan. 12 küresel bölgede edge sunucularımız var — sub-100ms gecikme ile sarmal ve kesimler anlık hissedilir."
+      },
+      "whichDevices": {
+        "q": "Hangi cihazlarda çalışıyor?",
+        "a": "Modern tarayıcılar (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android telefon ve tablet. Tek hesap hepsinde senkron."
+      },
+      "howToWin": {
+        "q": "Nasıl daha hızlı büyürüm?",
+        "a": "Saldırganlık değil, sabır ve konum kazanır. Kenarda kal, kill'lerden küre topla, sadece hedefin düz hatta sabit olduğu sarmalları başlat. Boost kütle yakar — sadece kill kapamak veya kaçmak için kullan."
+      },
+      "vsWormzone": {
+        "q": "Snake Online Worms Zone'dan nasıl farklı?",
+        "a": "Worms Zone büyük oranda AI botlara karşı tek oyunculu, sadece İngilizce, halka açık liderlik tablosu veya web sürümü yok. Snake Online insanlara karşı gerçek zamanlı çok oyunculu, 14 dil desteği, canlı küresel liderlik tablosu ve mobil-cross-progression ile tarayıcıda native çalışır."
+      },
+      "vsSlither": {
+        "q": "Slither.io'dan nasıl farklı?",
+        "a": "Snake Online, Slither'ın sezgisel kontrollerini korur ama ekler: 200+ koleksiyon skini (Slither ~50), 180+ ülke liderlik tablosu, günlük turnuvalar, saatlik güncellenen halka açık sıralamalar ve tam çapraz platform ilerleme. Sadece yetenek — pay-to-win yok."
+      },
+      "progressSync": {
+        "q": "İlerlemem cihazlar arasında senkron mu?",
+        "a": "Evet. Bir kez giriş yap, kupaların, skinlerin, arkadaşların ve turnuva kayıtların iOS, Android ve web arasında otomatik takip eder."
+      }
     }
   },
   "features": {
@@ -301,6 +391,7 @@
     "updatedAt": "Saatlik güncellenir",
     "viewAll": "Tüm sıralamalar",
     "trophyLabel": "kupa",
+    "liveOnline": "şu an çevrimiçi",
     "stats": {
       "players": "Oyuncu",
       "skins": "Görünüm",

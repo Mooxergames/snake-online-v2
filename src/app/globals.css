@@ -7,6 +7,8 @@
     color-scheme: dark;
     --font-inter: 'Inter', system-ui, sans-serif;
     --font-display: 'Sora', system-ui, sans-serif;
+    --cursor-x: 50%;
+    --cursor-y: 50%;
   }
   html, body {
     background: #06070A;
@@ -18,6 +20,11 @@
   ::selection { background: #FF9500; color: #06070A; }
   *:focus-visible { outline: 2px solid #FF9500; outline-offset: 2px; border-radius: 6px; }
   [dir="rtl"] body { text-align: right; }
+
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
 }
 
 @layer components {
@@ -31,21 +38,56 @@
     -webkit-backdrop-filter: blur(20px) saturate(160%);
   }
 
+  /* Apple HIG 2026 "Liquid Glass" — thicker blur, refined edge highlight, depth */
+  .liquid-glass {
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.015));
+    border: 1px solid rgba(255,255,255,0.10);
+    backdrop-filter: blur(36px) saturate(180%);
+    -webkit-backdrop-filter: blur(36px) saturate(180%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.12),
+      inset 0 -1px 0 rgba(0,0,0,0.25),
+      0 24px 60px -24px rgba(0,0,0,0.6);
+  }
+
+  .liquid-glass-strong {
+    background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.14);
+    backdrop-filter: blur(44px) saturate(200%);
+    -webkit-backdrop-filter: blur(44px) saturate(200%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.18),
+      inset 0 -1px 0 rgba(0,0,0,0.3),
+      0 32px 80px -32px rgba(0,0,0,0.7);
+  }
+
   .btn { @apply inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 select-none rounded-full; }
   .btn-primary {
     @apply btn px-7 py-3.5 text-base text-bg bg-brand-500 hover:bg-brand-400 active:scale-[0.98];
     box-shadow: 0 10px 30px -10px rgba(255,149,0,0.6), inset 0 1px 0 rgba(255,255,255,0.2);
   }
+  .btn-primary-xl {
+    @apply btn px-9 py-4 text-lg text-bg bg-brand-500 hover:bg-brand-400 active:scale-[0.98];
+    box-shadow: 0 14px 40px -10px rgba(255,149,0,0.7), inset 0 1px 0 rgba(255,255,255,0.25);
+  }
   .btn-secondary { @apply btn px-7 py-3.5 text-base text-text-primary glass hover:border-border-strong active:scale-[0.98]; }
   .btn-ghost { @apply btn px-5 py-2 text-sm text-text-secondary hover:text-text-primary; }
 
   .chip { @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium glass text-text-secondary; }
+  .chip-brand { @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold text-brand-300 border border-brand-500/30 bg-brand-500/10; }
 
   .card { @apply rounded-2xl glass p-6 transition-all duration-300 hover:border-border-strong; }
   .card-hover { @apply hover:-translate-y-1 hover:shadow-[0_20px_60px_-30px_rgba(255,149,0,0.4)]; }
 
   .gradient-text {
     background: linear-gradient(135deg, #FFD980 0%, #FF9500 50%, #FF3B8A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-text-cool {
+    background: linear-gradient(135deg, #A455FF 0%, #FF3B8A 50%, #FF9500 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -59,12 +101,53 @@
     mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 0%, transparent 70%);
   }
 
+  .dot-bg {
+    background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 0%, transparent 80%);
+  }
+
+  /* Cursor-following radial glow — vars set from CursorGlow component */
+  .cursor-glow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(420px circle at var(--cursor-x) var(--cursor-y), rgba(255,149,0,0.18), transparent 50%);
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  .cursor-glow:hover::before { opacity: 1; }
+
   .tier-common     { @apply text-slate-400 border-slate-500/40 bg-slate-500/10; }
   .tier-rare       { @apply text-sky-400 border-sky-500/40 bg-sky-500/10; }
   .tier-epic       { @apply text-violet-400 border-violet-500/40 bg-violet-500/10; }
   .tier-legendary  { @apply text-amber-400 border-amber-500/40 bg-amber-500/10; }
   .tier-mythic     { @apply text-rose-400 border-rose-500/40 bg-rose-500/10; }
   .tier-exclusive  { @apply text-emerald-400 border-emerald-500/40 bg-emerald-500/10; }
+
+  /* Animated conic border — wraps a child with a rotating gradient ring */
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .conic-border {
+    position: relative;
+    isolation: isolate;
+  }
+  .conic-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    background: conic-gradient(from var(--angle, 0deg), #FF9500, #FF3B8A, #A455FF, #00E5FF, #FF9500);
+    animation: conicSpin 6s linear infinite;
+  }
+  @keyframes conicSpin {
+    to { --angle: 360deg; }
+  }
 }
 
 @layer utilities {
@@ -73,4 +156,17 @@
   .scrollbar-thin::-webkit-scrollbar { height: 6px; width: 6px; }
   .scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 999px; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
+
+  /* Preserve-3d helpers for tilt cards */
+  .preserve-3d { transform-style: preserve-3d; }
+  .perspective-1000 { perspective: 1000px; }
+  .perspective-1500 { perspective: 1500px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .respect-reduced-motion {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }

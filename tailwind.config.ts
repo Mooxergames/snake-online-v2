@@ -16,15 +16,18 @@ const config: Config = {
           elevated: '#0C0E14',
           card: '#10131C',
           subtle: '#161A26',
+          deep: '#03040A',
         },
         border: {
           DEFAULT: 'rgba(255,255,255,0.08)',
           strong: 'rgba(255,255,255,0.14)',
+          glow: 'rgba(255,149,0,0.35)',
         },
         text: {
           primary: '#F5F7FA',
           secondary: '#A6ADBB',
           tertiary: '#6B7280',
+          muted: '#4B5263',
         },
         brand: {
           50: '#FFF8E6',
@@ -38,6 +41,17 @@ const config: Config = {
           800: '#7A4000',
           900: '#3D2000',
         },
+        magenta: {
+          300: '#FF7AB0',
+          400: '#FF5599',
+          500: '#FF3B8A',
+          600: '#E61F70',
+        },
+        purple: {
+          400: '#B57AFF',
+          500: '#A455FF',
+          600: '#8B33E6',
+        },
         venom: {
           400: '#5BFF8A',
           500: '#22E060',
@@ -47,6 +61,7 @@ const config: Config = {
           pink: '#FF3B8A',
           cyan: '#00E5FF',
           purple: '#A455FF',
+          lime: '#A5FF3B',
         },
       },
       fontFamily: {
@@ -64,12 +79,21 @@ const config: Config = {
         'grid-fade': 'radial-gradient(circle at 50% 0%, rgba(255,149,0,0.18), transparent 60%)',
         'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E\")",
         'venom-gradient': 'linear-gradient(135deg, #FF9500 0%, #FF3B8A 50%, #A455FF 100%)',
+        'mesh-aurora':
+          'radial-gradient(ellipse 60% 50% at 20% 30%, rgba(255,149,0,0.35), transparent 60%), radial-gradient(ellipse 55% 50% at 75% 20%, rgba(255,59,138,0.32), transparent 60%), radial-gradient(ellipse 55% 50% at 50% 80%, rgba(164,85,255,0.28), transparent 60%)',
+        'conic-shimmer':
+          'conic-gradient(from 0deg at 50% 50%, rgba(255,149,0,0) 0%, rgba(255,149,0,0.4) 25%, rgba(255,59,138,0.4) 50%, rgba(164,85,255,0.4) 75%, rgba(255,149,0,0) 100%)',
       },
       animation: {
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         'shimmer': 'shimmer 2.4s linear infinite',
         'float': 'float 6s ease-in-out infinite',
         'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+        'marquee': 'marquee 40s linear infinite',
+        'marquee-slow': 'marquee 80s linear infinite',
+        'spin-slow': 'spin 14s linear infinite',
+        'gradient-shift': 'gradientShift 12s ease-in-out infinite',
+        'tilt': 'tilt 10s ease-in-out infinite',
       },
       keyframes: {
         fadeUp: {
@@ -88,6 +112,25 @@ const config: Config = {
           '0%, 100%': { boxShadow: '0 0 0 0 rgba(255,149,0,0.5)' },
           '50%': { boxShadow: '0 0 40px 8px rgba(255,149,0,0.15)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        gradientShift: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+        tilt: {
+          '0%, 50%, 100%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(0.6deg)' },
+          '75%': { transform: 'rotate(-0.6deg)' },
+        },
+      },
+      boxShadow: {
+        'glow-brand': '0 0 60px -10px rgba(255,149,0,0.6)',
+        'glow-magenta': '0 0 60px -10px rgba(255,59,138,0.6)',
+        'glow-purple': '0 0 60px -10px rgba(164,85,255,0.6)',
+        'card-lifted': '0 24px 60px -24px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.06)',
       },
     },
   },
