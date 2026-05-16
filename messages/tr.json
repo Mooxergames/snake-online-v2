@@ -306,9 +306,51 @@
   },
   "news": {
     "title": "Haberler ve Güncellemeler",
-    "subtitle": "Yama notları, hikaye ve stüdyodan kulis.",
+    "subtitle": "Yama notları, skin tanıtımları, strateji rehberleri ve stüdyodan kulis. Her gün yeni yazılar.",
     "readMore": "Yazıyı oku",
     "noneYet": "İlk yazılar yakında geliyor."
+  },
+  "blog": {
+    "siteName": "Snake Online",
+    "eyebrow": "SNAKE ONLINE BLOG",
+    "titleLead": "Strateji, hikaye,",
+    "titleAccent": "ve skin tanıtımları.",
+    "exploreCategories": "Kategorileri keşfet",
+    "browse": "Gör",
+    "backToNews": "Habere dön",
+    "readingTime": "{min} dk okuma",
+    "aiAssisted": "AI destekli",
+    "relatedPosts": "İlgili yazılar",
+    "mentionedSkin": "Yazıdaki skin",
+    "viewSkin": "Skini gör",
+    "emptyCategory": "Bu kategoride henüz yazı yok — yakında ekleyeceğiz.",
+    "categories": {
+      "all": "Tüm yazılar",
+      "skin-spotlight": {
+        "title": "Skin Tanıtımı",
+        "description": "Tek tek yılan skinleri üzerine derin yazılar — hikaye, açma rehberi, benzer skinler."
+      },
+      "strategy": {
+        "title": "Strateji",
+        "description": "Snake Online'da nasıl kazanılır. Taktikler, boost ekonomisi, sarmal-tuzak mekanikleri, sıralama tırmanışı."
+      },
+      "comparisons": {
+        "title": "Karşılaştırmalar",
+        "description": "Worms Zone, Slither.io ve diğer .io yılan oyunlarına karşı kafa-kafaya."
+      },
+      "updates": {
+        "title": "Güncellemeler",
+        "description": "Yama notları, yeni skin sürümleri, denge değişiklikleri, stüdyo kulisleri."
+      },
+      "community": {
+        "title": "Topluluk",
+        "description": "Turnuva özetleri, oyuncu hikayeleri, içerik üreticileri, Discord öne çıkanları."
+      },
+      "lore": {
+        "title": "Hikaye",
+        "description": "Arenanın arkasındaki dünya. Yılan mitolojisi, skin köken hikayeleri, anlatı derinlikleri."
+      }
+    }
   },
   "about": {
     "title": "Oyuncular tarafından, oyuncular için.",

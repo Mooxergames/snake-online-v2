@@ -5,6 +5,9 @@ import { getOverview } from '@/lib/api';
 import type { Metadata } from 'next';
 import { buildPageMetadata } from '@/lib/seo';
 
+// Don't prerender at build — backend /players returns 11MB which can exceed
+// Next's 60s per-page static-generation timeout. ISR via runtime fetch caching.
+export const dynamic = 'force-dynamic';
 export const revalidate = 600;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {

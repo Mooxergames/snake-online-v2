@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getLocalRankings } from '@/lib/api';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 300;
 
 export async function GET(req: NextRequest, { params }: { params: { country: string } }) {

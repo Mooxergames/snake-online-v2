@@ -3,10 +3,11 @@ title: "Welcome to Snake Online — A New Arena Begins"
 description: "We rebuilt the snake game you grew up with for the players of today. Here's everything new, everything next, and everything we're still cooking."
 date: "2026-05-15"
 author: "Snake Online Studio"
-tags: ["announcement", "studio"]
+category: "updates"
+tags: ["announcement", "studio", "snake online"]
+cover: "/snakes/FSNAKE_22.png"
+featured: true
 ---
-
-# A new arena, a new beginning
 
 Snake Online started as a simple question: what if the .io game we played in browser tabs at school could feel as polished as the AAA titles we play on console today?
 

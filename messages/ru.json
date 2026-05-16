@@ -566,5 +566,47 @@
         "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
       }
     }
+  },
+  "blog": {
+    "siteName": "Snake Online",
+    "eyebrow": "THE SNAKE ONLINE BLOG",
+    "titleLead": "Strategy, lore,",
+    "titleAccent": "and skin spotlights.",
+    "exploreCategories": "Explore categories",
+    "browse": "Browse",
+    "backToNews": "Back to news",
+    "readingTime": "{min} min read",
+    "aiAssisted": "AI-assisted",
+    "relatedPosts": "Related posts",
+    "mentionedSkin": "Skin in this post",
+    "viewSkin": "View skin",
+    "emptyCategory": "No posts in this category yet — check back soon.",
+    "categories": {
+      "all": "All posts",
+      "skin-spotlight": {
+        "title": "Skin Spotlight",
+        "description": "Deep dives on individual snake skins — lore, unlock guides, related cosmetics."
+      },
+      "strategy": {
+        "title": "Strategy",
+        "description": "How to win at Snake Online. Tactics, boost economy, coil-trap mechanics, leaderboard climbs."
+      },
+      "comparisons": {
+        "title": "Comparisons",
+        "description": "Head-to-head reviews vs Worms Zone, Slither.io and the wider .io snake genre."
+      },
+      "updates": {
+        "title": "Updates",
+        "description": "Patch notes, new skin drops, balance changes, behind-the-scenes from the studio."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Tournament recaps, player stories, content creators, Discord highlights."
+      },
+      "lore": {
+        "title": "Lore",
+        "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+      }
+    }
   }
 }
