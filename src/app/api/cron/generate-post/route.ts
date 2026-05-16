@@ -206,30 +206,31 @@ export async function POST(req: Request) {
   const results: Array<{ skin: string; locales: string[]; committed: boolean }> = [];
 
   for (const skin of chosen) {
-    const localeResults: string[] = [];
-    for (const locale of LOCALES) {
-      const post = await generateForLocale(skin, locale, apiKey);
-      if (!post) continue;
+    // Fan out OpenAI requests for all 14 locales in parallel — was 70-140s
+    // sequential, now ~5-15s (Cloudflare's 100s edge timeout stays safe).
+    const posts = await Promise.all(
+      LOCALES.map(locale => generateForLocale(skin, locale, apiKey).then(post => ({ locale, post }))),
+    );
+
+    const writeOps = posts.map(async ({ locale, post }) => {
+      if (!post) return null;
       const file = buildFrontmatter(skin, post, locale);
       const relPath = `src/content/blog/${locale}/skin-spotlight-${skin.slug}.md`;
       const absPath = path.join(process.cwd(), relPath);
-
-      // Always write to local FS (works in dev + Railway with persistent volume).
       try {
         await fs.mkdir(path.dirname(absPath), { recursive: true });
         await fs.writeFile(absPath, file, 'utf8');
       } catch (e) {
         console.error(`fs write failed for ${relPath}:`, (e as Error).message);
       }
-
-      // Also commit to GitHub so the post survives the next redeploy.
       if (useGit) {
         const ok = await commitToGitHub(relPath, file, `blog: skin spotlight — ${skin.name} (${locale})`);
         if (!ok) console.warn(`github commit failed for ${relPath}`);
       }
+      return locale;
+    });
 
-      localeResults.push(locale);
-    }
+    const localeResults = (await Promise.all(writeOps)).filter((x): x is NonNullable<typeof x> => x !== null);
     results.push({ skin: skin.slug, locales: localeResults, committed: Boolean(useGit) });
   }
 

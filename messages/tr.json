@@ -93,6 +93,77 @@
   "marquee": {
     "label": "200+ Özenle Tasarlanmış Skin"
   },
+  "downloadsPage": {
+    "eyebrow": "SNAKE ONLINE'I İNDİR",
+    "titleLead": "Beş platform.",
+    "titleAccent": "Tek arena. Sıfır maliyet.",
+    "subtitle": "Sonsuza dek ücretsiz. Pay-to-win yok. iOS, Android, Web, Windows ve macOS'ta aynı kupalar, skinler ve sıralama — her yerde tek hesap.",
+    "trust": {
+      "free": "Sonsuza dek ücretsiz",
+      "cosmetics": "Sadece kozmetik, pay-to-win yok",
+      "crossplay": "Platformlar arası ilerleme",
+      "lightweight": "5 yıllık telefonlarda bile çalışır"
+    },
+    "web": {
+      "badge": "ÖNERİLEN · ANINDA",
+      "title": "Tarayıcında anında oyna",
+      "body": "Kurulum yok, kayıt yok, bekleme yok. Chrome, Safari, Firefox ve Edge'de tam ekran açılır — uygulamalarla aynı arena, aynı skinler, aynı liderlik tablosu.",
+      "cta": "Web sürümünü aç"
+    },
+    "platformsTitle": "Platformunu seç",
+    "platformsSubtitle": "Aynı arena. Aynı skinler. Aynı kupalar. Her yerde tek hesap.",
+    "platforms": {
+      "ios": {
+        "title": "iPhone & iPad",
+        "sub": "iOS 13.0 veya üzeri gerekir · Universal uygulama",
+        "cta": "App Store'dan indir",
+        "caption": "Şuradan indir"
+      },
+      "android": {
+        "title": "Android telefon ve tablet",
+        "sub": "Android 8.0 veya üzeri gerekir · Uygulama içi satın alma isteğe bağlı",
+        "cta": "Google Play'den al",
+        "caption": "Şuradan al"
+      },
+      "windows": {
+        "title": "Windows 10 / 11 masaüstü",
+        "sub": "x64, imzalı kurulum · sadece 64-bit",
+        "cta": "Windows için indir",
+        "caption": "Doğrudan indirme"
+      },
+      "mac": {
+        "title": "Mac (Intel ve Apple Silicon)",
+        "sub": "Mac Catalyst sürüm · macOS 11+ gerekir",
+        "cta": "Mac App Store'dan indir",
+        "caption": "Şuradan indir"
+      }
+    },
+    "whyEyebrow": "NEDEN YERLİ UYGULAMA",
+    "whyTitle": "Daha akıcı, daha hızlı, tamamen senin.",
+    "features": {
+      "fps":       { "title": "60 FPS sabit",       "body": "Her cihazda akıcı hareket. Yük altında uyarlanır çözünürlük." },
+      "noads":     { "title": "Maç içinde reklam yok", "body": "Asla maçını bölmeyiz. Maçlar arasında isteğe bağlı ödüllü reklam." },
+      "crosssync": { "title": "Platformlar arası senkron", "body": "Kupa, skin ve rütbe iOS, Android, Web, Windows ve Mac arasında senkron." },
+      "footprint": { "title": "Küçük boyut",        "body": "200 MB altı. 5 yaşındaki telefonlarda bile çalışır." }
+    },
+    "qr": {
+      "badge": "MOBİLDE EN HIZLI YOL",
+      "title": "Tara, kur, süzül.",
+      "body": "Telefon kameranı QR'a doğrult. Seni doğru mağazaya otomatik yönlendiririz.",
+      "alt": "Snake Online indir sayfasına bağlanan QR kod"
+    },
+    "reqsTitle": "Sistem gereksinimleri",
+    "reqsSubtitle": "Tasarımı hafif — 5 yıllık bir telefonda bile çalışır.",
+    "reqs": {
+      "cpu":      { "label": "İŞLEMCİ",  "val": "Dört çekirdek 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4. nesil" },
+      "storage":  { "label": "DEPOLAMA", "val": "Platforma göre 200 MB'a kadar boş alan" },
+      "network":  { "label": "AĞ",       "val": "5 Mbps kararlı bağlantı — Wi-Fi, 4G veya 5G" },
+      "security": { "label": "GÜVENLİK", "val": "Tüm kurulumlar kod imzalı. iOS notarize. Windows EV sertifikalı." }
+    },
+    "finalTitle": "200+ skin seni bekliyor.",
+    "finalBody": "Arena her maçta daha çetin. Tahtın bir oyun ötede.",
+    "finalCta": "Arenaya atla"
+  },
   "bento": {
     "eyebrow": "NEDEN SNAKE ONLINE",
     "title": "Modern arena için\ntasarlandı.",

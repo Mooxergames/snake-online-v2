@@ -1,0 +1,54 @@
+name: Daily blog post generator
+
+# Triggers /api/cron/generate-post on snakeonline.io every day at 08:00 UTC,
+# which writes 1 fresh skin-spotlight post per locale (14 posts) and commits
+# them to this repo via the GitHub Contents API.
+#
+# Required GitHub repository secrets:
+#   CRON_SECRET — same value as Railway's CRON_SECRET env var.
+#
+# Manually trigger from the Actions tab → "Run workflow".
+#
+# Security note: the only user-controlled input here is `inputs.count` from
+# workflow_dispatch. It's interpolated via env: + double-quoted "$N", and
+# validated to be a small positive integer before use — no injection surface.
+
+on:
+  schedule:
+    # Daily at 08:00 UTC
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many skins to generate (1-10)'
+        required: false
+        default: '1'
+
+jobs:
+  trigger-cron:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Hit /api/cron/generate-post
+        env:
+          COUNT_INPUT: ${{ inputs.count }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          # Sanitize the workflow_dispatch input — only digits, 1-2 chars,
+          # clamped to 1..10. Falls back to "1" for scheduled runs (no input).
+          RAW="${COUNT_INPUT:-1}"
+          if ! [[ "$RAW" =~ ^[0-9]{1,2}$ ]] || [ "$RAW" -lt 1 ] || [ "$RAW" -gt 10 ]; then
+            N=1
+          else
+            N="$RAW"
+          fi
+          echo "Triggering blog generation for n=$N skin(s)..."
+          # --max-time 240 since the cron can take ~30-120s for parallel OpenAI
+          # calls. -fS so curl exits non-zero on HTTP >= 400.
+          curl --max-time 240 -fSsv \
+            -X POST "https://snakeonline.io/api/cron/generate-post?n=$N" \
+            -H "x-cron-secret: $CRON_SECRET" \
+            -w '\nHTTP:%{http_code}\nTIME:%{time_total}s\n' \
+            -o /tmp/cron-response.json
+          echo "--- response ---"
+          cat /tmp/cron-response.json

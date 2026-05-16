@@ -93,6 +93,77 @@
   "marquee": {
     "label": "200+ Hand-Crafted Skins"
   },
+  "downloadsPage": {
+    "eyebrow": "GET SNAKE ONLINE",
+    "titleLead": "Five platforms.",
+    "titleAccent": "One arena. Zero cost.",
+    "subtitle": "Free forever. No pay-to-win. Same trophies, skins and rank across iOS, Android, Web, Windows and macOS — one account everywhere.",
+    "trust": {
+      "free": "Free forever",
+      "cosmetics": "Cosmetics-only, no pay-to-win",
+      "crossplay": "Cross-platform progress",
+      "lightweight": "Runs on 5-year-old phones"
+    },
+    "web": {
+      "badge": "RECOMMENDED · INSTANT",
+      "title": "Play instantly in your browser",
+      "body": "No install, no signup, no waiting. Opens in fullscreen on Chrome, Safari, Firefox, Edge — same arena as the apps, same skins, same leaderboard.",
+      "cta": "Launch web build"
+    },
+    "platformsTitle": "Choose your platform",
+    "platformsSubtitle": "Same arena. Same skins. Same trophies. One account everywhere.",
+    "platforms": {
+      "ios": {
+        "title": "iPhone & iPad",
+        "sub": "Requires iOS 13.0 or later · Universal app",
+        "cta": "Download on the App Store",
+        "caption": "Download on the"
+      },
+      "android": {
+        "title": "Android phones & tablets",
+        "sub": "Requires Android 8.0 or later · Free in-app purchases optional",
+        "cta": "Get it on Google Play",
+        "caption": "Get it on"
+      },
+      "windows": {
+        "title": "Windows 10 / 11 desktop",
+        "sub": "x64, signed installer · 64-bit only",
+        "cta": "Download for Windows",
+        "caption": "Direct download"
+      },
+      "mac": {
+        "title": "Mac (Intel & Apple Silicon)",
+        "sub": "Mac Catalyst build · Requires macOS 11+",
+        "cta": "Download on the Mac App Store",
+        "caption": "Download on the"
+      }
+    },
+    "whyEyebrow": "WHY THE NATIVE APP",
+    "whyTitle": "Smoother, faster, yours.",
+    "features": {
+      "fps":       { "title": "60 FPS locked",     "body": "Buttery smooth movement on every device. Adaptive resolution under load." },
+      "noads":     { "title": "No ads in match",   "body": "We never interrupt a fight. Optional rewarded ads only between matches." },
+      "crosssync": { "title": "Cross-progress",    "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac." },
+      "footprint": { "title": "Tiny footprint",    "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old." }
+    },
+    "qr": {
+      "badge": "FASTEST WAY ON MOBILE",
+      "title": "Scan, install, slither.",
+      "body": "Point your phone camera at the QR. We'll send you to the right store automatically.",
+      "alt": "QR code linking to the Snake Online downloads page"
+    },
+    "reqsTitle": "System requirements",
+    "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
+    "reqs": {
+      "cpu":      { "label": "CPU",      "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen" },
+      "storage":  { "label": "Storage",  "val": "Up to 200 MB free space depending on platform" },
+      "network":  { "label": "Network",  "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G" },
+      "security": { "label": "Security", "val": "All installers code-signed. iOS notarized. Windows EV cert." }
+    },
+    "finalTitle": "200+ skins waiting.",
+    "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
+    "finalCta": "Jump into the arena"
+  },
   "howToPlay": {
     "eyebrow": "BEGINNER GUIDE",
     "title": "How to play Snake Online.",
