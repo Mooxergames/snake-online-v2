@@ -212,7 +212,9 @@ export async function POST(req: Request) {
       LOCALES.map(locale => generateForLocale(skin, locale, apiKey).then(post => ({ locale, post }))),
     );
 
-    const writeOps = posts.map(async ({ locale, post }) => {
+    // FS writes parallel — different file paths, no contention.
+    const writtenLocales: string[] = [];
+    const fsWrites = posts.map(async ({ locale, post }) => {
       if (!post) return null;
       const file = buildFrontmatter(skin, post, locale);
       const relPath = `src/content/blog/${locale}/skin-spotlight-${skin.slug}.md`;
@@ -223,15 +225,33 @@ export async function POST(req: Request) {
       } catch (e) {
         console.error(`fs write failed for ${relPath}:`, (e as Error).message);
       }
-      if (useGit) {
-        const ok = await commitToGitHub(relPath, file, `blog: skin spotlight — ${skin.name} (${locale})`);
-        if (!ok) console.warn(`github commit failed for ${relPath}`);
-      }
-      return locale;
+      return { locale, file, relPath };
     });
+    const written = (await Promise.all(fsWrites)).filter((x): x is NonNullable<typeof x> => x !== null);
+    for (const w of written) writtenLocales.push(w.locale);
 
-    const localeResults = (await Promise.all(writeOps)).filter((x): x is NonNullable<typeof x> => x !== null);
-    results.push({ skin: skin.slug, locales: localeResults, committed: Boolean(useGit) });
+    // GitHub commits SEQUENTIAL. The Contents API serialises updates to the
+    // same branch and silently drops most concurrent PUTs (observed: 1/14
+    // landing under parallel fan-out). Sequential is fast enough (~150ms per
+    // call × 14 = ~2s) and 100% reliable.
+    const committedLocales: string[] = [];
+    if (useGit) {
+      for (const w of written) {
+        const ok = await commitToGitHub(
+          w.relPath,
+          w.file,
+          `blog: skin spotlight — ${skin.name} (${w.locale})`,
+        );
+        if (ok) committedLocales.push(w.locale);
+        else console.warn(`github commit failed for ${w.relPath}`);
+      }
+    }
+
+    results.push({
+      skin: skin.slug,
+      locales: writtenLocales,
+      committed: useGit ? committedLocales.length === writtenLocales.length : false,
+    });
   }
 
   // Best-effort: ping IndexNow with the new URLs (English only, the index will
