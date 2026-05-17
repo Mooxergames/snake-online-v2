@@ -4,7 +4,8 @@ import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { ArrowLeft, ArrowRight, Sparkles, Trophy, Globe, Play } from 'lucide-react';
 import { locales } from '@/lib/locales';
-import { getAllSkins, getSkinBySlug, getRelatedSkins, type Skin } from '@/lib/skins';
+import { getAllSkins, type Skin } from '@/lib/skins';
+import { getLocalizedSkin, getLocalizedRelatedSkins } from '@/lib/skin-localizer';
 import { snakeImg } from '@/lib/assets';
 import { SITE_URL } from '@/lib/seo';
 
@@ -20,7 +21,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const skin = getSkinBySlug(params.slug);
+  const skin = await getLocalizedSkin(params.slug, params.locale);
   if (!skin) return {};
 
   const t = await getTranslations({ locale: params.locale, namespace: 'skinPage' });
@@ -114,11 +115,11 @@ function SkinSchema({ skin, locale }: { skin: Skin; locale: string }) {
 
 export default async function SkinPage({ params }: PageProps) {
   unstable_setRequestLocale(params.locale);
-  const skin = getSkinBySlug(params.slug);
+  const skin = await getLocalizedSkin(params.slug, params.locale);
   if (!skin) notFound();
 
   const t = await getTranslations({ locale: params.locale, namespace: 'skinPage' });
-  const related = getRelatedSkins(skin);
+  const related = await getLocalizedRelatedSkins(skin, params.locale);
 
   return (
     <>

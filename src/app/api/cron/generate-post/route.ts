@@ -63,22 +63,30 @@ Subject of this post — a snake skin:
 Requirements:
 1. Title — 50-65 chars, includes the skin name + a hook word. Avoid clickbait.
 2. Description — 140-160 chars, SEO-friendly, includes "Snake Online" once and the skin name once.
-3. Body (Markdown, 500-700 words):
-   - Open with a one-paragraph hook (no h2 heading on the opening).
-   - "Lore & origin" section (h2) — 2-3 short paragraphs.
-   - "Why it stands out" section (h2) — bullet list of 3-5 design / mechanical highlights.
-   - "How to unlock" section (h2) — concrete steps based on the unlock method above.
-   - "Where to use it" section (h2) — strategy tip referencing 1-2 game mechanics (coil traps, boost economy, perimeter survival, leaderboard climbs).
+3. Body (Markdown, 500-700 words). Structure:
+   - One opening paragraph (no h2 heading).
+   - Exactly FOUR h2 sections, in this order. The h2 HEADINGS THEMSELVES must be translated into ${lang} — do NOT keep English headings like "Lore & origin" or "Why it stands out". Translate the heading to a natural ${lang} equivalent of these topics:
+       i.   Lore / origin → 2-3 short paragraphs about the skin's backstory.
+       ii.  Why this skin stands out → bullet list of 3-5 design or mechanical highlights.
+       iii. How to unlock → concrete steps based on the unlock method above.
+       iv.  Where to use it (strategy tip) → reference 1-2 game mechanics (coil traps, boost economy, perimeter survival, leaderboard climbs).
    - End with a single-sentence call to play.
-4. Tags — array of 4-6 short tags. Include "snake online", "skin spotlight", the rarity tier, and the skin name.
+4. Tags — array of 4-6 short tags, all in ${lang}. Include the ${lang} equivalents of "snake online", "skin spotlight", the rarity tier, and the skin name. (Brand "Snake Online" stays English even inside a translated tag.)
 5. Do NOT include front-matter, just the four fields below in this exact JSON shape:
 
 {"title": "...", "description": "...", "body": "<markdown>", "tags": ["...", "..."]}
 
+Strict translation rules:
+- Output EVERY visible string (title, description, body, tags, h2 headings, bullet labels, intro/outro paragraphs) entirely in ${lang}.
+- The ONLY English allowed in the output:
+    "Snake Online" (brand name) and the literal skin name "${skin.name}" if it's a fantasy/legendary brand identifier.
+- For country skins, the country name should be in ${lang} (e.g. for German: "Deutschland" not "Germany").
+- No mixed-language sentences. No code-switching mid-paragraph.
+- If you're unsure how to translate a gaming-specific term (e.g. "boost", "coil trap"), use the most common ${lang}-gaming convention, never the English original.
+
 Tone: gaming-blog, confident, second-person ("you"), no marketing fluff, no emojis.
 Mention Snake Online by name at most twice in the body.
 Keep paragraphs to 2-4 sentences.
-${lang !== 'English' ? `Output everything (title, description, body, tags) in ${lang}, but keep "Snake Online" as a brand name in English.` : ''}
 `.trim();
 }
 
@@ -192,15 +200,26 @@ export async function POST(req: Request) {
   if (!apiKey) return NextResponse.json({ error: 'openai_key_missing' }, { status: 503 });
 
   const url = new URL(req.url);
-  const n = Math.min(10, Math.max(1, Number(url.searchParams.get('n')) || 1));
+  const n = Math.min(20, Math.max(1, Number(url.searchParams.get('n')) || 1));
   const useGit = process.env.GITHUB_TOKEN && process.env.GITHUB_REPO;
+  // `force=1` ignores the "already has English post" filter, so we can
+  // regenerate existing posts (e.g. after a prompt change).
+  // `slug=fantasy-dusk-83` targets a specific skin.
+  const force = url.searchParams.get('force') === '1';
+  const targetSlug = url.searchParams.get('slug');
 
-  // Pick N skins without an existing English skin-spotlight post.
   const skins = getAllSkins();
   const blogDir = path.join(process.cwd(), 'src', 'content', 'blog');
-  const candidates = skins.filter(s => !existsSync(path.join(blogDir, 'en', `skin-spotlight-${s.slug}.md`)));
-  // Shuffle so we don't always start with the same skin.
-  candidates.sort(() => Math.random() - 0.5);
+  let candidates: typeof skins;
+  if (targetSlug) {
+    candidates = skins.filter(s => s.slug === targetSlug);
+  } else if (force) {
+    candidates = skins.slice();
+  } else {
+    candidates = skins.filter(s => !existsSync(path.join(blogDir, 'en', `skin-spotlight-${s.slug}.md`)));
+  }
+  // Shuffle so non-forced runs don't always start with the same skin.
+  if (!targetSlug) candidates.sort(() => Math.random() - 0.5);
   const chosen = candidates.slice(0, n);
 
   const results: Array<{ skin: string; locales: string[]; committed: boolean }> = [];
@@ -269,6 +288,7 @@ export async function POST(req: Request) {
   }
 
   return NextResponse.json({
+    cronVersion: 'v4-seq-2026-05-17',
     generated: chosen.length,
     skipped: skins.length - candidates.length,
     remaining: candidates.length - chosen.length,

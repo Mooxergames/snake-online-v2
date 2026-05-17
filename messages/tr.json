@@ -93,6 +93,39 @@
   "marquee": {
     "label": "200+ Özenle Tasarlanmış Skin"
   },
+  "skinTemplates": {
+    "descriptionCountry": "{country} ülke yılan skini — bayrağını arenaya çıkar. Snake Online'daki 180+ ülke özel skininden biri.",
+    "descriptionFantasy": {
+      "mythic":    "{name} — mitik kademe fantastik yılan skini. Yalnızca üst seviye turnuva finallerinde düşer.",
+      "legendary": "{name} — efsanevi kademe fantastik yılan skini. Geç oyun arenasında dövülmüş. Kazanması zor, korumak daha zor.",
+      "epic":      "{name} — epik kademe fantastik yılan skini. Sürekli sıralama tırmanışı ile kazanılır.",
+      "rare":      "{name} — nadir kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
+      "common":    "{name} — sıradan kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
+      "exclusive": "{name} — özel fantastik yılan skini. Sınırlı süreli etkinlik ödülü."
+    },
+    "obtainHintCountry": "{country} üzerinden bağlandığında otomatik olarak verilir veya herhangi bir ülke turnuvasını kazanarak kalıcı olarak açılır.",
+    "obtainHintFantasy": {
+      "mythic":    "Aylık Mitik Arena turnuvasında ilk 3'e girerek kazanılır.",
+      "legendary": "Küresel sıralamada ilk %1'e bir kez ulaştığında verilir.",
+      "epic":      "50 kupa eşiği ve üzerinde açılır.",
+      "rare":      "Başlangıç kadrosunda mevcut.",
+      "common":    "Başlangıç kadrosunda mevcut.",
+      "exclusive": "Sınırlı süreli etkinlik düşüşü."
+    },
+    "countries": {
+      "AE": "Birleşik Arap Emirlikleri", "AR": "Arjantin", "AT": "Avusturya", "AU": "Avustralya", "AZ": "Azerbaycan",
+      "BE": "Belçika", "BG": "Bulgaristan", "BR": "Brezilya", "CA": "Kanada", "CH": "İsviçre", "CL": "Şili",
+      "CN": "Çin", "CO": "Kolombiya", "CZ": "Çek Cumhuriyeti", "DE": "Almanya", "DK": "Danimarka", "EG": "Mısır",
+      "ES": "İspanya", "FI": "Finlandiya", "FR": "Fransa", "GB": "Birleşik Krallık", "GR": "Yunanistan", "HR": "Hırvatistan",
+      "HU": "Macaristan", "ID": "Endonezya", "IE": "İrlanda", "IL": "İsrail", "IN": "Hindistan", "IR": "İran",
+      "IT": "İtalya", "JP": "Japonya", "KR": "Güney Kore", "MX": "Meksika", "MY": "Malezya", "NG": "Nijerya",
+      "NL": "Hollanda", "NO": "Norveç", "NZ": "Yeni Zelanda", "PE": "Peru", "PH": "Filipinler",
+      "PK": "Pakistan", "PL": "Polonya", "PT": "Portekiz", "QA": "Katar", "RO": "Romanya", "RS": "Sırbistan",
+      "RU": "Rusya", "SA": "Suudi Arabistan", "SE": "İsveç", "SG": "Singapur", "SK": "Slovakya", "TH": "Tayland",
+      "TR": "Türkiye", "TW": "Tayvan", "UA": "Ukrayna", "US": "Amerika Birleşik Devletleri", "USA": "Amerika Birleşik Devletleri",
+      "VE": "Venezuela", "VN": "Vietnam", "ZA": "Güney Afrika"
+    }
+  },
   "downloadsPage": {
     "eyebrow": "SNAKE ONLINE'I İNDİR",
     "titleLead": "Beş platform.",

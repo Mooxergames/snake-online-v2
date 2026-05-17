@@ -113,6 +113,42 @@ GET /metadata/backgrounds/{id}
 - `unlockDetail` (string) — human-readable
 - `i18n.{locale}.name / .description / .lore` — per-language overrides. Without them, the site falls back to English.
 
+### Economy fields (NEW — for /skins/{slug} and the Compare panel)
+
+These let the marketing site display the actual in-game shop prices on the
+skin detail page, instead of the current "Free to earn / Top-1% reward"
+generic copy. All optional — if a skin is purely unlockable (no purchase
+path) leave them null.
+
+```json
+{
+  "purchaseable": true,
+  "price": {
+    "goldAmount": 12500,
+    "gemAmount": 0,
+    "usdEquivalent": 1.99
+  },
+  "discount": {
+    "active": false,
+    "percentOff": 0,
+    "endsAt": null
+  },
+  "availability": {
+    "type": "permanent" | "seasonal" | "rotation" | "event-locked",
+    "rotationEndsAt": "2026-06-30T23:59:59Z"
+  }
+}
+```
+
+- `price.goldAmount` (int) — primary in-game soft currency cost. Used as the headline number.
+- `price.gemAmount` (int) — premium currency cost. Show as alternative path if non-zero.
+- `price.usdEquivalent` (float) — approximate retail dollar value. The marketing site uses this for `Schema.org Offer.price` so Google Shopping understands the rich-result.
+- `discount.percentOff` — render as a strike-through banner on the skin card.
+- `availability.type` — controls whether we render an "available now" badge or a "limited time" countdown.
+
+For skins that cannot be purchased (starter, leaderboard reward, country
+flag), set `purchaseable: false` and omit the `price` block.
+
 ### Index endpoint
 
 ```

@@ -20,14 +20,22 @@ const SHOWCASE_CONFIG: { id: string; glow: string }[] = [
 
 export default function SnakeShowcase({ locale }: { locale: string }) {
   const t = useTranslations('snakes');
+  // Pull localized country names so e.g. CSNAKE_USA reads as "Vereinigte Staaten"
+  // on /de instead of "Liberty"/"United States". Fantasy names stay English (brand).
+  const tCountries = useTranslations('skinTemplates.countries');
 
-  // Marry each config entry with its catalog record so name + rarity stay in sync
-  // with the detail page.
   const all = getAllSkins();
   const items = SHOWCASE_CONFIG
     .map(c => {
       const skin = all.find(s => s.id === c.id);
-      return skin ? { ...skin, glow: c.glow } : null;
+      if (!skin) return null;
+      let name = skin.name;
+      if (skin.isCountry && skin.country) {
+        // useTranslations will fall back to the EN value if a locale's country
+        // dictionary is missing the key. Safe wrapper to avoid throw on missing keys.
+        try { name = tCountries(skin.country); } catch { /* keep EN */ }
+      }
+      return { ...skin, name, glow: c.glow };
     })
     .filter((x): x is NonNullable<typeof x> => x !== null);
 

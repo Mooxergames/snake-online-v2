@@ -117,6 +117,24 @@
       0 32px 80px -32px rgba(0,0,0,0.7);
   }
 
+  /* Lightweight glass variant for dense grids (e.g. /snakes — 166 cards on
+     screen). No `backdrop-filter` so we don't pay the GPU cost of compositing
+     hundreds of blur layers every scroll frame. Looks identical at normal
+     zoom levels because there's nothing behind the cards in the dense grid. */
+  .skin-grid-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.08),
+      0 8px 20px -12px rgba(0,0,0,0.5);
+  }
+  /* `content-visibility` skips layout + paint for off-screen rows. The
+     `contain-intrinsic-size` reserves space so scroll position stays stable. */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 600px;
+  }
+
   .btn { @apply inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 select-none rounded-full; }
   .btn-primary {
     @apply btn px-7 py-3.5 text-base text-bg bg-brand-500 hover:bg-brand-400 hover:brightness-105 active:scale-[0.98];
