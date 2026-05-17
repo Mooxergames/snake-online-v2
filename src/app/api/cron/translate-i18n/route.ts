@@ -168,13 +168,13 @@ export async function POST(req: Request) {
   const enJson = JSON.parse(await fs.readFile(path.join(msgsDir, 'en.json'), 'utf8'));
   const useGit = Boolean(process.env.GITHUB_TOKEN && process.env.GITHUB_REPO);
 
-  // Process locales in parallel; within each locale, blocks SEQUENTIALLY so the
-  // file write/commit cycle is consistent.
-  const results = await Promise.all(
+  // STEP 1 — Translate every locale in PARALLEL (OpenAI calls dominate the
+  // wall-clock; each locale is independent in-memory).
+  const drafts = await Promise.all(
     locales.map(async (loc) => {
       const langName = LANG_NAMES[loc] || loc;
       const file = path.join(msgsDir, `${loc}.json`);
-      if (!existsSync(file)) return { locale: loc, status: 'no_file' };
+      if (!existsSync(file)) return { loc, status: 'no_file' as const };
 
       const localeJson = JSON.parse(await fs.readFile(file, 'utf8'));
       const translatedBlocks: string[] = [];
@@ -188,14 +188,10 @@ export async function POST(req: Request) {
           continue;
         }
         const localeValue = (localeJson as Record<string, unknown>)[blockName];
-
-        // Skip if already translated (i.e. locale value differs from EN),
-        // unless force=1.
         if (!force && localeValue !== undefined && !deepEqual(localeValue, enValue)) {
           skippedBlocks.push(blockName);
           continue;
         }
-
         const translated = await callOpenAI(enValue, blockName, langName, apiKey);
         if (!translated) {
           failedBlocks.push(blockName);
@@ -204,28 +200,39 @@ export async function POST(req: Request) {
         (localeJson as Record<string, unknown>)[blockName] = translated;
         translatedBlocks.push(blockName);
       }
-
-      if (translatedBlocks.length === 0) {
-        return { locale: loc, status: 'nothing_to_do', skippedBlocks, failedBlocks };
-      }
-
-      const newContent = JSON.stringify(localeJson, null, 2) + '\n';
-      await fs.writeFile(file, newContent, 'utf8');
-
-      let committed = false;
-      if (useGit) {
-        committed = await commitToGitHub(
-          `messages/${loc}.json`,
-          newContent,
-          `i18n: translate ${translatedBlocks.join(',')} → ${langName}`,
-        );
-      }
-
       return {
-        locale: loc, status: 'ok', translatedBlocks, skippedBlocks, failedBlocks, committed,
+        loc, langName, localeJson, file, translatedBlocks, skippedBlocks, failedBlocks,
+        status: translatedBlocks.length > 0 ? ('ready' as const) : ('nothing_to_do' as const),
       };
     }),
   );
+
+  // STEP 2 — Write files in parallel (different paths, no contention) but
+  // commit to GitHub SEQUENTIALLY across locales. GitHub's Contents API
+  // serialises branch updates and silently drops most concurrent PUTs.
+  const results: Array<Record<string, unknown>> = [];
+  for (const draft of drafts) {
+    if (draft.status === 'no_file') { results.push({ locale: draft.loc, status: 'no_file' }); continue; }
+    const { loc, langName, localeJson, file, translatedBlocks, skippedBlocks, failedBlocks } = draft;
+    if (draft.status === 'nothing_to_do') {
+      results.push({ locale: loc, status: 'nothing_to_do', skippedBlocks, failedBlocks });
+      continue;
+    }
+    const newContent = JSON.stringify(localeJson, null, 2) + '\n';
+    await fs.writeFile(file, newContent, 'utf8');
+
+    let committed = false;
+    if (useGit) {
+      committed = await commitToGitHub(
+        `messages/${loc}.json`,
+        newContent,
+        `i18n: translate ${translatedBlocks.join(',')} → ${langName}`,
+      );
+    }
+    results.push({
+      locale: loc, status: 'ok', translatedBlocks, skippedBlocks, failedBlocks, committed,
+    });
+  }
 
   return NextResponse.json({
     cronVersion: 'translate-i18n-v1-2026-05-17',
