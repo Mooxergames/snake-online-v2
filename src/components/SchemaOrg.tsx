@@ -15,7 +15,6 @@ export default function SchemaOrg({ locale }: Props) {
         'https://twitter.com/snakeonlineio',
         'https://www.instagram.com/snakeonlineio/',
         'https://www.youtube.com/@SnakeOnlineio',
-        'https://discord.gg/snakeonline',
       ],
     },
     {
