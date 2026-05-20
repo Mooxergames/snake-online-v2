@@ -14,6 +14,74 @@ interface Props {
   locale: string;
 }
 
+// Moved outside parent to avoid re-creating on every render and to allow hooks.
+function PlayerAvatar({ player }: { player: PlayerRanking }) {
+  const [failed, setFailed] = useState(false);
+
+  if (player.avatarUrl && !failed) {
+    return (
+      <div className="relative size-11 rounded-full overflow-hidden ring-1 ring-border shrink-0 bg-bg-subtle">
+        <img
+          src={player.avatarUrl}
+          alt=""
+          loading="lazy"
+          className="w-full h-full object-cover"
+          onError={() => setFailed(true)}
+        />
+      </div>
+    );
+  }
+  return (
+    <div
+      className="relative size-11 rounded-full flex items-center justify-center overflow-hidden ring-1 ring-border shrink-0"
+      style={{ backgroundColor: avatarColor(player.selectedAvatar) + '22' }}
+    >
+      <span className="text-base font-bold" style={{ color: avatarColor(player.selectedAvatar) }}>
+        {player.playerName?.charAt(0).toUpperCase() || '?'}
+      </span>
+    </div>
+  );
+}
+
+function SnakeImage({ snakeUrl, selectedSnake }: { snakeUrl: string | null; selectedSnake: string }) {
+  const [failed, setFailed] = useState(false);
+  const src = !failed && snakeUrl ? snakeUrl : snakeImg(selectedSnake);
+  if (!src) return null;
+  return (
+    <div className="size-12 rounded-lg bg-bg-subtle flex items-center justify-center overflow-hidden">
+      <img
+        src={src}
+        alt={selectedSnake}
+        loading="lazy"
+        className="w-4/5 h-4/5 object-contain"
+        onError={(e) => {
+          if (!failed) { setFailed(true); }
+          else { (e.currentTarget.parentElement as HTMLElement).style.display = 'none'; }
+        }}
+      />
+    </div>
+  );
+}
+
+function FlagDisplay({ flagUrl, selectedFlag }: { flagUrl: string | null; selectedFlag: string }) {
+  const [failed, setFailed] = useState(false);
+  if (flagUrl && !failed) {
+    return (
+      <img
+        src={flagUrl}
+        alt=""
+        loading="lazy"
+        className="h-3.5 w-auto rounded-sm shrink-0"
+        onError={() => setFailed(true)}
+      />
+    );
+  }
+  if (selectedFlag) {
+    return <span className="text-sm shrink-0">{countryEmoji(selectedFlag)}</span>;
+  }
+  return null;
+}
+
 export default function RankingsTable({ initialGlobal, initialCountries, locale }: Props) {
   const t = useTranslations('ranking');
   const [tab, setTab] = useState<'global' | 'local'>('global');
@@ -48,29 +116,9 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
     return <span className="inline-flex items-center justify-center size-9 rounded-full bg-bg-subtle text-text-tertiary text-sm font-mono">{rank}</span>;
   };
 
-  const PlayerAvatar = ({ player }: { player: PlayerRanking }) => {
-    if (player.avatarUrl) {
-      return (
-        <div className="relative size-11 rounded-full overflow-hidden ring-1 ring-border shrink-0 bg-bg-subtle">
-          <img src={player.avatarUrl} alt="" loading="lazy" className="w-full h-full object-cover" />
-        </div>
-      );
-    }
-    return (
-      <div
-        className="relative size-11 rounded-full flex items-center justify-center overflow-hidden ring-1 ring-border shrink-0"
-        style={{ backgroundColor: avatarColor(player.selectedAvatar) + '22' }}
-      >
-        <span className="text-base font-bold" style={{ color: avatarColor(player.selectedAvatar) }}>
-          {player.playerName?.charAt(0).toUpperCase() || '?'}
-        </span>
-      </div>
-    );
-  };
-
   const sortOptions: { value: SortField; label: string }[] = [
-    { value: 'trophy', label: t('columns.trophies') },
-    { value: 'bestScore', label: t('columns.bestScore') },
+    { value: 'trophy',     label: t('columns.trophies') },
+    { value: 'bestScore',  label: t('columns.bestScore') },
     { value: 'totalkills', label: t('columns.kills') },
     { value: 'gamePlayed', label: t('columns.games') },
   ];
@@ -101,7 +149,9 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
             >
               <option value="">{t('selectCountry')}</option>
               {initialCountries.map(c => (
-                <option key={c.country} value={c.country}>{countryEmoji(c.country)} {c.country} ({formatNumber(c.playerCount, locale)})</option>
+                <option key={c.country} value={c.country}>
+                  {countryEmoji(c.country)} {c.country} ({formatNumber(c.playerCount, locale)})
+                </option>
               ))}
             </select>
           )}
@@ -161,9 +211,7 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                         <div className="font-medium text-text-primary truncate max-w-[180px] flex items-center gap-2">
                           {p.playerName || 'Unknown'}
                           {(p.flagUrl || p.selectedFlag) && (
-                            p.flagUrl
-                              ? <img src={p.flagUrl} alt="" loading="lazy" className="h-3.5 w-auto rounded-sm shrink-0" />
-                              : <span className="text-sm shrink-0">{countryEmoji(p.selectedFlag)}</span>
+                            <FlagDisplay flagUrl={p.flagUrl} selectedFlag={p.selectedFlag} />
                           )}
                         </div>
                         {p.badgeName && <div className="text-[11px] text-text-tertiary font-mono">{p.badgeName}</div>}
@@ -172,14 +220,7 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                   </td>
                   <td className="px-4 py-3 hidden sm:table-cell">
                     {(p.snakeUrl || p.selectedSnake) && (
-                      <div className="size-12 rounded-lg bg-bg-subtle flex items-center justify-center overflow-hidden">
-                        <img
-                          src={p.snakeUrl || snakeImg(p.selectedSnake)}
-                          alt={p.selectedSnake}
-                          loading="lazy"
-                          className="w-4/5 h-4/5 object-contain"
-                        />
-                      </div>
+                      <SnakeImage snakeUrl={p.snakeUrl} selectedSnake={p.selectedSnake} />
                     )}
                   </td>
                   <td className="px-4 py-3 text-right font-mono">
@@ -187,8 +228,12 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                       <Trophy size={14} /> {formatNumber(p.trophy || 0, locale)}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-right font-mono text-text-secondary hidden md:table-cell">{formatNumber(p.bestScore || 0, locale)}</td>
-                  <td className="px-4 py-3 text-right font-mono text-text-secondary hidden md:table-cell">{formatNumber(p.bestKills || 0, locale)}</td>
+                  <td className="px-4 py-3 text-right font-mono text-text-secondary hidden md:table-cell">
+                    {formatNumber(p.bestScore || 0, locale)}
+                  </td>
+                  <td className="px-4 py-3 text-right font-mono text-text-secondary hidden md:table-cell">
+                    {formatNumber(p.totalkills || 0, locale)}
+                  </td>
                   <td className="px-4 py-3 text-right text-text-secondary hidden lg:table-cell">
                     <span className="inline-flex items-center gap-1.5">
                       <span className="text-sm">{countryEmoji(p.location)}</span>
