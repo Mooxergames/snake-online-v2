@@ -7,7 +7,7 @@
 
 const API_BASE = (
   process.env.RANKINGS_API_BASE
-  || 'https://api.snakeonline.io/api/rankings'
+  || `${process.env.BACKEND_API_BASE || 'https://backend.snakeonline.net'}/api/rankings`
 ).replace(/\/$/, '');
 
 const REVALIDATE_S = 300; // match backend s-maxage

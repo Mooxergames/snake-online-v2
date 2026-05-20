@@ -6,7 +6,7 @@ import { cn, formatNumber } from '@/lib/utils';
 import type { PlayerRanking, CountryEntry, SortField } from '@/lib/api';
 import { snakeImg, countryEmoji, avatarColor } from '@/lib/assets';
 
-const RANKINGS_API = 'https://api.snakeonline.io/api/rankings';
+const RANKINGS_API = `${process.env.NEXT_PUBLIC_BACKEND_API_BASE || 'https://backend.snakeonline.net'}/api/rankings`;
 
 interface Props {
   initialGlobal: PlayerRanking[];
