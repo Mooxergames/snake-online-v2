@@ -1,6 +1,6 @@
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import PageHero from '@/components/PageHero';
-import { MessageCircle, Twitter, Instagram, Youtube, Facebook, Users, Trophy, Sparkles } from 'lucide-react';
+import { Twitter, Instagram, Youtube, Facebook, Users, Trophy, Sparkles } from 'lucide-react';
 import type { Metadata } from 'next';
 import { buildPageMetadata } from '@/lib/seo';
 
@@ -13,11 +13,10 @@ export default async function CommunityPage({ params: { locale } }: { params: { 
   const t = await getTranslations({ locale, namespace: 'community' });
 
   const channels = [
-    { Icon: Facebook,      label: 'Facebook',     handle: 'facebook.com/snakeonlineio',       href: 'https://www.facebook.com/snakeonlineio/',   followers: 'Follow us',       accent: 'from-blue-600 to-blue-400',    shadow: 'shadow-blue-500/20'   },
-    { Icon: Twitter,       label: t('twitter'),   handle: '@snakeonlineio',                   href: 'https://twitter.com/snakeonlineio',          followers: '92K followers',   accent: 'from-sky-500 to-cyan-400',     shadow: 'shadow-sky-500/20'    },
-    { Icon: Instagram,     label: t('instagram'), handle: '@snakeonlineio',                   href: 'https://www.instagram.com/snakeonlineio/',   followers: '210K followers',  accent: 'from-pink-500 to-rose-500',    shadow: 'shadow-pink-500/20'   },
-    { Icon: Youtube,       label: t('youtube'),   handle: '@SnakeOnlineio',                   href: 'https://www.youtube.com/@SnakeOnlineio',     followers: '67K subscribers', accent: 'from-red-500 to-orange-500',   shadow: 'shadow-red-500/20'    },
-    { Icon: MessageCircle, label: t('discord'),   handle: 'discord.gg/snakeonline',           href: 'https://discord.gg/snakeonline',             followers: '184K members',    accent: 'from-indigo-500 to-purple-500', shadow: 'shadow-indigo-500/20' },
+    { Icon: Facebook,  label: 'Facebook',     handle: 'facebook.com/snakeonlineio', href: 'https://www.facebook.com/snakeonlineio/',  followers: 'Follow us',       accent: 'from-blue-600 to-blue-400',  shadow: 'shadow-blue-500/20' },
+    { Icon: Twitter,   label: t('twitter'),   handle: '@snakeonlineio',             href: 'https://twitter.com/snakeonlineio',        followers: '92K followers',   accent: 'from-sky-500 to-cyan-400',   shadow: 'shadow-sky-500/20'  },
+    { Icon: Instagram, label: t('instagram'), handle: '@snakeonlineio',             href: 'https://www.instagram.com/snakeonlineio/', followers: '210K followers',  accent: 'from-pink-500 to-rose-500',  shadow: 'shadow-pink-500/20' },
+    { Icon: Youtube,   label: t('youtube'),   handle: '@SnakeOnlineio',             href: 'https://www.youtube.com/@SnakeOnlineio',   followers: '67K subscribers', accent: 'from-red-500 to-orange-500', shadow: 'shadow-red-500/20'  },
   ];
 
   const stats = [
