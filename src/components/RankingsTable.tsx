@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Trophy, Crown, Medal, Globe2 } from 'lucide-react';
+import { Trophy, Crown, Medal } from 'lucide-react';
 import { cn, formatNumber } from '@/lib/utils';
 import type { PlayerRanking, CountryEntry } from '@/lib/api';
-import { avatarImg, snakeImg, flagImg, isoToFlagId } from '@/lib/assets';
+import { avatarImg, snakeImg, flagImg, isoToFlagId, countryEmoji, avatarColor } from '@/lib/assets';
 
 interface Props {
   initialGlobal: PlayerRanking[];
@@ -61,7 +61,7 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
           >
             <option value="">{t('selectCountry')}</option>
             {initialCountries.map(c => (
-              <option key={c.country} value={c.country}>{c.country} ({formatNumber(c.playerCount, locale)})</option>
+              <option key={c.country} value={c.country}>{countryEmoji(c.country)} {c.country} ({formatNumber(c.playerCount, locale)})</option>
             ))}
           </select>
         )}
@@ -96,18 +96,19 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-3 min-w-0">
-                      <div className="relative size-11 rounded-full bg-bg-subtle flex items-center justify-center overflow-hidden ring-1 ring-border shrink-0">
-                        {p.selectedAvatar ? (
-                          <img src={avatarImg(p.selectedAvatar)} alt="" loading="lazy" className="w-full h-full object-cover" />
-                        ) : (
-                          <span className="text-xs font-bold text-brand-300">{p.playerName?.charAt(0).toUpperCase() || '?'}</span>
-                        )}
+                      <div
+                        className="relative size-11 rounded-full flex items-center justify-center overflow-hidden ring-1 ring-border shrink-0"
+                        style={{ backgroundColor: avatarColor(p.selectedAvatar) + '22' }}
+                      >
+                        <span className="text-base font-bold" style={{ color: avatarColor(p.selectedAvatar) }}>
+                          {p.playerName?.charAt(0).toUpperCase() || '?'}
+                        </span>
                       </div>
                       <div className="min-w-0">
                         <div className="font-medium text-text-primary truncate max-w-[180px] flex items-center gap-2">
                           {p.playerName || 'Unknown'}
                           {p.selectedFlag && (
-                            <img src={flagImg(p.selectedFlag)} alt="" loading="lazy" className="h-3 w-auto rounded-sm shrink-0" />
+                            <span className="text-sm shrink-0" title={p.selectedFlag.replace('_FLAG', '')}>{countryEmoji(p.selectedFlag)}</span>
                           )}
                         </div>
                         {p.badgeName && <div className="text-[11px] text-text-tertiary font-mono">{p.badgeName}</div>}
@@ -130,11 +131,7 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                   <td className="px-4 py-3 text-right font-mono text-text-secondary hidden md:table-cell">{formatNumber(p.bestKills || 0, locale)}</td>
                   <td className="px-4 py-3 text-right text-text-secondary hidden lg:table-cell">
                     <span className="inline-flex items-center gap-1.5">
-                      {p.location ? (
-                        <img src={flagImg(isoToFlagId(p.location))} alt="" loading="lazy" className="h-3 w-auto rounded-sm" />
-                      ) : (
-                        <Globe2 size={14} className="text-text-tertiary" />
-                      )}
+                      <span className="text-sm">{countryEmoji(p.location)}</span>
                       {p.location || '—'}
                     </span>
                   </td>
