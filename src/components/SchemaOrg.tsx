@@ -11,10 +11,11 @@ export default function SchemaOrg({ locale }: Props) {
       url: siteUrl,
       logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg`, width: 512, height: 512 },
       sameAs: [
+        'https://www.facebook.com/snakeonlineio/',
         'https://twitter.com/snakeonlineio',
-        'https://www.instagram.com/snakeonline.io',
-        'https://www.tiktok.com/@snakeonline.io',
-        'https://www.youtube.com/@snakeonline',
+        'https://www.instagram.com/snakeonlineio/',
+        'https://www.youtube.com/@SnakeOnlineio',
+        'https://discord.gg/snakeonline',
       ],
     },
     {
