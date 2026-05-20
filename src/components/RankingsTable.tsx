@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Trophy, Crown, Medal } from 'lucide-react';
 import { cn, formatNumber } from '@/lib/utils';
 import type { PlayerRanking, CountryEntry, SortField } from '@/lib/api';
-import { snakeImg, countryEmoji, avatarColor } from '@/lib/assets';
+import { snakeImg, flagImg, avatarImg, countryEmoji, avatarColor } from '@/lib/assets';
 
 const RANKINGS_API = `${process.env.NEXT_PUBLIC_BACKEND_API_BASE || 'https://backend.snakeonline.net'}/api/rankings`;
 
@@ -14,15 +14,15 @@ interface Props {
   locale: string;
 }
 
-// Moved outside parent to avoid re-creating on every render and to allow hooks.
 function PlayerAvatar({ player }: { player: PlayerRanking }) {
   const [failed, setFailed] = useState(false);
+  const src = avatarImg(player.selectedAvatar);
 
-  if (player.avatarUrl && !failed) {
+  if (src && !failed) {
     return (
       <div className="relative size-11 rounded-full overflow-hidden ring-1 ring-border shrink-0 bg-bg-subtle">
         <img
-          src={player.avatarUrl}
+          src={src}
           alt=""
           loading="lazy"
           className="w-full h-full object-cover"
@@ -43,10 +43,10 @@ function PlayerAvatar({ player }: { player: PlayerRanking }) {
   );
 }
 
-function SnakeImage({ snakeUrl, selectedSnake }: { snakeUrl: string | null; selectedSnake: string }) {
+function SnakeImage({ selectedSnake }: { selectedSnake: string }) {
   const [failed, setFailed] = useState(false);
-  const src = !failed && snakeUrl ? snakeUrl : snakeImg(selectedSnake);
-  if (!src) return null;
+  const src = snakeImg(selectedSnake);
+  if (!src || failed) return null;
   return (
     <div className="size-12 rounded-lg bg-bg-subtle flex items-center justify-center overflow-hidden">
       <img
@@ -54,21 +54,20 @@ function SnakeImage({ snakeUrl, selectedSnake }: { snakeUrl: string | null; sele
         alt={selectedSnake}
         loading="lazy"
         className="w-4/5 h-4/5 object-contain"
-        onError={(e) => {
-          if (!failed) { setFailed(true); }
-          else { (e.currentTarget.parentElement as HTMLElement).style.display = 'none'; }
-        }}
+        onError={() => setFailed(true)}
       />
     </div>
   );
 }
 
-function FlagDisplay({ flagUrl, selectedFlag }: { flagUrl: string | null; selectedFlag: string }) {
+function FlagDisplay({ selectedFlag }: { selectedFlag: string }) {
   const [failed, setFailed] = useState(false);
-  if (flagUrl && !failed) {
+  const src = flagImg(selectedFlag);
+
+  if (src && !failed) {
     return (
       <img
-        src={flagUrl}
+        src={src}
         alt=""
         loading="lazy"
         className="h-3.5 w-auto rounded-sm shrink-0"
@@ -210,18 +209,14 @@ export default function RankingsTable({ initialGlobal, initialCountries, locale 
                       <div className="min-w-0">
                         <div className="font-medium text-text-primary truncate max-w-[180px] flex items-center gap-2">
                           {p.playerName || 'Unknown'}
-                          {(p.flagUrl || p.selectedFlag) && (
-                            <FlagDisplay flagUrl={p.flagUrl} selectedFlag={p.selectedFlag} />
-                          )}
+                          {p.selectedFlag && <FlagDisplay selectedFlag={p.selectedFlag} />}
                         </div>
                         {p.badgeName && <div className="text-[11px] text-text-tertiary font-mono">{p.badgeName}</div>}
                       </div>
                     </div>
                   </td>
                   <td className="px-4 py-3 hidden sm:table-cell">
-                    {(p.snakeUrl || p.selectedSnake) && (
-                      <SnakeImage snakeUrl={p.snakeUrl} selectedSnake={p.selectedSnake} />
-                    )}
+                    {p.selectedSnake && <SnakeImage selectedSnake={p.selectedSnake} />}
                   </td>
                   <td className="px-4 py-3 text-right font-mono">
                     <span className="inline-flex items-center gap-1.5 text-amber-400">
