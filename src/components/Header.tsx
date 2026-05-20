@@ -82,15 +82,8 @@ export default function Header({ locale }: { locale: string }) {
       </div>
 
       <div className="container-wide flex h-16 items-center justify-between gap-4">
-        <Link href={`/${locale}`} className="flex items-center gap-2.5 group" aria-label="Snake Online home">
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-brand-500/20 blur-md group-hover:bg-brand-500/40 transition-colors" aria-hidden="true" />
-            <Logo className="relative h-9 w-9 transition-transform group-hover:rotate-6 group-hover:scale-110" />
-          </div>
-          <span className="font-display font-bold text-lg tracking-tight">
-            <span className="gradient-text">Snake</span>
-            <span className="text-text-primary"> Online</span>
-          </span>
+        <Link href={`/${locale}`} className="flex items-center group" aria-label="Snake Online home">
+          <Logo className="h-10 w-auto transition-transform group-hover:scale-105" />
         </Link>
 
         <nav aria-label="Primary" className="hidden lg:flex items-center gap-1">

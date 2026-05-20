@@ -47,14 +47,8 @@ export default function Footer({ locale }: { locale: string }) {
       <div className="container-wide py-16 relative">
         <div className="grid gap-12 lg:grid-cols-5 sm:grid-cols-2">
           <div className="lg:col-span-2 max-w-sm">
-            <Link href={`/${locale}`} className="inline-flex items-center gap-2.5 group">
-              <div className="relative">
-                <div className="absolute inset-0 rounded-full bg-brand-500/20 blur-md" />
-                <Logo className="relative h-10 w-10" />
-              </div>
-              <span className="font-display font-bold text-xl">
-                <span className="gradient-text">Snake</span> Online
-              </span>
+            <Link href={`/${locale}`} className="inline-flex items-center group">
+              <Logo className="h-12 w-auto" />
             </Link>
             <p className="mt-4 text-text-secondary text-sm leading-relaxed">{t('tagline')}</p>
             <div className="mt-6"><AppBadges /></div>
