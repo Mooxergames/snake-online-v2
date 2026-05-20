@@ -337,46 +337,46 @@
     "playStore": "प्राप्त करें"
   },
   "marquee": {
-    "label": "200+ Hand-Crafted Skins"
+    "label": "200+ हाथ से बनाए गए स्किन"
   },
   "bento": {
-    "eyebrow": "WHY SNAKE ONLINE",
-    "title": "Engineered for the\nmodern arena.",
-    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "eyebrow": "क्यों SNAKE ONLINE",
+    "title": "आधुनिक एरिना के लिए इंजीनियर्ड।",
+    "subtitle": "हर सिस्टम, हर फ्रेम, हर सांप — आपको अजेय महसूस कराने के लिए डिज़ाइन किया गया।",
     "items": {
       "realtime": {
-        "title": "Real Real-Time Multiplayer",
-        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
-        "metric": "ms latency",
-        "regions": "12 global regions · 99.95% uptime"
+        "title": "वास्तविक वास्तविक-समय मल्टीप्लेयर",
+        "body": "हजारों लाइव खिलाड़ियों से लड़ें — बॉट्स नहीं। 12 क्षेत्रों में एज सर्वर हर कुंडल, कट और जाल को सही ढंग से समन्वयित रखते हैं।",
+        "metric": "मिलीसेकंड लेटेंसी",
+        "regions": "12 वैश्विक क्षेत्र · 99.95% अपटाइम"
       },
       "skins": {
-        "title": "Hand-crafted Skins",
-        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+        "title": "हाथ से बने स्किन",
+        "body": "छह दुर्लभता स्तर। देश के झंडे, पौराणिक ड्रैगन, नीयन सांप। कोई पे-टू-विन नहीं — कौशल तय करता है।"
       },
       "leaderboards": {
-        "title": "Global Leaderboards",
-        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+        "title": "वैश्विक लीडरबोर्ड",
+        "body": "प्रत्येक देश और विश्व स्तर पर रैंकिंग हर घंटे ताज़ा होती है। शीर्ष 1% में चढ़ें और अपना सिंहासन हासिल करें।"
       },
       "country": {
-        "title": "180+ Country Skins",
-        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+        "title": "180+ देश स्किन",
+        "body": "अपने रंग उड़ाएं। दुनिया का हर झंडा एक पहनने योग्य स्किन है — अपने झंडे को लड़ाई में पहनें।"
       },
       "tournaments": {
-        "title": "Daily Tournaments",
-        "body": "Free entry. Real prizes. New brackets every 24 hours."
+        "title": "दैनिक टूर्नामेंट",
+        "body": "मुफ्त प्रवेश। असली पुरस्कार। हर 24 घंटे में नए ब्रैकेट।"
       },
       "crossplay": {
-        "title": "True Cross-Play",
-        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+        "title": "सच्चा क्रॉस-प्ले",
+        "body": "एक खाता। iOS, Android, वेब। आपकी प्रगति, स्किन और रैंक आपके साथ चलती है।"
       },
       "fairplay": {
-        "title": "Zero Pay-to-Win",
-        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+        "title": "जीरो पे-टू-विन",
+        "body": "सिर्फ कॉस्मेटिक्स। लीडरबोर्ड रिफ्लेक्स द्वारा तय किया जाता है, न कि बटुए द्वारा।"
       },
       "community": {
-        "title": "5M+ Snake Nation",
-        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+        "title": "5M+ स्नेक नेशन",
+        "body": "Discord, टूर्नामेंट, कंटेंट क्रिएटर्स। .io दुनिया में सबसे बड़ी सांप समुदाय।"
       }
     }
   },
@@ -427,48 +427,48 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Answers to everything.",
-    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "title": "सब कुछ के उत्तर।",
+    "subtitle": "वास्तविक खिलाड़ियों से वास्तविक प्रश्न। यदि आपका प्रश्न यहाँ नहीं है, तो समर्थन से संपर्क करें - हम हर संदेश पढ़ते हैं।",
     "items": {
       "whatIsIt": {
-        "q": "What is Snake Online?",
-        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+        "q": "Snake Online क्या है?",
+        "a": "Snake Online एक मुफ्त वास्तविक समय का मल्टीप्लेयर .io स्नेक बैटल रॉयल है। विरोधियों को लपेटें, उनके गोले खाएं, वैश्विक लीडरबोर्ड पर चढ़ें। 200+ संग्रहणीय स्किन, 180+ देश के लीडरबोर्ड, iOS, Android, और किसी भी आधुनिक वेब ब्राउज़र पर उपलब्ध।"
       },
       "isItFree": {
-        "q": "Is Snake Online really free?",
-        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+        "q": "क्या Snake Online वास्तव में मुफ्त है?",
+        "a": "हाँ। हमेशा के लिए मुफ्त, ब्राउज़र खेल के लिए कोई साइनअप आवश्यक नहीं है। कोई भुगतान दीवारें नहीं हैं और न ही भुगतान-से-विजेता लाभ - स्किन पूरी तरह से सौंदर्यात्मक हैं और अधिकांश खेल के माध्यम से अर्जित की जा सकती हैं।"
       },
       "doINeedToDownload": {
-        "q": "Do I need to download anything?",
-        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+        "q": "क्या मुझे कुछ डाउनलोड करने की आवश्यकता है?",
+        "a": "वेब के लिए नहीं - बस प्ले पर क्लिक करें और आप कुछ ही सेकंड में एरिना में हैं। मोबाइल के लिए, ऐप स्टोर और गूगल प्ले पर मुफ्त मूल ऐप उपलब्ध हैं, जिसमें वही क्रॉस-प्रोग्रेशन है।"
       },
       "howManySkins": {
-        "q": "How many snake skins are there?",
-        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+        "q": "कितनी स्नेक स्किन हैं?",
+        "a": "छह दुर्लभता स्तरों में 200 से अधिक हस्तनिर्मित स्किन: सामान्य, दुर्लभ, महाकाव्य, Legendary, Mythic, और Exclusive। हर महीने नए मौसमी ड्रॉप - 180+ देशों के लिए देश-झंडा विशेष।"
       },
       "isItMultiplayer": {
-        "q": "Is it true real-time multiplayer (not bots)?",
-        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+        "q": "क्या यह वास्तव में वास्तविक समय का मल्टीप्लेयर है (बॉट नहीं)?",
+        "a": "हाँ। आपके एरिना में हर स्नेक एक वास्तविक मानव खिलाड़ी है। हम 12 वैश्विक क्षेत्रों में एज सर्वर चलाते हैं ताकि 100ms से कम की लेटेंसी हो, इसलिए लपेटना, कटना, और जाल तुरंत महसूस होते हैं - न कि लेट।"
       },
       "whichDevices": {
-        "q": "Which devices does it run on?",
-        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+        "q": "यह किन उपकरणों पर चलता है?",
+        "a": "कोई भी आधुनिक वेब ब्राउज़र (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android फोन और टैबलेट। एक खाता सभी पर समन्वयित होता है।"
       },
       "howToWin": {
-        "q": "How do I get bigger faster?",
-        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+        "q": "मैं तेजी से बड़ा कैसे हो सकता हूँ?",
+        "a": "धैर्य और स्थिति आक्रामकता को हराते हैं। परिधि को गले लगाएं, हत्याओं से गोले इकट्ठा करें, केवल तब एक लपेटने-जाल में संलग्न हों जब लक्ष्य सीधी रेखा में लॉक हो। बूस्ट द्रव्यमान जलाता है - इसका उपयोग सीमित रूप से करें, केवल एक हत्या को बंद करने या भागने के लिए।"
       },
       "vsWormzone": {
-        "q": "How is Snake Online different from Worms Zone?",
-        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+        "q": "Snake Online Worms Zone से कैसे अलग है?",
+        "a": "Worms Zone ज्यादातर AI बॉट्स के खिलाफ एकल-खिलाड़ी है, केवल अंग्रेजी में, बिना सार्वजनिक लीडरबोर्ड या वेब संस्करण के। Snake Online वास्तविक समय का मल्टीप्लेयर है जो मनुष्यों के खिलाफ है, 14 भाषाओं का समर्थन करता है, एक लाइव वैश्विक लीडरबोर्ड है, और ब्राउज़र में स्वदेशी रूप से चलता है जिसमें मोबाइल के लिए क्रॉस-प्रोग्रेशन है।"
       },
       "vsSlither": {
-        "q": "How is it different from Slither.io?",
-        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+        "q": "यह Slither.io से कैसे अलग है?",
+        "a": "Snake Online Slither के सहज नियंत्रणों को बनाए रखता है लेकिन जोड़ता है: 200+ संग्रहणीय स्किन (Slither के ~50 के मुकाबले), 180+ देश के लीडरबोर्ड, दैनिक टूर्नामेंट, प्रति घंटे अपडेट होने वाली सार्वजनिक रैंकिंग, और पूर्ण क्रॉस-प्लेटफ़ॉर्म प्रगति। केवल कौशल-आधारित प्रगति - कोई भुगतान-से-विजेता नहीं।"
       },
       "progressSync": {
-        "q": "Does my progress sync across devices?",
-        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+        "q": "क्या मेरी प्रगति उपकरणों के बीच समन्वयित होती है?",
+        "a": "हाँ। एक बार साइन इन करें और आपके ट्रॉफी, स्किन, दोस्त, और टूर्नामेंट प्रविष्टियाँ स्वचालित रूप से iOS, Android, और वेब के बीच आपका अनुसरण करती हैं।"
       }
     }
   },
@@ -508,283 +508,283 @@
     "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
   },
   "versus": {
-    "eyebrow": "VS COMPARISON",
-    "playFreeNow": "Play Snake Online free",
-    "viewAllSkins": "Browse 200+ snake skins",
+    "eyebrow": "वीएस तुलना",
+    "playFreeNow": "Snake Online मुफ्त में खेलें",
+    "viewAllSkins": "200+ सांप की खालें ब्राउज़ करें",
     "wormzone": {
-      "title": "Snake Online vs Worms Zone .io",
-      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
-      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
-      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
-      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+      "title": "Snake Online बनाम Worms Zone .io",
+      "seoTitle": "Snake Online बनाम Worms Zone .io — 2026 में कौन सा सांप खेल जीतता है?",
+      "seoDescription": "पूर्ण तुलना: Snake Online और Worms Zone .io आमने-सामने। रियल-टाइम मल्टीप्लेयर बनाम बॉट्स, 200+ बनाम 80 खालें, 14 भाषाएँ बनाम 1, सार्वजनिक लीडरबोर्ड बनाम कोई नहीं। देखें कि खिलाड़ी क्यों स्विच कर रहे हैं।",
+      "lead": "Worms Zone .io ने लाखों लोगों को सांप .io शैली से परिचित कराया — लेकिन अनुभव ज्यादातर बॉट्स के खिलाफ एकल-खिलाड़ी है, केवल अंग्रेजी में, और मार्केटिंग साइट में कोई संरचित डेटा नहीं है। Snake Online ने इस शैली को सच्चे रियल-टाइम मल्टीप्लेयर के रूप में फिर से बनाया है जिसमें वैश्विक रैंकिंग, 14 भाषाएँ, और एक पारदर्शी स्किन अर्थव्यवस्था है। यहाँ फीचर द्वारा फीचर आमने-सामने है।",
+      "verdict": "निर्णय: यदि आप AI के खिलाफ कार्टून कैजुअल अनुभव चाहते हैं, तो Worms Zone अभी भी काम करता है। यदि आप असली प्रतिकूल, असली लीडरबोर्ड, और असली क्रॉस-प्लेटफ़ॉर्म प्रगति चाहते हैं, तो Snake Online एक अपग्रेड है।"
     },
     "slither": {
-      "title": "Snake Online vs Slither.io",
-      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
-      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
-      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
-      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+      "title": "Snake Online बनाम Slither.io",
+      "seoTitle": "Snake Online बनाम Slither.io — पूर्ण फीचर तुलना",
+      "seoDescription": "Snake Online बनाम Slither.io: 200+ संग्रहणीय खालें, प्रति घंटे लीडरबोर्ड, दैनिक टूर्नामेंट, 14 भाषाएँ, क्रॉस-प्लेटफ़ॉर्म सिंक। सब कुछ जो Slither के खिलाड़ी इंतजार कर रहे थे।",
+      "lead": "Slither.io ने 2016 में .io सांप शैली को परिभाषित किया — न्यूनतम, आकर्षक, तात्कालिक। Snake Online उस सहज अनुभव को बनाए रखता है और उन चीज़ों को जोड़ता है जो Slither कभी नहीं लाया: 200+ संग्रहणीय खालें, प्रति घंटे अपडेट होने वाला सार्वजनिक वैश्विक लीडरबोर्ड, दैनिक टूर्नामेंट, क्रॉस-प्रोग्रेशन के साथ मूल मोबाइल ऐप, और 14 भाषाएँ उचित स्थानीयकृत SEO के साथ।",
+      "verdict": "निर्णय: Slither शैली का मूल है। Snake Online वही है जो Slither होता अगर यह 2026 में लॉन्च हुआ होता — वही नियंत्रण, आधुनिक गहराई।"
     }
   },
   "howToPlay": {
-    "eyebrow": "BEGINNER GUIDE",
-    "title": "How to play Snake Online.",
-    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
-    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
-    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
-    "playNow": "Play free now",
-    "browseSkins": "Browse skins",
-    "readyTitle": "Ready to slither?",
-    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "eyebrow": "शुरुआती गाइड",
+    "title": "Snake Online कैसे खेलें।",
+    "seoTitle": "Snake Online कैसे खेलें — 5-मिनट की शुरुआती गाइड",
+    "seoDescription": "Snake Online खेलने के लिए चरण-दर-चरण गाइड: नियंत्रण, खाना, बूस्ट, कॉइल-ट्रैप, और लीडरबोर्ड पर चढ़ना। किसी भी आधुनिक ब्राउज़र में मुफ्त।",
+    "lead": "Snake Online तीस सेकंड के पिकअप खेल और घंटों की गहराई में महारत के लिए बनाया गया है। मूल बातें एक स्क्रीन पर समाहित हैं — एक बार पढ़ें, फिर यह पूरी तरह से मांसपेशियों की याददाश्त है। यहाँ वह सब कुछ है जो आपको नए खिलाड़ी से शीर्ष 10% में जाने के लिए चाहिए।",
+    "playNow": "अब मुफ्त में खेलें",
+    "browseSkins": "स्किन ब्राउज़ करें",
+    "readyTitle": "स्लिदर करने के लिए तैयार?",
+    "readyBody": "कोई डाउनलोड नहीं, कोई साइनअप नहीं। खेल पर क्लिक करें और आप सेकंड में एरेना में हैं।",
     "steps": {
       "enter": {
-        "title": "Hit Play — you're in the arena instantly.",
-        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+        "title": "प्ले पर क्लिक करें — आप तुरंत एरेना में हैं।",
+        "body": "Play Free Now पर क्लिक करें। कोई साइनअप नहीं, कोई इंस्टॉल नहीं। आप सेकंड के भीतर असली खिलाड़ियों के साथ एक लाइव एरेना में स्पॉन होंगे। एक सांप की स्किन चुनें (मुफ्त शुरुआती स्किन उपलब्ध हैं) और एक क्षेत्र — निकटतम क्षेत्र का मतलब कम लेटेंसी है।"
       },
       "move": {
-        "title": "Steer with your mouse or thumb.",
-        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+        "title": "अपने माउस या अंगूठे से स्टीयर करें।",
+        "body": "डेस्कटॉप पर, आपके सांप का सिर कर्सर का पालन करता है। मोबाइल पर, स्क्रीन पर कहीं भी खींचकर स्टीयर करें। सांप कभी नहीं रुकता — आपका एकमात्र काम दिशा है। तेज मोड़ों के बजाय चौड़े, चिकने आर्क का प्रयास करें: आप कम गति बर्बाद करते हैं और तेजी से प्रतिक्रिया कर सकते हैं।"
       },
       "eat": {
-        "title": "Eat orbs to grow.",
-        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+        "title": "बढ़ने के लिए गोले खाएं।",
+        "body": "छोटे चमकते गोले मानचित्र पर बिखरे हुए हैं। उन्हें पार करें ताकि आप लंबे हों और स्कोर करें। बड़े गोले (जो मरते हुए सांपों द्वारा छोड़े जाते हैं) विशाल वृद्धि देते हैं — लेकिन वे चारा हैं। अन्य सांप हमेशा उन्हें जल्दी से लेते हैं। उन्हें तब तक न उठाएं जब तक आपके पास स्पष्ट भागने का रास्ता न हो।"
       },
       "boost": {
-        "title": "Boost burns mass — use it wisely.",
-        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+        "title": "बूस्ट मास को जलाता है — इसका बुद्धिमानी से उपयोग करें।",
+        "body": "बूस्ट करने के लिए बाएं-क्लिक दबाए रखें (या मोबाइल पर टैप-और-होल्ड करें)। आप ~50% तेजी से चलते हैं लेकिन हर सेकंड मास खोते हैं। दो असली उपयोग: एक हत्या को बंद करने के लिए (एक लक्ष्य के सामने कटें) और एक जाल से बचने के लिए। केवल तेज दिखने के लिए कभी बूस्ट न करें — यह महंगा है।"
       },
       "coil": {
-        "title": "Coil-trap to kill.",
-        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+        "title": "मारने के लिए कॉइल-ट्रैप करें।",
+        "body": "यदि आपके शरीर का कोई हिस्सा किसी अन्य सांप के सिर को छूता है तो आप मर जाते हैं। इसलिए आप विरोधियों से आगे नहीं निकलते — आप उन्हें खुद से टकराने के लिए मजबूर करते हैं। क्लासिक चाल: एक सांप के आगे बूस्ट करें, फिर उनके आगे के रास्ते पर लिपटें। वे या तो टकराते हैं या बूस्ट-बर्न करके मास खो देते हैं।"
       },
       "survive": {
-        "title": "Survive the perimeter first.",
-        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+        "title": "पहले परिधि पर जीवित रहें।",
+        "body": "एरेना का किनारा बढ़ने के लिए सबसे सुरक्षित स्थान है — कम हमलावर, एक पूर्वानुमानित सीमा जिसे आप गले लगा सकते हैं। जब तक आप शीर्ष 30% में नहीं पहुंचते, तब तक वहीं रहें। मध्य-मानचित्र वह जगह है जहां चैंपियन बोरिंग टॉप 10 द्वारा निशाना बनते हैं।"
       },
       "climb": {
-        "title": "Climb the global leaderboard.",
-        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+        "title": "वैश्विक लीडरबोर्ड पर चढ़ें।",
+        "body": "जीवित रहने, उच्च स्कोर करने और बड़े सांपों को हराने के लिए ट्रॉफियां दी जाती हैं। हर घंटे लीडरबोर्ड ताज़ा होते हैं — शीर्ष 1% को विशेष स्किन मिलती है। किसी भी देश के लीडरबोर्ड के शीर्ष 3 अगले सीजन के लिए देश-झंडा स्किन का दावा करते हैं।"
       }
     }
   },
   "blog": {
     "siteName": "Snake Online",
-    "eyebrow": "THE SNAKE ONLINE BLOG",
-    "titleLead": "Strategy, lore,",
-    "titleAccent": "and skin spotlights.",
-    "exploreCategories": "Explore categories",
-    "browse": "Browse",
-    "backToNews": "Back to news",
-    "readingTime": "{min} min read",
-    "aiAssisted": "AI-assisted",
-    "relatedPosts": "Related posts",
-    "mentionedSkin": "Skin in this post",
-    "viewSkin": "View skin",
-    "emptyCategory": "No posts in this category yet — check back soon.",
+    "eyebrow": "SNAKE ONLINE ब्लॉग",
+    "titleLead": "रणनीति, कथा,",
+    "titleAccent": "और स्किन स्पॉटलाइट।",
+    "exploreCategories": "श्रेणियों का अन्वेषण करें",
+    "browse": "ब्राउज़ करें",
+    "backToNews": "समाचार पर वापस जाएं",
+    "readingTime": "{min} मिनट पढ़ें",
+    "aiAssisted": "AI-सहायता प्राप्त",
+    "relatedPosts": "संबंधित पोस्ट",
+    "mentionedSkin": "इस पोस्ट में स्किन",
+    "viewSkin": "स्किन देखें",
+    "emptyCategory": "इस श्रेणी में अभी कोई पोस्ट नहीं है — जल्द ही वापस आएं।",
     "categories": {
-      "all": "All posts",
+      "all": "सभी पोस्ट",
       "skin-spotlight": {
-        "title": "Skin Spotlight",
-        "description": "Deep dives on individual snake skins — lore, unlock guides, related cosmetics."
+        "title": "स्किन स्पॉटलाइट",
+        "description": "व्यक्तिगत सांप की स्किन पर गहराई से जानकारी — कथा, अनलॉक गाइड, संबंधित कॉस्मेटिक्स।"
       },
       "strategy": {
-        "title": "Strategy",
-        "description": "How to win at Snake Online. Tactics, boost economy, coil-trap mechanics, leaderboard climbs."
+        "title": "रणनीति",
+        "description": "Snake Online में जीतने के तरीके। रणनीतियाँ, बूस्ट अर्थव्यवस्था, कॉइल-ट्रैप मैकेनिक्स, लीडरबोर्ड चढ़ाई।"
       },
       "comparisons": {
-        "title": "Comparisons",
-        "description": "Head-to-head reviews vs Worms Zone, Slither.io and the wider .io snake genre."
+        "title": "तुलनाएँ",
+        "description": "Worms Zone, Slither.io और व्यापक .io सांप शैली के खिलाफ आमने-सामने समीक्षाएँ।"
       },
       "updates": {
-        "title": "Updates",
-        "description": "Patch notes, new skin drops, balance changes, behind-the-scenes from the studio."
+        "title": "अपडेट",
+        "description": "पैच नोट्स, नई स्किन ड्रॉप, संतुलन परिवर्तन, स्टूडियो से पर्दे के पीछे।"
       },
       "community": {
-        "title": "Community",
-        "description": "Tournament recaps, player stories, content creators, Discord highlights."
+        "title": "समुदाय",
+        "description": "टूर्नामेंट की पुनरावृत्तियाँ, खिलाड़ी की कहानियाँ, सामग्री निर्माता, Discord हाइलाइट्स।"
       },
       "lore": {
-        "title": "Lore",
-        "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+        "title": "कथा",
+        "description": "अरेना के पीछे की दुनिया। Snake की पौराणिक कथाएँ, स्किन की उत्पत्ति की कहानियाँ, कथा की गहरी जानकारी।"
       }
     }
   },
   "downloadsPage": {
-    "eyebrow": "GET SNAKE ONLINE",
-    "titleLead": "Five platforms.",
-    "titleAccent": "One arena. Zero cost.",
-    "subtitle": "Free forever. No pay-to-win. Same trophies, skins and rank across iOS, Android, Web, Windows and macOS — one account everywhere.",
+    "eyebrow": "स्नेक ऑनलाइन प्राप्त करें",
+    "titleLead": "पाँच प्लेटफार्म।",
+    "titleAccent": "एक एरीना। शून्य लागत।",
+    "subtitle": "हमेशा के लिए मुफ्त। कोई पे-टू-विन नहीं। iOS, Android, Web, Windows और macOS पर समान ट्रॉफियाँ, स्किन और रैंक — हर जगह एक खाता।",
     "trust": {
-      "free": "Free forever",
-      "cosmetics": "Cosmetics-only, no pay-to-win",
-      "crossplay": "Cross-platform progress",
-      "lightweight": "Runs on 5-year-old phones"
+      "free": "हमेशा के लिए मुफ्त",
+      "cosmetics": "केवल कॉस्मेटिक्स, कोई पे-टू-विन नहीं",
+      "crossplay": "क्रॉस-प्लेटफ़ॉर्म प्रगति",
+      "lightweight": "5 साल पुराने फोन पर चलता है"
     },
     "web": {
-      "badge": "RECOMMENDED · INSTANT",
-      "title": "Play instantly in your browser",
-      "body": "No install, no signup, no waiting. Opens in fullscreen on Chrome, Safari, Firefox, Edge — same arena as the apps, same skins, same leaderboard.",
-      "cta": "Launch web build"
+      "badge": "सिफारिश की गई · तात्कालिक",
+      "title": "अपने ब्राउज़र में तुरंत खेलें",
+      "body": "कोई इंस्टॉल नहीं, कोई साइनअप नहीं, कोई इंतज़ार नहीं। Chrome, Safari, Firefox, Edge पर फुलस्क्रीन में खुलता है — ऐप्स के समान एरीना, समान स्किन, समान लीडरबोर्ड।",
+      "cta": "वेब बिल्ड लॉन्च करें"
     },
-    "platformsTitle": "Choose your platform",
-    "platformsSubtitle": "Same arena. Same skins. Same trophies. One account everywhere.",
+    "platformsTitle": "अपने प्लेटफार्म का चयन करें",
+    "platformsSubtitle": "समान एरीना। समान स्किन। समान ट्रॉफियाँ। हर जगह एक खाता।",
     "platforms": {
       "ios": {
-        "title": "iPhone & iPad",
-        "sub": "Requires iOS 13.0 or later · Universal app",
-        "cta": "Download on the App Store",
-        "caption": "Download on the"
+        "title": "iPhone और iPad",
+        "sub": "iOS 13.0 या बाद की आवश्यकता · यूनिवर्सल ऐप",
+        "cta": "App Store पर डाउनलोड करें",
+        "caption": "पर डाउनलोड करें"
       },
       "android": {
-        "title": "Android phones & tablets",
-        "sub": "Requires Android 8.0 or later · Free in-app purchases optional",
-        "cta": "Get it on Google Play",
-        "caption": "Get it on"
+        "title": "Android फोन और टैबलेट",
+        "sub": "Android 8.0 या बाद की आवश्यकता · मुफ्त इन-ऐप खरीदारी वैकल्पिक",
+        "cta": "Google Play पर प्राप्त करें",
+        "caption": "पर प्राप्त करें"
       },
       "windows": {
-        "title": "Windows 10 / 11 desktop",
-        "sub": "x64, signed installer · 64-bit only",
-        "cta": "Download for Windows",
-        "caption": "Direct download"
+        "title": "Windows 10 / 11 डेस्कटॉप",
+        "sub": "x64, साइन किए गए इंस्टॉलर · केवल 64-बिट",
+        "cta": "Windows के लिए डाउनलोड करें",
+        "caption": "प्रत्यक्ष डाउनलोड"
       },
       "mac": {
-        "title": "Mac (Intel & Apple Silicon)",
-        "sub": "Mac Catalyst build · Requires macOS 11+",
-        "cta": "Download on the Mac App Store",
-        "caption": "Download on the"
+        "title": "Mac (Intel और Apple Silicon)",
+        "sub": "Mac Catalyst बिल्ड · macOS 11+ की आवश्यकता",
+        "cta": "Mac App Store पर डाउनलोड करें",
+        "caption": "पर डाउनलोड करें"
       }
     },
-    "whyEyebrow": "WHY THE NATIVE APP",
-    "whyTitle": "Smoother, faster, yours.",
+    "whyEyebrow": "स्थानीय ऐप क्यों",
+    "whyTitle": "स्मूद, तेज, आपका।",
     "features": {
       "fps": {
-        "title": "60 FPS locked",
-        "body": "Buttery smooth movement on every device. Adaptive resolution under load."
+        "title": "60 FPS लॉक किया गया",
+        "body": "हर डिवाइस पर बटररी स्मूद मूवमेंट। लोड के तहत अनुकूली रिज़ॉल्यूशन।"
       },
       "noads": {
-        "title": "No ads in match",
-        "body": "We never interrupt a fight. Optional rewarded ads only between matches."
+        "title": "मैच में कोई विज्ञापन नहीं",
+        "body": "हम कभी भी लड़ाई को बाधित नहीं करते। वैकल्पिक पुरस्कार वाले विज्ञापन केवल मैचों के बीच।"
       },
       "crosssync": {
-        "title": "Cross-progress",
-        "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac."
+        "title": "क्रॉस-प्रगति",
+        "body": "iOS, Android, Web, Windows और Mac पर ट्रॉफियाँ, स्किन और रैंक सिंक।"
       },
       "footprint": {
-        "title": "Tiny footprint",
-        "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old."
+        "title": "छोटी फूटप्रिंट",
+        "body": "डिस्क पर 200 MB से कम। 5 साल पुराने फोन पर चलाने के लिए डिज़ाइन किया गया।"
       }
     },
     "qr": {
-      "badge": "FASTEST WAY ON MOBILE",
-      "title": "Scan, install, slither.",
-      "body": "Point your phone camera at the QR. We'll send you to the right store automatically.",
-      "alt": "QR code linking to the Snake Online downloads page"
+      "badge": "मोबाइल पर सबसे तेज़ तरीका",
+      "title": "स्कैन करें, इंस्टॉल करें, स्लिदर करें।",
+      "body": "अपने फोन के कैमरे को QR पर पॉइंट करें। हम आपको सही स्टोर पर स्वचालित रूप से भेज देंगे।",
+      "alt": "स्नेक ऑनलाइन डाउनलोड पृष्ठ से लिंक करने वाला QR कोड"
     },
-    "reqsTitle": "System requirements",
-    "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
+    "reqsTitle": "सिस्टम आवश्यकताएँ",
+    "reqsSubtitle": "डिज़ाइन द्वारा हल्का — 5 साल पुराने फोन पर चलता है।",
     "reqs": {
       "cpu": {
         "label": "CPU",
-        "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen"
+        "val": "क्वाड-कोर 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th जनरेशन"
       },
       "storage": {
-        "label": "Storage",
-        "val": "Up to 200 MB free space depending on platform"
+        "label": "स्टोरेज",
+        "val": "प्लेटफार्म के आधार पर 200 MB तक मुफ्त स्थान"
       },
       "network": {
-        "label": "Network",
-        "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G"
+        "label": "नेटवर्क",
+        "val": "5 Mbps स्थिर कनेक्शन — Wi-Fi, 4G या 5G"
       },
       "security": {
-        "label": "Security",
-        "val": "All installers code-signed. iOS notarized. Windows EV cert."
+        "label": "सुरक्षा",
+        "val": "सभी इंस्टॉलर कोड-साइन किए गए हैं। iOS नोटराइज्ड। Windows EV सर्टिफिकेट।"
       }
     },
-    "finalTitle": "200+ skins waiting.",
-    "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
-    "finalCta": "Jump into the arena"
+    "finalTitle": "200+ स्किन्स इंतज़ार कर रही हैं।",
+    "finalBody": "हर मैच के साथ एरीना और भी तीव्र हो जाता है। आपका सिंहासन एक खेल दूर है।",
+    "finalCta": "एरीना में कूदें"
   },
   "skinTemplates": {
     "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
-    "descriptionCountry": "The {country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.",
+    "descriptionCountry": "{country} देश का सांप स्किन — एरीना में अपना झंडा फहराएं। Snake Online में 180+ विशेष राष्ट्रीय स्किन में से एक।",
     "descriptionFantasy": {
-      "mythic": "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
-      "legendary": "{name} — a legendary tier fantasy snake skin. Forged in the late-game arena. Hard-earned, harder to keep.",
-      "epic": "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
-      "rare": "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
-      "common": "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
-      "exclusive": "{name} — an exclusive fantasy snake skin. Limited-time event reward."
+      "mythic": "{name} — एक पौराणिक स्तर का फैंटेसी सांप स्किन। केवल उच्च-स्तरीय टूर्नामेंट फाइनल के दौरान मिलता है।",
+      "legendary": "{name} — एक किंवदंती स्तर का फैंटेसी सांप स्किन। अंत-खेल एरीना में बनाया गया। कठिनाई से अर्जित, रखना और भी कठिन।",
+      "epic": "{name} — एक महाकाव्य स्तर का फैंटेसी सांप स्किन। निरंतर लीडरबोर्ड चढ़ाई के माध्यम से अर्जित किया गया।",
+      "rare": "{name} — एक दुर्लभ स्तर का फैंटेसी सांप स्किन। चढ़ाई के लिए एक विश्वसनीय साथी।",
+      "common": "{name} — एक सामान्य स्तर का फैंटेसी सांप स्किन। चढ़ाई के लिए एक विश्वसनीय साथी।",
+      "exclusive": "{name} — एक विशेष फैंटेसी सांप स्किन। सीमित समय के इवेंट का पुरस्कार।"
     },
-    "obtainHintCountry": "Awarded automatically when you connect from {country}, or unlocked permanently by winning any country tournament.",
+    "obtainHintCountry": "जब आप {country} से कनेक्ट करते हैं तो स्वचालित रूप से दिया जाता है, या किसी भी देश के टूर्नामेंट को जीतकर स्थायी रूप से अनलॉक किया जाता है।",
     "obtainHintFantasy": {
-      "mythic": "Won by placing top-3 in any monthly Mythic Arena tournament.",
-      "legendary": "Awarded for reaching Top 1% on the global leaderboard once.",
-      "epic": "Unlocked at 50 trophy threshold and above.",
-      "rare": "Available from the starting roster.",
-      "common": "Available from the starting roster.",
-      "exclusive": "Limited-time event drop."
+      "mythic": "किसी भी मासिक पौराणिक एरीना टूर्नामेंट में शीर्ष-3 में स्थान प्राप्त करके जीता जाता है।",
+      "legendary": "एक बार वैश्विक लीडरबोर्ड पर शीर्ष 1% तक पहुँचने पर दिया जाता है।",
+      "epic": "50 ट्रॉफी थ्रेशोल्ड और ऊपर अनलॉक किया जाता है।",
+      "rare": "शुरुआती रोस्टर से उपलब्ध।",
+      "common": "शुरुआती रोस्टर से उपलब्ध।",
+      "exclusive": "सीमित समय के इवेंट ड्रॉप।"
     },
     "countries": {
-      "AE": "United Arab Emirates",
-      "AR": "Argentina",
-      "AT": "Austria",
-      "AU": "Australia",
-      "AZ": "Azerbaijan",
-      "BE": "Belgium",
-      "BG": "Bulgaria",
-      "BR": "Brazil",
-      "CA": "Canada",
-      "CH": "Switzerland",
-      "CL": "Chile",
-      "CN": "China",
-      "CO": "Colombia",
-      "CZ": "Czech Republic",
-      "DE": "Germany",
-      "DK": "Denmark",
-      "EG": "Egypt",
-      "ES": "Spain",
-      "FI": "Finland",
-      "FR": "France",
-      "GB": "United Kingdom",
-      "GR": "Greece",
-      "HR": "Croatia",
-      "HU": "Hungary",
-      "ID": "Indonesia",
-      "IE": "Ireland",
-      "IL": "Israel",
-      "IN": "India",
-      "IR": "Iran",
-      "IT": "Italy",
-      "JP": "Japan",
-      "KR": "South Korea",
-      "MX": "Mexico",
-      "MY": "Malaysia",
-      "NG": "Nigeria",
-      "NL": "Netherlands",
-      "NO": "Norway",
-      "NZ": "New Zealand",
-      "PE": "Peru",
-      "PH": "Philippines",
-      "PK": "Pakistan",
-      "PL": "Poland",
-      "PT": "Portugal",
-      "QA": "Qatar",
-      "RO": "Romania",
-      "RS": "Serbia",
-      "RU": "Russia",
-      "SA": "Saudi Arabia",
-      "SE": "Sweden",
-      "SG": "Singapore",
-      "SK": "Slovakia",
-      "TH": "Thailand",
-      "TR": "Türkiye",
-      "TW": "Taiwan",
-      "UA": "Ukraine",
-      "US": "United States",
-      "USA": "United States",
-      "VE": "Venezuela",
-      "VN": "Vietnam",
-      "ZA": "South Africa"
+      "AE": "संयुक्त अरब अमीरात",
+      "AR": "अर्जेंटीना",
+      "AT": "ऑस्ट्रिया",
+      "AU": "ऑस्ट्रेलिया",
+      "AZ": "अज़रबैजान",
+      "BE": "बेल्जियम",
+      "BG": "बुल्गारिया",
+      "BR": "ब्राज़ील",
+      "CA": "कनाडा",
+      "CH": "स्विट्ज़रलैंड",
+      "CL": "चिली",
+      "CN": "चीन",
+      "CO": "कोलंबिया",
+      "CZ": "चेक गणराज्य",
+      "DE": "जर्मनी",
+      "DK": "डेनमार्क",
+      "EG": "मिस्र",
+      "ES": "स्पेन",
+      "FI": "फिनलैंड",
+      "FR": "फ्रांस",
+      "GB": "यूनाइटेड किंगडम",
+      "GR": "ग्रीस",
+      "HR": "क्रोएशिया",
+      "HU": "हंगरी",
+      "ID": "इंडोनेशिया",
+      "IE": "आयरलैंड",
+      "IL": "इज़राइल",
+      "IN": "भारत",
+      "IR": "ईरान",
+      "IT": "इटली",
+      "JP": "जापान",
+      "KR": "दक्षिण कोरिया",
+      "MX": "मेक्सिको",
+      "MY": "मलेशिया",
+      "NG": "नाइजीरिया",
+      "NL": "नीदरलैंड",
+      "NO": "नॉर्वे",
+      "NZ": "न्यूज़ीलैंड",
+      "PE": "पेरू",
+      "PH": "फिलीपींस",
+      "PK": "पाकिस्तान",
+      "PL": "पोलैंड",
+      "PT": "पुर्तगाल",
+      "QA": "कतर",
+      "RO": "रोमानिया",
+      "RS": "सर्बिया",
+      "RU": "रूस",
+      "SA": "सऊदी अरब",
+      "SE": "स्वीडन",
+      "SG": "सिंगापुर",
+      "SK": "स्लोवाकिया",
+      "TH": "थाईलैंड",
+      "TR": "टर्की",
+      "TW": "ताइवान",
+      "UA": "यूक्रेन",
+      "US": "संयुक्त राज्य",
+      "USA": "संयुक्त राज्य",
+      "VE": "वेनेज़ुएला",
+      "VN": "वियतनाम",
+      "ZA": "दक्षिण अफ्रीका"
     }
   }
 }
