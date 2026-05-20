@@ -337,46 +337,46 @@
     "playStore": "احصل عليه من"
   },
   "marquee": {
-    "label": "200+ Hand-Crafted Skins"
+    "label": "أكثر من 200 جلد مصمم يدويًا"
   },
   "bento": {
-    "eyebrow": "WHY SNAKE ONLINE",
-    "title": "Engineered for the\nmodern arena.",
-    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "eyebrow": "لماذا Snake Online",
+    "title": "مصمم من أجل\nالساحة الحديثة.",
+    "subtitle": "كل نظام، كل إطار، كل ثعبان — مصمم ليجعلك تشعر بأنك لا يمكن إيقافك.",
     "items": {
       "realtime": {
-        "title": "Real Real-Time Multiplayer",
-        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
-        "metric": "ms latency",
-        "regions": "12 global regions · 99.95% uptime"
+        "title": "لعبة متعددة اللاعبين في الوقت الحقيقي",
+        "body": "قاتل الآلاف من اللاعبين المباشرين — وليس الروبوتات. تخدم خوادم الحافة في 12 منطقة كل لفة، قطع، وفخ بشكل متزامن تمامًا.",
+        "metric": "زمن تأخير  بالمللي ثانية",
+        "regions": "12 منطقة عالمية · 99.95% وقت تشغيل"
       },
       "skins": {
-        "title": "Hand-crafted Skins",
-        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+        "title": "أزياء مصنوعة يدويًا",
+        "body": "ستة مستويات نادرة. أعلام الدول، تنانين أسطورية، ثعابين نيون. لا دفع للفوز — المهارة هي التي تحدد."
       },
       "leaderboards": {
-        "title": "Global Leaderboards",
-        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+        "title": "لوحات المتصدرين العالمية",
+        "body": "تصنيفات حسب الدولة وعالمية تتجدد كل ساعة. تسلق إلى أعلى 1% واطلب عرشك."
       },
       "country": {
-        "title": "180+ Country Skins",
-        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+        "title": "أزياء من 180+ دولة",
+        "body": "ارفع ألوانك. كل علم في العالم هو زي قابل للارتداء — ارتدِ علمك في المعركة."
       },
       "tournaments": {
-        "title": "Daily Tournaments",
-        "body": "Free entry. Real prizes. New brackets every 24 hours."
+        "title": "بطولات يومية",
+        "body": "دخول مجاني. جوائز حقيقية. أقسام جديدة كل 24 ساعة."
       },
       "crossplay": {
-        "title": "True Cross-Play",
-        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+        "title": "لعب متقاطع حقيقي",
+        "body": "حساب واحد. iOS، Android، ويب. تقدمك، أزياؤك ورRankك تتبعك."
       },
       "fairplay": {
-        "title": "Zero Pay-to-Win",
-        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+        "title": "لا دفع للفوز",
+        "body": "مجرد مستحضرات تجميل. لوحة المتصدرين تحددها ردود الفعل، وليس المحفظة."
       },
       "community": {
-        "title": "5M+ Snake Nation",
-        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+        "title": "5M+ أمة الثعابين",
+        "body": "Discord، بطولات، منشئي المحتوى. أكبر مجتمع ثعابين في عالم .io."
       }
     }
   },
@@ -426,49 +426,49 @@
     "cellNo": "لا"
   },
   "faq": {
-    "eyebrow": "FAQ",
-    "title": "Answers to everything.",
-    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "eyebrow": "الأسئلة الشائعة",
+    "title": "إجابات على كل شيء.",
+    "subtitle": "أسئلة حقيقية من لاعبين حقيقيين. إذا لم تكن سؤالك هنا، تواصل مع الدعم — نحن نقرأ كل رسالة.",
     "items": {
       "whatIsIt": {
-        "q": "What is Snake Online?",
-        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+        "q": "ما هو Snake Online؟",
+        "a": "Snake Online هي لعبة مجانية متعددة اللاعبين في الوقت الحقيقي .io معركة ثعبان ملكية. لف خصومك، كل كراتهم، تسلق قائمة المتصدرين العالمية. أكثر من 200 مظهر قابل للجمع، أكثر من 180 قائمة متصدرين للدول، متاحة على iOS وAndroid وأي متصفح ويب حديث."
       },
       "isItFree": {
-        "q": "Is Snake Online really free?",
-        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+        "q": "هل Snake Online مجانية حقًا؟",
+        "a": "نعم. مجانية إلى الأبد، لا حاجة للتسجيل للعب عبر المتصفح. لا توجد جدران دفع ولا مزايا للدفع للفوز — المظاهر تجميلية بحتة ومعظمها يمكن كسبه من خلال اللعب."
       },
       "doINeedToDownload": {
-        "q": "Do I need to download anything?",
-        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+        "q": "هل أحتاج إلى تحميل أي شيء؟",
+        "a": "ليس للويب — فقط اضغط على اللعب وستكون في الساحة خلال ثوانٍ. بالنسبة للهواتف المحمولة، تتوفر تطبيقات أصلية مجانية على App Store وGoogle Play بنفس التقدم المتقاطع."
       },
       "howManySkins": {
-        "q": "How many snake skins are there?",
-        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+        "q": "كم عدد مظاهر الثعابين الموجودة؟",
+        "a": "أكثر من 200 مظهر مصمم يدويًا عبر ستة مستويات نادرة: شائع، نادر، ملحمي، أسطوري، أسطوري، وحصري. يتم إصدار قطرات موسمية جديدة كل شهر — بما في ذلك مظاهر حصرية لعلم الدول لأكثر من 180 دولة."
       },
       "isItMultiplayer": {
-        "q": "Is it true real-time multiplayer (not bots)?",
-        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+        "q": "هل هي متعددة اللاعبين في الوقت الحقيقي (ليس روبوتات)؟",
+        "a": "نعم. كل ثعبان في ساحتك هو لاعب إنسان حقيقي. نحن ندير خوادم حافة في 12 منطقة عالمية لتحقيق زمن انتقال أقل من 100 مللي ثانية، لذا فإن اللف، والقطع، والفخاخ تشعر بأنها فورية — ليست بطيئة."
       },
       "whichDevices": {
-        "q": "Which devices does it run on?",
-        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+        "q": "على أي أجهزة تعمل؟",
+        "a": "أي متصفح ويب حديث (Chrome، Safari، Firefox، Edge)، iPhone، iPad، هواتف وأجهزة Android اللوحية. حساب واحد يتزامن عبر جميعها."
       },
       "howToWin": {
-        "q": "How do I get bigger faster?",
-        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+        "q": "كيف أزداد حجمًا بشكل أسرع؟",
+        "a": "الصبر والتخطيط يتفوقان على العدوان. التصاق بالحواف، اجمع الكرات من القتلى، التزم بفخ اللف فقط عندما يكون الهدف مقفلًا في خط مستقيم. التعزيز يحرق الكتلة — استخدمه بحذر، فقط لإغلاق قتل أو الهروب."
       },
       "vsWormzone": {
-        "q": "How is Snake Online different from Worms Zone?",
-        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+        "q": "كيف يختلف Snake Online عن Worms Zone؟",
+        "a": "Worms Zone هي في الغالب لعبة فردية ضد روبوتات الذكاء الاصطناعي، باللغة الإنجليزية فقط، بدون قائمة متصدرين عامة أو نسخة ويب. Snake Online هي متعددة اللاعبين في الوقت الحقيقي ضد البشر، تدعم 14 لغة، تحتوي على قائمة متصدرين عالمية حية، وتعمل بشكل أصلي في المتصفح مع تقدم متقاطع إلى الهواتف المحمولة."
       },
       "vsSlither": {
-        "q": "How is it different from Slither.io?",
-        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+        "q": "كيف يختلف عن Slither.io؟",
+        "a": "تحتفظ Snake Online بالتحكمات البديهية لـ Slither ولكن تضيف: أكثر من 200 مظهر قابل للجمع (مقابل حوالي 50 لـ Slither)، أكثر من 180 قائمة متصدرين للدول، بطولات يومية، تصنيفات عامة محدثة كل ساعة، وتقدم كامل عبر المنصات. تقدم يعتمد على المهارة فقط — لا يوجد دفع للفوز."
       },
       "progressSync": {
-        "q": "Does my progress sync across devices?",
-        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+        "q": "هل يتزامن تقدمي عبر الأجهزة؟",
+        "a": "نعم. سجل الدخول مرة واحدة وستتبعك الكؤوس، والمظاهر، والأصدقاء، ومدخلات البطولات بين iOS وAndroid والويب تلقائيًا."
       }
     }
   },
@@ -508,283 +508,283 @@
     "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
   },
   "versus": {
-    "eyebrow": "VS COMPARISON",
-    "playFreeNow": "Play Snake Online free",
-    "viewAllSkins": "Browse 200+ snake skins",
+    "eyebrow": "مقارنة VS",
+    "playFreeNow": "العب Snake Online مجانًا",
+    "viewAllSkins": "تصفح أكثر من 200 جلد ثعبان",
     "wormzone": {
-      "title": "Snake Online vs Worms Zone .io",
-      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
-      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
-      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
-      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+      "title": "Snake Online مقابل Worms Zone .io",
+      "seoTitle": "Snake Online مقابل Worms Zone .io — أي لعبة ثعبان تفوز في 2026؟",
+      "seoDescription": "مقارنة كاملة: Snake Online و Worms Zone .io وجهًا لوجه. متعددة اللاعبين في الوقت الحقيقي مقابل الروبوتات، أكثر من 200 مقابل 80 جلد، 14 لغة مقابل 1، لوحة المتصدرين العامة مقابل لا شيء. اكتشف لماذا ينتقل اللاعبون.",
+      "lead": "قدمت Worms Zone .io الملايين إلى نوع ثعبان .io — لكن التجربة في الغالب فردية ضد الروبوتات، باللغة الإنجليزية فقط، وموقع التسويق ليس لديه بيانات منظمة. أعادت Snake Online بناء النوع كمتعددة اللاعبين حقيقية في الوقت الحقيقي مع تصنيفات عالمية، و14 لغة، واقتصاد جلد شفاف. إليك المقارنة، ميزة بميزة.",
+      "verdict": "الحكم: إذا كنت تريد الشعور الكرتوني غير الرسمي ضد الذكاء الاصطناعي، فإن Worms Zone لا تزال تعمل. إذا كنت تريد خصومًا حقيقيين، ولوحات متصدرين حقيقية، وتقدم حقيقي عبر المنصات، فإن Snake Online هو الترقية."
     },
     "slither": {
-      "title": "Snake Online vs Slither.io",
-      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
-      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
-      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
-      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+      "title": "Snake Online مقابل Slither.io",
+      "seoTitle": "Snake Online مقابل Slither.io — مقارنة كاملة للميزات",
+      "seoDescription": "Snake Online مقابل Slither.io: أكثر من 200 جلد قابل للجمع، لوحات متصدرين كل ساعة، بطولات يومية، 14 لغة، مزامنة عبر المنصات. كل ما كان ينتظره لاعبو Slither.",
+      "lead": "حددت Slither.io نوع ثعبان .io في 2016 — بسيطة، مدمنة، فورية. تحافظ Snake Online على ذلك الشعور البديهي وتضيف الأشياء التي لم تطلقها Slither أبدًا: أكثر من 200 جلد قابل للجمع، لوحة متصدرين عالمية عامة محدثة كل ساعة، بطولات يومية، تطبيقات موبايل أصلية مع تقدم عبر المنصات، و14 لغة مع تحسين محلي مناسب.",
+      "verdict": "الحكم: تظل Slither الأصلية في النوع. Snake Online هي ما كانت ستكون عليه Slither لو أُطلقت في 2026 — نفس التحكمات، عمق حديث."
     }
   },
   "howToPlay": {
-    "eyebrow": "BEGINNER GUIDE",
-    "title": "How to play Snake Online.",
-    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
-    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
-    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
-    "playNow": "Play free now",
-    "browseSkins": "Browse skins",
-    "readyTitle": "Ready to slither?",
-    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "eyebrow": "دليل المبتدئين",
+    "title": "كيفية اللعب في Snake Online.",
+    "seoTitle": "كيفية اللعب في Snake Online — دليل المبتدئين في 5 دقائق",
+    "seoDescription": "دليل خطوة بخطوة للعب Snake Online: التحكم، الأكل، التعزيز، الفخاخ الحلزونية، وتسلق لوحة المتصدرين. مجاني في أي متصفح حديث.",
+    "lead": "تم تصميم Snake Online للعب السريع لمدة ثلاثين ثانية وإتقان عميق لساعات. الأساسيات تناسب شاشة واحدة — اقرأ مرة واحدة، ثم يصبح الأمر ذاكرة عضلية بحتة. إليك كل ما تحتاجه للانتقال من لاعب جديد إلى أفضل 10%.",
+    "playNow": "العب مجانًا الآن",
+    "browseSkins": "تصفح الأشكال",
+    "readyTitle": "هل أنت مستعد للزحف؟",
+    "readyBody": "لا تحميل، لا تسجيل. اضغط على اللعب وستكون في الساحة في ثوانٍ.",
     "steps": {
       "enter": {
-        "title": "Hit Play — you're in the arena instantly.",
-        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+        "title": "اضغط على اللعب — ستكون في الساحة على الفور.",
+        "body": "انقر على العب مجانًا الآن. لا تسجيل، لا تثبيت. ستظهر في ساحة حية مع لاعبين حقيقيين في غضون ثوانٍ. اختر شكل ثعبان (الأشكال المجانية المتاحة) ومنطقة — المناطق الأقرب تعني تأخير أقل."
       },
       "move": {
-        "title": "Steer with your mouse or thumb.",
-        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+        "title": "تحكم باستخدام الماوس أو الإبهام.",
+        "body": "على الكمبيوتر، يتبع رأس ثعبانك المؤشر. على الهاتف المحمول، اسحب في أي مكان على الشاشة للتحكم. الثعبان لا يتوقف أبدًا عن الحركة — وظيفتك الوحيدة هي الاتجاه. حاول أن تقوم بحركات واسعة وسلسة بدلاً من المنعطفات الحادة: ستوفر المزيد من الزخم ويمكنك التفاعل بشكل أسرع."
       },
       "eat": {
-        "title": "Eat orbs to grow.",
-        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+        "title": "كل الكرات لتنمو.",
+        "body": "تت scattered الكرات المتلألئة في الخريطة. اجري فوقها لتصبح أطول وتحصل على نقاط. الكرات الأكبر (التي تتركها الثعابين الميتة) تعطي نموًا هائلًا — لكنها طُعم. الثعابين الأخرى دائمًا تتسرع نحوها. التقطها فقط عندما يكون لديك مخرج واضح."
       },
       "boost": {
-        "title": "Boost burns mass — use it wisely.",
-        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+        "title": "التعزيز يحرق الكتلة — استخدمه بحكمة.",
+        "body": "اضغط على الزر الأيسر (أو اضغط مع الاستمرار على الهاتف المحمول) لتعزيز السرعة. ستتحرك بسرعة ~50% أكبر ولكنك ستفقد الكتلة كل ثانية. استخدامان حقيقيان: لإنهاء القتل (اقطع أمام هدف) وللخروج من الفخ. لا تعزز فقط لتبدو سريعًا — إنه مكلف."
       },
       "coil": {
-        "title": "Coil-trap to kill.",
-        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+        "title": "استخدم الفخ الحلزوني للقتل.",
+        "body": "تموت إذا لمست أي جزء من جسمك رأس ثعبان آخر. لذلك لا تتفوق على الخصوم — اجعلهم يصطدمون بك. الحركة الكلاسيكية: عزز أمام ثعبان، ثم التفت عبر مسارهم الأمامي. إما أن يصطدموا أو يحترقوا من الكتلة للهروب."
       },
       "survive": {
-        "title": "Survive the perimeter first.",
-        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+        "title": "ابق على قيد الحياة في المحيط أولاً.",
+        "body": "حافة الساحة هي المكان الأكثر أمانًا للنمو — عدد أقل من المهاجمين، وحدود يمكن التنبؤ بها يمكنك الالتصاق بها. ابق هناك حتى تصبح في أفضل 30%. منتصف الخريطة هو المكان الذي يتم فيه استهداف الأبطال من قبل أفضل 10 المملين."
       },
       "climb": {
-        "title": "Climb the global leaderboard.",
-        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+        "title": "تسلق لوحة المتصدرين العالمية.",
+        "body": "تُمنح الجوائز للبقاء على قيد الحياة لفترة أطول، وتحقيق نقاط أعلى، وهزيمة ثعابين أكبر. تتجدد لوحات المتصدرين كل ساعة — يحصل أفضل 1% على أشكال حصرية. أفضل 3 في أي لوحة متصدرين لدولة ما يحصلون على شكل علم الدولة للموسم التالي."
       }
     }
   },
   "blog": {
     "siteName": "Snake Online",
-    "eyebrow": "THE SNAKE ONLINE BLOG",
-    "titleLead": "Strategy, lore,",
-    "titleAccent": "and skin spotlights.",
-    "exploreCategories": "Explore categories",
-    "browse": "Browse",
-    "backToNews": "Back to news",
-    "readingTime": "{min} min read",
-    "aiAssisted": "AI-assisted",
-    "relatedPosts": "Related posts",
-    "mentionedSkin": "Skin in this post",
-    "viewSkin": "View skin",
-    "emptyCategory": "No posts in this category yet — check back soon.",
+    "eyebrow": "مدونة سنايك أونلاين",
+    "titleLead": "استراتيجيات، أساطير،",
+    "titleAccent": "وأضواء على الأشكال.",
+    "exploreCategories": "استكشف الفئات",
+    "browse": "تصفح",
+    "backToNews": "العودة إلى الأخبار",
+    "readingTime": "{min} دقيقة قراءة",
+    "aiAssisted": "مدعوم بالذكاء الاصطناعي",
+    "relatedPosts": "المشاركات ذات الصلة",
+    "mentionedSkin": "الشكل المذكور في هذه المشاركة",
+    "viewSkin": "عرض الشكل",
+    "emptyCategory": "لا توجد مشاركات في هذه الفئة بعد — تحقق مرة أخرى قريبًا.",
     "categories": {
-      "all": "All posts",
+      "all": "جميع المشاركات",
       "skin-spotlight": {
-        "title": "Skin Spotlight",
-        "description": "Deep dives on individual snake skins — lore, unlock guides, related cosmetics."
+        "title": "أضواء على الشكل",
+        "description": "تحليلات عميقة حول أشكال الثعابين الفردية — الأساطير، أدلة الفتح، مستحضرات التجميل ذات الصلة."
       },
       "strategy": {
-        "title": "Strategy",
-        "description": "How to win at Snake Online. Tactics, boost economy, coil-trap mechanics, leaderboard climbs."
+        "title": "استراتيجية",
+        "description": "كيف تربح في Snake Online. تكتيكات، اقتصاد التعزيز، آليات الفخ الحلزوني، صعود على لوحة المتصدرين."
       },
       "comparisons": {
-        "title": "Comparisons",
-        "description": "Head-to-head reviews vs Worms Zone, Slither.io and the wider .io snake genre."
+        "title": "مقارنات",
+        "description": "مراجعات مباشرة مقابل Worms Zone، Slither.io ونوع الثعابين الأوسع في .io."
       },
       "updates": {
-        "title": "Updates",
-        "description": "Patch notes, new skin drops, balance changes, behind-the-scenes from the studio."
+        "title": "تحديثات",
+        "description": "ملاحظات التصحيح، إسقاطات أشكال جديدة، تغييرات التوازن، خلف الكواليس من الاستوديو."
       },
       "community": {
-        "title": "Community",
-        "description": "Tournament recaps, player stories, content creators, Discord highlights."
+        "title": "المجتمع",
+        "description": "ملخصات البطولات، قصص اللاعبين، منشئي المحتوى، أبرز ما في Discord."
       },
       "lore": {
-        "title": "Lore",
-        "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+        "title": "أساطير",
+        "description": "العالم خلف الساحة. أساطير الثعابين، قصص أصل الأشكال، قصص سردية عميقة."
       }
     }
   },
   "downloadsPage": {
-    "eyebrow": "GET SNAKE ONLINE",
-    "titleLead": "Five platforms.",
-    "titleAccent": "One arena. Zero cost.",
-    "subtitle": "Free forever. No pay-to-win. Same trophies, skins and rank across iOS, Android, Web, Windows and macOS — one account everywhere.",
+    "eyebrow": "احصل على Snake Online",
+    "titleLead": "خمسة منصات.",
+    "titleAccent": "ساحة واحدة. صفر تكلفة.",
+    "subtitle": "مجاني إلى الأبد. لا دفع للفوز. نفس الكؤوس، الأشكال والترتيب عبر iOS، Android، الويب، Windows وmacOS — حساب واحد في كل مكان.",
     "trust": {
-      "free": "Free forever",
-      "cosmetics": "Cosmetics-only, no pay-to-win",
-      "crossplay": "Cross-platform progress",
-      "lightweight": "Runs on 5-year-old phones"
+      "free": "مجاني إلى الأبد",
+      "cosmetics": "لأغراض تجميلية فقط، لا دفع للفوز",
+      "crossplay": "تقدم عبر المنصات",
+      "lightweight": "يعمل على الهواتف التي عمرها 5 سنوات"
     },
     "web": {
-      "badge": "RECOMMENDED · INSTANT",
-      "title": "Play instantly in your browser",
-      "body": "No install, no signup, no waiting. Opens in fullscreen on Chrome, Safari, Firefox, Edge — same arena as the apps, same skins, same leaderboard.",
-      "cta": "Launch web build"
+      "badge": "موصى به · فوري",
+      "title": "العب فوراً في متصفحك",
+      "body": "لا تثبيت، لا تسجيل، لا انتظار. يفتح في وضع ملء الشاشة على Chrome، Safari، Firefox، Edge — نفس الساحة كما في التطبيقات، نفس الأشكال، نفس لوحة المتصدرين.",
+      "cta": "إطلاق النسخة على الويب"
     },
-    "platformsTitle": "Choose your platform",
-    "platformsSubtitle": "Same arena. Same skins. Same trophies. One account everywhere.",
+    "platformsTitle": "اختر منصتك",
+    "platformsSubtitle": "نفس الساحة. نفس الأشكال. نفس الكؤوس. حساب واحد في كل مكان.",
     "platforms": {
       "ios": {
-        "title": "iPhone & iPad",
-        "sub": "Requires iOS 13.0 or later · Universal app",
-        "cta": "Download on the App Store",
-        "caption": "Download on the"
+        "title": "iPhone و iPad",
+        "sub": "يتطلب iOS 13.0 أو أحدث · تطبيق عالمي",
+        "cta": "تحميل من App Store",
+        "caption": "تحميل من"
       },
       "android": {
-        "title": "Android phones & tablets",
-        "sub": "Requires Android 8.0 or later · Free in-app purchases optional",
-        "cta": "Get it on Google Play",
-        "caption": "Get it on"
+        "title": "هواتف وأجهزة Android اللوحية",
+        "sub": "يتطلب Android 8.0 أو أحدث · مشتريات داخل التطبيق اختيارية مجانية",
+        "cta": "احصل عليه على Google Play",
+        "caption": "احصل عليه على"
       },
       "windows": {
-        "title": "Windows 10 / 11 desktop",
-        "sub": "x64, signed installer · 64-bit only",
-        "cta": "Download for Windows",
-        "caption": "Direct download"
+        "title": "سطح مكتب Windows 10 / 11",
+        "sub": "x64، مثبت موقع · 64 بت فقط",
+        "cta": "تحميل لـ Windows",
+        "caption": "تحميل مباشر"
       },
       "mac": {
-        "title": "Mac (Intel & Apple Silicon)",
-        "sub": "Mac Catalyst build · Requires macOS 11+",
-        "cta": "Download on the Mac App Store",
-        "caption": "Download on the"
+        "title": "Mac (Intel و Apple Silicon)",
+        "sub": "بناء Mac Catalyst · يتطلب macOS 11+",
+        "cta": "تحميل من Mac App Store",
+        "caption": "تحميل من"
       }
     },
-    "whyEyebrow": "WHY THE NATIVE APP",
-    "whyTitle": "Smoother, faster, yours.",
+    "whyEyebrow": "لماذا التطبيق الأصلي",
+    "whyTitle": "أكثر سلاسة، أسرع، لك.",
     "features": {
       "fps": {
-        "title": "60 FPS locked",
-        "body": "Buttery smooth movement on every device. Adaptive resolution under load."
+        "title": "60 FPS مقفلة",
+        "body": "حركة سلسة للغاية على كل جهاز. دقة متكيفة تحت الحمل."
       },
       "noads": {
-        "title": "No ads in match",
-        "body": "We never interrupt a fight. Optional rewarded ads only between matches."
+        "title": "لا إعلانات في المباراة",
+        "body": "نحن لا نقطع القتال أبداً. إعلانات اختيارية مدفوعة فقط بين المباريات."
       },
       "crosssync": {
-        "title": "Cross-progress",
-        "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac."
+        "title": "تقدم مشترك",
+        "body": "تزامن الكؤوس، الأشكال، والترتيب عبر iOS، Android، الويب، Windows وMac."
       },
       "footprint": {
-        "title": "Tiny footprint",
-        "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old."
+        "title": "حجم صغير",
+        "body": "أقل من 200 ميغابايت على القرص. مصمم للعمل على الهواتف التي عمرها حتى 5 سنوات."
       }
     },
     "qr": {
-      "badge": "FASTEST WAY ON MOBILE",
-      "title": "Scan, install, slither.",
-      "body": "Point your phone camera at the QR. We'll send you to the right store automatically.",
-      "alt": "QR code linking to the Snake Online downloads page"
+      "badge": "أسرع طريقة على الهاتف المحمول",
+      "title": "امسح، ثبت، انزلق.",
+      "body": "وجه كاميرا هاتفك نحو رمز الاستجابة السريعة. سنوجهك إلى المتجر الصحيح تلقائياً.",
+      "alt": "رمز الاستجابة السريعة يربط بصفحة تحميل Snake Online"
     },
-    "reqsTitle": "System requirements",
-    "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
+    "reqsTitle": "متطلبات النظام",
+    "reqsSubtitle": "خفيف الوزن حسب التصميم — يعمل على هاتف عمره 5 سنوات.",
     "reqs": {
       "cpu": {
-        "label": "CPU",
-        "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen"
+        "label": "وحدة المعالجة المركزية",
+        "val": "رباعي النواة 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 الجيل الرابع"
       },
       "storage": {
-        "label": "Storage",
-        "val": "Up to 200 MB free space depending on platform"
+        "label": "التخزين",
+        "val": "حتى 200 ميغابايت مساحة خالية حسب المنصة"
       },
       "network": {
-        "label": "Network",
-        "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G"
+        "label": "الشبكة",
+        "val": "اتصال ثابت 5 ميغابت في الثانية — Wi-Fi، 4G أو 5G"
       },
       "security": {
-        "label": "Security",
-        "val": "All installers code-signed. iOS notarized. Windows EV cert."
+        "label": "الأمان",
+        "val": "جميع المثبتات موقعة بالشيفرة. موثقة من iOS. شهادة EV لـ Windows."
       }
     },
-    "finalTitle": "200+ skins waiting.",
-    "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
-    "finalCta": "Jump into the arena"
+    "finalTitle": "200+ أشكال في الانتظار.",
+    "finalBody": "تزداد حدة الساحة مع كل مباراة. عرشك على بعد لعبة واحدة.",
+    "finalCta": "اقفز إلى الساحة"
   },
   "skinTemplates": {
     "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
-    "descriptionCountry": "The {country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.",
+    "descriptionCountry": "جلد الثعبان من دولة {country} — ارفع علمك في الساحة. واحدة من أكثر من 180 جلد وطني حصري في Snake Online.",
     "descriptionFantasy": {
-      "mythic": "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
-      "legendary": "{name} — a legendary tier fantasy snake skin. Forged in the late-game arena. Hard-earned, harder to keep.",
-      "epic": "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
-      "rare": "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
-      "common": "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
-      "exclusive": "{name} — an exclusive fantasy snake skin. Limited-time event reward."
+      "mythic": "{name} — جلد ثعبان خيالي من الدرجة الأسطورية. يظهر فقط خلال نهائيات البطولات عالية المستوى.",
+      "legendary": "{name} — جلد ثعبان خيالي من الدرجة légendaire. تم تشكيله في ساحة اللعبة المتأخرة. صعب الحصول عليه، وأصعب للحفاظ عليه.",
+      "epic": "{name} — جلد ثعبان خيالي من الدرجة الملحمية. يتم الحصول عليه من خلال الصعود المستمر في لوحة المتصدرين.",
+      "rare": "{name} — جلد ثعبان خيالي من الدرجة النادرة. رفيق موثوق للصعود.",
+      "common": "{name} — جلد ثعبان خيالي من الدرجة الشائعة. رفيق موثوق للصعود.",
+      "exclusive": "{name} — جلد ثعبان خيالي حصري. مكافأة حدث محدود الوقت."
     },
-    "obtainHintCountry": "Awarded automatically when you connect from {country}, or unlocked permanently by winning any country tournament.",
+    "obtainHintCountry": "يتم منحه تلقائيًا عند الاتصال من {country}، أو يتم فتحه بشكل دائم من خلال الفوز في أي بطولة وطنية.",
     "obtainHintFantasy": {
-      "mythic": "Won by placing top-3 in any monthly Mythic Arena tournament.",
-      "legendary": "Awarded for reaching Top 1% on the global leaderboard once.",
-      "epic": "Unlocked at 50 trophy threshold and above.",
-      "rare": "Available from the starting roster.",
-      "common": "Available from the starting roster.",
-      "exclusive": "Limited-time event drop."
+      "mythic": "يتم الفوز به من خلال الحصول على أحد المراكز الثلاثة الأولى في أي بطولة Mythic Arena شهرية.",
+      "legendary": "يتم منحه للوصول إلى أعلى 1% في لوحة المتصدرين العالمية مرة واحدة.",
+      "epic": "يتم فتحه عند عتبة 50 كأسًا وما فوق.",
+      "rare": "متاح من قائمة البداية.",
+      "common": "متاح من قائمة البداية.",
+      "exclusive": "سقوط حدث محدود الوقت."
     },
     "countries": {
-      "AE": "United Arab Emirates",
-      "AR": "Argentina",
-      "AT": "Austria",
-      "AU": "Australia",
-      "AZ": "Azerbaijan",
-      "BE": "Belgium",
-      "BG": "Bulgaria",
-      "BR": "Brazil",
-      "CA": "Canada",
-      "CH": "Switzerland",
-      "CL": "Chile",
-      "CN": "China",
-      "CO": "Colombia",
-      "CZ": "Czech Republic",
-      "DE": "Germany",
-      "DK": "Denmark",
-      "EG": "Egypt",
-      "ES": "Spain",
-      "FI": "Finland",
-      "FR": "France",
-      "GB": "United Kingdom",
-      "GR": "Greece",
-      "HR": "Croatia",
-      "HU": "Hungary",
-      "ID": "Indonesia",
-      "IE": "Ireland",
-      "IL": "Israel",
-      "IN": "India",
-      "IR": "Iran",
-      "IT": "Italy",
-      "JP": "Japan",
-      "KR": "South Korea",
-      "MX": "Mexico",
-      "MY": "Malaysia",
-      "NG": "Nigeria",
-      "NL": "Netherlands",
-      "NO": "Norway",
-      "NZ": "New Zealand",
-      "PE": "Peru",
-      "PH": "Philippines",
-      "PK": "Pakistan",
-      "PL": "Poland",
-      "PT": "Portugal",
-      "QA": "Qatar",
-      "RO": "Romania",
-      "RS": "Serbia",
-      "RU": "Russia",
-      "SA": "Saudi Arabia",
-      "SE": "Sweden",
-      "SG": "Singapore",
-      "SK": "Slovakia",
-      "TH": "Thailand",
-      "TR": "Türkiye",
-      "TW": "Taiwan",
-      "UA": "Ukraine",
-      "US": "United States",
-      "USA": "United States",
-      "VE": "Venezuela",
-      "VN": "Vietnam",
-      "ZA": "South Africa"
+      "AE": "الإمارات العربية المتحدة",
+      "AR": "الأرجنتين",
+      "AT": "النمسا",
+      "AU": "أستراليا",
+      "AZ": "أذربيجان",
+      "BE": "بلجيكا",
+      "BG": "بلغاريا",
+      "BR": "البرازيل",
+      "CA": "كندا",
+      "CH": "سويسرا",
+      "CL": "تشيلي",
+      "CN": "الصين",
+      "CO": "كولومبيا",
+      "CZ": "جمهورية التشيك",
+      "DE": "ألمانيا",
+      "DK": "الدنمارك",
+      "EG": "مصر",
+      "ES": "إسبانيا",
+      "FI": "فنلندا",
+      "FR": "فرنسا",
+      "GB": "المملكة المتحدة",
+      "GR": "اليونان",
+      "HR": "كرواتيا",
+      "HU": "المجر",
+      "ID": "إندونيسيا",
+      "IE": "أيرلندا",
+      "IL": "إسرائيل",
+      "IN": "الهند",
+      "IR": "إيران",
+      "IT": "إيطاليا",
+      "JP": "اليابان",
+      "KR": "كوريا الجنوبية",
+      "MX": "المكسيك",
+      "MY": "ماليزيا",
+      "NG": "نيجيريا",
+      "NL": "هولندا",
+      "NO": "النرويج",
+      "NZ": "نيوزيلندا",
+      "PE": "بيرو",
+      "PH": "الفلبين",
+      "PK": "باكستان",
+      "PL": "بولندا",
+      "PT": "البرتغال",
+      "QA": "قطر",
+      "RO": "رومانيا",
+      "RS": "صربيا",
+      "RU": "روسيا",
+      "SA": "المملكة العربية السعودية",
+      "SE": "السويد",
+      "SG": "سنغافورة",
+      "SK": "سلوفاكيا",
+      "TH": "تايلاند",
+      "TR": "تركيا",
+      "TW": "تايوان",
+      "UA": "أوكرانيا",
+      "US": "الولايات المتحدة",
+      "USA": "الولايات المتحدة",
+      "VE": "فنزويلا",
+      "VN": "فيتنام",
+      "ZA": "جنوب أفريقيا"
     }
   }
 }
