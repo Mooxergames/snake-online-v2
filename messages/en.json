@@ -97,34 +97,83 @@
     "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
     "descriptionCountry": "The {country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.",
     "descriptionFantasy": {
-      "mythic":    "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
+      "mythic": "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
       "legendary": "{name} — a legendary tier fantasy snake skin. Forged in the late-game arena. Hard-earned, harder to keep.",
-      "epic":      "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
-      "rare":      "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
-      "common":    "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
+      "epic": "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
+      "rare": "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
+      "common": "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
       "exclusive": "{name} — an exclusive fantasy snake skin. Limited-time event reward."
     },
     "obtainHintCountry": "Awarded automatically when you connect from {country}, or unlocked permanently by winning any country tournament.",
     "obtainHintFantasy": {
-      "mythic":    "Won by placing top-3 in any monthly Mythic Arena tournament.",
+      "mythic": "Won by placing top-3 in any monthly Mythic Arena tournament.",
       "legendary": "Awarded for reaching Top 1% on the global leaderboard once.",
-      "epic":      "Unlocked at 50 trophy threshold and above.",
-      "rare":      "Available from the starting roster.",
-      "common":    "Available from the starting roster.",
+      "epic": "Unlocked at 50 trophy threshold and above.",
+      "rare": "Available from the starting roster.",
+      "common": "Available from the starting roster.",
       "exclusive": "Limited-time event drop."
     },
     "countries": {
-      "AE": "United Arab Emirates", "AR": "Argentina", "AT": "Austria", "AU": "Australia", "AZ": "Azerbaijan",
-      "BE": "Belgium", "BG": "Bulgaria", "BR": "Brazil", "CA": "Canada", "CH": "Switzerland", "CL": "Chile",
-      "CN": "China", "CO": "Colombia", "CZ": "Czech Republic", "DE": "Germany", "DK": "Denmark", "EG": "Egypt",
-      "ES": "Spain", "FI": "Finland", "FR": "France", "GB": "United Kingdom", "GR": "Greece", "HR": "Croatia",
-      "HU": "Hungary", "ID": "Indonesia", "IE": "Ireland", "IL": "Israel", "IN": "India", "IR": "Iran",
-      "IT": "Italy", "JP": "Japan", "KR": "South Korea", "MX": "Mexico", "MY": "Malaysia", "NG": "Nigeria",
-      "NL": "Netherlands", "NO": "Norway", "NZ": "New Zealand", "PE": "Peru", "PH": "Philippines",
-      "PK": "Pakistan", "PL": "Poland", "PT": "Portugal", "QA": "Qatar", "RO": "Romania", "RS": "Serbia",
-      "RU": "Russia", "SA": "Saudi Arabia", "SE": "Sweden", "SG": "Singapore", "SK": "Slovakia", "TH": "Thailand",
-      "TR": "Türkiye", "TW": "Taiwan", "UA": "Ukraine", "US": "United States", "USA": "United States",
-      "VE": "Venezuela", "VN": "Vietnam", "ZA": "South Africa"
+      "AE": "United Arab Emirates",
+      "AR": "Argentina",
+      "AT": "Austria",
+      "AU": "Australia",
+      "AZ": "Azerbaijan",
+      "BE": "Belgium",
+      "BG": "Bulgaria",
+      "BR": "Brazil",
+      "CA": "Canada",
+      "CH": "Switzerland",
+      "CL": "Chile",
+      "CN": "China",
+      "CO": "Colombia",
+      "CZ": "Czech Republic",
+      "DE": "Germany",
+      "DK": "Denmark",
+      "EG": "Egypt",
+      "ES": "Spain",
+      "FI": "Finland",
+      "FR": "France",
+      "GB": "United Kingdom",
+      "GR": "Greece",
+      "HR": "Croatia",
+      "HU": "Hungary",
+      "ID": "Indonesia",
+      "IE": "Ireland",
+      "IL": "Israel",
+      "IN": "India",
+      "IR": "Iran",
+      "IT": "Italy",
+      "JP": "Japan",
+      "KR": "South Korea",
+      "MX": "Mexico",
+      "MY": "Malaysia",
+      "NG": "Nigeria",
+      "NL": "Netherlands",
+      "NO": "Norway",
+      "NZ": "New Zealand",
+      "PE": "Peru",
+      "PH": "Philippines",
+      "PK": "Pakistan",
+      "PL": "Poland",
+      "PT": "Portugal",
+      "QA": "Qatar",
+      "RO": "Romania",
+      "RS": "Serbia",
+      "RU": "Russia",
+      "SA": "Saudi Arabia",
+      "SE": "Sweden",
+      "SG": "Singapore",
+      "SK": "Slovakia",
+      "TH": "Thailand",
+      "TR": "Türkiye",
+      "TW": "Taiwan",
+      "UA": "Ukraine",
+      "US": "United States",
+      "USA": "United States",
+      "VE": "Venezuela",
+      "VN": "Vietnam",
+      "ZA": "South Africa"
     }
   },
   "downloadsPage": {
@@ -175,10 +224,22 @@
     "whyEyebrow": "WHY THE NATIVE APP",
     "whyTitle": "Smoother, faster, yours.",
     "features": {
-      "fps":       { "title": "60 FPS locked",     "body": "Buttery smooth movement on every device. Adaptive resolution under load." },
-      "noads":     { "title": "No ads in match",   "body": "We never interrupt a fight. Optional rewarded ads only between matches." },
-      "crosssync": { "title": "Cross-progress",    "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac." },
-      "footprint": { "title": "Tiny footprint",    "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old." }
+      "fps": {
+        "title": "60 FPS locked",
+        "body": "Buttery smooth movement on every device. Adaptive resolution under load."
+      },
+      "noads": {
+        "title": "No ads in match",
+        "body": "We never interrupt a fight. Optional rewarded ads only between matches."
+      },
+      "crosssync": {
+        "title": "Cross-progress",
+        "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac."
+      },
+      "footprint": {
+        "title": "Tiny footprint",
+        "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old."
+      }
     },
     "qr": {
       "badge": "FASTEST WAY ON MOBILE",
@@ -189,10 +250,22 @@
     "reqsTitle": "System requirements",
     "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
     "reqs": {
-      "cpu":      { "label": "CPU",      "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen" },
-      "storage":  { "label": "Storage",  "val": "Up to 200 MB free space depending on platform" },
-      "network":  { "label": "Network",  "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G" },
-      "security": { "label": "Security", "val": "All installers code-signed. iOS notarized. Windows EV cert." }
+      "cpu": {
+        "label": "CPU",
+        "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen"
+      },
+      "storage": {
+        "label": "Storage",
+        "val": "Up to 200 MB free space depending on platform"
+      },
+      "network": {
+        "label": "Network",
+        "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G"
+      },
+      "security": {
+        "label": "Security",
+        "val": "All installers code-signed. iOS notarized. Windows EV cert."
+      }
     },
     "finalTitle": "200+ skins waiting.",
     "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
@@ -482,7 +555,8 @@
       "trophies": "Trophies",
       "bestScore": "Best Score",
       "kills": "Kills",
-      "country": "Country"
+      "country": "Country",
+      "games": "Games"
     },
     "empty": "Rankings are warming up. Check back in a moment.",
     "selectCountry": "Select a country",

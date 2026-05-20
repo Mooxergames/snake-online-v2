@@ -146,7 +146,8 @@
       "trophies": "Trophäen",
       "bestScore": "Bester Score",
       "kills": "Kills",
-      "country": "Land"
+      "country": "Land",
+      "games": "Spiele"
     },
     "empty": "Ranglisten werden geladen. Schau gleich nochmal.",
     "selectCountry": "Land wählen",

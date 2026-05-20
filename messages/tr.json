@@ -96,34 +96,83 @@
   "skinTemplates": {
     "descriptionCountry": "{country} ülke yılan skini — bayrağını arenaya çıkar. Snake Online'daki 180+ ülke özel skininden biri.",
     "descriptionFantasy": {
-      "mythic":    "{name} — mitik kademe fantastik yılan skini. Yalnızca üst seviye turnuva finallerinde düşer.",
+      "mythic": "{name} — mitik kademe fantastik yılan skini. Yalnızca üst seviye turnuva finallerinde düşer.",
       "legendary": "{name} — efsanevi kademe fantastik yılan skini. Geç oyun arenasında dövülmüş. Kazanması zor, korumak daha zor.",
-      "epic":      "{name} — epik kademe fantastik yılan skini. Sürekli sıralama tırmanışı ile kazanılır.",
-      "rare":      "{name} — nadir kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
-      "common":    "{name} — sıradan kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
+      "epic": "{name} — epik kademe fantastik yılan skini. Sürekli sıralama tırmanışı ile kazanılır.",
+      "rare": "{name} — nadir kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
+      "common": "{name} — sıradan kademe fantastik yılan skini. Tırmanışta güvenilir bir yoldaş.",
       "exclusive": "{name} — özel fantastik yılan skini. Sınırlı süreli etkinlik ödülü."
     },
     "obtainHintCountry": "{country} üzerinden bağlandığında otomatik olarak verilir veya herhangi bir ülke turnuvasını kazanarak kalıcı olarak açılır.",
     "obtainHintFantasy": {
-      "mythic":    "Aylık Mitik Arena turnuvasında ilk 3'e girerek kazanılır.",
+      "mythic": "Aylık Mitik Arena turnuvasında ilk 3'e girerek kazanılır.",
       "legendary": "Küresel sıralamada ilk %1'e bir kez ulaştığında verilir.",
-      "epic":      "50 kupa eşiği ve üzerinde açılır.",
-      "rare":      "Başlangıç kadrosunda mevcut.",
-      "common":    "Başlangıç kadrosunda mevcut.",
+      "epic": "50 kupa eşiği ve üzerinde açılır.",
+      "rare": "Başlangıç kadrosunda mevcut.",
+      "common": "Başlangıç kadrosunda mevcut.",
       "exclusive": "Sınırlı süreli etkinlik düşüşü."
     },
     "countries": {
-      "AE": "Birleşik Arap Emirlikleri", "AR": "Arjantin", "AT": "Avusturya", "AU": "Avustralya", "AZ": "Azerbaycan",
-      "BE": "Belçika", "BG": "Bulgaristan", "BR": "Brezilya", "CA": "Kanada", "CH": "İsviçre", "CL": "Şili",
-      "CN": "Çin", "CO": "Kolombiya", "CZ": "Çek Cumhuriyeti", "DE": "Almanya", "DK": "Danimarka", "EG": "Mısır",
-      "ES": "İspanya", "FI": "Finlandiya", "FR": "Fransa", "GB": "Birleşik Krallık", "GR": "Yunanistan", "HR": "Hırvatistan",
-      "HU": "Macaristan", "ID": "Endonezya", "IE": "İrlanda", "IL": "İsrail", "IN": "Hindistan", "IR": "İran",
-      "IT": "İtalya", "JP": "Japonya", "KR": "Güney Kore", "MX": "Meksika", "MY": "Malezya", "NG": "Nijerya",
-      "NL": "Hollanda", "NO": "Norveç", "NZ": "Yeni Zelanda", "PE": "Peru", "PH": "Filipinler",
-      "PK": "Pakistan", "PL": "Polonya", "PT": "Portekiz", "QA": "Katar", "RO": "Romanya", "RS": "Sırbistan",
-      "RU": "Rusya", "SA": "Suudi Arabistan", "SE": "İsveç", "SG": "Singapur", "SK": "Slovakya", "TH": "Tayland",
-      "TR": "Türkiye", "TW": "Tayvan", "UA": "Ukrayna", "US": "Amerika Birleşik Devletleri", "USA": "Amerika Birleşik Devletleri",
-      "VE": "Venezuela", "VN": "Vietnam", "ZA": "Güney Afrika"
+      "AE": "Birleşik Arap Emirlikleri",
+      "AR": "Arjantin",
+      "AT": "Avusturya",
+      "AU": "Avustralya",
+      "AZ": "Azerbaycan",
+      "BE": "Belçika",
+      "BG": "Bulgaristan",
+      "BR": "Brezilya",
+      "CA": "Kanada",
+      "CH": "İsviçre",
+      "CL": "Şili",
+      "CN": "Çin",
+      "CO": "Kolombiya",
+      "CZ": "Çek Cumhuriyeti",
+      "DE": "Almanya",
+      "DK": "Danimarka",
+      "EG": "Mısır",
+      "ES": "İspanya",
+      "FI": "Finlandiya",
+      "FR": "Fransa",
+      "GB": "Birleşik Krallık",
+      "GR": "Yunanistan",
+      "HR": "Hırvatistan",
+      "HU": "Macaristan",
+      "ID": "Endonezya",
+      "IE": "İrlanda",
+      "IL": "İsrail",
+      "IN": "Hindistan",
+      "IR": "İran",
+      "IT": "İtalya",
+      "JP": "Japonya",
+      "KR": "Güney Kore",
+      "MX": "Meksika",
+      "MY": "Malezya",
+      "NG": "Nijerya",
+      "NL": "Hollanda",
+      "NO": "Norveç",
+      "NZ": "Yeni Zelanda",
+      "PE": "Peru",
+      "PH": "Filipinler",
+      "PK": "Pakistan",
+      "PL": "Polonya",
+      "PT": "Portekiz",
+      "QA": "Katar",
+      "RO": "Romanya",
+      "RS": "Sırbistan",
+      "RU": "Rusya",
+      "SA": "Suudi Arabistan",
+      "SE": "İsveç",
+      "SG": "Singapur",
+      "SK": "Slovakya",
+      "TH": "Tayland",
+      "TR": "Türkiye",
+      "TW": "Tayvan",
+      "UA": "Ukrayna",
+      "US": "Amerika Birleşik Devletleri",
+      "USA": "Amerika Birleşik Devletleri",
+      "VE": "Venezuela",
+      "VN": "Vietnam",
+      "ZA": "Güney Afrika"
     }
   },
   "downloadsPage": {
@@ -174,10 +223,22 @@
     "whyEyebrow": "NEDEN YERLİ UYGULAMA",
     "whyTitle": "Daha akıcı, daha hızlı, tamamen senin.",
     "features": {
-      "fps":       { "title": "60 FPS sabit",       "body": "Her cihazda akıcı hareket. Yük altında uyarlanır çözünürlük." },
-      "noads":     { "title": "Maç içinde reklam yok", "body": "Asla maçını bölmeyiz. Maçlar arasında isteğe bağlı ödüllü reklam." },
-      "crosssync": { "title": "Platformlar arası senkron", "body": "Kupa, skin ve rütbe iOS, Android, Web, Windows ve Mac arasında senkron." },
-      "footprint": { "title": "Küçük boyut",        "body": "200 MB altı. 5 yaşındaki telefonlarda bile çalışır." }
+      "fps": {
+        "title": "60 FPS sabit",
+        "body": "Her cihazda akıcı hareket. Yük altında uyarlanır çözünürlük."
+      },
+      "noads": {
+        "title": "Maç içinde reklam yok",
+        "body": "Asla maçını bölmeyiz. Maçlar arasında isteğe bağlı ödüllü reklam."
+      },
+      "crosssync": {
+        "title": "Platformlar arası senkron",
+        "body": "Kupa, skin ve rütbe iOS, Android, Web, Windows ve Mac arasında senkron."
+      },
+      "footprint": {
+        "title": "Küçük boyut",
+        "body": "200 MB altı. 5 yaşındaki telefonlarda bile çalışır."
+      }
     },
     "qr": {
       "badge": "MOBİLDE EN HIZLI YOL",
@@ -188,10 +249,22 @@
     "reqsTitle": "Sistem gereksinimleri",
     "reqsSubtitle": "Tasarımı hafif — 5 yıllık bir telefonda bile çalışır.",
     "reqs": {
-      "cpu":      { "label": "İŞLEMCİ",  "val": "Dört çekirdek 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4. nesil" },
-      "storage":  { "label": "DEPOLAMA", "val": "Platforma göre 200 MB'a kadar boş alan" },
-      "network":  { "label": "AĞ",       "val": "5 Mbps kararlı bağlantı — Wi-Fi, 4G veya 5G" },
-      "security": { "label": "GÜVENLİK", "val": "Tüm kurulumlar kod imzalı. iOS notarize. Windows EV sertifikalı." }
+      "cpu": {
+        "label": "İŞLEMCİ",
+        "val": "Dört çekirdek 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4. nesil"
+      },
+      "storage": {
+        "label": "DEPOLAMA",
+        "val": "Platforma göre 200 MB'a kadar boş alan"
+      },
+      "network": {
+        "label": "AĞ",
+        "val": "5 Mbps kararlı bağlantı — Wi-Fi, 4G veya 5G"
+      },
+      "security": {
+        "label": "GÜVENLİK",
+        "val": "Tüm kurulumlar kod imzalı. iOS notarize. Windows EV sertifikalı."
+      }
     },
     "finalTitle": "200+ skin seni bekliyor.",
     "finalBody": "Arena her maçta daha çetin. Tahtın bir oyun ötede.",
@@ -386,7 +459,8 @@
       "trophies": "Kupa",
       "bestScore": "En İyi Skor",
       "kills": "Öldürme",
-      "country": "Ülke"
+      "country": "Ülke",
+      "games": "Oyunlar"
     },
     "empty": "Sıralamalar ısınıyor. Birazdan tekrar bak.",
     "selectCountry": "Ülke seç",

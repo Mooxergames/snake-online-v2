@@ -146,7 +146,8 @@
       "trophies": "Trofeos",
       "bestScore": "Mejor puntuación",
       "kills": "Muertes",
-      "country": "País"
+      "country": "País",
+      "games": "Partidas"
     },
     "empty": "El ranking se está calentando. Vuelve en un momento.",
     "selectCountry": "Selecciona un país",

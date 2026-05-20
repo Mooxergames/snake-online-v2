@@ -146,7 +146,8 @@
       "trophies": "Trophies",
       "bestScore": "Best Score",
       "kills": "Kills",
-      "country": "Country"
+      "country": "Country",
+      "games": "Permainan"
     },
     "empty": "Rankings are warming up. Check back in a moment.",
     "selectCountry": "Select a country",
