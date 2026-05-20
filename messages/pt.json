@@ -337,7 +337,7 @@
     "playStore": "Disponível no"
   },
   "marquee": {
-    "label": "Mais de 200 Skins Feitas à Mão"
+    "label": "Mais de 200 skins feitas à mão"
   },
   "bento": {
     "eyebrow": "POR QUE SNAKE ONLINE",
@@ -347,7 +347,7 @@
       "realtime": {
         "title": "Multiplayer Real em Tempo Real",
         "body": "Batalhe contra milhares de jogadores ao vivo — não bots. Servidores de borda em 12 regiões mantêm cada espiral, corte e armadilha perfeitamente sincronizados.",
-        "metric": "latência de ms",
+        "metric": "ms de latência",
         "regions": "12 regiões globais · 99,95% de uptime"
       },
       "skins": {
@@ -359,15 +359,15 @@
         "body": "Classificações por país e mundiais atualizadas a cada hora. Suba para o top 1% e reivindique seu trono."
       },
       "country": {
-        "title": "180+ Skins de Países",
+        "title": "Skins de 180+ Países",
         "body": "Mostre suas cores. Cada bandeira do mundo é uma skin utilizável — use a sua na batalha."
       },
       "tournaments": {
         "title": "Torneios Diários",
-        "body": "Entrada gratuita. Prêmios reais. Novos grupos a cada 24 horas."
+        "body": "Entrada gratuita. Prêmios reais. Novas chaves a cada 24 horas."
       },
       "crossplay": {
-        "title": "True Cross-Play",
+        "title": "Verdadeiro Cross-Play",
         "body": "Uma conta. iOS, Android, Web. Seu progresso, skins e classificação te acompanham."
       },
       "fairplay": {
@@ -376,7 +376,7 @@
       },
       "community": {
         "title": "5M+ Nação Snake",
-        "body": "Discord, torneios, criadores de conteúdo. A maior comunidade de cobras do mundo .io."
+        "body": "Discord, torneios, criadores de conteúdo. A maior comunidade de cobras no mundo .io."
       }
     }
   },
@@ -432,43 +432,43 @@
     "items": {
       "whatIsIt": {
         "q": "O que é Snake Online?",
-        "a": "Snake Online é um battle royale de cobra multiplayer .io em tempo real e gratuito. Enrole os oponentes, coma suas esferas, suba na tabela de classificação global. Mais de 200 skins colecionáveis, mais de 180 tabelas de classificação por país, disponível no iOS, Android e em qualquer navegador moderno."
+        "a": "Snake Online é um battle royale .io de serpentes multiplayer em tempo real e gratuito. Enrole os oponentes, coma suas orbs, suba no ranking global. Mais de 200 skins colecionáveis, 180+ rankings de países, disponível em iOS, Android e em qualquer navegador web moderno."
       },
       "isItFree": {
         "q": "Snake Online é realmente gratuito?",
-        "a": "Sim. Gratuito para sempre, sem necessidade de cadastro para jogar no navegador. Não há barreiras de pagamento e nenhuma vantagem de pagar para ganhar — as skins são puramente cosméticas e a maioria pode ser conquistada jogando."
+        "a": "Sim. Gratuito para sempre, sem necessidade de cadastro para jogar no navegador. Não há paywalls e nenhuma vantagem pay-to-win — as skins são puramente cosméticas e a maioria pode ser conquistada jogando."
       },
       "doINeedToDownload": {
         "q": "Preciso baixar algo?",
         "a": "Não para a web — basta clicar em Jogar e você estará na arena em segundos. Para dispositivos móveis, aplicativos nativos gratuitos estão disponíveis na App Store e no Google Play com a mesma progressão cruzada."
       },
       "howManySkins": {
-        "q": "Quantas skins de cobra existem?",
-        "a": "Mais de 200 skins feitas à mão em seis níveis de raridade: Comum, Rara, Épica, Lendária, Mítica e Exclusiva. Novos lançamentos sazonais todo mês — incluindo skins exclusivas de bandeira de país para mais de 180 nações."
+        "q": "Quantas skins de serpente existem?",
+        "a": "Mais de 200 skins feitas à mão em seis níveis de raridade: Comum, Rara, Épica, Lendária, Mítica e Exclusiva. Novos lançamentos sazonais todo mês — incluindo skins exclusivas de bandeira de país para 180+ nações."
       },
       "isItMultiplayer": {
         "q": "É verdade que é multiplayer em tempo real (sem bots)?",
-        "a": "Sim. Cada cobra na sua arena é um jogador humano real. Temos servidores de borda em 12 regiões globais para latência abaixo de 100ms, então enrolar, cortar e armar armadilhas parece instantâneo — sem atraso."
+        "a": "Sim. Cada serpente na sua arena é um jogador humano real. Temos servidores em 12 regiões globais para latência abaixo de 100ms, então enroladas, cortes e armadilhas parecem instantâneas — sem lag."
       },
       "whichDevices": {
-        "q": "Em quais dispositivos ele roda?",
-        "a": "Qualquer navegador web moderno (Chrome, Safari, Firefox, Edge), iPhone, iPad, telefones e tablets Android. Uma conta se sincroniza em todos eles."
+        "q": "Em quais dispositivos ele funciona?",
+        "a": "Qualquer navegador web moderno (Chrome, Safari, Firefox, Edge), iPhone, iPad, telefones e tablets Android. Uma conta sincroniza em todos eles."
       },
       "howToWin": {
-        "q": "Como eu fico maior mais rápido?",
-        "a": "Paciência e posicionamento vencem a agressão. Abrace o perímetro, colete esferas de eliminações, comprometa-se a uma armadilha de enrolamento apenas quando o alvo estiver preso em linha reta. O impulso queima massa — use-o com moderação, apenas para finalizar uma eliminação ou escapar."
+        "q": "Como fico maior mais rápido?",
+        "a": "Paciência e posicionamento vencem a agressão. Fique perto da borda, colete orbs de eliminações, comprometa-se a uma armadilha de enrolada apenas quando o alvo estiver em linha reta. O boost consome massa — use-o com moderação, apenas para finalizar uma eliminação ou escapar."
       },
       "vsWormzone": {
         "q": "Como Snake Online é diferente de Worms Zone?",
-        "a": "Worms Zone é principalmente um jogo para um jogador contra bots de IA, apenas em inglês, sem tabela de classificação pública ou versão web. Snake Online é multiplayer em tempo real contra humanos, suporta 14 idiomas, tem uma tabela de classificação global ao vivo e roda nativamente no navegador com progressão cruzada para dispositivos móveis."
+        "a": "Worms Zone é principalmente um jogo para um jogador contra bots de IA, apenas em inglês, sem ranking público ou versão web. Snake Online é multiplayer em tempo real contra humanos, suporta 14 idiomas, tem um ranking global ao vivo e roda nativamente no navegador com progressão cruzada para dispositivos móveis."
       },
       "vsSlither": {
         "q": "Como é diferente de Slither.io?",
-        "a": "Snake Online mantém os controles intuitivos de Slither, mas adiciona: mais de 200 skins colecionáveis (contra cerca de 50 de Slither), mais de 180 tabelas de classificação por país, torneios diários, classificações públicas atualizadas a cada hora e progressão completa entre plataformas. Progressão apenas por habilidade — sem pagar para ganhar."
+        "a": "Snake Online mantém os controles intuitivos de Slither, mas adiciona: mais de 200 skins colecionáveis (contra ~50 de Slither), 180+ rankings de países, torneios diários, rankings públicos atualizados a cada hora e progressão completa entre plataformas. Progressão apenas por habilidade — sem pay-to-win."
       },
       "progressSync": {
-        "q": "Meu progresso se sincroniza entre dispositivos?",
-        "a": "Sim. Faça login uma vez e seus troféus, skins, amigos e inscrições em torneios te seguem automaticamente entre iOS, Android e web."
+        "q": "Meu progresso sincroniza entre dispositivos?",
+        "a": "Sim. Faça login uma vez e seus troféus, skins, amigos e entradas de torneio te seguem entre iOS, Android e web automaticamente."
       }
     }
   },
@@ -514,24 +514,24 @@
     "wormzone": {
       "title": "Snake Online vs Worms Zone .io",
       "seoTitle": "Snake Online vs Worms Zone .io — Qual Jogo de Cobra Vence em 2026?",
-      "seoDescription": "Comparação completa: Snake Online e Worms Zone .io cara a cara. Multiplayer em tempo real vs bots, mais de 200 vs 80 skins, 14 idiomas vs 1, leaderboard público vs nenhum. Veja por que os jogadores estão mudando.",
-      "lead": "Worms Zone .io apresentou milhões ao gênero de cobra .io — mas a experiência é principalmente para um jogador contra bots, apenas em inglês, e o site de marketing não possui dados estruturados. Snake Online reconstruiu o gênero como um verdadeiro multiplayer em tempo real com rankings globais, 14 idiomas e uma economia de skins transparente. Aqui está o confronto, recurso por recurso.",
-      "verdict": "Veredicto: se você quer a sensação casual de desenho animado contra IA, Worms Zone ainda funciona. Se você quer oponentes reais, leaderboards reais e uma progressão real entre plataformas, Snake Online é a atualização."
+      "seoDescription": "Comparação completa: Snake Online e Worms Zone .io lado a lado. Multiplayer em tempo real vs bots, mais de 200 vs 80 skins, 14 idiomas vs 1, ranking público vs nenhum. Veja por que os jogadores estão mudando.",
+      "lead": "Worms Zone .io apresentou milhões ao gênero de cobra .io — mas a experiência é principalmente para um jogador contra bots, apenas em inglês, e o site de marketing não possui dados estruturados. Snake Online reconstruiu o gênero como um verdadeiro multiplayer em tempo real com rankings globais, 14 idiomas e uma economia de skins transparente. Aqui está a comparação, recurso por recurso.",
+      "verdict": "Veredicto: se você quer a sensação casual de desenho animado contra IA, Worms Zone ainda funciona. Se você quer oponentes reais, rankings reais e uma progressão real entre plataformas, Snake Online é a atualização."
     },
     "slither": {
       "title": "Snake Online vs Slither.io",
       "seoTitle": "Snake Online vs Slither.io — Comparação Completa de Recursos",
-      "seoDescription": "Snake Online vs Slither.io: mais de 200 skins colecionáveis, leaderboards horárias, torneios diários, 14 idiomas, sincronização entre plataformas. Tudo o que os jogadores de Slither estavam esperando.",
-      "lead": "Slither.io definiu o gênero de cobra .io em 2016 — minimalista, viciante, instantâneo. Snake Online mantém essa sensação intuitiva e adiciona as coisas que Slither nunca lançou: mais de 200 skins colecionáveis, um leaderboard global público atualizado a cada hora, torneios diários, aplicativos móveis nativos com progressão cruzada e 14 idiomas com SEO localizado adequado.",
+      "seoDescription": "Snake Online vs Slither.io: mais de 200 skins colecionáveis, rankings horários, torneios diários, 14 idiomas, sincronização entre plataformas. Tudo o que os jogadores de Slither estavam esperando.",
+      "lead": "Slither.io definiu o gênero de cobra .io em 2016 — minimalista, viciante, instantâneo. Snake Online mantém essa sensação intuitiva e adiciona as coisas que Slither nunca lançou: mais de 200 skins colecionáveis, um ranking global público atualizado a cada hora, torneios diários, aplicativos móveis nativos com progressão cruzada e 14 idiomas com SEO localizado adequado.",
       "verdict": "Veredicto: Slither continua sendo o original do gênero. Snake Online é o que Slither seria se tivesse sido lançado em 2026 — mesmos controles, profundidade moderna."
     }
   },
   "howToPlay": {
     "eyebrow": "GUIA PARA INICIANTES",
     "title": "Como jogar Snake Online.",
-    "seoTitle": "Como Jogar Snake Online — Guia para Iniciantes em 5 Minutos",
-    "seoDescription": "Guia passo a passo para jogar Snake Online: controles, comer, impulso, armadilhas em espiral e subir no ranking. Grátis em qualquer navegador moderno.",
-    "lead": "Snake Online foi criado para partidas rápidas de trinta segundos e horas de maestria profunda. O básico cabe em uma tela — leia uma vez e depois é pura memória muscular. Aqui está tudo que você precisa para passar de novo jogador para o top 10%.",
+    "seoTitle": "Como Jogar Snake Online — Guia para Iniciantes de 5 Minutos",
+    "seoDescription": "Guia passo a passo para jogar Snake Online: controles, comer, impulso, armadilhas em espiral e subir na classificação. Grátis em qualquer navegador moderno.",
+    "lead": "Snake Online é feito para partidas rápidas de trinta segundos e horas de maestria. O básico cabe em uma tela — leia uma vez, depois é pura memória muscular. Aqui está tudo que você precisa para passar de novo jogador para o top 10%.",
     "playNow": "Jogue grátis agora",
     "browseSkins": "Navegar por skins",
     "readyTitle": "Pronto para deslizar?",
@@ -539,31 +539,31 @@
     "steps": {
       "enter": {
         "title": "Clique em Jogar — você está na arena instantaneamente.",
-        "body": "Clique em Jogue Grátis Agora. Sem cadastro, sem instalação. Você aparecerá em uma arena ao vivo com jogadores reais em segundos. Escolha uma skin de cobra (disponíveis as iniciais gratuitas) e uma região — regiões mais próximas significam menor latência."
+        "body": "Clique em Jogue Grátis Agora. Sem cadastro, sem instalação. Você aparecerá em uma arena ao vivo com jogadores reais em segundos. Escolha uma skin de cobra (as iniciais são gratuitas) e uma região — regiões mais próximas significam menor latência."
       },
       "move": {
         "title": "Dirija com o mouse ou o polegar.",
-        "body": "No desktop, a cabeça da sua cobra segue o cursor. No celular, arraste em qualquer lugar da tela para dirigir. A cobra nunca para de se mover — seu único trabalho é a direção. Tente arcos largos e suaves em vez de curvas acentuadas: você desperdiça menos impulso e pode reagir mais rápido."
+        "body": "No desktop, a cabeça da sua cobra segue o cursor. No celular, arraste em qualquer lugar da tela para dirigir. A cobra nunca para de se mover — seu único trabalho é a direção. Tente arcos largos e suaves em vez de curvas acentuadas: você perde menos impulso e pode reagir mais rápido."
       },
       "eat": {
         "title": "Coma orbes para crescer.",
-        "body": "Pequenos orbes brilhantes estão espalhados pelo mapa. Passe por cima deles para crescer mais e marcar pontos. Orbes maiores (de cobras que morreram) proporcionam um crescimento massivo — mas são iscas. Outras cobras sempre correm para eles. Pegue-os apenas quando tiver uma fuga clara."
+        "body": "Pequenos orbes brilhantes estão espalhados pelo mapa. Passe por eles para crescer e marcar pontos. Orbes maiores (de cobras que morreram) proporcionam um crescimento massivo — mas são iscas. Outras cobras sempre correm para eles. Pegue-os apenas quando tiver uma fuga clara."
       },
       "boost": {
         "title": "O impulso queima massa — use-o sabiamente.",
-        "body": "Mantenha o clique esquerdo (ou toque e segure no celular) para impulsionar. Você se move ~50% mais rápido, mas perde massa a cada segundo. Duas utilizações reais: para fechar um abate (corte na frente de um alvo) e para escapar de uma armadilha. Nunca impulsione apenas para parecer rápido — é caro."
+        "body": "Mantenha o clique esquerdo (ou toque e segure no celular) para impulsionar. Você se move ~50% mais rápido, mas perde massa a cada segundo. Duas utilizações reais: para fechar um abate (cortar na frente de um alvo) e para escapar de uma armadilha. Nunca impulsione apenas para parecer rápido — é caro."
       },
       "coil": {
         "title": "Armadilha em espiral para matar.",
-        "body": "Você morre se qualquer parte do seu corpo tocar a cabeça de outra cobra. Então, você não ultrapassa os oponentes — você faz com que eles colidam com você. O movimento clássico: impulsione à frente de uma cobra, depois enrole-se pelo caminho à frente dela. Eles colidem ou queimam massa para escapar."
+        "body": "Você morre se qualquer parte do seu corpo tocar a cabeça de outra cobra. Então, você não ultrapassa os oponentes — você faz com que eles colidam com você. O movimento clássico: impulsione à frente de uma cobra, depois enrosque-se pelo caminho à frente dela. Eles colidem ou queimam massa para escapar."
       },
       "survive": {
-        "title": "Sobreviva ao perímetro primeiro.",
+        "title": "Sobreviva à periferia primeiro.",
         "body": "A borda da arena é o lugar mais seguro para crescer — menos atacantes, limite previsível que você pode abraçar. Fique lá até estar no top 30%. O meio do mapa é onde campeões são eliminados por um Top 10 entediado."
       },
       "climb": {
-        "title": "Suba no ranking global.",
-        "body": "Troféus são concedidos por sobreviver mais tempo, marcar mais pontos e vencer cobras maiores. Os rankings são atualizados a cada hora — o top 1% ganha skins exclusivas. Os 3 melhores de qualquer ranking de país reivindicam a skin da bandeira do país para a próxima temporada."
+        "title": "Suba na classificação global.",
+        "body": "Troféus são concedidos por sobreviver mais tempo, marcar mais pontos e vencer cobras maiores. As classificações são atualizadas a cada hora — o top 1% ganha skins exclusivas. Os 3 melhores de qualquer classificação de país reivindicam a skin da bandeira do país para a próxima temporada."
       }
     }
   },
@@ -589,15 +589,15 @@
       },
       "strategy": {
         "title": "Estratégia",
-        "description": "Como vencer no Snake Online. Táticas, economia de impulso, mecânicas de armadilha em espiral, subidas na tabela de classificação."
+        "description": "Como vencer no Snake Online. Táticas, economia de impulso, mecânicas de armadilha em espiral, subidas no ranking."
       },
       "comparisons": {
         "title": "Comparações",
-        "description": "Avaliações cara a cara contra Worms Zone, Slither.io e o gênero mais amplo de .io de cobra."
+        "description": "Análises diretas contra Worms Zone, Slither.io e o gênero mais amplo de .io de cobras."
       },
       "updates": {
         "title": "Atualizações",
-        "description": "Notas de patch, novos lançamentos de skins, mudanças de balanceamento, bastidores do estúdio."
+        "description": "Notas de patch, novas skins, mudanças de balanceamento, bastidores do estúdio."
       },
       "community": {
         "title": "Comunidade",
@@ -605,12 +605,12 @@
       },
       "lore": {
         "title": "Lore",
-        "description": "O mundo por trás da arena. Mitologia da cobra, histórias de origem das skins, narrativas profundas."
+        "description": "O mundo por trás da arena. Mitologia das cobras, histórias de origem das skins, narrativas profundas."
       }
     }
   },
   "downloadsPage": {
-    "eyebrow": "JOGUE SNAKE ONLINE",
+    "eyebrow": "BAIXE SNAKE ONLINE",
     "titleLead": "Cinco plataformas.",
     "titleAccent": "Uma arena. Zero custo.",
     "subtitle": "Gratuito para sempre. Sem pay-to-win. Mesmos troféus, skins e classificação em iOS, Android, Web, Windows e macOS — uma conta em todos os lugares.",
@@ -618,12 +618,12 @@
       "free": "Gratuito para sempre",
       "cosmetics": "Apenas cosméticos, sem pay-to-win",
       "crossplay": "Progresso entre plataformas",
-      "lightweight": "Funciona em celulares de 5 anos atrás"
+      "lightweight": "Funciona em celulares de 5 anos"
     },
     "web": {
       "badge": "RECOMENDADO · INSTANTÂNEO",
       "title": "Jogue instantaneamente no seu navegador",
-      "body": "Sem instalação, sem cadastro, sem espera. Abre em tela cheia no Chrome, Safari, Firefox, Edge — mesma arena que os apps, mesmas skins, mesma classificação.",
+      "body": "Sem instalação, sem cadastro, sem espera. Abre em tela cheia no Chrome, Safari, Firefox, Edge — mesma arena que os aplicativos, mesmas skins, mesma classificação.",
       "cta": "Iniciar versão web"
     },
     "platformsTitle": "Escolha sua plataforma",
@@ -631,13 +631,13 @@
     "platforms": {
       "ios": {
         "title": "iPhone & iPad",
-        "sub": "Requer iOS 13.0 ou posterior · App universal",
+        "sub": "Requer iOS 13.0 ou posterior · Aplicativo universal",
         "cta": "Baixe na App Store",
         "caption": "Baixe na"
       },
       "android": {
         "title": "Celulares e tablets Android",
-        "sub": "Requer Android 8.0 ou posterior · Compras no app gratuitas opcionais",
+        "sub": "Requer Android 8.0 ou posterior · Compras dentro do aplicativo opcionais",
         "cta": "Obtenha no Google Play",
         "caption": "Obtenha no"
       },
@@ -654,12 +654,12 @@
         "caption": "Baixe na"
       }
     },
-    "whyEyebrow": "POR QUE O APP NATIVE",
+    "whyEyebrow": "POR QUE O APLICATIVO NATIVE",
     "whyTitle": "Mais suave, mais rápido, seu.",
     "features": {
       "fps": {
-        "title": "60 FPS travado",
-        "body": "Movimento suave como manteiga em todos os dispositivos. Resolução adaptativa sob carga."
+        "title": "60 FPS bloqueados",
+        "body": "Movimento suave em todos os dispositivos. Resolução adaptativa sob carga."
       },
       "noads": {
         "title": "Sem anúncios na partida",
@@ -677,8 +677,8 @@
     "qr": {
       "badge": "MAIOR VELOCIDADE NO MÓVEL",
       "title": "Escaneie, instale, deslize.",
-      "body": "Aponte a câmera do seu celular para o QR. Nós o levaremos automaticamente para a loja certa.",
-      "alt": "Código QR vinculando à página de downloads do Snake Online"
+      "body": "Aponte a câmera do seu celular para o QR. Nós te levaremos automaticamente para a loja certa.",
+      "alt": "Código QR ligando à página de downloads do Snake Online"
     },
     "reqsTitle": "Requisitos do sistema",
     "reqsSubtitle": "Leve por design — funciona em um celular de 5 anos.",
@@ -705,20 +705,21 @@
     "finalCta": "Entre na arena"
   },
   "skinTemplates": {
-    "descriptionCountry": "A pele de cobra do país {country} — mostre sua bandeira na arena. Uma das 180+ skins nacionais exclusivas em Snake Online.",
+    "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
+    "descriptionCountry": "A skin de cobra do país {country} — exiba sua bandeira na arena. Um dos 180+ skins nacionais exclusivos em Snake Online.",
     "descriptionFantasy": {
-      "mythic": "{name} — uma pele de cobra de fantasia de nível mítico. Cai apenas durante as finais de torneios de alto nível.",
-      "legendary": "{name} — uma pele de cobra de fantasia de nível lendário. Forjada na arena do final do jogo. Dura para conquistar, mais difícil de manter.",
-      "epic": "{name} — uma pele de cobra de fantasia de nível épico. Conquistada através de uma escalada sustentada na tabela de classificação.",
-      "rare": "{name} — uma pele de cobra de fantasia de nível raro. Um companheiro confiável para a escalada.",
-      "common": "{name} — uma pele de cobra de fantasia de nível comum. Um companheiro confiável para a escalada.",
-      "exclusive": "{name} — uma pele de cobra de fantasia exclusiva. Recompensa de evento por tempo limitado."
+      "mythic": "{name} — uma skin de cobra de fantasia de nível mítico. Obtida apenas durante as finais de torneios de alto nível.",
+      "legendary": "{name} — uma skin de cobra de fantasia de nível lendário. Forjada na arena do final do jogo. Dura de conquistar, mais difícil de manter.",
+      "epic": "{name} — uma skin de cobra de fantasia de nível épico. Conquistada através de uma escalada sustentada na tabela de líderes.",
+      "rare": "{name} — uma skin de cobra de fantasia de nível raro. Um companheiro confiável para a escalada.",
+      "common": "{name} — uma skin de cobra de fantasia de nível comum. Um companheiro confiável para a escalada.",
+      "exclusive": "{name} — uma skin de cobra de fantasia exclusiva. Recompensa de evento por tempo limitado."
     },
     "obtainHintCountry": "Concedida automaticamente quando você se conecta de {country}, ou desbloqueada permanentemente ao vencer qualquer torneio do país.",
     "obtainHintFantasy": {
-      "mythic": "Ganha ao ficar entre os 3 primeiros em qualquer torneio mensal da Mythic Arena.",
-      "legendary": "Concedida por alcançar o Top 1% na tabela de classificação global uma vez.",
-      "epic": "Desbloqueada ao atingir o limite de 50 troféus e acima.",
+      "mythic": "Conquistada ao ficar entre os 3 primeiros em qualquer torneio mensal da Mythic Arena.",
+      "legendary": "Concedida por alcançar o Top 1% na tabela de líderes global uma vez.",
+      "epic": "Desbloqueada ao atingir o limite de 50 troféus ou mais.",
       "rare": "Disponível no elenco inicial.",
       "common": "Disponível no elenco inicial.",
       "exclusive": "Queda de evento por tempo limitado."
