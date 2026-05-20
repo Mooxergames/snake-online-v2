@@ -337,46 +337,46 @@
     "playStore": "받기"
   },
   "marquee": {
-    "label": "200+ Hand-Crafted Skins"
+    "label": "200개 이상의 수작업 스킨"
   },
   "bento": {
-    "eyebrow": "WHY SNAKE ONLINE",
-    "title": "Engineered for the\nmodern arena.",
-    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "eyebrow": "왜 Snake Online인가",
+    "title": "현대 아레나를 위해 설계됨.",
+    "subtitle": "모든 시스템, 모든 프레임, 모든 뱀 — 당신이 멈출 수 없도록 설계되었습니다.",
     "items": {
       "realtime": {
-        "title": "Real Real-Time Multiplayer",
-        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
-        "metric": "ms latency",
-        "regions": "12 global regions · 99.95% uptime"
+        "title": "실시간 멀티플레이어",
+        "body": "수천 명의 실시간 플레이어와 전투 — 봇이 아닙니다. 12개 지역의 엣지 서버가 모든 코일, 컷, 트랩을 완벽하게 동기화합니다.",
+        "metric": "ms 지연 시간",
+        "regions": "12개 글로벌 지역 · 99.95% 가동 시간"
       },
       "skins": {
-        "title": "Hand-crafted Skins",
-        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+        "title": "수제 스킨",
+        "body": "여섯 가지 희귀도 등급. 국가 깃발, 신화의 드래곤, 네온 뱀. 유료 승리 없음 — 실력이 결정합니다."
       },
       "leaderboards": {
-        "title": "Global Leaderboards",
-        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+        "title": "글로벌 리더보드",
+        "body": "국가별 및 전 세계 순위가 매시간 새로 고쳐집니다. 상위 1%에 올라 왕좌를 차지하세요."
       },
       "country": {
-        "title": "180+ Country Skins",
-        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+        "title": "180개 이상의 국가 스킨",
+        "body": "당신의 색을 자랑하세요. 세계의 모든 깃발이 착용 가능한 스킨입니다 — 전투에 당신의 깃발을 착용하세요."
       },
       "tournaments": {
-        "title": "Daily Tournaments",
-        "body": "Free entry. Real prizes. New brackets every 24 hours."
+        "title": "일일 토너먼트",
+        "body": "무료 참가. 실제 상품. 매 24시간마다 새로운 브래킷."
       },
       "crossplay": {
-        "title": "True Cross-Play",
-        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+        "title": "진정한 크로스 플레이",
+        "body": "하나의 계정. iOS, Android, 웹. 당신의 진행 상황, 스킨, 순위가 따라옵니다."
       },
       "fairplay": {
-        "title": "Zero Pay-to-Win",
-        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+        "title": "제로 유료 승리",
+        "body": "화장품만. 리더보드는 반사 신경에 의해 결정되며, 지갑에 의해 결정되지 않습니다."
       },
       "community": {
-        "title": "5M+ Snake Nation",
-        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+        "title": "500만 이상의 뱀 국가",
+        "body": "Discord, 토너먼트, 콘텐츠 제작자. .io 세계에서 가장 큰 뱀 커뮤니티입니다."
       }
     }
   },
@@ -426,49 +426,49 @@
     "cellNo": "없음"
   },
   "faq": {
-    "eyebrow": "FAQ",
-    "title": "Answers to everything.",
-    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "eyebrow": "자주 묻는 질문",
+    "title": "모든 것에 대한 답변.",
+    "subtitle": "진짜 플레이어의 진짜 질문. 여기 없는 질문이 있다면 지원팀에 문의하세요 — 우리는 모든 메시지를 읽습니다.",
     "items": {
       "whatIsIt": {
-        "q": "What is Snake Online?",
-        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+        "q": "Snake Online이란 무엇인가요?",
+        "a": "Snake Online은 무료 실시간 멀티플레이어 .io 뱀 배틀 로얄 게임입니다. 상대를 감싸고, 그들의 구슬을 먹고, 글로벌 리더보드에서 올라가세요. 200개 이상의 수집 가능한 스킨과 180개 이상의 국가 리더보드가 있으며, iOS, Android 및 모든 최신 웹 브라우저에서 이용 가능합니다."
       },
       "isItFree": {
-        "q": "Is Snake Online really free?",
-        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+        "q": "Snake Online은 정말 무료인가요?",
+        "a": "네. 영원히 무료이며, 브라우저 플레이를 위해 가입이 필요하지 않습니다. 결제 장벽이 없고, 유료 승리의 이점도 없습니다 — 스킨은 순전히 미적 요소이며 대부분은 플레이를 통해 얻을 수 있습니다."
       },
       "doINeedToDownload": {
-        "q": "Do I need to download anything?",
-        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+        "q": "다운로드할 것이 필요한가요?",
+        "a": "웹에서는 필요 없습니다 — 그냥 플레이를 클릭하면 몇 초 안에 아레나에 들어갈 수 있습니다. 모바일에서는 App Store와 Google Play에서 무료 네이티브 앱을 이용할 수 있으며, 동일한 크로스 프로그레션이 지원됩니다."
       },
       "howManySkins": {
-        "q": "How many snake skins are there?",
-        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+        "q": "뱀 스킨은 얼마나 되나요?",
+        "a": "여섯 가지 희귀도 계층에 걸쳐 200개 이상의 수작업 스킨이 있습니다: 일반, 희귀, 에픽, 전설, 신화, 그리고 독점. 매달 새로운 시즌 드롭이 있으며 — 180개 이상의 국가 국기 독점 스킨도 포함됩니다."
       },
       "isItMultiplayer": {
-        "q": "Is it true real-time multiplayer (not bots)?",
-        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+        "q": "진짜 실시간 멀티플레이어(봇이 아님)인가요?",
+        "a": "네. 아레나의 모든 뱀은 실제 인간 플레이어입니다. 우리는 12개 글로벌 지역에 엣지 서버를 운영하여 100ms 이하의 지연 시간을 제공하므로, 감싸기, 자르기, 함정이 즉각적으로 느껴집니다 — 지연이 없습니다."
       },
       "whichDevices": {
-        "q": "Which devices does it run on?",
-        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+        "q": "어떤 기기에서 실행되나요?",
+        "a": "모든 최신 웹 브라우저(Chrome, Safari, Firefox, Edge), iPhone, iPad, Android 휴대폰 및 태블릿에서 실행됩니다. 하나의 계정으로 모든 기기에서 동기화됩니다."
       },
       "howToWin": {
-        "q": "How do I get bigger faster?",
-        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+        "q": "더 빨리 커지려면 어떻게 해야 하나요?",
+        "a": "인내와 위치 선정이 공격보다 우선합니다. 주변을 붙잡고, 처치한 적의 구슬을 scavenging하며, 목표가 직선으로 고정될 때만 감싸기 함정에 전념하세요. 부스트는 질량을 소모하므로, 처치하거나 탈출할 때만 아껴서 사용하세요."
       },
       "vsWormzone": {
-        "q": "How is Snake Online different from Worms Zone?",
-        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+        "q": "Snake Online은 Worms Zone과 어떻게 다른가요?",
+        "a": "Worms Zone은 주로 AI 봇과의 싱글 플레이어 게임이며, 영어 전용이고, 공개 리더보드나 웹 버전이 없습니다. Snake Online은 인간과의 실시간 멀티플레이어 게임이며, 14개 언어를 지원하고, 실시간 글로벌 리더보드가 있으며, 브라우저에서 네이티브로 실행되고 모바일과의 크로스 프로그레션이 가능합니다."
       },
       "vsSlither": {
-        "q": "How is it different from Slither.io?",
-        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+        "q": "Slither.io와는 어떻게 다른가요?",
+        "a": "Snake Online은 Slither의 직관적인 조작 방식을 유지하지만, 200개 이상의 수집 가능한 스킨(슬리더의 ~50개에 비해), 180개 이상의 국가 리더보드, 일일 토너먼트, 매시간 업데이트되는 공개 순위, 그리고 완전한 크로스 플랫폼 프로그레션을 추가합니다. 기술 기반의 프로그레션 — 유료 승리는 없습니다."
       },
       "progressSync": {
-        "q": "Does my progress sync across devices?",
-        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+        "q": "내 진행 상황이 기기 간에 동기화되나요?",
+        "a": "네. 한 번 로그인하면 당신의 트로피, 스킨, 친구 및 토너먼트 참가가 iOS, Android 및 웹 간에 자동으로 따라옵니다."
       }
     }
   },
@@ -508,283 +508,283 @@
     "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
   },
   "versus": {
-    "eyebrow": "VS COMPARISON",
-    "playFreeNow": "Play Snake Online free",
-    "viewAllSkins": "Browse 200+ snake skins",
+    "eyebrow": "VS 비교",
+    "playFreeNow": "Snake Online을 무료로 플레이하세요",
+    "viewAllSkins": "200개 이상의 뱀 스킨 둘러보기",
     "wormzone": {
       "title": "Snake Online vs Worms Zone .io",
-      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
-      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
-      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
-      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+      "seoTitle": "Snake Online vs Worms Zone .io — 2026년 어떤 뱀 게임이 승리할까요?",
+      "seoDescription": "전체 비교: Snake Online과 Worms Zone .io의 정면 대결. 실시간 멀티플레이어 vs 봇, 200개+ vs 80개 스킨, 14개 언어 vs 1개, 공개 리더보드 vs 없음. 플레이어들이 왜 전환하고 있는지 확인하세요.",
+      "lead": "Worms Zone .io는 수백만 명에게 뱀 .io 장르를 소개했지만, 경험은 주로 봇과의 싱글 플레이어로, 영어 전용이며, 마케팅 사이트에는 구조화된 데이터가 전혀 없습니다. Snake Online은 진정한 실시간 멀티플레이어로 장르를 재구성하여 글로벌 랭킹, 14개 언어, 투명한 스킨 경제를 제공합니다. 여기에 기능별 정면 대결이 있습니다.",
+      "verdict": "결론: AI와의 캐주얼한 만화 느낌을 원한다면 Worms Zone이 여전히 효과적입니다. 실제 상대, 실제 리더보드, 그리고 실제 크로스 플랫폼 진행을 원한다면 Snake Online이 업그레이드입니다."
     },
     "slither": {
       "title": "Snake Online vs Slither.io",
-      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
-      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
-      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
-      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+      "seoTitle": "Snake Online vs Slither.io — 전체 기능 비교",
+      "seoDescription": "Snake Online vs Slither.io: 200개 이상의 수집 가능한 스킨, 시간별 리더보드, 일일 토너먼트, 14개 언어, 크로스 플랫폼 동기화. Slither 플레이어들이 기다려온 모든 것.",
+      "lead": "Slither.io는 2016년에 .io 뱀 장르를 정의했습니다 — 미니멀리즘, 중독성, 즉각적입니다. Snake Online은 그 직관적인 느낌을 유지하면서 Slither가 결코 제공하지 않았던 것들을 추가했습니다: 200개 이상의 수집 가능한 스킨, 매시간 업데이트되는 공개 글로벌 리더보드, 일일 토너먼트, 크로스 진행이 가능한 네이티브 모바일 앱, 그리고 적절한 지역화 SEO가 포함된 14개 언어.",
+      "verdict": "결론: Slither는 여전히 장르의 원조입니다. Snake Online은 Slither가 2026년에 출시되었다면 어떤 모습일지 보여줍니다 — 동일한 조작, 현대적인 깊이."
     }
   },
   "howToPlay": {
-    "eyebrow": "BEGINNER GUIDE",
-    "title": "How to play Snake Online.",
-    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
-    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
-    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
-    "playNow": "Play free now",
-    "browseSkins": "Browse skins",
-    "readyTitle": "Ready to slither?",
-    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "eyebrow": "초보자 가이드",
+    "title": "Snake Online 플레이하는 방법.",
+    "seoTitle": "Snake Online 플레이하는 방법 — 5분 초보자 가이드",
+    "seoDescription": "Snake Online을 플레이하는 단계별 가이드: 조작, 먹기, 부스트, 코일-트랩, 리더보드 오르기. 모든 현대 브라우저에서 무료로 이용 가능합니다.",
+    "lead": "Snake Online은 30초 동안의 짧은 플레이와 수시간에 걸친 마스터리를 위해 설계되었습니다. 기본 사항은 한 화면에 담길 수 있습니다 — 한 번 읽고 나면 순전히 근육 기억으로 남습니다. 새로운 플레이어에서 상위 10%로 가기 위해 필요한 모든 것이 여기에 있습니다.",
+    "playNow": "지금 무료로 플레이하기",
+    "browseSkins": "스킨 둘러보기",
+    "readyTitle": "슬리더를 준비하시겠습니까?",
+    "readyBody": "다운로드나 가입이 필요 없습니다. 플레이를 클릭하면 몇 초 안에 아레나에 들어갑니다.",
     "steps": {
       "enter": {
-        "title": "Hit Play — you're in the arena instantly.",
-        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+        "title": "플레이를 클릭하세요 — 즉시 아레나에 들어갑니다.",
+        "body": "지금 무료로 플레이하기를 클릭하세요. 가입이나 설치가 필요 없습니다. 몇 초 안에 실제 플레이어가 있는 라이브 아레나에 스폰됩니다. 뱀 스킨을 선택하세요 (무료 스타터 스킨이 제공됩니다) 그리고 지역을 선택하세요 — 가까운 지역일수록 지연 시간이 짧습니다."
       },
       "move": {
-        "title": "Steer with your mouse or thumb.",
-        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+        "title": "마우스나 엄지로 조종하세요.",
+        "body": "데스크탑에서는 뱀의 머리가 커서를 따라갑니다. 모바일에서는 화면의 아무 곳이나 드래그하여 조종하세요. 뱀은 절대 멈추지 않습니다 — 당신의 유일한 임무는 방향입니다. 날카로운 회전보다는 넓고 부드러운 아크를 시도하세요: 더 적은 모멘텀을 낭비하고 더 빠르게 반응할 수 있습니다."
       },
       "eat": {
-        "title": "Eat orbs to grow.",
-        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+        "title": "구슬을 먹어 성장하세요.",
+        "body": "작은 빛나는 구슬이 맵에 흩어져 있습니다. 그것들을 지나치면 더 길어지고 점수를 얻습니다. 더 큰 구슬(죽은 뱀들이 남긴 것)은 엄청난 성장을 제공합니다 — 하지만 그것들은 미끼입니다. 다른 뱀들이 항상 그것들을 향해 돌진합니다. 명확한 탈출 경로가 있을 때만 주워야 합니다."
       },
       "boost": {
-        "title": "Boost burns mass — use it wisely.",
-        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+        "title": "부스트는 질량을 소모합니다 — 현명하게 사용하세요.",
+        "body": "왼쪽 클릭을 유지하거나 모바일에서 탭하고 유지하여 부스트하세요. 약 50% 더 빠르게 이동하지만 매초 질량을 잃습니다. 두 가지 실제 용도: 킬을 마무리하기 위해 (대상 앞에 끼어들기)와 함정에서 탈출하기 위해. 단순히 빠르게 보이기 위해 부스트하지 마세요 — 비용이 많이 듭니다."
       },
       "coil": {
-        "title": "Coil-trap to kill.",
-        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+        "title": "코일-트랩으로 처치하세요.",
+        "body": "당신의 몸의 어떤 부분이라도 다른 뱀의 머리에 닿으면 죽습니다. 그래서 상대를 앞지르지 않고 — 그들이 당신을 들이받게 만듭니다. 고전적인 움직임: 뱀 앞에서 부스트한 다음, 그들의 전방 경로를 가로막으세요. 그들은 충돌하거나 부스트로 질량을 소모하며 탈출해야 합니다."
       },
       "survive": {
-        "title": "Survive the perimeter first.",
-        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+        "title": "먼저 주변에서 생존하세요.",
+        "body": "아레나의 가장자리는 성장하기에 가장 안전한 장소입니다 — 공격자가 적고, 예측 가능한 경계가 있어 붙잡을 수 있습니다. 상위 30%에 도달할 때까지 그곳에 머무르세요. 중간 맵은 챔피언들이 지루한 상위 10%에게 저격당하는 곳입니다."
       },
       "climb": {
-        "title": "Climb the global leaderboard.",
-        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+        "title": "글로벌 리더보드를 오르세요.",
+        "body": "더 오래 생존하고, 더 높은 점수를 얻고, 더 큰 뱀을 처치하면 트로피가 수여됩니다. 매시간 리더보드가 새로 고쳐집니다 — 상위 1%는 독점 스킨을 받습니다. 각 국가 리더보드의 상위 3위는 다음 시즌을 위한 국가 깃발 스킨을 차지합니다."
       }
     }
   },
   "blog": {
     "siteName": "Snake Online",
-    "eyebrow": "THE SNAKE ONLINE BLOG",
-    "titleLead": "Strategy, lore,",
-    "titleAccent": "and skin spotlights.",
-    "exploreCategories": "Explore categories",
-    "browse": "Browse",
-    "backToNews": "Back to news",
-    "readingTime": "{min} min read",
-    "aiAssisted": "AI-assisted",
-    "relatedPosts": "Related posts",
-    "mentionedSkin": "Skin in this post",
-    "viewSkin": "View skin",
-    "emptyCategory": "No posts in this category yet — check back soon.",
+    "eyebrow": "SNAKE ONLINE 블로그",
+    "titleLead": "전략, 배경 이야기,",
+    "titleAccent": "그리고 스킨 조명.",
+    "exploreCategories": "카테고리 탐색",
+    "browse": "탐색",
+    "backToNews": "뉴스로 돌아가기",
+    "readingTime": "{min} 분 읽기",
+    "aiAssisted": "AI 지원",
+    "relatedPosts": "관련 게시물",
+    "mentionedSkin": "이 게시물의 스킨",
+    "viewSkin": "스킨 보기",
+    "emptyCategory": "이 카테고리에는 아직 게시물이 없습니다 — 곧 다시 확인하세요.",
     "categories": {
-      "all": "All posts",
+      "all": "모든 게시물",
       "skin-spotlight": {
-        "title": "Skin Spotlight",
-        "description": "Deep dives on individual snake skins — lore, unlock guides, related cosmetics."
+        "title": "스킨 조명",
+        "description": "개별 스킨에 대한 심층 분석 — 배경 이야기, 잠금 해제 가이드, 관련 화장품."
       },
       "strategy": {
-        "title": "Strategy",
-        "description": "How to win at Snake Online. Tactics, boost economy, coil-trap mechanics, leaderboard climbs."
+        "title": "전략",
+        "description": "Snake Online에서 이기는 방법. 전술, 부스트 경제, 코일 트랩 메커니즘, 리더보드 상승."
       },
       "comparisons": {
-        "title": "Comparisons",
-        "description": "Head-to-head reviews vs Worms Zone, Slither.io and the wider .io snake genre."
+        "title": "비교",
+        "description": "Worms Zone, Slither.io 및 더 넓은 .io 스네이크 장르와의 정면 리뷰."
       },
       "updates": {
-        "title": "Updates",
-        "description": "Patch notes, new skin drops, balance changes, behind-the-scenes from the studio."
+        "title": "업데이트",
+        "description": "패치 노트, 새로운 스킨 드롭, 밸런스 변경, 스튜디오의 비하인드 신."
       },
       "community": {
-        "title": "Community",
-        "description": "Tournament recaps, player stories, content creators, Discord highlights."
+        "title": "커뮤니티",
+        "description": "토너먼트 요약, 플레이어 이야기, 콘텐츠 제작자, Discord 하이라이트."
       },
       "lore": {
-        "title": "Lore",
-        "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+        "title": "배경 이야기",
+        "description": "아레나 뒤에 숨겨진 세계. 스네이크 신화, 스킨 기원 이야기, 내러티브 깊이."
       }
     }
   },
   "downloadsPage": {
-    "eyebrow": "GET SNAKE ONLINE",
-    "titleLead": "Five platforms.",
-    "titleAccent": "One arena. Zero cost.",
-    "subtitle": "Free forever. No pay-to-win. Same trophies, skins and rank across iOS, Android, Web, Windows and macOS — one account everywhere.",
+    "eyebrow": "SNAKE ONLINE 받기",
+    "titleLead": "다섯 개 플랫폼.",
+    "titleAccent": "하나의 아레나. 제로 비용.",
+    "subtitle": "영원히 무료. 결제 유도 없음. iOS, Android, Web, Windows 및 macOS에서 동일한 트로피, 스킨 및 순위 — 어디서나 하나의 계정.",
     "trust": {
-      "free": "Free forever",
-      "cosmetics": "Cosmetics-only, no pay-to-win",
-      "crossplay": "Cross-platform progress",
-      "lightweight": "Runs on 5-year-old phones"
+      "free": "영원히 무료",
+      "cosmetics": "화장품만, 결제 유도 없음",
+      "crossplay": "크로스 플랫폼 진행",
+      "lightweight": "5년 된 전화에서도 실행"
     },
     "web": {
-      "badge": "RECOMMENDED · INSTANT",
-      "title": "Play instantly in your browser",
-      "body": "No install, no signup, no waiting. Opens in fullscreen on Chrome, Safari, Firefox, Edge — same arena as the apps, same skins, same leaderboard.",
-      "cta": "Launch web build"
+      "badge": "추천 · 즉시",
+      "title": "브라우저에서 즉시 플레이",
+      "body": "설치, 가입, 대기 없음. Chrome, Safari, Firefox, Edge에서 전체 화면으로 열립니다 — 앱과 동일한 아레나, 동일한 스킨, 동일한 리더보드.",
+      "cta": "웹 빌드 시작"
     },
-    "platformsTitle": "Choose your platform",
-    "platformsSubtitle": "Same arena. Same skins. Same trophies. One account everywhere.",
+    "platformsTitle": "플랫폼 선택",
+    "platformsSubtitle": "동일한 아레나. 동일한 스킨. 동일한 트로피. 어디서나 하나의 계정.",
     "platforms": {
       "ios": {
         "title": "iPhone & iPad",
-        "sub": "Requires iOS 13.0 or later · Universal app",
-        "cta": "Download on the App Store",
-        "caption": "Download on the"
+        "sub": "iOS 13.0 이상 필요 · 범용 앱",
+        "cta": "App Store에서 다운로드",
+        "caption": "다운로드는"
       },
       "android": {
-        "title": "Android phones & tablets",
-        "sub": "Requires Android 8.0 or later · Free in-app purchases optional",
-        "cta": "Get it on Google Play",
-        "caption": "Get it on"
+        "title": "Android 전화 및 태블릿",
+        "sub": "Android 8.0 이상 필요 · 무료 인앱 구매 선택 가능",
+        "cta": "Google Play에서 받기",
+        "caption": "받기"
       },
       "windows": {
-        "title": "Windows 10 / 11 desktop",
-        "sub": "x64, signed installer · 64-bit only",
-        "cta": "Download for Windows",
-        "caption": "Direct download"
+        "title": "Windows 10 / 11 데스크탑",
+        "sub": "x64, 서명된 설치 프로그램 · 64비트 전용",
+        "cta": "Windows용 다운로드",
+        "caption": "직접 다운로드"
       },
       "mac": {
         "title": "Mac (Intel & Apple Silicon)",
-        "sub": "Mac Catalyst build · Requires macOS 11+",
-        "cta": "Download on the Mac App Store",
-        "caption": "Download on the"
+        "sub": "Mac Catalyst 빌드 · macOS 11+ 필요",
+        "cta": "Mac App Store에서 다운로드",
+        "caption": "다운로드는"
       }
     },
-    "whyEyebrow": "WHY THE NATIVE APP",
-    "whyTitle": "Smoother, faster, yours.",
+    "whyEyebrow": "네이티브 앱의 이유",
+    "whyTitle": "더 부드럽고, 더 빠르며, 당신의 것.",
     "features": {
       "fps": {
-        "title": "60 FPS locked",
-        "body": "Buttery smooth movement on every device. Adaptive resolution under load."
+        "title": "60 FPS 고정",
+        "body": "모든 장치에서 부드러운 움직임. 부하에 따라 적응형 해상도."
       },
       "noads": {
-        "title": "No ads in match",
-        "body": "We never interrupt a fight. Optional rewarded ads only between matches."
+        "title": "매치 중 광고 없음",
+        "body": "우리는 전투를 방해하지 않습니다. 매치 사이에만 선택적 보상 광고."
       },
       "crosssync": {
-        "title": "Cross-progress",
-        "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac."
+        "title": "크로스 진행",
+        "body": "트로피, 스킨 및 순위가 iOS, Android, Web, Windows 및 Mac에서 동기화됩니다."
       },
       "footprint": {
-        "title": "Tiny footprint",
-        "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old."
+        "title": "작은 용량",
+        "body": "디스크에서 200MB 미만. 최대 5년 된 전화에서 실행되도록 설계."
       }
     },
     "qr": {
-      "badge": "FASTEST WAY ON MOBILE",
-      "title": "Scan, install, slither.",
-      "body": "Point your phone camera at the QR. We'll send you to the right store automatically.",
-      "alt": "QR code linking to the Snake Online downloads page"
+      "badge": "모바일에서 가장 빠른 방법",
+      "title": "스캔하고, 설치하고, 미끄러지세요.",
+      "body": "전화 카메라를 QR에 맞추세요. 올바른 스토어로 자동으로 안내해 드립니다.",
+      "alt": "Snake Online 다운로드 페이지로 연결되는 QR 코드"
     },
-    "reqsTitle": "System requirements",
-    "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
+    "reqsTitle": "시스템 요구 사항",
+    "reqsSubtitle": "설계상 가벼움 — 5년 된 전화에서 실행.",
     "reqs": {
       "cpu": {
         "label": "CPU",
-        "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen"
+        "val": "쿼드코어 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4세대"
       },
       "storage": {
-        "label": "Storage",
-        "val": "Up to 200 MB free space depending on platform"
+        "label": "저장 공간",
+        "val": "플랫폼에 따라 최대 200MB의 여유 공간 필요"
       },
       "network": {
-        "label": "Network",
-        "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G"
+        "label": "네트워크",
+        "val": "5 Mbps 안정적인 연결 — Wi-Fi, 4G 또는 5G"
       },
       "security": {
-        "label": "Security",
-        "val": "All installers code-signed. iOS notarized. Windows EV cert."
+        "label": "보안",
+        "val": "모든 설치 프로그램은 코드 서명됨. iOS는 인증됨. Windows EV 인증."
       }
     },
-    "finalTitle": "200+ skins waiting.",
-    "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
-    "finalCta": "Jump into the arena"
+    "finalTitle": "200개 이상의 스킨이 기다립니다.",
+    "finalBody": "매치마다 아레나가 더욱 치열해집니다. 당신의 왕좌는 한 게임 남았습니다.",
+    "finalCta": "아레나에 뛰어들기"
   },
   "skinTemplates": {
     "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
-    "descriptionCountry": "The {country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.",
+    "descriptionCountry": "{country} 국가의 뱀 스킨 — 경기장에서 당신의 국기를 휘날리세요. Snake Online에서 180개 이상의 독점 국가 스킨 중 하나입니다.",
     "descriptionFantasy": {
-      "mythic": "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
-      "legendary": "{name} — a legendary tier fantasy snake skin. Forged in the late-game arena. Hard-earned, harder to keep.",
-      "epic": "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
-      "rare": "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
-      "common": "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
-      "exclusive": "{name} — an exclusive fantasy snake skin. Limited-time event reward."
+      "mythic": "{name} — 신화적 등급의 판타지 뱀 스킨. 고급 토너먼트 결승에서만 드랍됩니다.",
+      "legendary": "{name} — 전설적 등급의 판타지 뱀 스킨. 게임 후반 아레나에서 제작됩니다. 힘들게 얻었고, 더 힘들게 유지해야 합니다.",
+      "epic": "{name} — 서사적 등급의 판타지 뱀 스킨. 지속적인 리더보드 상승을 통해 얻습니다.",
+      "rare": "{name} — 희귀 등급의 판타지 뱀 스킨. 상승을 위한 신뢰할 수 있는 동반자입니다.",
+      "common": "{name} — 일반 등급의 판타지 뱀 스킨. 상승을 위한 신뢰할 수 있는 동반자입니다.",
+      "exclusive": "{name} — 독점 판타지 뱀 스킨. 한정 시간 이벤트 보상입니다."
     },
-    "obtainHintCountry": "Awarded automatically when you connect from {country}, or unlocked permanently by winning any country tournament.",
+    "obtainHintCountry": "{country}에서 연결할 때 자동으로 수여되거나, 어떤 국가 토너먼트를 이겨서 영구적으로 잠금 해제됩니다.",
     "obtainHintFantasy": {
-      "mythic": "Won by placing top-3 in any monthly Mythic Arena tournament.",
-      "legendary": "Awarded for reaching Top 1% on the global leaderboard once.",
-      "epic": "Unlocked at 50 trophy threshold and above.",
-      "rare": "Available from the starting roster.",
-      "common": "Available from the starting roster.",
-      "exclusive": "Limited-time event drop."
+      "mythic": "매월 Mythic Arena 토너먼트에서 상위 3위 안에 들어야 얻을 수 있습니다.",
+      "legendary": "글로벌 리더보드에서 Top 1%에 도달해야 수여됩니다.",
+      "epic": "50 트로피 기준 이상에서 잠금 해제됩니다.",
+      "rare": "시작 로스터에서 사용할 수 있습니다.",
+      "common": "시작 로스터에서 사용할 수 있습니다.",
+      "exclusive": "한정 시간 이벤트 드랍입니다."
     },
     "countries": {
-      "AE": "United Arab Emirates",
-      "AR": "Argentina",
-      "AT": "Austria",
-      "AU": "Australia",
-      "AZ": "Azerbaijan",
-      "BE": "Belgium",
-      "BG": "Bulgaria",
-      "BR": "Brazil",
-      "CA": "Canada",
-      "CH": "Switzerland",
-      "CL": "Chile",
-      "CN": "China",
-      "CO": "Colombia",
-      "CZ": "Czech Republic",
-      "DE": "Germany",
-      "DK": "Denmark",
-      "EG": "Egypt",
-      "ES": "Spain",
-      "FI": "Finland",
-      "FR": "France",
-      "GB": "United Kingdom",
-      "GR": "Greece",
-      "HR": "Croatia",
-      "HU": "Hungary",
-      "ID": "Indonesia",
-      "IE": "Ireland",
-      "IL": "Israel",
-      "IN": "India",
-      "IR": "Iran",
-      "IT": "Italy",
-      "JP": "Japan",
-      "KR": "South Korea",
-      "MX": "Mexico",
-      "MY": "Malaysia",
-      "NG": "Nigeria",
-      "NL": "Netherlands",
-      "NO": "Norway",
-      "NZ": "New Zealand",
-      "PE": "Peru",
-      "PH": "Philippines",
-      "PK": "Pakistan",
-      "PL": "Poland",
-      "PT": "Portugal",
-      "QA": "Qatar",
-      "RO": "Romania",
-      "RS": "Serbia",
-      "RU": "Russia",
-      "SA": "Saudi Arabia",
-      "SE": "Sweden",
-      "SG": "Singapore",
-      "SK": "Slovakia",
-      "TH": "Thailand",
-      "TR": "Türkiye",
-      "TW": "Taiwan",
-      "UA": "Ukraine",
-      "US": "United States",
-      "USA": "United States",
-      "VE": "Venezuela",
-      "VN": "Vietnam",
-      "ZA": "South Africa"
+      "AE": "아랍에미리트",
+      "AR": "아르헨티나",
+      "AT": "오스트리아",
+      "AU": "호주",
+      "AZ": "아제르바이잔",
+      "BE": "벨기에",
+      "BG": "불가리아",
+      "BR": "브라질",
+      "CA": "캐나다",
+      "CH": "스위스",
+      "CL": "칠레",
+      "CN": "중국",
+      "CO": "콜롬비아",
+      "CZ": "체코",
+      "DE": "독일",
+      "DK": "덴마크",
+      "EG": "이집트",
+      "ES": "스페인",
+      "FI": "핀란드",
+      "FR": "프랑스",
+      "GB": "영국",
+      "GR": "그리스",
+      "HR": "크로아티아",
+      "HU": "헝가리",
+      "ID": "인도네시아",
+      "IE": "아일랜드",
+      "IL": "이스라엘",
+      "IN": "인도",
+      "IR": "이란",
+      "IT": "이탈리아",
+      "JP": "일본",
+      "KR": "대한민국",
+      "MX": "멕시코",
+      "MY": "말레이시아",
+      "NG": "나이지리아",
+      "NL": "네덜란드",
+      "NO": "노르웨이",
+      "NZ": "뉴질랜드",
+      "PE": "페루",
+      "PH": "필리핀",
+      "PK": "파키스탄",
+      "PL": "폴란드",
+      "PT": "포르투갈",
+      "QA": "카타르",
+      "RO": "루마니아",
+      "RS": "세르비아",
+      "RU": "러시아",
+      "SA": "사우디 아라비아",
+      "SE": "스웨덴",
+      "SG": "싱가포르",
+      "SK": "슬로바키아",
+      "TH": "태국",
+      "TR": "터키",
+      "TW": "대만",
+      "UA": "우크라이나",
+      "US": "미국",
+      "USA": "미국",
+      "VE": "베네수엘라",
+      "VN": "베트남",
+      "ZA": "남아프리카"
     }
   }
 }
