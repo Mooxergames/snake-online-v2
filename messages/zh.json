@@ -337,46 +337,46 @@
     "playStore": "获取应用"
   },
   "marquee": {
-    "label": "200+ Hand-Crafted Skins"
+    "label": "200+ 手工制作的皮肤"
   },
   "bento": {
-    "eyebrow": "WHY SNAKE ONLINE",
-    "title": "Engineered for the\nmodern arena.",
-    "subtitle": "Every system, every frame, every snake — designed to make you feel unstoppable.",
+    "eyebrow": "为什么选择 Snake Online",
+    "title": "为现代竞技场而设计。",
+    "subtitle": "每个系统、每帧画面、每条蛇——旨在让你感到无可阻挡。",
     "items": {
       "realtime": {
-        "title": "Real Real-Time Multiplayer",
-        "body": "Battle thousands of live players — not bots. Edge servers in 12 regions keep every coil, cut, and trap perfectly synced.",
-        "metric": "ms latency",
-        "regions": "12 global regions · 99.95% uptime"
+        "title": "真实实时多人游戏",
+        "body": "与数千名实时玩家战斗——而不是机器人。12个地区的边缘服务器保持每个环节、切割和陷阱完美同步。",
+        "metric": "毫秒延迟",
+        "regions": "12个全球区域 · 99.95%正常运行时间"
       },
       "skins": {
-        "title": "Hand-crafted Skins",
-        "body": "Six rarity tiers. Country flags, mythic dragons, neon serpents. No pay-to-win — skill decides."
+        "title": "手工制作的皮肤",
+        "body": "六个稀有度等级。国家旗帜、神话龙、霓虹蛇。没有付费取胜——技能决定一切。"
       },
       "leaderboards": {
-        "title": "Global Leaderboards",
-        "body": "Per-country and worldwide rankings refreshed every hour. Climb to the top 1% and claim your throne."
+        "title": "全球排行榜",
+        "body": "每小时刷新每个国家和全球排名。冲击前1%，夺取你的王座。"
       },
       "country": {
-        "title": "180+ Country Skins",
-        "body": "Fly your colors. Every flag in the world is a wearable skin — wear yours into battle."
+        "title": "180+ 国家皮肤",
+        "body": "展示你的颜色。世界上每面旗帜都是可穿戴的皮肤——带着你的皮肤上战场。"
       },
       "tournaments": {
-        "title": "Daily Tournaments",
-        "body": "Free entry. Real prizes. New brackets every 24 hours."
+        "title": "每日锦标赛",
+        "body": "免费参赛。真实奖品。每24小时更新新的赛区。"
       },
       "crossplay": {
-        "title": "True Cross-Play",
-        "body": "One account. iOS, Android, Web. Your progress, skins and rank follow you."
+        "title": "真正的跨平台游戏",
+        "body": "一个账户。iOS、Android、Web。你的进度、皮肤和排名随你而动。"
       },
       "fairplay": {
-        "title": "Zero Pay-to-Win",
-        "body": "Cosmetics only. The leaderboard is decided by reflex, not wallet."
+        "title": "零付费取胜",
+        "body": "仅限外观。排行榜由反应速度决定，而非钱包。"
       },
       "community": {
-        "title": "5M+ Snake Nation",
-        "body": "Discord, tournaments, content creators. The biggest snake community in the .io world."
+        "title": "500万+ 蛇国",
+        "body": "Discord、锦标赛、内容创作者。 .io世界中最大的蛇社区。"
       }
     }
   },
@@ -426,49 +426,49 @@
     "cellNo": "无"
   },
   "faq": {
-    "eyebrow": "FAQ",
-    "title": "Answers to everything.",
-    "subtitle": "Real questions from real players. If your question isn't here, hit support — we read every message.",
+    "eyebrow": "常见问题",
+    "title": "所有问题的答案。",
+    "subtitle": "来自真实玩家的真实问题。如果你的问题不在这里，请联系客服 — 我们会阅读每一条消息。",
     "items": {
       "whatIsIt": {
-        "q": "What is Snake Online?",
-        "a": "Snake Online is a free real-time multiplayer .io snake battle royale. Coil opponents, eat their orbs, climb the global leaderboard. 200+ collectible skins, 180+ country leaderboards, available on iOS, Android, and any modern web browser."
+        "q": "什么是 Snake Online？",
+        "a": "Snake Online 是一款免费的实时多人 .io 蛇类战斗 royale。缠绕对手，吃掉他们的球体，登上全球排行榜。超过 200 种可收集皮肤，180 多个国家排行榜，支持 iOS、Android 和任何现代网页浏览器。"
       },
       "isItFree": {
-        "q": "Is Snake Online really free?",
-        "a": "Yes. Free forever, no signup required for browser play. There are no paywalls and no pay-to-win advantages — skins are purely cosmetic and most can be earned through play."
+        "q": "Snake Online 真的是免费的吗？",
+        "a": "是的。永久免费，浏览器游戏无需注册。没有付费墙，也没有付费赢的优势 — 皮肤纯粹是外观上的，大多数可以通过游戏获得。"
       },
       "doINeedToDownload": {
-        "q": "Do I need to download anything?",
-        "a": "Not for the web — just hit Play and you're in the arena in seconds. For mobile, free native apps are available on the App Store and Google Play with the same cross-progression."
+        "q": "我需要下载任何东西吗？",
+        "a": "在网页上不需要 — 只需点击播放，你就能在几秒钟内进入竞技场。对于移动设备，App Store 和 Google Play 上提供免费的原生应用，支持相同的跨平台进度。"
       },
       "howManySkins": {
-        "q": "How many snake skins are there?",
-        "a": "Over 200 hand-crafted skins across six rarity tiers: Common, Rare, Epic, Legendary, Mythic, and Exclusive. New seasonal drops every month — including country-flag exclusives for 180+ nations."
+        "q": "有多少种蛇皮肤？",
+        "a": "超过 200 种手工制作的皮肤，分为六个稀有度等级：普通、稀有、史诗、传奇、神话和独占。每月都有新的季节性掉落 — 包括 180 多个国家的国旗独占皮肤。"
       },
       "isItMultiplayer": {
-        "q": "Is it true real-time multiplayer (not bots)?",
-        "a": "Yes. Every snake in your arena is a real human player. We run edge servers in 12 global regions for sub-100ms latency, so coils, cuts, and traps feel instant — not laggy."
+        "q": "这是真的实时多人游戏（不是机器人）吗？",
+        "a": "是的。你竞技场中的每条蛇都是一个真实的人类玩家。我们在全球 12 个地区运行边缘服务器，延迟低于 100 毫秒，因此缠绕、切割和陷阱的反应感觉瞬时 — 不会有延迟。"
       },
       "whichDevices": {
-        "q": "Which devices does it run on?",
-        "a": "Any modern web browser (Chrome, Safari, Firefox, Edge), iPhone, iPad, Android phones and tablets. One account syncs across all of them."
+        "q": "它支持哪些设备？",
+        "a": "任何现代网页浏览器（Chrome、Safari、Firefox、Edge）、iPhone、iPad、Android 手机和平板电脑。一个账户可以在所有设备上同步。"
       },
       "howToWin": {
-        "q": "How do I get bigger faster?",
-        "a": "Patience and positioning beat aggression. Hug the perimeter, scavenge orbs from kills, only commit to a coil-trap when the target is straight-line locked. Boost burns mass — use it sparingly, only to close a kill or escape."
+        "q": "我如何更快变大？",
+        "a": "耐心和位置比攻击更重要。紧贴边缘，从击杀中捡取球体，只有在目标被锁定为直线时才进行缠绕陷阱。加速会消耗质量 — 要节省使用，仅在结束击杀或逃跑时使用。"
       },
       "vsWormzone": {
-        "q": "How is Snake Online different from Worms Zone?",
-        "a": "Worms Zone is mostly single-player against AI bots, English-only, with no public leaderboard or web version. Snake Online is real-time multiplayer against humans, supports 14 languages, has a live global leaderboard, and runs natively in the browser with cross-progression to mobile."
+        "q": "Snake Online 和 Worms Zone 有什么不同？",
+        "a": "Worms Zone 主要是与 AI 机器人进行单人游戏，仅支持英语，没有公共排行榜或网页版本。Snake Online 是与人类的实时多人游戏，支持 14 种语言，拥有实时全球排行榜，并且可以在浏览器中原生运行，支持移动设备的跨平台进度。"
       },
       "vsSlither": {
-        "q": "How is it different from Slither.io?",
-        "a": "Snake Online keeps Slither's intuitive controls but adds: 200+ collectible skins (vs Slither's ~50), 180+ country leaderboards, daily tournaments, hourly-updated public rankings, and full cross-platform progression. Skill-only progression — no pay-to-win."
+        "q": "它与 Slither.io 有什么不同？",
+        "a": "Snake Online 保留了 Slither 的直观控制，但增加了：200 多种可收集皮肤（而 Slither 只有 ~50），180 多个国家排行榜，每日比赛，每小时更新的公共排名，以及完整的跨平台进度。仅通过技能进步 — 没有付费赢。"
       },
       "progressSync": {
-        "q": "Does my progress sync across devices?",
-        "a": "Yes. Sign in once and your trophies, skins, friends, and tournament entries follow you between iOS, Android, and web automatically."
+        "q": "我的进度在设备之间同步吗？",
+        "a": "是的。只需登录一次，你的奖杯、皮肤、朋友和比赛报名会在 iOS、Android 和网页之间自动跟随你。"
       }
     }
   },
@@ -508,283 +508,282 @@
     "seoDescriptionAlt4": "{name} ({rarity}) — one of 200+ hand-crafted Snake Online skins. Free to earn through play. See related skins and unlock guide."
   },
   "versus": {
-    "eyebrow": "VS COMPARISON",
-    "playFreeNow": "Play Snake Online free",
-    "viewAllSkins": "Browse 200+ snake skins",
+    "eyebrow": "对比",
+    "playFreeNow": "免费玩 Snake Online",
+    "viewAllSkins": "浏览 200+ 蛇皮肤",
     "wormzone": {
       "title": "Snake Online vs Worms Zone .io",
-      "seoTitle": "Snake Online vs Worms Zone .io — Which Snake Game Wins in 2026?",
-      "seoDescription": "Full comparison: Snake Online and Worms Zone .io head-to-head. Real-time multiplayer vs bots, 200+ vs 80 skins, 14 languages vs 1, public leaderboard vs none. See why players are switching.",
-      "lead": "Worms Zone .io introduced millions to the snake .io genre — but the experience is mostly single-player against bots, English-only, and the marketing site has zero structured data. Snake Online rebuilt the genre as true real-time multiplayer with global rankings, 14 languages, and a transparent skin economy. Here's the head-to-head, feature by feature.",
-      "verdict": "Verdict: if you want the cartoon casual feel against AI, Worms Zone still works. If you want real opponents, real leaderboards, and a real cross-platform progression, Snake Online is the upgrade."
+      "seoTitle": "Snake Online vs Worms Zone .io — 哪个蛇游戏在 2026 年获胜？",
+      "seoDescription": "全面对比：Snake Online 和 Worms Zone .io 逐一对决。实时多人游戏 vs 机器人，200+ vs 80 种皮肤，14 种语言 vs 1 种，公共排行榜 vs 无。看看为什么玩家们正在转变。",
+      "lead": "Worms Zone .io 向数百万玩家介绍了蛇 .io 类型 — 但体验主要是与机器人单人游戏，仅支持英语，营销网站没有结构化数据。Snake Online 重新构建了这一类型，成为真正的实时多人游戏，拥有全球排名、14 种语言和透明的皮肤经济。以下是逐项对比。",
+      "verdict": "结论：如果你想要与 AI 对战的卡通休闲感觉，Worms Zone 仍然有效。如果你想要真实的对手、真实的排行榜和真正的跨平台进度，Snake Online 是升级版。"
     },
     "slither": {
       "title": "Snake Online vs Slither.io",
-      "seoTitle": "Snake Online vs Slither.io — Full Feature Comparison",
-      "seoDescription": "Snake Online vs Slither.io: 200+ collectible skins, hourly leaderboards, daily tournaments, 14 languages, cross-platform sync. Everything Slither players have been waiting for.",
-      "lead": "Slither.io defined the .io snake genre in 2016 — minimalist, addictive, instant. Snake Online keeps that intuitive feel and stacks on the things Slither never shipped: 200+ collectible skins, a public global leaderboard updated hourly, daily tournaments, native mobile apps with cross-progression, and 14 languages with proper localized SEO.",
-      "verdict": "Verdict: Slither remains the genre's original. Snake Online is what Slither would be if it had launched in 2026 — same controls, modern depth."
+      "seoTitle": "Snake Online vs Slither.io — 完整功能对比",
+      "seoDescription": "Snake Online vs Slither.io：200+ 可收集的皮肤、每小时排行榜、每日锦标赛、14 种语言、跨平台同步。一切 Slither 玩家期待的功能。",
+      "lead": "Slither.io 在 2016 年定义了 .io 蛇类型 — 极简、上瘾、即时。Snake Online 保持了这种直观的感觉，并增加了 Slither 从未推出的功能：200+ 可收集的皮肤、每小时更新的公共全球排行榜、每日锦标赛、具有跨进度的原生移动应用，以及 14 种语言的本地化 SEO。",
+      "verdict": "结论：Slither 仍然是这一类型的原始游戏。如果 Slither 在 2026 年推出，Snake Online 就是它的样子 — 相同的控制，现代的深度。"
     }
   },
   "howToPlay": {
-    "eyebrow": "BEGINNER GUIDE",
-    "title": "How to play Snake Online.",
-    "seoTitle": "How to Play Snake Online — 5-Minute Beginner Guide",
-    "seoDescription": "Step-by-step guide to playing Snake Online: controls, eating, boost, coil-traps, and climbing the leaderboard. Free in any modern browser.",
-    "lead": "Snake Online is built for thirty-second pickup play and hours-deep mastery. The basics fit on one screen — read once, then it's pure muscle memory. Here's everything you need to go from new player to top 10%.",
-    "playNow": "Play free now",
-    "browseSkins": "Browse skins",
-    "readyTitle": "Ready to slither?",
-    "readyBody": "No download, no signup. Hit play and you're in the arena in seconds.",
+    "eyebrow": "初学者指南",
+    "title": "如何玩 Snake Online。",
+    "seoTitle": "如何玩 Snake Online — 5分钟初学者指南",
+    "seoDescription": "逐步指南，教你如何玩 Snake Online：控制、吃食物、加速、缠绕陷阱，以及攀登排行榜。在任何现代浏览器中免费游玩。",
+    "lead": "Snake Online 旨在提供三十秒的快速游戏体验和数小时的深度掌握。基础知识可以在一个屏幕上展示——阅读一次，然后就是纯粹的肌肉记忆。这里是你从新玩家到前 10% 所需的一切。",
+    "playNow": "立即免费游戏",
+    "browseSkins": "浏览皮肤",
+    "readyTitle": "准备好滑行了吗？",
+    "readyBody": "无需下载，无需注册。点击播放，你将在几秒钟内进入竞技场。",
     "steps": {
       "enter": {
-        "title": "Hit Play — you're in the arena instantly.",
-        "body": "Click Play Free Now. No signup, no install. You'll spawn into a live arena with real players within seconds. Pick a snake skin (free starter ones available) and a region — closer regions mean lower latency."
+        "title": "点击播放 — 你会立即进入竞技场。",
+        "body": "点击立即免费游戏。无需注册，无需安装。你将在几秒钟内生成到一个有真实玩家的实时竞技场。选择一个蛇皮肤（可用的免费初学者皮肤）和一个区域——靠近的区域意味着更低的延迟。"
       },
       "move": {
-        "title": "Steer with your mouse or thumb.",
-        "body": "On desktop, your snake's head follows the cursor. On mobile, drag anywhere on screen to steer. The snake never stops moving — your only job is direction. Try wide, smooth arcs rather than sharp turns: you waste less momentum and can react faster."
+        "title": "用鼠标或拇指控制方向。",
+        "body": "在桌面上，你的蛇头会跟随光标。在移动设备上，拖动屏幕上的任何地方来控制方向。蛇不会停止移动——你唯一的工作就是控制方向。尝试宽而平滑的弧线，而不是急转弯：这样你会减少动能损失，并能更快反应。"
       },
       "eat": {
-        "title": "Eat orbs to grow.",
-        "body": "Small glowing orbs scatter the map. Run them over to grow longer and score. Bigger orbs (left by dying snakes) give massive growth — but they're bait. Other snakes always rush them. Pick them up only when you have a clear escape."
+        "title": "吃掉光球以成长。",
+        "body": "小的发光光球散布在地图上。跑过它们可以让你变得更长并得分。更大的光球（由死亡的蛇留下）会带来巨大的成长——但它们是诱饵。其他蛇总是会冲向它们。只有在你有明确逃生路线时再去捡。"
       },
       "boost": {
-        "title": "Boost burns mass — use it wisely.",
-        "body": "Hold left-click (or tap-and-hold on mobile) to boost. You move ~50% faster but lose mass every second. Two real uses: to close a kill (cut in front of a target) and to escape a trap. Never boost just to look fast — it's expensive."
+        "title": "加速消耗质量——明智使用。",
+        "body": "按住左键（或在移动设备上长按）以加速。你的移动速度约为 50% 更快，但每秒会损失质量。两种实际用途：结束击杀（在目标前方切入）和逃脱陷阱。绝不要仅仅为了看起来快而加速——这代价高昂。"
       },
       "coil": {
-        "title": "Coil-trap to kill.",
-        "body": "You die if any part of your body touches another snake's head. So you don't outrace opponents — you make them ram you. The classic move: boost ahead of a snake, then curl across their forward path. They either crash or boost-burn out of mass to escape."
+        "title": "缠绕陷阱以击杀。",
+        "body": "如果你身体的任何部分碰到另一条蛇的头部，你就会死亡。所以你不是超越对手——而是让他们撞上你。经典动作：在一条蛇前加速，然后在它们的前进路径上蜷缩。它们要么撞上，要么因加速而消耗质量逃跑。"
       },
       "survive": {
-        "title": "Survive the perimeter first.",
-        "body": "The edge of the arena is the safest place to grow — fewer attackers, predictable boundary you can hug. Stay there until you're top 30%. Mid-map is where champions get sniped by a bored Top 10."
+        "title": "首先在边缘生存。",
+        "body": "竞技场的边缘是最安全的成长地点——攻击者较少，可预测的边界可以依靠。待在那儿直到你进入前 30%。中间地图是冠军被无聊的前 10% 瞄准的地方。"
       },
       "climb": {
-        "title": "Climb the global leaderboard.",
-        "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
+        "title": "攀登全球排行榜。",
+        "body": "生存更久、得分更高和击败更大蛇会获得奖杯。每小时排行榜会刷新——前 1% 将获得独家皮肤。任何国家排行榜的前 3 名将在下个赛季获得国家旗帜皮肤。"
       }
     }
   },
   "blog": {
     "siteName": "Snake Online",
-    "eyebrow": "THE SNAKE ONLINE BLOG",
-    "titleLead": "Strategy, lore,",
-    "titleAccent": "and skin spotlights.",
-    "exploreCategories": "Explore categories",
-    "browse": "Browse",
-    "backToNews": "Back to news",
-    "readingTime": "{min} min read",
-    "aiAssisted": "AI-assisted",
-    "relatedPosts": "Related posts",
-    "mentionedSkin": "Skin in this post",
-    "viewSkin": "View skin",
-    "emptyCategory": "No posts in this category yet — check back soon.",
+    "eyebrow": "蛇在线博客",
+    "titleLead": "策略，背景，",
+    "titleAccent": "和皮肤聚焦。",
+    "exploreCategories": "探索类别",
+    "browse": "浏览",
+    "backToNews": "返回新闻",
+    "readingTime": "{min} 分钟阅读",
+    "aiAssisted": "AI辅助",
+    "relatedPosts": "相关文章",
+    "mentionedSkin": "本文中的皮肤",
+    "viewSkin": "查看皮肤",
+    "emptyCategory": "该类别尚无帖子 — 请稍后再来。",
     "categories": {
-      "all": "All posts",
+      "all": "所有帖子",
       "skin-spotlight": {
-        "title": "Skin Spotlight",
-        "description": "Deep dives on individual snake skins — lore, unlock guides, related cosmetics."
+        "title": "皮肤聚焦",
+        "description": "深入探讨个别蛇皮肤 — 背景，解锁指南，相关化妆品。"
       },
       "strategy": {
-        "title": "Strategy",
-        "description": "How to win at Snake Online. Tactics, boost economy, coil-trap mechanics, leaderboard climbs."
+        "title": "策略",
+        "description": "如何在 Snake Online 中获胜。战术，提升经济，圈套机制，排行榜攀升。"
       },
       "comparisons": {
-        "title": "Comparisons",
-        "description": "Head-to-head reviews vs Worms Zone, Slither.io and the wider .io snake genre."
+        "title": "比较",
+        "description": "与 Worms Zone、Slither.io 及更广泛的 .io 蛇类游戏的对比评测。"
       },
       "updates": {
-        "title": "Updates",
-        "description": "Patch notes, new skin drops, balance changes, behind-the-scenes from the studio."
+        "title": "更新",
+        "description": "补丁说明，新皮肤发布，平衡调整，工作室幕后花絮。"
       },
       "community": {
-        "title": "Community",
-        "description": "Tournament recaps, player stories, content creators, Discord highlights."
+        "title": "社区",
+        "description": "比赛回顾，玩家故事，内容创作者，Discord 精华。"
       },
       "lore": {
-        "title": "Lore",
-        "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+        "title": "背景",
+        "description": "竞技场背后的世界。蛇的神话，皮肤起源故事，叙事深度解析。"
       }
     }
   },
   "downloadsPage": {
-    "eyebrow": "GET SNAKE ONLINE",
-    "titleLead": "Five platforms.",
-    "titleAccent": "One arena. Zero cost.",
-    "subtitle": "Free forever. No pay-to-win. Same trophies, skins and rank across iOS, Android, Web, Windows and macOS — one account everywhere.",
+    "eyebrow": "获取 Snake Online",
+    "titleLead": "五个平台。",
+    "titleAccent": "一个竞技场。零成本。",
+    "subtitle": "永久免费。无付费赢。iOS、Android、Web、Windows 和 macOS 上的奖杯、皮肤和排名相同——一个账户遍及所有平台。",
     "trust": {
-      "free": "Free forever",
-      "cosmetics": "Cosmetics-only, no pay-to-win",
-      "crossplay": "Cross-platform progress",
-      "lightweight": "Runs on 5-year-old phones"
+      "free": "永久免费",
+      "cosmetics": "仅限化妆品，无付费赢",
+      "crossplay": "跨平台进度",
+      "lightweight": "可在 5 年前的手机上运行"
     },
     "web": {
-      "badge": "RECOMMENDED · INSTANT",
-      "title": "Play instantly in your browser",
-      "body": "No install, no signup, no waiting. Opens in fullscreen on Chrome, Safari, Firefox, Edge — same arena as the apps, same skins, same leaderboard.",
-      "cta": "Launch web build"
+      "badge": "推荐 · 即时",
+      "title": "在浏览器中即时游戏",
+      "body": "无需安装，无需注册，无需等待。在 Chrome、Safari、Firefox、Edge 上全屏打开——与应用程序相同的竞技场，相同的皮肤，相同的排行榜。",
+      "cta": "启动网页版本"
     },
-    "platformsTitle": "Choose your platform",
-    "platformsSubtitle": "Same arena. Same skins. Same trophies. One account everywhere.",
+    "platformsTitle": "选择你的平台",
+    "platformsSubtitle": "相同的竞技场。相同的皮肤。相同的奖杯。一个账户遍及所有平台。",
     "platforms": {
       "ios": {
-        "title": "iPhone & iPad",
-        "sub": "Requires iOS 13.0 or later · Universal app",
-        "cta": "Download on the App Store",
-        "caption": "Download on the"
+        "title": "iPhone 和 iPad",
+        "sub": "需要 iOS 13.0 或更高版本 · 通用应用",
+        "cta": "在 App Store 下载",
+        "caption": "在"
       },
       "android": {
-        "title": "Android phones & tablets",
-        "sub": "Requires Android 8.0 or later · Free in-app purchases optional",
-        "cta": "Get it on Google Play",
-        "caption": "Get it on"
+        "title": "Android 手机和平板",
+        "sub": "需要 Android 8.0 或更高版本 · 可选的免费应用内购买",
+        "cta": "在 Google Play 获取",
+        "caption": "在"
       },
       "windows": {
-        "title": "Windows 10 / 11 desktop",
-        "sub": "x64, signed installer · 64-bit only",
-        "cta": "Download for Windows",
-        "caption": "Direct download"
+        "title": "Windows 10 / 11 桌面",
+        "sub": "x64，签名安装程序 · 仅限 64 位",
+        "cta": "下载 Windows 版本",
+        "caption": "直接下载"
       },
       "mac": {
-        "title": "Mac (Intel & Apple Silicon)",
-        "sub": "Mac Catalyst build · Requires macOS 11+",
-        "cta": "Download on the Mac App Store",
-        "caption": "Download on the"
+        "title": "Mac (Intel 和 Apple Silicon)",
+        "sub": "Mac Catalyst 版本 · 需要 macOS 11+",
+        "cta": "在 Mac App Store 下载",
+        "caption": "在"
       }
     },
-    "whyEyebrow": "WHY THE NATIVE APP",
-    "whyTitle": "Smoother, faster, yours.",
+    "whyEyebrow": "为什么选择本地应用",
+    "whyTitle": "更流畅，更快速，属于你。",
     "features": {
       "fps": {
-        "title": "60 FPS locked",
-        "body": "Buttery smooth movement on every device. Adaptive resolution under load."
+        "title": "60 FPS 锁定",
+        "body": "在每个设备上都能实现丝滑的移动。在负载下自适应分辨率。"
       },
       "noads": {
-        "title": "No ads in match",
-        "body": "We never interrupt a fight. Optional rewarded ads only between matches."
+        "title": "比赛中无广告",
+        "body": "我们从不打断战斗。仅在比赛之间可选的奖励广告。"
       },
       "crosssync": {
-        "title": "Cross-progress",
-        "body": "Trophies, skins, and rank sync across iOS, Android, Web, Windows and Mac."
+        "title": "跨进度",
+        "body": "奖杯、皮肤和排名在 iOS、Android、Web、Windows 和 Mac 之间同步。"
       },
       "footprint": {
-        "title": "Tiny footprint",
-        "body": "Under 200 MB on disk. Designed to run on phones up to 5 years old."
+        "title": "小巧的占用",
+        "body": "磁盘占用低于 200 MB。设计用于在最多 5 年的手机上运行。"
       }
     },
     "qr": {
-      "badge": "FASTEST WAY ON MOBILE",
-      "title": "Scan, install, slither.",
-      "body": "Point your phone camera at the QR. We'll send you to the right store automatically.",
-      "alt": "QR code linking to the Snake Online downloads page"
+      "badge": "移动设备上最快的方式",
+      "title": "扫描，安装，滑行。",
+      "body": "将手机相机对准二维码。我们会自动将你引导到正确的商店。",
+      "alt": "指向 Snake Online 下载页面的二维码"
     },
-    "reqsTitle": "System requirements",
-    "reqsSubtitle": "Lightweight by design — runs on a 5-year-old phone.",
+    "reqsTitle": "系统要求",
+    "reqsSubtitle": "轻量设计——可在 5 年前的手机上运行。",
     "reqs": {
       "cpu": {
         "label": "CPU",
-        "val": "Quad-core 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 4th gen"
+        "val": "四核 1.6 GHz · Apple A11 / Snapdragon 660 / Intel i3 第四代"
       },
       "storage": {
-        "label": "Storage",
-        "val": "Up to 200 MB free space depending on platform"
+        "label": "存储",
+        "val": "根据平台需要最多 200 MB 的可用空间"
       },
       "network": {
-        "label": "Network",
-        "val": "5 Mbps stable connection — Wi-Fi, 4G or 5G"
+        "label": "网络",
+        "val": "5 Mbps 稳定连接——Wi-Fi、4G 或 5G"
       },
       "security": {
-        "label": "Security",
-        "val": "All installers code-signed. iOS notarized. Windows EV cert."
+        "label": "安全",
+        "val": "所有安装程序均经过代码签名。iOS 已公证。Windows EV 证书。"
       }
     },
-    "finalTitle": "200+ skins waiting.",
-    "finalBody": "The arena gets fiercer with every match. Your throne is one game away.",
-    "finalCta": "Jump into the arena"
+    "finalTitle": "200+ 款皮肤等待中。",
+    "finalBody": "每场比赛竞技场都变得更加激烈。你的王座只差一场游戏。",
+    "finalCta": "跳入竞技场"
   },
   "skinTemplates": {
-    "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
-    "descriptionCountry": "The {country} country snake skin — fly your flag in the arena. One of 180+ exclusive national skins in Snake Online.",
+    "descriptionCountry": "来自{country}的蛇皮肤——在竞技场上展示你的国旗。Snake Online中180多种独家国家皮肤之一。",
     "descriptionFantasy": {
-      "mythic": "{name} — a mythic tier fantasy snake skin. Drops only during high-level tournament finals.",
-      "legendary": "{name} — a legendary tier fantasy snake skin. Forged in the late-game arena. Hard-earned, harder to keep.",
-      "epic": "{name} — an epic tier fantasy snake skin. Earned through sustained leaderboard climb.",
-      "rare": "{name} — a rare tier fantasy snake skin. A reliable companion for the climb.",
-      "common": "{name} — a common tier fantasy snake skin. A reliable companion for the climb.",
-      "exclusive": "{name} — an exclusive fantasy snake skin. Limited-time event reward."
+      "mythic": "{name}——一种神话级别的幻想蛇皮肤。仅在高水平锦标赛决赛期间掉落。",
+      "legendary": "{name}——一种传奇级别的幻想蛇皮肤。在后期竞技场锻造。辛苦获得，更难保持。",
+      "epic": "{name}——一种史诗级别的幻想蛇皮肤。通过持续的排行榜攀升获得。",
+      "rare": "{name}——一种稀有级别的幻想蛇皮肤。攀升过程中的可靠伙伴。",
+      "common": "{name}——一种普通级别的幻想蛇皮肤。攀升过程中的可靠伙伴。",
+      "exclusive": "{name}——一种独家幻想蛇皮肤。限时活动奖励。"
     },
-    "obtainHintCountry": "Awarded automatically when you connect from {country}, or unlocked permanently by winning any country tournament.",
+    "obtainHintCountry": "当你从{country}连接时自动授予，或通过赢得任何国家锦标赛永久解锁。",
     "obtainHintFantasy": {
-      "mythic": "Won by placing top-3 in any monthly Mythic Arena tournament.",
-      "legendary": "Awarded for reaching Top 1% on the global leaderboard once.",
-      "epic": "Unlocked at 50 trophy threshold and above.",
-      "rare": "Available from the starting roster.",
-      "common": "Available from the starting roster.",
-      "exclusive": "Limited-time event drop."
+      "mythic": "通过在任何每月神话竞技场锦标赛中获得前三名赢得。",
+      "legendary": "通过在全球排行榜上达到前1%一次获得。",
+      "epic": "在50奖杯门槛及以上解锁。",
+      "rare": "从起始阵容中获得。",
+      "common": "从起始阵容中获得。",
+      "exclusive": "限时活动掉落。"
     },
     "countries": {
-      "AE": "United Arab Emirates",
-      "AR": "Argentina",
-      "AT": "Austria",
-      "AU": "Australia",
-      "AZ": "Azerbaijan",
-      "BE": "Belgium",
-      "BG": "Bulgaria",
-      "BR": "Brazil",
-      "CA": "Canada",
-      "CH": "Switzerland",
-      "CL": "Chile",
-      "CN": "China",
-      "CO": "Colombia",
-      "CZ": "Czech Republic",
-      "DE": "Germany",
-      "DK": "Denmark",
-      "EG": "Egypt",
-      "ES": "Spain",
-      "FI": "Finland",
-      "FR": "France",
-      "GB": "United Kingdom",
-      "GR": "Greece",
-      "HR": "Croatia",
-      "HU": "Hungary",
-      "ID": "Indonesia",
-      "IE": "Ireland",
-      "IL": "Israel",
-      "IN": "India",
-      "IR": "Iran",
-      "IT": "Italy",
-      "JP": "Japan",
-      "KR": "South Korea",
-      "MX": "Mexico",
-      "MY": "Malaysia",
-      "NG": "Nigeria",
-      "NL": "Netherlands",
-      "NO": "Norway",
-      "NZ": "New Zealand",
-      "PE": "Peru",
-      "PH": "Philippines",
-      "PK": "Pakistan",
-      "PL": "Poland",
-      "PT": "Portugal",
-      "QA": "Qatar",
-      "RO": "Romania",
-      "RS": "Serbia",
-      "RU": "Russia",
-      "SA": "Saudi Arabia",
-      "SE": "Sweden",
-      "SG": "Singapore",
-      "SK": "Slovakia",
-      "TH": "Thailand",
-      "TR": "Türkiye",
-      "TW": "Taiwan",
-      "UA": "Ukraine",
-      "US": "United States",
-      "USA": "United States",
-      "VE": "Venezuela",
-      "VN": "Vietnam",
-      "ZA": "South Africa"
+      "AE": "阿联酋",
+      "AR": "阿根廷",
+      "AT": "奥地利",
+      "AU": "澳大利亚",
+      "AZ": "阿塞拜疆",
+      "BE": "比利时",
+      "BG": "保加利亚",
+      "BR": "巴西",
+      "CA": "加拿大",
+      "CH": "瑞士",
+      "CL": "智利",
+      "CN": "中国",
+      "CO": "哥伦比亚",
+      "CZ": "捷克共和国",
+      "DE": "德国",
+      "DK": "丹麦",
+      "EG": "埃及",
+      "ES": "西班牙",
+      "FI": "芬兰",
+      "FR": "法国",
+      "GB": "英国",
+      "GR": "希腊",
+      "HR": "克罗地亚",
+      "HU": "匈牙利",
+      "ID": "印度尼西亚",
+      "IE": "爱尔兰",
+      "IL": "以色列",
+      "IN": "印度",
+      "IR": "伊朗",
+      "IT": "意大利",
+      "JP": "日本",
+      "KR": "韩国",
+      "MX": "墨西哥",
+      "MY": "马来西亚",
+      "NG": "尼日利亚",
+      "NL": "荷兰",
+      "NO": "挪威",
+      "NZ": "新西兰",
+      "PE": "秘鲁",
+      "PH": "菲律宾",
+      "PK": "巴基斯坦",
+      "PL": "波兰",
+      "PT": "葡萄牙",
+      "QA": "卡塔尔",
+      "RO": "罗马尼亚",
+      "RS": "塞尔维亚",
+      "RU": "俄罗斯",
+      "SA": "沙特阿拉伯",
+      "SE": "瑞典",
+      "SG": "新加坡",
+      "SK": "斯洛伐克",
+      "TH": "泰国",
+      "TR": "土耳其",
+      "TW": "台湾",
+      "UA": "乌克兰",
+      "US": "美国",
+      "USA": "美国",
+      "VE": "委内瑞拉",
+      "VN": "越南",
+      "ZA": "南非"
     }
   }
 }
