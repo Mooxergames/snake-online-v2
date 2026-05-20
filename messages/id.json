@@ -352,7 +352,7 @@
       },
       "skins": {
         "title": "Skin Buatan Tangan",
-        "body": "Enam tingkatan kelangkaan. Bendera negara, naga mitos, ular neon. Tidak ada bayar untuk menang — keterampilan yang menentukan."
+        "body": "Enam tingkat kelangkaan. Bendera negara, naga mitos, ular neon. Tidak ada bayar untuk menang — keterampilan yang menentukan."
       },
       "leaderboards": {
         "title": "Papan Peringkat Global",
@@ -360,7 +360,7 @@
       },
       "country": {
         "title": "180+ Skin Negara",
-        "body": "Tunjukkan warna-warnamu. Setiap bendera di dunia adalah skin yang dapat dikenakan — kenakan milikmu ke dalam pertempuran."
+        "body": "Tampilkan warnamu. Setiap bendera di dunia adalah skin yang dapat dikenakan — kenakan milikmu ke dalam pertempuran."
       },
       "tournaments": {
         "title": "Turnamen Harian",
@@ -368,14 +368,14 @@
       },
       "crossplay": {
         "title": "Cross-Play Sebenarnya",
-        "body": "Satu akun. iOS, Android, Web. Kemajuan, skin, dan peringkatmu mengikuti kamu."
+        "body": "Satu akun. iOS, Android, Web. Kemajuan, skin, dan peringkatmu mengikuti."
       },
       "fairplay": {
         "title": "Tanpa Bayar untuk Menang",
         "body": "Hanya kosmetik. Papan peringkat ditentukan oleh refleks, bukan dompet."
       },
       "community": {
-        "title": "5M+ Komunitas Ular",
+        "title": "5M+ Snake Nation",
         "body": "Discord, turnamen, pembuat konten. Komunitas ular terbesar di dunia .io."
       }
     }
@@ -432,43 +432,43 @@
     "items": {
       "whatIsIt": {
         "q": "Apa itu Snake Online?",
-        "a": "Snake Online adalah battle royale ular multiplayer .io waktu nyata gratis. Lingkari lawan, makan orbs mereka, naik ke papan peringkat global. 200+ skin koleksi, 180+ papan peringkat negara, tersedia di iOS, Android, dan browser web modern mana pun."
+        "a": "Snake Online adalah permainan .io snake battle royale multiplayer real-time gratis. Lingkari lawan, makan orbs mereka, naik ke papan peringkat global. Lebih dari 200 skin koleksi, 180+ papan peringkat negara, tersedia di iOS, Android, dan browser web modern mana pun."
       },
       "isItFree": {
         "q": "Apakah Snake Online benar-benar gratis?",
-        "a": "Ya. Gratis selamanya, tidak perlu mendaftar untuk bermain di browser. Tidak ada dinding bayar dan tidak ada keuntungan bayar-untuk-menang — skin hanya bersifat kosmetik dan sebagian besar bisa didapatkan melalui permainan."
+        "a": "Ya. Gratis selamanya, tidak perlu mendaftar untuk bermain di browser. Tidak ada dinding pembayaran dan tidak ada keuntungan bayar-untuk-menang — skin hanya bersifat kosmetik dan sebagian besar dapat diperoleh melalui permainan."
       },
       "doINeedToDownload": {
-        "q": "Apakah saya perlu mengunduh apa pun?",
-        "a": "Tidak untuk web — cukup tekan Mainkan dan kamu sudah berada di arena dalam hitungan detik. Untuk mobile, aplikasi native gratis tersedia di App Store dan Google Play dengan progresi lintas yang sama."
+        "q": "Apakah saya perlu mengunduh sesuatu?",
+        "a": "Tidak untuk web — cukup tekan Play dan kamu sudah berada di arena dalam hitungan detik. Untuk mobile, aplikasi native gratis tersedia di App Store dan Google Play dengan progresi lintas yang sama."
       },
       "howManySkins": {
         "q": "Ada berapa banyak skin ular?",
-        "a": "Lebih dari 200 skin buatan tangan di enam tingkat kelangkaan: Umum, Langka, Epik, Legendaris, Mitik, dan Eksklusif. Penurunan musiman baru setiap bulan — termasuk eksklusif bendera negara untuk 180+ negara."
+        "a": "Lebih dari 200 skin yang dibuat dengan tangan di enam tingkatan kelangkaan: Umum, Langka, Epik, Legendaris, Mitik, dan Eksklusif. Penurunan musiman baru setiap bulan — termasuk eksklusif bendera negara untuk 180+ negara."
       },
       "isItMultiplayer": {
-        "q": "Apakah benar-benar multiplayer waktu nyata (bukan bot)?",
-        "a": "Ya. Setiap ular di arena kamu adalah pemain manusia nyata. Kami menjalankan server tepi di 12 wilayah global untuk latensi di bawah 100ms, sehingga lingkaran, potongan, dan jebakan terasa instan — tidak lag."
+        "q": "Apakah benar-benar multiplayer real-time (bukan bot)?",
+        "a": "Ya. Setiap ular di arena kamu adalah pemain manusia nyata. Kami menjalankan server edge di 12 wilayah global untuk latensi di bawah 100ms, sehingga lilitan, potongan, dan perangkap terasa instan — tidak lag."
       },
       "whichDevices": {
         "q": "Di perangkat apa saja ini dapat dijalankan?",
-        "a": "Browser web modern mana pun (Chrome, Safari, Firefox, Edge), iPhone, iPad, ponsel dan tablet Android. Satu akun tersinkronisasi di semua perangkat tersebut."
+        "a": "Browser web modern mana pun (Chrome, Safari, Firefox, Edge), iPhone, iPad, ponsel dan tablet Android. Satu akun dapat disinkronkan di semua perangkat tersebut."
       },
       "howToWin": {
         "q": "Bagaimana cara saya menjadi lebih besar lebih cepat?",
-        "a": "Kesabaran dan posisi mengalahkan agresi. Dekati perimeter, ambil orbs dari pembunuhan, hanya lakukan jebakan lingkaran ketika target terkunci dalam garis lurus. Boost mengurangi massa — gunakan dengan hemat, hanya untuk menyelesaikan pembunuhan atau melarikan diri."
+        "a": "Kesabaran dan posisi mengalahkan agresi. Dekati tepi, ambil orbs dari pembunuhan, hanya lakukan perangkap lilitan ketika target terkunci dalam garis lurus. Boost membakar massa — gunakan dengan hemat, hanya untuk menutup pembunuhan atau melarikan diri."
       },
       "vsWormzone": {
         "q": "Bagaimana Snake Online berbeda dari Worms Zone?",
-        "a": "Worms Zone sebagian besar adalah permainan tunggal melawan bot AI, hanya dalam bahasa Inggris, tanpa papan peringkat publik atau versi web. Snake Online adalah multiplayer waktu nyata melawan manusia, mendukung 14 bahasa, memiliki papan peringkat global langsung, dan berjalan secara native di browser dengan progresi lintas ke mobile."
+        "a": "Worms Zone sebagian besar adalah permainan tunggal melawan bot AI, hanya dalam bahasa Inggris, tanpa papan peringkat publik atau versi web. Snake Online adalah multiplayer real-time melawan manusia, mendukung 14 bahasa, memiliki papan peringkat global langsung, dan berjalan secara native di browser dengan progresi lintas ke mobile."
       },
       "vsSlither": {
         "q": "Bagaimana ini berbeda dari Slither.io?",
-        "a": "Snake Online mempertahankan kontrol intuitif Slither tetapi menambahkan: 200+ skin koleksi (dibandingkan dengan ~50 di Slither), 180+ papan peringkat negara, turnamen harian, peringkat publik yang diperbarui setiap jam, dan progresi lintas platform penuh. Progresi hanya berdasarkan keterampilan — tidak ada bayar-untuk-menang."
+        "a": "Snake Online mempertahankan kontrol intuitif Slither tetapi menambahkan: lebih dari 200 skin koleksi (dibandingkan dengan ~50 di Slither), 180+ papan peringkat negara, turnamen harian, peringkat publik yang diperbarui setiap jam, dan progresi lintas platform penuh. Progresi hanya berdasarkan keterampilan — tidak ada bayar-untuk-menang."
       },
       "progressSync": {
-        "q": "Apakah progres saya tersinkronisasi di berbagai perangkat?",
-        "a": "Ya. Masuk sekali dan trofi, skin, teman, dan entri turnamenmu mengikuti kamu antara iOS, Android, dan web secara otomatis."
+        "q": "Apakah progres saya disinkronkan di berbagai perangkat?",
+        "a": "Ya. Masuk sekali dan trofi, skin, teman, dan entri turnamenmu akan mengikuti kamu antara iOS, Android, dan web secara otomatis."
       }
     }
   },
@@ -509,20 +509,20 @@
   },
   "versus": {
     "eyebrow": "PERBANDINGAN VS",
-    "playFreeNow": "Mainkan Snake Online gratis",
+    "playFreeNow": "Mainkan Snake Online secara gratis",
     "viewAllSkins": "Jelajahi 200+ kulit ular",
     "wormzone": {
       "title": "Snake Online vs Worms Zone .io",
       "seoTitle": "Snake Online vs Worms Zone .io — Game Ular Mana yang Menang di 2026?",
       "seoDescription": "Perbandingan lengkap: Snake Online dan Worms Zone .io secara langsung. Multiplayer waktu nyata vs bot, 200+ vs 80 kulit, 14 bahasa vs 1, papan peringkat publik vs tidak ada. Lihat mengapa pemain beralih.",
       "lead": "Worms Zone .io memperkenalkan jutaan orang ke genre ular .io — tetapi pengalaman ini sebagian besar adalah pemain tunggal melawan bot, hanya dalam bahasa Inggris, dan situs pemasaran tidak memiliki data terstruktur. Snake Online membangun kembali genre ini sebagai multiplayer waktu nyata yang sebenarnya dengan peringkat global, 14 bahasa, dan ekonomi kulit yang transparan. Berikut adalah perbandingan langsung, fitur demi fitur.",
-      "verdict": "Putusan: jika Anda menginginkan suasana kasual kartun melawan AI, Worms Zone masih berfungsi. Jika Anda menginginkan lawan nyata, papan peringkat nyata, dan kemajuan lintas platform yang nyata, Snake Online adalah peningkatannya."
+      "verdict": "Putusan: jika Anda menginginkan suasana kasual kartun melawan AI, Worms Zone masih berfungsi. Jika Anda menginginkan lawan yang nyata, papan peringkat yang nyata, dan kemajuan lintas platform yang nyata, Snake Online adalah peningkatannya."
     },
     "slither": {
       "title": "Snake Online vs Slither.io",
       "seoTitle": "Snake Online vs Slither.io — Perbandingan Fitur Lengkap",
-      "seoDescription": "Snake Online vs Slither.io: 200+ kulit koleksi, papan peringkat per jam, turnamen harian, 14 bahasa, sinkronisasi lintas platform. Segala sesuatu yang ditunggu-tunggu oleh pemain Slither.",
-      "lead": "Slither.io mendefinisikan genre ular .io pada 2016 — minimalis, adiktif, instan. Snake Online mempertahankan nuansa intuitif itu dan menambahkan hal-hal yang tidak pernah diluncurkan oleh Slither: 200+ kulit koleksi, papan peringkat global publik yang diperbarui setiap jam, turnamen harian, aplikasi seluler asli dengan kemajuan lintas platform, dan 14 bahasa dengan SEO lokal yang tepat.",
+      "seoDescription": "Snake Online vs Slither.io: 200+ kulit koleksi, papan peringkat setiap jam, turnamen harian, 14 bahasa, sinkronisasi lintas platform. Segala sesuatu yang ditunggu-tunggu oleh pemain Slither.",
+      "lead": "Slither.io mendefinisikan genre ular .io pada 2016 — minimalis, adiktif, instan. Snake Online mempertahankan nuansa intuitif itu dan menambahkan hal-hal yang tidak pernah dirilis oleh Slither: 200+ kulit koleksi, papan peringkat global publik yang diperbarui setiap jam, turnamen harian, aplikasi seluler asli dengan kemajuan lintas platform, dan 14 bahasa dengan SEO lokal yang tepat.",
       "verdict": "Putusan: Slither tetap yang asli dari genre ini. Snake Online adalah apa yang akan menjadi Slither jika diluncurkan pada 2026 — kontrol yang sama, kedalaman modern."
     }
   },
@@ -530,28 +530,28 @@
     "eyebrow": "PANDUAN PEMULA",
     "title": "Cara bermain Snake Online.",
     "seoTitle": "Cara Bermain Snake Online — Panduan Pemula 5 Menit",
-    "seoDescription": "Panduan langkah demi langkah untuk bermain Snake Online: kontrol, makan, dorongan, perangkap koil, dan mendaki papan peringkat. Gratis di browser modern mana pun.",
+    "seoDescription": "Panduan langkah demi langkah untuk bermain Snake Online: kontrol, makan, dorongan, perangkap koil, dan naik papan peringkat. Gratis di browser modern mana pun.",
     "lead": "Snake Online dirancang untuk permainan cepat selama tiga puluh detik dan penguasaan yang mendalam selama berjam-jam. Dasar-dasarnya muat di satu layar — baca sekali, lalu itu hanya memori otot. Berikut adalah semua yang Anda butuhkan untuk beralih dari pemain baru ke 10% teratas.",
     "playNow": "Mainkan gratis sekarang",
     "browseSkins": "Jelajahi skin",
     "readyTitle": "Siap untuk meluncur?",
-    "readyBody": "Tidak perlu unduhan, tidak perlu pendaftaran. Tekan main dan Anda akan berada di arena dalam hitungan detik.",
+    "readyBody": "Tidak perlu unduhan, tidak perlu pendaftaran. Tekan main dan Anda sudah berada di arena dalam hitungan detik.",
     "steps": {
       "enter": {
         "title": "Tekan Main — Anda langsung berada di arena.",
-        "body": "Klik Main Gratis Sekarang. Tidak perlu pendaftaran, tidak perlu instalasi. Anda akan muncul di arena langsung dengan pemain nyata dalam hitungan detik. Pilih skin ular (skin pemula gratis tersedia) dan wilayah — wilayah yang lebih dekat berarti latensi lebih rendah."
+        "body": "Klik Main Gratis Sekarang. Tidak ada pendaftaran, tidak ada instalasi. Anda akan muncul di arena langsung dengan pemain nyata dalam hitungan detik. Pilih skin ular (yang gratis tersedia) dan sebuah wilayah — wilayah yang lebih dekat berarti latensi yang lebih rendah."
       },
       "move": {
         "title": "Arahkan dengan mouse atau jempol Anda.",
-        "body": "Di desktop, kepala ular Anda mengikuti kursor. Di ponsel, seret di mana saja di layar untuk mengarahkan. Ular tidak pernah berhenti bergerak — tugas Anda hanya arah. Cobalah lengkungan lebar dan halus daripada belokan tajam: Anda akan membuang lebih sedikit momentum dan dapat bereaksi lebih cepat."
+        "body": "Di desktop, kepala ular Anda mengikuti kursor. Di mobile, seret di mana saja di layar untuk mengarahkan. Ular tidak pernah berhenti bergerak — satu-satunya tugas Anda adalah arah. Cobalah lengkungan yang lebar dan halus daripada belokan tajam: Anda akan membuang lebih sedikit momentum dan dapat bereaksi lebih cepat."
       },
       "eat": {
         "title": "Makan orbs untuk tumbuh.",
-        "body": "Orbs kecil yang bersinar tersebar di peta. Jalankan di atasnya untuk tumbuh lebih panjang dan mencetak poin. Orbs yang lebih besar (ditinggalkan oleh ular yang mati) memberikan pertumbuhan besar — tetapi itu umpan. Ular lain selalu terburu-buru ke sana. Ambil hanya ketika Anda memiliki jalan keluar yang jelas."
+        "body": "Orbs kecil yang bersinar tersebar di peta. Jalani mereka untuk tumbuh lebih panjang dan mencetak poin. Orbs yang lebih besar (ditinggalkan oleh ular yang mati) memberikan pertumbuhan besar — tetapi itu adalah umpan. Ular lain selalu terburu-buru ke sana. Ambil hanya ketika Anda memiliki jalan keluar yang jelas."
       },
       "boost": {
         "title": "Dorongan membakar massa — gunakan dengan bijak.",
-        "body": "Tahan klik kiri (atau ketuk dan tahan di ponsel) untuk meningkatkan. Anda bergerak ~50% lebih cepat tetapi kehilangan massa setiap detik. Dua penggunaan nyata: untuk menutup pembunuhan (potong di depan target) dan untuk melarikan diri dari perangkap. Jangan pernah meningkatkan hanya untuk terlihat cepat — itu mahal."
+        "body": "Tahan klik kiri (atau ketuk dan tahan di mobile) untuk meningkatkan. Anda bergerak ~50% lebih cepat tetapi kehilangan massa setiap detik. Dua penggunaan nyata: untuk menutup pembunuhan (potong di depan target) dan untuk melarikan diri dari perangkap. Jangan pernah meningkatkan hanya untuk terlihat cepat — itu mahal."
       },
       "coil": {
         "title": "Perangkap koil untuk membunuh.",
@@ -559,37 +559,37 @@
       },
       "survive": {
         "title": "Bertahan di perimeter terlebih dahulu.",
-        "body": "Tepi arena adalah tempat teraman untuk tumbuh — lebih sedikit penyerang, batas yang dapat diprediksi yang bisa Anda dekati. Tetap di sana sampai Anda berada di 30% teratas. Tengah peta adalah tempat juara ditembak oleh Top 10 yang bosan."
+        "body": "Tepi arena adalah tempat teraman untuk tumbuh — lebih sedikit penyerang, batas yang dapat diprediksi yang dapat Anda dekati. Tetap di sana sampai Anda berada di 30% teratas. Tengah peta adalah tempat juara ditembak oleh Top 10 yang bosan."
       },
       "climb": {
         "title": "Naik papan peringkat global.",
-        "body": "Trofi diberikan untuk bertahan lebih lama, mencetak lebih tinggi, dan mengalahkan ular yang lebih besar. Papan peringkat setiap jam diperbarui — 1% teratas mendapatkan skin eksklusif. 3 teratas dari papan peringkat negara mana pun mengklaim skin bendera negara untuk musim berikutnya."
+        "body": "Trofi diberikan untuk bertahan lebih lama, mencetak lebih tinggi, dan mengalahkan ular yang lebih besar. Papan peringkat setiap jam diperbarui — 1% teratas mendapatkan skin eksklusif. Tiga teratas di papan peringkat negara mana pun mengklaim skin bendera negara untuk musim berikutnya."
       }
     }
   },
   "blog": {
     "siteName": "Snake Online",
     "eyebrow": "BLOG SNAKE ONLINE",
-    "titleLead": "Strategi, lore,",
+    "titleLead": "Strategi, cerita,",
     "titleAccent": "dan sorotan skin.",
     "exploreCategories": "Jelajahi kategori",
-    "browse": "Jelajahi",
+    "browse": "Telusuri",
     "backToNews": "Kembali ke berita",
     "readingTime": "{min} menit baca",
     "aiAssisted": "Dibantu AI",
     "relatedPosts": "Pos terkait",
-    "mentionedSkin": "Skin di pos ini",
+    "mentionedSkin": "Skin dalam pos ini",
     "viewSkin": "Lihat skin",
     "emptyCategory": "Belum ada pos di kategori ini — periksa kembali segera.",
     "categories": {
       "all": "Semua pos",
       "skin-spotlight": {
         "title": "Sorotan Skin",
-        "description": "Pendalaman tentang skin ular individu — lore, panduan pembukaan, kosmetik terkait."
+        "description": "Pendalaman pada skin ular individu — cerita, panduan buka kunci, kosmetik terkait."
       },
       "strategy": {
         "title": "Strategi",
-        "description": "Cara menang di Snake Online. Taktik, ekonomi boost, mekanik perangkap gulungan, pendakian papan peringkat."
+        "description": "Cara menang di Snake Online. Taktik, ekonomi boost, mekanik jebakan koil, pendakian papan peringkat."
       },
       "comparisons": {
         "title": "Perbandingan",
@@ -597,14 +597,14 @@
       },
       "updates": {
         "title": "Pembaruan",
-        "description": "Catatan patch, skin baru, perubahan keseimbangan, di balik layar dari studio."
+        "description": "Catatan patch, rilis skin baru, perubahan keseimbangan, di balik layar dari studio."
       },
       "community": {
         "title": "Komunitas",
-        "description": "Rekap turnamen, cerita pemain, pembuat konten, sorotan Discord."
+        "description": "Rekap turnamen, cerita pemain, pencipta konten, sorotan Discord."
       },
       "lore": {
-        "title": "Lore",
+        "title": "Cerita",
         "description": "Dunia di balik arena. Mitologi ular, cerita asal skin, narasi mendalam."
       }
     }
@@ -613,17 +613,17 @@
     "eyebrow": "DAPATKAN SNAKE ONLINE",
     "titleLead": "Lima platform.",
     "titleAccent": "Satu arena. Nol biaya.",
-    "subtitle": "Gratis selamanya. Tanpa pay-to-win. Trofi, skin, dan peringkat yang sama di iOS, Android, Web, Windows, dan macOS — satu akun di mana saja.",
+    "subtitle": "Gratis selamanya. Tanpa bayar untuk menang. Trofi, skin, dan peringkat yang sama di iOS, Android, Web, Windows, dan macOS — satu akun di mana saja.",
     "trust": {
       "free": "Gratis selamanya",
-      "cosmetics": "Hanya kosmetik, tanpa pay-to-win",
+      "cosmetics": "Hanya kosmetik, tanpa bayar untuk menang",
       "crossplay": "Kemajuan lintas platform",
-      "lightweight": "Bisa dijalankan di ponsel berusia 5 tahun"
+      "lightweight": "Bisa berjalan di ponsel berusia 5 tahun"
     },
     "web": {
       "badge": "REKOMENDASI · INSTAN",
       "title": "Mainkan instan di browser Anda",
-      "body": "Tanpa instalasi, tanpa pendaftaran, tanpa menunggu. Membuka dalam layar penuh di Chrome, Safari, Firefox, Edge — arena yang sama seperti aplikasi, skin yang sama, papan peringkat yang sama.",
+      "body": "Tanpa instalasi, tanpa pendaftaran, tanpa menunggu. Membuka dalam mode layar penuh di Chrome, Safari, Firefox, Edge — arena yang sama seperti aplikasi, skin yang sama, papan peringkat yang sama.",
       "cta": "Luncurkan versi web"
     },
     "platformsTitle": "Pilih platform Anda",
@@ -659,11 +659,11 @@
     "features": {
       "fps": {
         "title": "60 FPS terkunci",
-        "body": "Gerakan yang sangat mulus di setiap perangkat. Resolusi adaptif saat beban."
+        "body": "Gerakan yang sangat halus di setiap perangkat. Resolusi adaptif saat beban."
       },
       "noads": {
-        "title": "Tanpa iklan di pertandingan",
-        "body": "Kami tidak pernah mengganggu pertarungan. Iklan yang diberi imbalan hanya opsional antara pertandingan."
+        "title": "Tanpa iklan dalam pertandingan",
+        "body": "Kami tidak pernah mengganggu pertarungan. Iklan yang dihargai hanya opsional antara pertandingan."
       },
       "crosssync": {
         "title": "Kemajuan lintas",
@@ -671,7 +671,7 @@
       },
       "footprint": {
         "title": "Jejak kecil",
-        "body": "Di bawah 200 MB di disk. Dirancang untuk dijalankan di ponsel hingga 5 tahun."
+        "body": "Di bawah 200 MB di disk. Dirancang untuk berjalan di ponsel hingga 5 tahun."
       }
     },
     "qr": {
@@ -681,7 +681,7 @@
       "alt": "Kode QR yang mengarah ke halaman unduhan Snake Online"
     },
     "reqsTitle": "Persyaratan sistem",
-    "reqsSubtitle": "Ringan secara desain — dapat dijalankan di ponsel berusia 5 tahun.",
+    "reqsSubtitle": "Ringan secara desain — berjalan di ponsel berusia 5 tahun.",
     "reqs": {
       "cpu": {
         "label": "CPU",
@@ -697,7 +697,7 @@
       },
       "security": {
         "label": "Keamanan",
-        "val": "Semua installer ditandatangani kode. iOS terverifikasi. Sertifikat EV Windows."
+        "val": "Semua installer ditandatangani kode. iOS terdaftar. Sertifikat EV Windows."
       }
     },
     "finalTitle": "200+ skin menunggu.",
@@ -706,23 +706,23 @@
   },
   "skinTemplates": {
     "_note": "Localized templates used by lib/skins.ts to build per-locale skin descriptions and unlock hints. The skin's fantasy name (Ember, Dusk, etc.) and country name are interpolated; everything else translates per locale.",
-    "descriptionCountry": "Skin ular negara {country} — kibarkan benderamu di arena. Salah satu dari 180+ skin nasional eksklusif di Snake Online.",
+    "descriptionCountry": "Skin ular negara {country} — kibarkan bendera Anda di arena. Salah satu dari 180+ skin nasional eksklusif di Snake Online.",
     "descriptionFantasy": {
       "mythic": "{name} — skin ular fantasi tingkat mitik. Hanya jatuh selama final turnamen tingkat tinggi.",
       "legendary": "{name} — skin ular fantasi tingkat legendaris. Ditempa di arena akhir permainan. Diperoleh dengan susah payah, lebih sulit untuk dipertahankan.",
       "epic": "{name} — skin ular fantasi tingkat epik. Diperoleh melalui pendakian papan peringkat yang berkelanjutan.",
       "rare": "{name} — skin ular fantasi tingkat langka. Teman yang dapat diandalkan untuk pendakian.",
       "common": "{name} — skin ular fantasi tingkat umum. Teman yang dapat diandalkan untuk pendakian.",
-      "exclusive": "{name} — skin ular fantasi eksklusif. Hadiah acara terbatas."
+      "exclusive": "{name} — skin ular fantasi eksklusif. Hadiah acara terbatas waktu."
     },
-    "obtainHintCountry": "Diberikan secara otomatis ketika kamu terhubung dari {country}, atau dibuka secara permanen dengan memenangkan turnamen negara mana pun.",
+    "obtainHintCountry": "Diberikan secara otomatis saat Anda terhubung dari {country}, atau dibuka secara permanen dengan memenangkan turnamen negara mana pun.",
     "obtainHintFantasy": {
-      "mythic": "Dimenangkan dengan menempatkan posisi 3 besar di turnamen Mythic Arena bulanan mana pun.",
+      "mythic": "Dimenangkan dengan menempatkan di 3 besar dalam turnamen Mythic Arena bulanan mana pun.",
       "legendary": "Diberikan untuk mencapai Top 1% di papan peringkat global sekali.",
       "epic": "Dibuka pada ambang 50 trofi dan di atasnya.",
       "rare": "Tersedia dari roster awal.",
       "common": "Tersedia dari roster awal.",
-      "exclusive": "Jatuhan acara terbatas."
+      "exclusive": "Jatuhan acara terbatas waktu."
     },
     "countries": {
       "AE": "Uni Emirat Arab",
@@ -748,7 +748,7 @@
       "GB": "Inggris Raya",
       "GR": "Yunani",
       "HR": "Kroasia",
-      "HU": "Hongaria",
+      "HU": "Hungaria",
       "ID": "Indonesia",
       "IE": "Irlandia",
       "IL": "Israel",
@@ -777,7 +777,7 @@
       "SG": "Singapura",
       "SK": "Slovakia",
       "TH": "Thailand",
-      "TR": "Turki",
+      "TR": "Türkiye",
       "TW": "Taiwan",
       "UA": "Ukraina",
       "US": "Amerika Serikat",
