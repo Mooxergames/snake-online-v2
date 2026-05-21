@@ -57,6 +57,9 @@ const BLOCKS_TO_TRANSLATE = [
   'downloadsPage',
   'blog',
   'marquee',
+  'gameModes',
+  'powerUps',
+  'experience',
   // meta.pages is a SUB-block — handled separately
 ] as const;
 
