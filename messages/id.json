@@ -819,5 +819,44 @@
         "description": "Jelajahi arena untuk menemukan permata tersembunyi dan peti harta karun. Cerdiklah dari pemburu saingan dan amankan barang berharga yang paling berharga."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Eliksir Peningkatan",
+    "title": "Tingkatkan Permainan Anda",
+    "subtitle": "8 peningkatan yang mengubah permainan untuk meningkatkan gameplay Anda. Kumpulkan mereka di arena untuk mendapatkan keuntungan taktis.",
+    "items": {
+      "magnify": {
+        "name": "Perbesar",
+        "desc": "Meningkatkan jangkauan penglihatan Anda untuk melihat musuh dan makanan dari jauh"
+      },
+      "magnet": {
+        "name": "Magnet",
+        "desc": "Menarik orb makanan terdekat secara otomatis menuju ular Anda"
+      },
+      "x2": {
+        "name": "Pengali 2x",
+        "desc": "Menggandakan semua skor yang diperoleh selama durasi terbatas"
+      },
+      "x5": {
+        "name": "Pengali 5x",
+        "desc": "Menggandakan skor Anda — risiko tinggi, imbalan tinggi"
+      },
+      "scoreSaver": {
+        "name": "Penyimpan Skor",
+        "desc": "Melindungi skor Anda dari penurunan saat mati sekali"
+      },
+      "quickTurn": {
+        "name": "Belok Cepat",
+        "desc": "Meningkatkan kecepatan belok secara dramatis untuk manuver tajam"
+      },
+      "shield": {
+        "name": "Perisai",
+        "desc": "Ketidakberdayaan sementara — melewati musuh tanpa terluka"
+      },
+      "speedBoost": {
+        "name": "Peningkatan Kecepatan",
+        "desc": "Ledakan kecepatan tanpa mengurangi panjang tubuh Anda"
+      }
+    }
   }
 }
