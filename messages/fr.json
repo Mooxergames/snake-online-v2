@@ -819,5 +819,44 @@
         "description": "Explorez l'arène à la recherche de gemmes cachées et de coffres au trésor. Surpassez les chasseurs rivaux et sécurisez le butin le plus précieux."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Élixirs de Boost",
+    "title": "Améliorez Votre Jeu",
+    "subtitle": "8 power-ups révolutionnaires pour élever votre gameplay. Collectez-les dans l'arène pour obtenir un avantage tactique.",
+    "items": {
+      "magnify": {
+        "name": "Magnifier",
+        "desc": "Augmente votre portée de vision pour repérer les ennemis et la nourriture de loin"
+      },
+      "magnet": {
+        "name": "Aimant",
+        "desc": "Attire automatiquement les orbes de nourriture à proximité vers votre serpent"
+      },
+      "x2": {
+        "name": "Multiplicateur 2x",
+        "desc": "Double tous les points gagnés pendant une durée limitée"
+      },
+      "x5": {
+        "name": "Multiplicateur 5x",
+        "desc": "Quintuples vos gains de score — risque élevé, récompense élevée"
+      },
+      "scoreSaver": {
+        "name": "Sauvegarde de Score",
+        "desc": "Protège votre score de la chute à la mort une fois"
+      },
+      "quickTurn": {
+        "name": "Virage Rapide",
+        "desc": "Augmente considérablement la vitesse de rotation pour des manœuvres serrées"
+      },
+      "shield": {
+        "name": "Bouclier",
+        "desc": "Invincibilité temporaire — traversez les ennemis sans être blessé"
+      },
+      "speedBoost": {
+        "name": "Accélération",
+        "desc": "Élan de vitesse sans consommer votre longueur de corps"
+      }
+    }
   }
 }
