@@ -15,10 +15,10 @@ export default async function ContactPage({ params: { locale } }: { params: { lo
   const tf = await getTranslations({ locale, namespace: 'contactForm' });
 
   const channels = [
-    { Icon: Mail,        label: 'General',      email: 'hello@snakeonline.io',     desc: 'Anything else.' },
-    { Icon: Briefcase,   label: 'Partnerships', email: 'biz@snakeonline.io',       desc: 'Brand collabs, esports, distribution.' },
-    { Icon: Newspaper,   label: 'Press',        email: 'press@snakeonline.io',     desc: 'Interviews, review codes, assets.' },
-    { Icon: MessageCircle, label: 'Player Support', email: 'support@snakeonline.io', desc: 'Account, billing, gameplay.' },
+    { Icon: Mail,        label: 'General',      email: 'info@visiongo.at',     desc: 'Anything else.' },
+    { Icon: Briefcase,   label: 'Partnerships', email: 'info@visiongo.at',       desc: 'Brand collabs, esports, distribution.' },
+    { Icon: Newspaper,   label: 'Press',        email: 'info@visiongo.at',     desc: 'Interviews, review codes, assets.' },
+    { Icon: MessageCircle, label: 'Player Support', email: 'info@visiongo.at', desc: 'Account, billing, gameplay.' },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default async function ContactPage({ params: { locale } }: { params: { lo
         <div>
           <h2 className="font-display text-2xl font-semibold mb-6">{tf('title')}</h2>
           <form
-            action="mailto:hello@snakeonline.io"
+            action="mailto:info@visiongo.at"
             method="post"
             encType="text/plain"
             className="space-y-4 card"

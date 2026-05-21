@@ -24,7 +24,7 @@ export default async function SupportPage({ params: { locale } }: { params: { lo
   const faqs = [
     { q: 'Is Snake Online free to play?', a: 'Yes. The game is 100% free on Web, iOS, and Android. We sell only cosmetic skins — no pay-to-win, ever.' },
     { q: 'Can I play across devices with the same account?', a: 'Absolutely. Sign in with the same provider (Apple, Google, or email) on any device and your trophies, skins, and rank follow you.' },
-    { q: "I lost my account — how do I recover it?", a: 'If you signed in with Apple or Google, just sign in again on a new device. For email accounts, use the "Forgot password" link in the app or email support@snakeonline.io.' },
+    { q: "I lost my account — how do I recover it?", a: 'If you signed in with Apple or Google, just sign in again on a new device. For email accounts, use the "Forgot password" link in the app or email info@visiongo.at.' },
     { q: 'How do I get a refund for an in-app purchase?', a: 'Refunds are handled by Apple App Store or Google Play, not by us. Open the store app → Order history → Request refund. We never take cuts on refund decisions.' },
     { q: 'Why is my game lagging?', a: 'Most lag is network-related. Try switching from Wi-Fi to mobile data (or vice versa). Servers in 12 regions auto-pick the closest one — but background downloads can saturate your connection.' },
     { q: 'Are there cheaters? What do you do about them?', a: 'We use server-authoritative movement and behavioural anti-cheat. Confirmed cheaters get permanent hardware bans. Report a player from the in-game profile screen.' },

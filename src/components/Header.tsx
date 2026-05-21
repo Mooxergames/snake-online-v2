@@ -73,7 +73,7 @@ export default function Header({ locale }: { locale: string }) {
               5M+ players online globally
             </span>
             <span className="hidden lg:inline opacity-60" aria-hidden="true">·</span>
-            <a href="mailto:hello@snakeonline.io" className="hidden lg:inline text-text-secondary hover:text-text-primary transition-colors">hello@snakeonline.io</a>
+            <a href="mailto:info@visiongo.at" className="hidden lg:inline text-text-secondary hover:text-text-primary transition-colors">info@visiongo.at</a>
           </div>
           <div className="flex items-center gap-2">
             <SocialIcons size={13} />

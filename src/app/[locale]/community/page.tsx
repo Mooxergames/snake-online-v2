@@ -76,7 +76,7 @@ export default async function CommunityPage({ params: { locale } }: { params: { 
             <div className="chip mb-5">CREATOR PROGRAM · COMING SOON</div>
             <h3 className="font-display text-3xl sm:text-4xl font-semibold mb-3 gradient-text">Make content. Earn skins.</h3>
             <p className="text-text-secondary max-w-xl mx-auto">Streamers and creators with 1K+ subscribers get exclusive skins, code drops, and revenue share. Apply to the Snake Creators program once it opens this summer.</p>
-            <a href="mailto:creators@snakeonline.io" className="btn-primary mt-8">Get early access</a>
+            <a href="mailto:info@visiongo.at" className="btn-primary mt-8">Get early access</a>
           </div>
         </div>
       </section>
