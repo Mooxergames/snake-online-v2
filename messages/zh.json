@@ -857,5 +857,28 @@
         "desc": "瞬间加速而不消耗你的身体长度"
       }
     }
+  },
+  "experience": {
+    "eyebrow": "体验刺激",
+    "title": "无与伦比的多人游戏",
+    "subtitle": "Snake Online 提供竞争性的游戏玩法、惊艳的视觉效果，以及在所有平台上无尽的可重玩性。",
+    "highlights": {
+      "competitive": {
+        "stat": "500万+",
+        "label": "全球活跃玩家"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "可收集皮肤"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "独特的游戏模式"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "支持的语言"
+      }
+    }
   }
 }
