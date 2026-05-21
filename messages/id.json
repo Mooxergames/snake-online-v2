@@ -858,5 +858,28 @@
         "desc": "Ledakan kecepatan tanpa mengurangi panjang tubuh Anda"
       }
     }
+  },
+  "experience": {
+    "eyebrow": "Rasakan Sensasinya",
+    "title": "Aksi Multiplayer Tanpa Tanding",
+    "subtitle": "Snake Online menghadirkan gameplay kompetitif, visual yang menakjubkan, dan replayability tanpa akhir di semua platform.",
+    "highlights": {
+      "competitive": {
+        "stat": "5M+",
+        "label": "Pemain aktif di seluruh dunia"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "Kulit yang dapat dikoleksi"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "Mode permainan unik"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "Bahasa yang didukung"
+      }
+    }
   }
 }
