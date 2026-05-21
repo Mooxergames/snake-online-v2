@@ -787,5 +787,37 @@
       "VN": "Vietnam",
       "ZA": "Südafrika"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Spielmodi",
+    "title": "Wähle dein Schlachtfeld",
+    "subtitle": "Fünf einzigartige Spielmodi, jeder erfordert eine andere Strategie. Meistere sie alle, um die Bestenliste zu dominieren.",
+    "modes": {
+      "classic": {
+        "name": "Klassischer Modus",
+        "short": "Strategie trifft Geschwindigkeit in der originalen Arena",
+        "description": "Navigiere deine Schlange durch das digitale Reich, wachse über deine Rivalen hinaus und überliste sie. Das klassische Schlangen-Erlebnis neu definiert mit Echtzeit-Multiplayer-Action."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "Die letzte Schlange steht gewinnt alles",
+        "description": "Die Arena schrumpft, der Druck steigt. Überlebe gegen 100 Spieler, während die Karte sich schließt. Nur der strategischste Spieler erringt den Sieg."
+      },
+      "deathMatch": {
+        "name": "Todesmatch",
+        "short": "Reiner Kampf, maximale Kills",
+        "description": "Vergiss das Überleben — hier geht es nur um Aggression. Erzielen Sie Kills, um in schnellen Eliminierungsrunden die Bestenliste zu erklimmen."
+      },
+      "timeTunnel": {
+        "name": "Zeit-Tunnel",
+        "short": "Renne gegen die Zeit",
+        "description": "Jede Sekunde zählt. Sammle Zeitkugeln, um deinen Lauf zu verlängern, während du so schnell wie möglich wächst. Die Uhr bleibt nie stehen."
+      },
+      "treasureHunt": {
+        "name": "Schatzsuche",
+        "short": "Finde versteckte Schätze auf der Karte",
+        "description": "Erkunde die Arena nach versteckten Juwelen und Schatztruhen. Überliste rivalisierende Jäger und sichere die wertvollste Beute."
+      }
+    }
   }
 }
