@@ -819,5 +819,44 @@
         "description": "Explora la arena en busca de gemas ocultas y cofres del tesoro. Engaña a los cazadores rivales y asegura el botín más valioso."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Elixires de Potenciación",
+    "title": "Potencia Tu Juego",
+    "subtitle": "8 potenciadores que cambian el juego para elevar tu experiencia. Recolecta estos en la arena para obtener una ventaja táctica.",
+    "items": {
+      "magnify": {
+        "name": "Magnificar",
+        "desc": "Aumenta tu rango de visión para detectar enemigos y comida desde lejos"
+      },
+      "magnet": {
+        "name": "Imán",
+        "desc": "Atrae automáticamente orbes de comida cercanos hacia tu serpiente"
+      },
+      "x2": {
+        "name": "Multiplicador 2x",
+        "desc": "Duplica todos los puntos obtenidos por un tiempo limitado"
+      },
+      "x5": {
+        "name": "Multiplicador 5x",
+        "desc": "Quintuplica tus ganancias de puntos — alto riesgo, alta recompensa"
+      },
+      "scoreSaver": {
+        "name": "Salvador de Puntos",
+        "desc": "Protege tu puntuación de caer al morir una vez"
+      },
+      "quickTurn": {
+        "name": "Giro Rápido",
+        "desc": "Aumenta drásticamente la velocidad de giro para maniobras precisas"
+      },
+      "shield": {
+        "name": "Escudo",
+        "desc": "Invulnerabilidad temporal — pasa a través de enemigos sin daño"
+      },
+      "speedBoost": {
+        "name": "Aumento de Velocidad",
+        "desc": "Explosión de velocidad sin consumir la longitud de tu cuerpo"
+      }
+    }
   }
 }
