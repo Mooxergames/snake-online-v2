@@ -16,6 +16,99 @@ export interface Skin {
   metaTemplate: number;
 }
 
+// ─── Backend catalog ────────────────────────────────────────────────────────
+// When the backend /api/snakes/catalog endpoint is live, skins are built from
+// real game data. Until then, falls back to the old generated names.
+
+interface CatalogSnake {
+  id: string;
+  name: string;
+  rarity: string;
+  category?: string;
+  countryCode?: string;
+  description?: string;
+  obtainMethod?: string;
+}
+
+const CATALOG_URL = (
+  process.env.SNAKE_CATALOG_URL
+  || `${process.env.BACKEND_API_BASE || 'https://backend.snakeonline.net'}/api/snakes/catalog`
+);
+
+let _catalogPromise: Promise<Map<string, CatalogSnake>> | null = null;
+let _catalogCache: Map<string, CatalogSnake> | null = null;
+let _catalogFetchedAt = 0;
+const CATALOG_TTL = 3600_000; // 1 hour
+
+async function fetchCatalog(): Promise<Map<string, CatalogSnake>> {
+  // Return memory cache if fresh
+  if (_catalogCache && Date.now() - _catalogFetchedAt < CATALOG_TTL) return _catalogCache;
+
+  try {
+    const res = await fetch(CATALOG_URL, {
+      next: { revalidate: 3600 },
+      headers: { Accept: 'application/json' },
+    });
+    if (!res.ok) return _catalogCache ?? new Map();
+    const json = await res.json() as { success?: boolean; data?: { snakes?: CatalogSnake[] } };
+    if (!json.success || !json.data?.snakes) return _catalogCache ?? new Map();
+
+    const map = new Map<string, CatalogSnake>();
+    for (const s of json.data.snakes) {
+      if (s.id) map.set(s.id, s);
+    }
+    _catalogCache = map;
+    _catalogFetchedAt = Date.now();
+    return map;
+  } catch {
+    return _catalogCache ?? new Map();
+  }
+}
+
+/**
+ * Async skin loader — uses backend catalog when available.
+ * Call this in server components / API routes for real names.
+ */
+export async function getAllSkinsFromCatalog(): Promise<Skin[]> {
+  if (!_catalogPromise) _catalogPromise = fetchCatalog();
+  const catalog = await _catalogPromise;
+
+  if (catalog.size === 0) return getAllSkins(); // fallback
+
+  // Build skins from catalog, keep any local-only IDs from snakes.json
+  const allIds = new Set([...catalog.keys(), ...(snakes as string[])]);
+  return Array.from(allIds).map(id => {
+    const cat = catalog.get(id);
+    if (cat) return buildSkinFromCatalog(cat);
+    return buildSkinFallback(id);
+  });
+}
+
+export async function getSkinBySlugFromCatalog(slug: string): Promise<Skin | undefined> {
+  const all = await getAllSkinsFromCatalog();
+  return all.find(s => s.slug === slug);
+}
+
+function buildSkinFromCatalog(cat: CatalogSnake): Skin {
+  const rarity = validRarity(cat.rarity);
+  const isCountry = cat.category === 'country' || cat.id.startsWith('CSNAKE_');
+  const code = cat.countryCode || (isCountry ? cat.id.replace('CSNAKE_', '') : undefined);
+
+  return {
+    id: cat.id,
+    slug: isCountry ? `country-${slugify(cat.name)}` : `fantasy-${slugify(cat.name)}-${cat.id.replace(/\D/g, '')}`,
+    name: cat.name,
+    rarity,
+    country: code,
+    isCountry,
+    description: cat.description || `${cat.name} — a ${rarity} tier snake skin.`,
+    obtainHint: cat.obtainMethod || defaultObtainHint(rarity),
+    metaTemplate: templateBucket(cat.id),
+  };
+}
+
+// ─── Fallback (current behavior — generated names) ──────────────────────────
+
 const COUNTRY_NAMES: Record<string, string> = {
   AE: 'United Arab Emirates', AR: 'Argentina', AT: 'Austria', AU: 'Australia', AZ: 'Azerbaijan',
   BE: 'Belgium', BG: 'Bulgaria', BR: 'Brazil', CA: 'Canada', CH: 'Switzerland', CL: 'Chile',
@@ -47,7 +140,6 @@ const FANTASY_NAMES = [
 ];
 
 const FAMOUS_FANTASY_RARITY: Record<string, Rarity> = {
-  // Hand-curated: the standout names get top tiers
   Ember: 'legendary', Voidling: 'mythic', Frostbite: 'epic', Solaris: 'legendary',
   Eclipse: 'mythic', Phoenix: 'legendary', Aurora: 'epic', Nebula: 'mythic',
   Tempest: 'legendary', Mythril: 'mythic',
@@ -64,6 +156,21 @@ function fantasyRarity(name: string, suffix: string): Rarity {
   return 'mythic';
 }
 
+function validRarity(r: string): Rarity {
+  const valid: Rarity[] = ['common', 'rare', 'epic', 'legendary', 'mythic', 'exclusive'];
+  return valid.includes(r as Rarity) ? (r as Rarity) : 'common';
+}
+
+function defaultObtainHint(rarity: Rarity): string {
+  switch (rarity) {
+    case 'mythic': return 'Won by placing top-3 in any monthly Mythic Arena tournament.';
+    case 'legendary': return 'Awarded for reaching Top 1% on the global leaderboard.';
+    case 'epic': return 'Unlocked at 50 trophy threshold and above.';
+    case 'exclusive': return 'Awarded automatically based on your country.';
+    default: return 'Available from the starting roster.';
+  }
+}
+
 function slugify(name: string): string {
   return name
     .toLowerCase()
@@ -71,23 +178,20 @@ function slugify(name: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-// Deterministic 0..4 from an id, so the same skin always picks the same template
-// (stable URLs, stable SERP snippets).
 function templateBucket(id: string): number {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) | 0;
   return Math.abs(h) % 5;
 }
 
-function buildSkin(id: string): Skin {
+function buildSkinFallback(id: string): Skin {
   if (id.startsWith('CSNAKE_')) {
     const code = id.replace('CSNAKE_', '');
     const country = COUNTRY_NAMES[code] || code;
-    const name = country;
     return {
       id,
       slug: `country-${slugify(country)}`,
-      name,
+      name: country,
       rarity: 'exclusive',
       country: code,
       isCountry: true,
@@ -109,13 +213,7 @@ function buildSkin(id: string): Skin {
       rarity,
       isCountry: false,
       description: `${name} — a ${rarity} tier fantasy snake skin. ${rarity === 'mythic' ? 'Drops only during high-level tournament finals.' : rarity === 'legendary' ? 'Forged in the late-game arena. Hard-earned, harder to keep.' : rarity === 'epic' ? 'Earned through sustained leaderboard climb.' : 'A reliable companion for the climb.'}`,
-      obtainHint: rarity === 'mythic'
-        ? 'Won by placing top-3 in any monthly Mythic Arena tournament.'
-        : rarity === 'legendary'
-          ? 'Awarded for reaching Top 1% on the global leaderboard once.'
-          : rarity === 'epic'
-            ? 'Unlocked at 50 trophy threshold and above.'
-            : 'Available from the starting roster.',
+      obtainHint: defaultObtainHint(rarity),
       metaTemplate: templateBucket(id),
     };
   }
@@ -131,10 +229,12 @@ function buildSkin(id: string): Skin {
   };
 }
 
+// ─── Synchronous API (uses fallback names, for existing consumers) ──────────
+
 let _allSkins: Skin[] | null = null;
 export function getAllSkins(): Skin[] {
   if (_allSkins) return _allSkins;
-  _allSkins = (snakes as string[]).map(buildSkin);
+  _allSkins = (snakes as string[]).map(buildSkinFallback);
   return _allSkins;
 }
 

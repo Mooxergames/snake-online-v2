@@ -6,7 +6,7 @@ import { snakeImg, backgroundImg } from '@/lib/assets';
 import backgrounds from '@/data/backgrounds.json';
 import type { Metadata } from 'next';
 import { buildPageMetadata } from '@/lib/seo';
-import { getAllSkins, type Skin } from '@/lib/skins';
+import { getAllSkinsFromCatalog, getAllSkins, type Skin } from '@/lib/skins';
 import { getLocalizedSkin } from '@/lib/skin-localizer';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
@@ -24,7 +24,7 @@ export default async function SnakesPage({ params: { locale } }: { params: { loc
   const t = await getTranslations({ locale, namespace: 'snakes' });
   const tSkin = await getTranslations({ locale, namespace: 'skinPage' });
 
-  const baseAll = getAllSkins();
+  const baseAll = await getAllSkinsFromCatalog();
   // Localise every skin's name/description/obtainHint so per-locale pages
   // show "Almanya" instead of "Germany", "Türkiye" instead of "Türkiye", etc.
   // Done in parallel — each call is just a memory lookup against the cached

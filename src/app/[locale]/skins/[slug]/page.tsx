@@ -4,7 +4,7 @@ import { unstable_setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { ArrowLeft, ArrowRight, Sparkles, Trophy, Globe, Play } from 'lucide-react';
 import { locales } from '@/lib/locales';
-import { getAllSkins, type Skin } from '@/lib/skins';
+import { getAllSkins, getAllSkinsFromCatalog, type Skin } from '@/lib/skins';
 import { getLocalizedSkin, getLocalizedRelatedSkins } from '@/lib/skin-localizer';
 import { snakeImg } from '@/lib/assets';
 import { SITE_URL } from '@/lib/seo';
