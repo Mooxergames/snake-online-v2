@@ -819,5 +819,44 @@
         "description": "Esplora l'arena alla ricerca di gemme nascoste e forzieri. Inganna i cacciatori rivali e assicurati il bottino più prezioso."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Elisir di Potenziamento",
+    "title": "Potenzia il Tuo Gioco",
+    "subtitle": "8 potenziamenti che cambiano il gioco per elevare la tua esperienza. Raccoglili nell'arena per ottenere un vantaggio tattico.",
+    "items": {
+      "magnify": {
+        "name": "Ingrandisci",
+        "desc": "Aumenta il tuo raggio visivo per individuare nemici e cibo da lontano"
+      },
+      "magnet": {
+        "name": "Magnete",
+        "desc": "Attira automaticamente le sfere di cibo vicine verso il tuo serpente"
+      },
+      "x2": {
+        "name": "Moltiplicatore 2x",
+        "desc": "Raddoppia tutti i punti guadagnati per un periodo limitato"
+      },
+      "x5": {
+        "name": "Moltiplicatore 5x",
+        "desc": "Quintupla i tuoi guadagni di punteggio — alto rischio, alta ricompensa"
+      },
+      "scoreSaver": {
+        "name": "Salva Punteggio",
+        "desc": "Protegge il tuo punteggio da una perdita alla morte una volta"
+      },
+      "quickTurn": {
+        "name": "Svolta Veloce",
+        "desc": "Aumenta drammaticamente la velocità di svolta per manovre rapide"
+      },
+      "shield": {
+        "name": "Scudo",
+        "desc": "Invincibilità temporanea — passa attraverso i nemici illeso"
+      },
+      "speedBoost": {
+        "name": "Incremento di Velocità",
+        "desc": "Scossa di velocità senza consumare la lunghezza del tuo corpo"
+      }
+    }
   }
 }
