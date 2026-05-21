@@ -786,5 +786,99 @@
         "body": "Trophies are awarded for surviving longer, scoring higher, and beating larger snakes. Hourly leaderboards refresh — top 1% gets exclusive skins. Top 3 of any country leaderboard claims the country-flag skin for the next season."
       }
     }
+  },
+  "gameModes": {
+    "eyebrow": "Oyun Modları",
+    "title": "Savaş Alanını Seç",
+    "subtitle": "Beş benzersiz oyun modu, her biri farklı bir strateji gerektiriyor. Skor tablolarında zirveye çıkmak için hepsinde ustalaş.",
+    "modes": {
+      "classic": {
+        "name": "Klasik Mod",
+        "short": "Strateji ve hız orijinal arenada buluşuyor",
+        "description": "Dijital arenada yılanını yönet, rakiplerini geç ve zekice hamle yap. Gerçek zamanlı çok oyunculu aksiyonla yeniden tanımlanan klasik yılan deneyimi."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "Ayakta kalan son yılan kazanır",
+        "description": "Arena daralıyor, baskı artıyor. Harita kapanırken 100 oyuncuya karşı hayatta kal. Sadece en stratejik oyuncu zaferi kazanır."
+      },
+      "deathMatch": {
+        "name": "Ölüm Maçı",
+        "short": "Saf savaş, maksimum öldürme",
+        "description": "Hayatta kalmayı unut — bu tamamen saldırı ile ilgili. Hızlı eleme turlarında öldürme sayını artırarak skor tablosuna tırman."
+      },
+      "timeTunnel": {
+        "name": "Zaman Tüneli",
+        "short": "Zamana karşı yarış",
+        "description": "Her saniye önemli. Sürenizi uzatmak için zaman küreleri toplayın ve mümkün olduğunca hızlı büyüyün. Saat asla durmuyor."
+      },
+      "treasureHunt": {
+        "name": "Hazine Avı",
+        "short": "Haritadaki gizli hazineleri bul",
+        "description": "Gizli mücevherler ve hazine sandıkları için arenayı keşfet. Rakip avcıları alt et ve en değerli ganimetleri ele geçir."
+      }
+    }
+  },
+  "powerUps": {
+    "eyebrow": "Güçlendirmeler",
+    "title": "Oyununu Güçlendir",
+    "subtitle": "Oyun deneyimini yükselten 8 güçlendirme. Taktiksel avantaj için arenada topla.",
+    "items": {
+      "magnify": {
+        "name": "Büyüteç",
+        "desc": "Görüş menzilini artırarak düşmanları ve yemi uzaktan görmeyi sağlar"
+      },
+      "magnet": {
+        "name": "Mıknatıs",
+        "desc": "Yakındaki yem kürelerini otomatik olarak yılanına çeker"
+      },
+      "x2": {
+        "name": "2x Çarpan",
+        "desc": "Sınırlı süre boyunca kazanılan tüm puanları ikiye katlar"
+      },
+      "x5": {
+        "name": "5x Çarpan",
+        "desc": "Puan kazancını beşe katla — yüksek risk, yüksek ödül"
+      },
+      "scoreSaver": {
+        "name": "Skor Koruyucu",
+        "desc": "Ölümde skorunun düşmesini bir kez engeller"
+      },
+      "quickTurn": {
+        "name": "Hızlı Dönüş",
+        "desc": "Keskin manevralar için dönüş hızını dramatik şekilde artırır"
+      },
+      "shield": {
+        "name": "Kalkan",
+        "desc": "Geçici dokunulmazlık — düşmanlardan zarar almadan geç"
+      },
+      "speedBoost": {
+        "name": "Hız Patlaması",
+        "desc": "Vücut uzunluğunu tüketmeden ani hız artışı"
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Heyecanı Yaşa",
+    "title": "Eşsiz Çok Oyunculu Aksiyon",
+    "subtitle": "Snake Online tüm platformlarda rekabetçi oynanış, çarpıcı görseller ve sonsuz tekrar oynanabilirlik sunuyor.",
+    "highlights": {
+      "competitive": {
+        "stat": "5M+",
+        "label": "Dünya genelinde aktif oyuncu"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "Koleksiyon görünümü"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "Benzersiz oyun modu"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "Desteklenen dil"
+      }
+    }
   }
 }

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N2MXJK2R');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <link rel="icon" type="image/x-icon" href="https://mxrtoken.com/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="https://mxrtoken.com/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mxrtoken.com/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mxrtoken.com/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://mxrtoken.com/mxr-logo.png" />
+    
+    <title>Snake Online - The Ultimate Multiplayer Snake Game</title>
+    <meta name="description" content="Experience the next generation of competitive snake gaming with blockchain integration and the MXR token ecosystem." />
+    <meta name="keywords" content="Snake Online, multiplayer snake game, MXR token, Solana blockchain" />
+    <meta name="author" content="Snake Online LLC" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    
+    <!-- AI/LLM Crawler Meta Tags -->
+    <meta name="gptbot" content="index, follow" />
+    <meta name="chatgpt-user" content="index, follow" />
+    <meta name="claudebot" content="index, follow" />
+    <meta name="perplexitybot" content="index, follow" />
+    <meta name="google-extended" content="index, follow" />
+    <meta name="cohere-ai" content="index, follow" />
+    
+    <meta name="theme-color" content="#10b981" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Snake Online" />
+    <meta property="og:title" content="Snake Online - The Ultimate Multiplayer Snake Game" />
+    <meta property="og:description" content="Experience the next generation of competitive snake gaming with blockchain integration and the MXR token ecosystem." />
+    <meta property="og:image" content="https://mxrtoken.com/og-image.webp" />
+    <meta property="og:url" content="https://mxrtoken.com/powerups/x2-multiplier.webp" />
+    <meta property="og:locale" content="en_US" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SnakeOnlineGame" />
+    <meta name="twitter:creator" content="@SnakeOnlineGame" />
+    <meta name="twitter:title" content="Snake Online - The Ultimate Multiplayer Snake Game" />
+    <meta name="twitter:description" content="Experience the next generation of competitive snake gaming with blockchain integration and the MXR token ecosystem." />
+    <meta name="twitter:image" content="https://mxrtoken.com/og-image.webp" />
+    
+    <link rel="canonical" href="https://mxrtoken.com/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="en" href="https://mxrtoken.com/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="tr" href="https://mxrtoken.com/tr/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="de" href="https://mxrtoken.com/de/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="fr" href="https://mxrtoken.com/fr/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="es" href="https://mxrtoken.com/es/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="pt" href="https://mxrtoken.com/pt/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="ru" href="https://mxrtoken.com/ru/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="it" href="https://mxrtoken.com/it/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="zh" href="https://mxrtoken.com/zh/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="ja" href="https://mxrtoken.com/ja/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="ko" href="https://mxrtoken.com/ko/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="ar" href="https://mxrtoken.com/ar/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="hi" href="https://mxrtoken.com/hi/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="nl" href="https://mxrtoken.com/nl/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="pl" href="https://mxrtoken.com/pl/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="th" href="https://mxrtoken.com/th/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="vi" href="https://mxrtoken.com/vi/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="id" href="https://mxrtoken.com/id/powerups/x2-multiplier.webp" />
+    <link rel="alternate" hreflang="x-default" href="https://mxrtoken.com/powerups/x2-multiplier.webp" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.coingecko.com" />
+    <link rel="dns-prefetch" href="https://flagcdn.com" />
+    <link rel="dns-prefetch" href="https://solscan.io" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTLVRNK4K4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTLVRNK4K4');
+    </script>
+    <script type="module" crossorigin src="/assets/index-DIj_zd5Y.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-bHGW42WO.js">
+    <link rel="modulepreload" crossorigin href="/assets/radix-CkUIdFbt.js">
+    <link rel="modulepreload" crossorigin href="/assets/recharts-DMtft7s3.js">
+    <link rel="modulepreload" crossorigin href="/assets/solana-qcTRpJwR.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CGIevqYU.css">
+  </head>
+  <body class="dark bg-[#0a110e]">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2MXJK2R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root">
+      <!-- Loading indicator shown while JS is loading -->
+      <div id="loading-overlay" style="position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #0a110e; z-index: 9999;">
+        <div style="width: 40px; height: 40px; border: 3px solid #10b981; border-top-color: transparent; border-radius: 50%; animate: spin 1s linear infinite;"></div>
+        <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+      </div>
+      <!-- Static SEO content for crawlers - hidden by default, visible only to bots/no-js -->
+      <main style="display: none;">
+        <nav aria-label="Main navigation">
+          <a href="/">Home</a> |
+          <a href="/game">Play Game</a> |
+          <a href="/presale">Buy MXR</a> |
+          <a href="/leaderboard">Leaderboard</a> |
+          <a href="/tokenomics">Tokenomics</a> |
+          <a href="/roadmap">Roadmap</a> |
+          <a href="/whitepaper">Whitepaper</a> |
+          <a href="/download">Download</a> |
+          <a href="/blog">Blog</a> |
+          <a href="/help">Help</a>
+        </nav>
+        
+        <header>
+          <h1>The Ultimate Multiplayer Snake Experience</h1>
+          <p>Play <a href="/game">Snake Online</a> on iOS and Android. Compete globally, earn <a href="/tokenomics">MXR tokens</a>, and join our <a href="/play-to-earn">play-to-earn gaming ecosystem</a>.</p>
+          <p><a href="/presale">Join the MXR Token Presale Now</a> | <a href="/download">Download the Game</a></p>
+        </header>
+        
+        <section>
+          <h2>MXR Token Presale</h2>
+          <p>Join the <a href="/presale">MXR Token presale</a> and be part of the Snake Online gaming revolution. MXR is a Solana SPL utility token powering our gaming ecosystem with fast transactions and low fees. Read our <a href="/whitepaper">whitepaper</a> to learn more.</p>
+          <ul>
+            <li>Stage 1: $0.075 per MXR - 67% discount</li>
+            <li>Stage 2: $0.15 per MXR - 40% discount</li>
+            <li>Stage 3: $0.25 per MXR - Final price</li>
+          </ul>
+          <p>Total Supply: 1,000,000,000 MXR tokens on Solana blockchain. See full <a href="/tokenomics">tokenomics details</a>.</p>
+        </section>
+        
+        <section>
+          <h2>About Snake Online</h2>
+          <p><a href="/game">Snake Online</a> is a real, playable mobile game available now on iOS App Store and Google Play. <a href="/download">Download now</a> to start playing!</p>
+          <ul>
+            <li>Real-time multiplayer battles with players worldwide - see the <a href="/leaderboard">global leaderboard</a></li>
+            <li>Compete for rankings and climb the <a href="/leaderboard">leaderboards</a></li>
+            <li>Daily challenges and rewards</li>
+            <li>Custom snake skins and cosmetics</li>
+            <li><a href="/play-to-earn">Play-to-earn mechanics</a> with MXR tokens</li>
+          </ul>
+          <p>Learn more about <a href="/game-features">game features</a> and <a href="/about">our team</a>.</p>
+        </section>
+        
+        <section>
+          <h2>Why Choose MXR Token?</h2>
+          <p>MXR Token is built on Solana for speed and efficiency. Use MXR for in-game purchases, tournament entries, governance voting, and earning rewards through gameplay. MiCA-compliant utility token with real use cases. Read our <a href="/whitepaper">whitepaper</a> and check the <a href="/roadmap">development roadmap</a>.</p>
+        </section>
+        
+        <section>
+          <h2>How to Buy MXR Tokens</h2>
+          <p>Visit our <a href="/presale">presale page</a> to purchase MXR tokens:</p>
+          <ol>
+            <li>Get a Solana wallet like Phantom or Solflare - see our <a href="/need-help/wallet-connection">wallet guide</a></li>
+            <li>Purchase SOL on your preferred exchange</li>
+            <li>Connect your wallet to our <a href="/presale">presale page</a></li>
+            <li>Select amount and complete your purchase</li>
+          </ol>
+          <p>Need help? Visit our <a href="/help">help center</a> or <a href="/contact">contact us</a>.</p>
+        </section>
+        
+        <section>
+          <h2>Latest Blog Articles</h2>
+          <ul>
+            <li><a href="/blog/what-is-mxr-token-solana-spl-overview">What is MXR Token? A Complete Solana SPL Token Overview</a></li>
+            <li><a href="/blog/snake-online-mobile-multiplayer-gaming">Snake Online: Mobile Multiplayer Gaming Revolution</a></li>
+            <li><a href="/blog/understanding-blockchain-gaming-solana">Understanding Blockchain Gaming on Solana</a></li>
+            <li><a href="/blog/how-token-presales-work-beginners-guide">How Token Presales Work: A Beginner's Guide</a></li>
+            <li><a href="/blog/mxr-tokenomics-supply-distribution">MXR Tokenomics: Supply, Distribution, and Economics</a></li>
+          </ul>
+          <p><a href="/blog">View all blog articles</a></p>
+        </section>
+        
+        <section>
+          <h2>Share Snake Online</h2>
+          <p>Help spread the word about MXR Token and Snake Online:</p>
+          <nav aria-label="Social sharing">
+            <a href="https://twitter.com/intent/tweet?url=https://mxrtoken.com&text=Check%20out%20Snake%20Online%20-%20a%20multiplayer%20game%20with%20MXR%20tokens!" rel="noopener" aria-label="Share on Twitter">Share on Twitter</a> |
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://mxrtoken.com" rel="noopener" aria-label="Share on Facebook">Share on Facebook</a> |
+            <a href="https://t.me/share/url?url=https://mxrtoken.com&text=Check%20out%20Snake%20Online%20and%20MXR%20Token!" rel="noopener" aria-label="Share on Telegram">Share on Telegram</a> |
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mxrtoken.com&title=Snake%20Online%20MXR%20Token" rel="noopener" aria-label="Share on LinkedIn">Share on LinkedIn</a>
+          </nav>
+        </section>
+        
+        <section>
+          <h2>Follow Us</h2>
+          <nav aria-label="Social media profiles">
+            <a href="https://x.com/MxrToken" rel="noopener">Twitter/X</a> |
+            <a href="https://t.me/mxrtoken" rel="noopener">Telegram</a> |
+            <a href="https://www.facebook.com/profile.php?id=61585947340151" rel="noopener">Facebook</a> |
+            <a href="https://www.linkedin.com/in/mxr-token-5729403a3/" rel="noopener">LinkedIn</a>
+          </nav>
+        </section>
+        
+        <footer>
+          <p>Snake Online LLC - Building the future of play-to-earn gaming on Solana.</p>
+          <nav aria-label="Footer navigation">
+            <a href="/presale">Buy MXR Tokens</a> |
+            <a href="/game">Play Snake Online</a> |
+            <a href="/tokenomics">Tokenomics</a> |
+            <a href="/roadmap">Roadmap</a> |
+            <a href="/whitepaper">Whitepaper</a> |
+            <a href="/blog">Blog</a> |
+            <a href="/leaderboard">Leaderboard</a> |
+            <a href="/download">Download</a> |
+            <a href="/game-features">Game Features</a> |
+            <a href="/play-to-earn">Play to Earn</a> |
+            <a href="/about">About Us</a> |
+            <a href="/contact">Contact</a> |
+            <a href="/help">Help Center</a> |
+            <a href="/press-kit">Press Kit</a> |
+            <a href="/forum">Community Forum</a>
+          </nav>
+          <nav aria-label="Legal">
+            <a href="/privacy-policy">Privacy Policy</a> |
+            <a href="/terms-of-service">Terms of Service</a> |
+            <a href="/cookie-policy">Cookie Policy</a> |
+            <a href="/disclaimer">Disclaimer</a> |
+            <a href="/data-protection">Data Protection</a>
+          </nav>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

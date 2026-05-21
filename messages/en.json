@@ -787,5 +787,99 @@
   "appBadges": {
     "appStore": "Download on the",
     "playStore": "Get it on"
+  },
+  "gameModes": {
+    "eyebrow": "Game Modes",
+    "title": "Choose Your Battlefield",
+    "subtitle": "Five unique game modes, each demanding a different strategy. Master them all to dominate the leaderboards.",
+    "modes": {
+      "classic": {
+        "name": "Classic Mode",
+        "short": "Strategy meets speed in the original arena",
+        "description": "Navigate your snake through the digital realm, outgrow and outsmart your rivals. The classic snake experience redefined with real-time multiplayer action."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "Last snake standing wins it all",
+        "description": "The arena shrinks, the pressure mounts. Survive against 100 players as the map closes in. Only the most strategic player claims victory."
+      },
+      "deathMatch": {
+        "name": "Death Match",
+        "short": "Pure combat, maximum kills",
+        "description": "Forget survival — this is all about aggression. Score kills to climb the leaderboard in fast-paced elimination rounds."
+      },
+      "timeTunnel": {
+        "name": "Time Tunnel",
+        "short": "Race against the clock",
+        "description": "Every second counts. Collect time orbs to extend your run while growing as fast as possible. The clock never stops."
+      },
+      "treasureHunt": {
+        "name": "Treasure Hunt",
+        "short": "Find hidden treasures across the map",
+        "description": "Explore the arena for hidden gems and treasure chests. Outsmart rival hunters and secure the most valuable loot."
+      }
+    }
+  },
+  "powerUps": {
+    "eyebrow": "Boost Elixirs",
+    "title": "Power Up Your Game",
+    "subtitle": "8 game-changing power-ups to elevate your gameplay. Collect them in the arena to gain a tactical edge.",
+    "items": {
+      "magnify": {
+        "name": "Magnify",
+        "desc": "Increases your vision range to spot enemies and food from afar"
+      },
+      "magnet": {
+        "name": "Magnet",
+        "desc": "Attracts nearby food orbs automatically toward your snake"
+      },
+      "x2": {
+        "name": "2x Multiplier",
+        "desc": "Doubles all score earned for a limited duration"
+      },
+      "x5": {
+        "name": "5x Multiplier",
+        "desc": "Quintuple your score gains — high risk, high reward"
+      },
+      "scoreSaver": {
+        "name": "Score Saver",
+        "desc": "Protects your score from dropping on death once"
+      },
+      "quickTurn": {
+        "name": "Quick Turn",
+        "desc": "Dramatically increases turning speed for sharp maneuvers"
+      },
+      "shield": {
+        "name": "Shield",
+        "desc": "Temporary invincibility — pass through enemies unharmed"
+      },
+      "speedBoost": {
+        "name": "Speed Boost",
+        "desc": "Burst of speed without consuming your body length"
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experience the Thrill",
+    "title": "Unmatched Multiplayer Action",
+    "subtitle": "Snake Online delivers competitive gameplay, stunning visuals, and endless replayability across all platforms.",
+    "highlights": {
+      "competitive": {
+        "stat": "5M+",
+        "label": "Active players worldwide"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "Collectible skins"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "Unique game modes"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "Languages supported"
+      }
+    }
   }
 }
