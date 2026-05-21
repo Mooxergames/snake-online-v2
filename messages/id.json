@@ -787,5 +787,37 @@
       "VN": "Vietnam",
       "ZA": "Afrika Selatan"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Mode Permainan",
+    "title": "Pilih Medan Pertempuran Anda",
+    "subtitle": "Lima mode permainan unik, masing-masing membutuhkan strategi yang berbeda. Kuasai semuanya untuk mendominasi papan peringkat.",
+    "modes": {
+      "classic": {
+        "name": "Mode Klasik",
+        "short": "Strategi bertemu kecepatan di arena asli",
+        "description": "Navigasikan ular Anda melalui dunia digital, tumbuh lebih besar dan lebih pintar dari rival Anda. Pengalaman ular klasik yang didefinisikan ulang dengan aksi multiplayer waktu nyata."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "Ular terakhir yang berdiri menang semuanya",
+        "description": "Arena menyusut, tekanan meningkat. Bertahan melawan 100 pemain saat peta semakin menyusut. Hanya pemain yang paling strategis yang meraih kemenangan."
+      },
+      "deathMatch": {
+        "name": "Pertandingan Kematian",
+        "short": "Pertarungan murni, maksimum pembunuhan",
+        "description": "Lupakan bertahan — ini semua tentang agresi. Dapatkan pembunuhan untuk naik papan peringkat dalam putaran eliminasi yang cepat."
+      },
+      "timeTunnel": {
+        "name": "Terowongan Waktu",
+        "short": "Berlomba melawan waktu",
+        "description": "Setiap detik berharga. Kumpulkan bola waktu untuk memperpanjang permainan Anda sambil tumbuh secepat mungkin. Jam tidak pernah berhenti."
+      },
+      "treasureHunt": {
+        "name": "Perburuan Harta Karun",
+        "short": "Temukan harta karun tersembunyi di seluruh peta",
+        "description": "Jelajahi arena untuk menemukan permata tersembunyi dan peti harta karun. Cerdiklah dari pemburu saingan dan amankan barang berharga yang paling berharga."
+      }
+    }
   }
 }
