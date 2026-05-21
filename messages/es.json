@@ -787,5 +787,37 @@
       "VN": "Vietnam",
       "ZA": "Sudáfrica"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Modos de Juego",
+    "title": "Elige Tu Campo de Batalla",
+    "subtitle": "Cinco modos de juego únicos, cada uno demandando una estrategia diferente. Domínalos todos para dominar las clasificaciones.",
+    "modes": {
+      "classic": {
+        "name": "Modo Clásico",
+        "short": "La estrategia se encuentra con la velocidad en la arena original",
+        "description": "Navega tu serpiente a través del reino digital, supera y engaña a tus rivales. La experiencia clásica de la serpiente redefinida con acción multijugador en tiempo real."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "La última serpiente en pie lo gana todo",
+        "description": "La arena se reduce, la presión aumenta. Sobrevive contra 100 jugadores mientras el mapa se cierra. Solo el jugador más estratégico reclama la victoria."
+      },
+      "deathMatch": {
+        "name": "Partida a Muerte",
+        "short": "Combate puro, máxima cantidad de eliminaciones",
+        "description": "Olvida la supervivencia — esto se trata de agresión. Consigue eliminaciones para escalar en la clasificación en rondas de eliminación de ritmo rápido."
+      },
+      "timeTunnel": {
+        "name": "Túnel del Tiempo",
+        "short": "Corre contra el reloj",
+        "description": "Cada segundo cuenta. Recoge orbes de tiempo para extender tu carrera mientras creces lo más rápido posible. El reloj nunca se detiene."
+      },
+      "treasureHunt": {
+        "name": "Búsqueda del Tesoro",
+        "short": "Encuentra tesoros ocultos en el mapa",
+        "description": "Explora la arena en busca de gemas ocultas y cofres del tesoro. Engaña a los cazadores rivales y asegura el botín más valioso."
+      }
+    }
   }
 }
