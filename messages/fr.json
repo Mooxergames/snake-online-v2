@@ -787,5 +787,37 @@
       "VN": "Vietnam",
       "ZA": "Afrique du Sud"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Modes de jeu",
+    "title": "Choisissez votre champ de bataille",
+    "subtitle": "Cinq modes de jeu uniques, chacun nécessitant une stratégie différente. Maîtrisez-les tous pour dominer les classements.",
+    "modes": {
+      "classic": {
+        "name": "Mode Classique",
+        "short": "La stratégie rencontre la vitesse dans l'arène originale",
+        "description": "Naviguez votre serpent à travers le royaume numérique, dépassez et surpassez vos rivaux. L'expérience classique du serpent redéfinie avec une action multijoueur en temps réel."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "Le dernier serpent debout remporte tout",
+        "description": "L'arène rétrécit, la pression monte. Survivez contre 100 joueurs alors que la carte se referme. Seul le joueur le plus stratégique remporte la victoire."
+      },
+      "deathMatch": {
+        "name": "Match à Mort",
+        "short": "Combat pur, maximum de kills",
+        "description": "Oubliez la survie — il s'agit ici d'agression. Marquez des kills pour gravir le classement lors de rondes d'élimination rapides."
+      },
+      "timeTunnel": {
+        "name": "Tunnel du Temps",
+        "short": "Courez contre la montre",
+        "description": "Chaque seconde compte. Collectez des orbes de temps pour prolonger votre course tout en grandissant le plus vite possible. L'horloge ne s'arrête jamais."
+      },
+      "treasureHunt": {
+        "name": "Chasse au Trésor",
+        "short": "Trouvez des trésors cachés sur la carte",
+        "description": "Explorez l'arène à la recherche de gemmes cachées et de coffres au trésor. Surpassez les chasseurs rivaux et sécurisez le butin le plus précieux."
+      }
+    }
   }
 }
