@@ -126,15 +126,19 @@ export default function GameModes() {
                 transition={{ duration: 0.4 }}
                 className="liquid-glass rounded-3xl overflow-hidden"
               >
-                <div className="relative aspect-[16/10]">
+                <div
+                  className="relative aspect-[4/3] flex items-center justify-center p-6 sm:p-10"
+                  style={{ background: `radial-gradient(circle at 50% 35%, ${mode.glow}, transparent 70%), #0E0F14` }}
+                >
                   <Image
                     src={mode.image}
                     alt={t(`modes.${mode.key}.name`)}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 60vw"
+                    width={500}
+                    height={482}
+                    className="max-h-full w-auto object-contain drop-shadow-[0_18px_36px_rgba(0,0,0,0.6)]"
+                    sizes="(max-width: 768px) 90vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                     <h3 className="font-display text-xl sm:text-2xl font-bold text-text-primary">
                       {t(`modes.${mode.key}.name`)}

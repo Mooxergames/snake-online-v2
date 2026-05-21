@@ -14,6 +14,18 @@ export interface Skin {
   /** Deterministic 0..4 — used to rotate metadata templates so titles/descriptions
    *  on programmatic skin pages don't all look identical to Google's duplicate-content classifier. */
   metaTemplate: number;
+  // Backend catalog economy fields (null when not provided)
+  price?: number | null;
+  currency?: string | null;
+  premiumPrice?: number | null;
+  premiumCurrency?: string | null;
+  isFree?: boolean | null;
+  isPurchasable?: boolean | null;
+  isLimited?: boolean | null;
+  isNew?: boolean | null;
+  releaseDate?: string | null;
+  season?: string | null;
+  tags?: string[];
 }
 
 // ─── Backend catalog ────────────────────────────────────────────────────────
@@ -25,14 +37,25 @@ interface CatalogSnake {
   name: string;
   rarity: string;
   category?: string;
-  countryCode?: string;
-  description?: string;
-  obtainMethod?: string;
+  countryCode?: string | null;
+  description?: string | null;
+  obtainMethod?: string | null;
+  price?: number | null;
+  currency?: string | null;
+  premiumPrice?: number | null;
+  premiumCurrency?: string | null;
+  isFree?: boolean | null;
+  isPurchasable?: boolean | null;
+  isLimited?: boolean | null;
+  isNew?: boolean | null;
+  releaseDate?: string | null;
+  season?: string | null;
+  tags?: string[];
 }
 
 const CATALOG_URL = (
   process.env.SNAKE_CATALOG_URL
-  || `${process.env.BACKEND_API_BASE || 'https://backend.snakeonline.net'}/api/snakes/catalog`
+  || `${process.env.BACKEND_API_BASE || 'https://backend.snakeonline.net'}/public/catalog/snakes`
 );
 
 let _catalogPromise: Promise<Map<string, CatalogSnake>> | null = null;
@@ -90,20 +113,35 @@ export async function getSkinBySlugFromCatalog(slug: string): Promise<Skin | und
 }
 
 function buildSkinFromCatalog(cat: CatalogSnake): Skin {
-  const rarity = validRarity(cat.rarity);
   const isCountry = cat.category === 'country' || cat.id.startsWith('CSNAKE_');
+  // Backend uses "country" as rarity for national skins — map it to "exclusive"
+  // so our UI rarity badges keep working.
+  const rarity: Rarity = isCountry ? 'exclusive' : validRarity(cat.rarity);
   const code = cat.countryCode || (isCountry ? cat.id.replace('CSNAKE_', '') : undefined);
 
   return {
     id: cat.id,
-    slug: isCountry ? `country-${slugify(cat.name)}` : `fantasy-${slugify(cat.name)}-${cat.id.replace(/\D/g, '')}`,
+    slug: isCountry
+      ? `country-${slugify(cat.name)}`
+      : `fantasy-${slugify(cat.name)}-${cat.id.replace(/\D/g, '') || templateBucket(cat.id)}`,
     name: cat.name,
     rarity,
-    country: code,
+    country: code || undefined,
     isCountry,
-    description: cat.description || `${cat.name} — a ${rarity} tier snake skin.`,
+    description: cat.description || `${cat.name} — a ${rarity} tier snake skin in Snake Online.`,
     obtainHint: cat.obtainMethod || defaultObtainHint(rarity),
     metaTemplate: templateBucket(cat.id),
+    price: cat.price ?? null,
+    currency: cat.currency ?? null,
+    premiumPrice: cat.premiumPrice ?? null,
+    premiumCurrency: cat.premiumCurrency ?? null,
+    isFree: cat.isFree ?? null,
+    isPurchasable: cat.isPurchasable ?? null,
+    isLimited: cat.isLimited ?? null,
+    isNew: cat.isNew ?? null,
+    releaseDate: cat.releaseDate ?? null,
+    season: cat.season ?? null,
+    tags: cat.tags ?? [],
   };
 }
 

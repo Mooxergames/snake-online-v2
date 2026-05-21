@@ -12,6 +12,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'backend.snakeonlines.com' },
+      { protocol: 'https', hostname: 'backend.snakeonline.net' },
+      { protocol: 'https', hostname: 'snakeeditor.snakeonline.net' },
       { protocol: 'https', hostname: 'snakeonline.io' },
       { protocol: 'https', hostname: 'snakeonlines.com' },
       { protocol: 'https', hostname: '**.amazonaws.com' },

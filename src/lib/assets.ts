@@ -1,6 +1,6 @@
 const ASSET_BASE = (
   process.env.NEXT_PUBLIC_ASSET_BASE_URL
-  ?? 'https://snakeeditor.snakeonline.net/public'
+  ?? 'https://backend.snakeonline.net/public'
 ).replace(/\/$/, '');
 
 const url = (folder: string, id?: string) => (id ? `${ASSET_BASE}/${folder}/${id}.png` : '');

@@ -14,8 +14,6 @@ const POWERUPS = [
   { key: 'x5',         image: '/powerups/x5.png',             color: '#EF4444', bg: 'bg-red-500/10 ring-red-500/30' },
   { key: 'scoreSaver', image: '/powerups/score-saver.png',    color: '#06B6D4', bg: 'bg-cyan-500/10 ring-cyan-500/30' },
   { key: 'quickTurn',  image: '/powerups/quick-turn.png',     color: '#FF9500', bg: 'bg-brand-500/10 ring-brand-500/30' },
-  { key: 'shield',     image: '/powerups/shield.webp',        color: '#3B82F6', bg: 'bg-blue-500/10 ring-blue-500/30' },
-  { key: 'speedBoost', image: '/powerups/speed-boost.webp',   color: '#EC4899', bg: 'bg-pink-500/10 ring-pink-500/30' },
 ] as const;
 
 export default function PowerUps() {
