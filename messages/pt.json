@@ -819,5 +819,44 @@
         "description": "Explore a arena em busca de gemas escondidas e baús de tesouro. Supere caçadores rivais e garanta o loot mais valioso."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Elixires de Impulso",
+    "title": "Potencialize Seu Jogo",
+    "subtitle": "8 power-ups que mudam o jogo para elevar sua jogabilidade. Colete-os na arena para ganhar uma vantagem tática.",
+    "items": {
+      "magnify": {
+        "name": "Amplificar",
+        "desc": "Aumenta seu alcance de visão para detectar inimigos e comida à distância"
+      },
+      "magnet": {
+        "name": "Ímã",
+        "desc": "Atrai orbes de comida próximos automaticamente para a sua cobra"
+      },
+      "x2": {
+        "name": "Multiplicador 2x",
+        "desc": "Duplica toda a pontuação ganha por um tempo limitado"
+      },
+      "x5": {
+        "name": "Multiplicador 5x",
+        "desc": "Quintuplica seus ganhos de pontuação — alto risco, alta recompensa"
+      },
+      "scoreSaver": {
+        "name": "Protetor de Pontuação",
+        "desc": "Protege sua pontuação de cair na morte uma vez"
+      },
+      "quickTurn": {
+        "name": "Virada Rápida",
+        "desc": "Aumenta dramaticamente a velocidade de virada para manobras rápidas"
+      },
+      "shield": {
+        "name": "Escudo",
+        "desc": "Invencibilidade temporária — passe por inimigos ileso"
+      },
+      "speedBoost": {
+        "name": "Aumento de Velocidade",
+        "desc": "Explosão de velocidade sem consumir o comprimento do seu corpo"
+      }
+    }
   }
 }
