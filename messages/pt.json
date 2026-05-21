@@ -858,5 +858,28 @@
         "desc": "Explosão de velocidade sem consumir o comprimento do seu corpo"
       }
     }
+  },
+  "experience": {
+    "eyebrow": "Experimente a Emoção",
+    "title": "Ação Multijogador Inigualável",
+    "subtitle": "Snake Online oferece jogabilidade competitiva, visuais impressionantes e uma rejogabilidade infinita em todas as plataformas.",
+    "highlights": {
+      "competitive": {
+        "stat": "5M+",
+        "label": "Jogadores ativos em todo o mundo"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "Skins colecionáveis"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "Modos de jogo únicos"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "Idiomas suportados"
+      }
+    }
   }
 }
