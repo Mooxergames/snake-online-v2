@@ -819,5 +819,44 @@
         "description": "Erkunde die Arena nach versteckten Juwelen und Schatztruhen. Überliste rivalisierende Jäger und sichere die wertvollste Beute."
       }
     }
+  },
+  "powerUps": {
+    "eyebrow": "Boost-Elixiere",
+    "title": "Verbessere Dein Spiel",
+    "subtitle": "8 spielverändernde Power-Ups, um dein Gameplay zu verbessern. Sammle sie in der Arena, um einen taktischen Vorteil zu erlangen.",
+    "items": {
+      "magnify": {
+        "name": "Vergrößern",
+        "desc": "Erhöht deinen Sichtbereich, um Feinde und Nahrung aus der Ferne zu entdecken"
+      },
+      "magnet": {
+        "name": "Magnet",
+        "desc": "Zieht automatisch nahegelegene Nahrungs-Orbs zu deiner Schlange"
+      },
+      "x2": {
+        "name": "2x Multiplikator",
+        "desc": "Verdoppelt alle Punkte, die für eine begrenzte Zeit erzielt werden"
+      },
+      "x5": {
+        "name": "5x Multiplikator",
+        "desc": "Verfünffacht deine Punktgewinne — hohes Risiko, hohe Belohnung"
+      },
+      "scoreSaver": {
+        "name": "Punkteschutz",
+        "desc": "Schützt deine Punkte vor dem Verlust beim Tod einmal"
+      },
+      "quickTurn": {
+        "name": "Schneller Dreh",
+        "desc": "Erhöht die Drehgeschwindigkeit dramatisch für scharfe Manöver"
+      },
+      "shield": {
+        "name": "Schild",
+        "desc": "Vorübergehende Unverwundbarkeit — durch Feinde hindurchgehen, ohne Schaden zu nehmen"
+      },
+      "speedBoost": {
+        "name": "Geschwindigkeitsboost",
+        "desc": "Geschwindigkeitsausbruch, ohne deine Körperlänge zu verbrauchen"
+      }
+    }
   }
 }
