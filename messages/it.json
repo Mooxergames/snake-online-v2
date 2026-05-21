@@ -787,5 +787,37 @@
       "VN": "Vietnam",
       "ZA": "Sudafrica"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Modalità di Gioco",
+    "title": "Scegli il Tuo Campo di Battaglia",
+    "subtitle": "Cinque modalità di gioco uniche, ognuna delle quali richiede una strategia diversa. Masterale tutte per dominare le classifiche.",
+    "modes": {
+      "classic": {
+        "name": "Modalità Classica",
+        "short": "Strategia incontra velocità nell'arena originale",
+        "description": "Naviga il tuo serpente attraverso il regno digitale, supera e inganna i tuoi rivali. L'esperienza classica del serpente ridefinita con azione multiplayer in tempo reale."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "L'ultimo serpente in piedi vince tutto",
+        "description": "L'arena si restringe, la pressione aumenta. Sopravvivi contro 100 giocatori mentre la mappa si chiude. Solo il giocatore più strategico conquista la vittoria."
+      },
+      "deathMatch": {
+        "name": "Death Match",
+        "short": "Combattimento puro, massimo numero di uccisioni",
+        "description": "Dimentica la sopravvivenza — qui si tratta solo di aggressione. Fai uccisioni per scalare la classifica in round di eliminazione frenetici."
+      },
+      "timeTunnel": {
+        "name": "Tunnel del Tempo",
+        "short": "Corri contro il tempo",
+        "description": "Ogni secondo conta. Raccogli orbs temporali per estendere la tua corsa mentre cresci il più velocemente possibile. L'orologio non si ferma mai."
+      },
+      "treasureHunt": {
+        "name": "Caccia al Tesoro",
+        "short": "Trova tesori nascosti nella mappa",
+        "description": "Esplora l'arena alla ricerca di gemme nascoste e forzieri. Inganna i cacciatori rivali e assicurati il bottino più prezioso."
+      }
+    }
   }
 }
