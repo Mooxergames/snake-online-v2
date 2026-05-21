@@ -858,5 +858,28 @@
         "desc": "体長を消費せずにスピードを一気に上げる"
       }
     }
+  },
+  "experience": {
+    "eyebrow": "スリルを体験しよう",
+    "title": "比類なきマルチプレイヤーアクション",
+    "subtitle": "Snake Onlineは、競争力のあるゲームプレイ、驚くべきビジュアル、そしてすべてのプラットフォームでの無限のリプレイ性を提供します。",
+    "highlights": {
+      "competitive": {
+        "stat": "5M+",
+        "label": "全世界のアクティブプレイヤー"
+      },
+      "visuals": {
+        "stat": "200+",
+        "label": "コレクション可能なスキン"
+      },
+      "replayability": {
+        "stat": "5",
+        "label": "ユニークなゲームモード"
+      },
+      "crossPlatform": {
+        "stat": "14",
+        "label": "サポートされている言語"
+      }
+    }
   }
 }
