@@ -787,5 +787,37 @@
       "VN": "Vietnã",
       "ZA": "África do Sul"
     }
+  },
+  "gameModes": {
+    "eyebrow": "Modos de Jogo",
+    "title": "Escolha Seu Campo de Batalha",
+    "subtitle": "Cinco modos de jogo únicos, cada um exigindo uma estratégia diferente. Domine todos para dominar as tabelas de classificação.",
+    "modes": {
+      "classic": {
+        "name": "Modo Clássico",
+        "short": "Estratégia encontra velocidade na arena original",
+        "description": "Navegue sua cobra pelo reino digital, cresça e supere seus rivais. A experiência clássica de cobra redefinida com ação multiplayer em tempo real."
+      },
+      "battleRoyale": {
+        "name": "Battle Royale",
+        "short": "A última cobra em pé ganha tudo",
+        "description": "A arena encolhe, a pressão aumenta. Sobreviva contra 100 jogadores enquanto o mapa se fecha. Apenas o jogador mais estratégico reivindica a vitória."
+      },
+      "deathMatch": {
+        "name": "Death Match",
+        "short": "Combate puro, máximo de eliminações",
+        "description": "Esqueça a sobrevivência — aqui é tudo sobre agressão. Marque eliminações para subir na tabela de classificação em rodadas de eliminação rápidas."
+      },
+      "timeTunnel": {
+        "name": "Túnel do Tempo",
+        "short": "Corra contra o tempo",
+        "description": "Cada segundo conta. Colete orbes de tempo para estender sua corrida enquanto cresce o mais rápido possível. O relógio nunca para."
+      },
+      "treasureHunt": {
+        "name": "Caça ao Tesouro",
+        "short": "Encontre tesouros escondidos pelo mapa",
+        "description": "Explore a arena em busca de gemas escondidas e baús de tesouro. Supere caçadores rivais e garanta o loot mais valioso."
+      }
+    }
   }
 }
