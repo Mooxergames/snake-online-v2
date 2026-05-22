@@ -1,4 +1,4 @@
-import { getSkinBySlug, type Skin } from './skins';
+import { getSkinBySlug, getSkinBySlugFromCatalog, type Skin } from './skins';
 
 /**
  * Server-only locale-aware skin lookup.
@@ -19,7 +19,10 @@ import { getSkinBySlug, type Skin } from './skins';
  * the original English Skin is returned unchanged.
  */
 export async function getLocalizedSkin(slug: string, locale: string): Promise<Skin | undefined> {
-  const skin = getSkinBySlug(slug);
+  // Prefer the backend catalog (real names). Fall back to the sync generator
+  // so dev/preview without network still renders something.
+  let skin = await getSkinBySlugFromCatalog(slug);
+  if (!skin) skin = getSkinBySlug(slug);
   if (!skin) return undefined;
   const messages = await loadMessages(locale);
   return applyTemplates(skin, messages);
@@ -30,8 +33,21 @@ export async function getLocalizedRelatedSkins(
   locale: string,
   count = 6,
 ): Promise<Skin[]> {
-  const { getRelatedSkins } = await import('./skins');
-  const related = getRelatedSkins(base, count);
+  // Build related from the same catalog the base came from, so slugs match.
+  const { getAllSkinsFromCatalog, getRelatedSkins } = await import('./skins');
+  let related: Skin[];
+  try {
+    const all = await getAllSkinsFromCatalog();
+    const sameRarity = all.filter(s => s.id !== base.id && s.rarity === base.rarity).slice(0, count);
+    if (sameRarity.length >= count) {
+      related = sameRarity;
+    } else {
+      const fill = all.filter(s => s.id !== base.id && !sameRarity.some(x => x.id === s.id)).slice(0, count - sameRarity.length);
+      related = [...sameRarity, ...fill];
+    }
+  } catch {
+    related = getRelatedSkins(base, count);
+  }
   const messages = await loadMessages(locale);
   return related.map(s => applyTemplates(s, messages));
 }

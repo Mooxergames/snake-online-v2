@@ -5,18 +5,28 @@ import type { Metadata } from 'next';
 import { ArrowLeft, ArrowRight, Sparkles, Trophy, Globe, Play } from 'lucide-react';
 import { locales } from '@/lib/locales';
 import { getAllSkins, getAllSkinsFromCatalog, type Skin } from '@/lib/skins';
+// Force dynamic rendering so the page always pulls the live catalog. With
+// `force-static` + a stale generateStaticParams list, catalog-renamed skins
+// 404 because their new slug isn't in the prebuilt list.
+export const dynamic = 'force-dynamic';
 import { getLocalizedSkin, getLocalizedRelatedSkins } from '@/lib/skin-localizer';
 import { snakeImg } from '@/lib/assets';
 import { SITE_URL } from '@/lib/seo';
-
-export const revalidate = 86400;
 
 interface PageProps {
   params: { locale: string; slug: string };
 }
 
-export function generateStaticParams() {
-  const skins = getAllSkins();
+export async function generateStaticParams() {
+  // Use the live backend catalog so the prebuilt params match the slugs that
+  // the listing page (/snakes) generates from the same source. Fallback to
+  // the sync generator if the network is unavailable at build time.
+  let skins: Skin[];
+  try {
+    skins = await getAllSkinsFromCatalog();
+  } catch {
+    skins = getAllSkins();
+  }
   return locales.flatMap(locale => skins.map(s => ({ locale, slug: s.slug })));
 }
 
