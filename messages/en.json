@@ -623,6 +623,18 @@
       "lore": {
         "title": "Lore",
         "description": "The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts."
+      },
+      "tech-deep-dive": {
+        "title": "Tech Deep Dive",
+        "description": "How Snake Online is built — Photon, Unity, WebSocket netcode, mobile performance, anti-cheat."
+      },
+      "gaming-history": {
+        "title": "Gaming History",
+        "description": "From the Nokia 3310 to the .io era. Three decades of snake games and how the genre evolved."
+      },
+      "country-culture": {
+        "title": "Country & Culture",
+        "description": "Country snake skins, national leaderboards, regional community stories from across 60+ nations."
       }
     }
   },

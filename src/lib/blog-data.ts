@@ -10,7 +10,10 @@ export type BlogCategorySlug =
   | 'comparisons'
   | 'updates'
   | 'community'
-  | 'lore';
+  | 'lore'
+  | 'tech-deep-dive'
+  | 'gaming-history'
+  | 'country-culture';
 
 export interface BlogCategory {
   slug: BlogCategorySlug;
@@ -27,6 +30,9 @@ export const CATEGORIES: BlogCategory[] = [
   { slug: 'updates',        title: 'Updates',        description: 'Patch notes, new skin drops, balance changes, behind-the-scenes from the studio.',             icon: 'Bell',       tier: 'rare' },
   { slug: 'community',      title: 'Community',      description: 'Tournament recaps, player stories, content creators, Discord highlights.',                     icon: 'Users',      tier: 'common' },
   { slug: 'lore',           title: 'Lore',           description: 'The world behind the arena. Snake mythology, skin origin stories, narrative deep-cuts.',       icon: 'BookOpen',   tier: 'exclusive' },
+  { slug: 'tech-deep-dive',  title: 'Tech Deep Dive',  description: 'How Snake Online is built — Photon, Unity, WebSocket netcode, mobile performance, anti-cheat.', icon: 'Code',       tier: 'epic' },
+  { slug: 'gaming-history',  title: 'Gaming History',  description: 'From the Nokia 3310 to the .io era. Three decades of snake games and how the genre evolved.',    icon: 'History',    tier: 'legendary' },
+  { slug: 'country-culture', title: 'Country & Culture', description: 'Country snake skins, national leaderboards, regional community stories from across 60+ nations.', icon: 'Globe',     tier: 'rare' },
 ];
 
 export function getCategory(slug: BlogCategorySlug | string | undefined): BlogCategory | undefined {

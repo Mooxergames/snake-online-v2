@@ -6,7 +6,8 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import { getAllSkins, type Skin } from './skins';
+import { getAllSkins, getAllSkinsFromCatalog, type Skin } from './skins';
+import { injectInternalLinks, skinsToLinkTargets, standardHubs } from './content-pipeline/internal-links';
 import {
   CATEGORIES,
   getCategory,
@@ -31,25 +32,23 @@ export function getBlogSlugs(locale = 'en'): string[] {
     .map(f => f.replace(/\.mdx?$/, ''));
 }
 
-function buildSnakeLinkInjector(skins: Skin[], locale: string, currentSlug: string) {
-  const eligible = skins.filter(s => `skin-spotlight-${s.slug}` !== currentSlug);
-  const sorted = [...eligible].sort((a, b) => b.name.length - a.name.length);
-  return (rawHtml: string) => {
-    let out = rawHtml;
-    const linkedSlugs = new Set<string>();
-    for (const s of sorted) {
-      if (linkedSlugs.has(s.slug)) continue;
-      const escaped = s.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const pattern = new RegExp(`(?<![\\w/>])(${escaped})(?![\\w<])`, 'i');
-      const m = out.match(pattern);
-      if (!m) continue;
-      const href = `/${locale}/skins/${s.slug}`;
-      const replacement = `<a href="${href}" class="text-brand-400 hover:text-brand-300 underline-offset-4 hover:underline" data-internal-skin="${s.id}">${m[1]}</a>`;
-      out = out.replace(pattern, replacement);
-      linkedSlugs.add(s.slug);
-    }
-    return out;
-  };
+/**
+ * Wires the rules-based internal-link injector (src/lib/content-pipeline/internal-links.ts)
+ * into the rendered HTML. Targets come from the backend catalog (real snake
+ * names) plus a standard hub set. Editor-suggested slugs from the frontmatter
+ * `suggestedLinks` field are prioritized.
+ */
+function injectLinks(skins: Skin[], locale: string, currentSlug: string, suggestedSlugs: string[] | undefined, html: string): string {
+  const eligibleSkins = skins.filter(s => `skin-spotlight-${s.slug}` !== currentSlug);
+  const targets = [
+    ...skinsToLinkTargets(eligibleSkins, locale),
+    ...standardHubs(locale),
+  ];
+  return injectInternalLinks(html, targets, {
+    locale,
+    currentSlug,
+    suggestedSlugs,
+  }).html;
 }
 
 function estimateReadingTime(markdown: string): number {
@@ -71,9 +70,19 @@ export async function getBlogPost(slug: string, locale = 'en'): Promise<BlogPost
   const fm = data as BlogPostFrontmatter;
   const processed = await remark().use(html).process(content);
 
-  const skins = getAllSkins();
-  const inject = buildSnakeLinkInjector(skins, locale, slug);
-  const renderedHtml = inject(processed.toString());
+  // Prefer the live backend catalog for real snake names; fall back to the
+  // synchronous fallback so dev/preview environments without network access
+  // still render something.
+  let skins: Skin[];
+  try {
+    skins = await getAllSkinsFromCatalog();
+  } catch {
+    skins = getAllSkins();
+  }
+  const suggested = Array.isArray((fm as BlogPostFrontmatter & { suggestedLinks?: string[] }).suggestedLinks)
+    ? (fm as BlogPostFrontmatter & { suggestedLinks?: string[] }).suggestedLinks
+    : undefined;
+  const renderedHtml = injectLinks(skins, locale, slug, suggested, processed.toString());
 
   let cover = fm.cover;
   if (!cover && fm.coverSkinId) cover = `/snakes/${fm.coverSkinId}.png`;

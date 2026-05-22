@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Sparkles, Target, Trophy, Bell, Users, BookOpen, Newspaper } from 'lucide-react';
+import { Sparkles, Target, Trophy, Bell, Users, BookOpen, Newspaper, Code2, History, Globe } from 'lucide-react';
 import { CATEGORIES, type BlogCategorySlug } from '@/lib/blog-data';
 import { useTranslations } from 'next-intl';
 import { fadeUp, inView } from '@/lib/motion';
@@ -13,6 +13,9 @@ const ICONS: Record<BlogCategorySlug, typeof Sparkles> = {
   'updates': Bell,
   'community': Users,
   'lore': BookOpen,
+  'tech-deep-dive': Code2,
+  'gaming-history': History,
+  'country-culture': Globe,
 };
 
 interface Props {

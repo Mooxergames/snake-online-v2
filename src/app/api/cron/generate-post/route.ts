@@ -1,192 +1,163 @@
 import { NextResponse } from 'next/server';
-import { getAllSkins, type Skin } from '@/lib/skins';
 import { promises as fs, existsSync } from 'fs';
 import path from 'path';
-
-// This route writes files + calls OpenAI — must run on Node, not Edge.
-export const runtime = 'nodejs';
-export const dynamic = 'force-dynamic';
+import { findTopic, loadAllTopics, isSkinTopic, topicToPostSlug, type Topic, type SkinTopic } from '@/lib/content-pipeline/topics';
+import { buildPrompt, type PromptOutput } from '@/lib/content-pipeline/prompts';
+import { runSeoGate, type GateResult } from '@/lib/content-pipeline/seo-gate';
+import { commitFile, readGitHubEnv } from '@/lib/content-pipeline/github';
+import type { BlogCategorySlug } from '@/lib/blog-data';
 
 /**
  * POST /api/cron/generate-post
  *
- * Picks one (or up to `?n=10`) skins that doesn't yet have a skin-spotlight
- * blog post and asks OpenAI gpt-4o-mini to generate a localized post for
- * each of the 14 site locales.
+ * v5 — May 2026 rewrite.
  *
- * Auth: `x-cron-secret: <CRON_SECRET>` header. Set CRON_SECRET in Railway env.
+ * Generates ONE English blog post per call:
+ *   1. Resolves the topic (via ?topicId, ?slug, or random pick).
+ *   2. Builds a category-specific prompt from src/lib/content-pipeline/prompts.ts.
+ *   3. Calls OpenAI gpt-4o-mini with structured-JSON output.
+ *   4. Runs seo-gate validation. Retries once with sharper instructions if gate fails.
+ *   5. Writes the EN markdown file + commits to GitHub.
+ *   6. Fan-out: dispatches translate-post for each of 13 non-EN locales.
+ *   7. Pings IndexNow with the new URLs.
  *
- * Writes posts to:
- *   src/content/blog/{locale}/skin-spotlight-{slug}.md
+ * The locale-by-locale fan-out is HTTP, not in-process. That isolates failures
+ * (one locale's OpenAI flake can't crash the others) and keeps the cron under
+ * the 100s edge timeout.
  *
- * Caveats:
- *   - On a stateless host (Vercel) the filesystem write is ephemeral and the
- *     deployment must be rebuilt for the post to appear publicly. On Railway
- *     with persistent volume mounting the repo, the file persists.
- *   - To make the writes survive a redeploy, set GITHUB_TOKEN + GITHUB_REPO
- *     and the route will commit each post to git via the GitHub Contents API.
+ * Auth: `x-cron-secret` header (POST) or `?secret=` query (GET).
  *
- * Cost: gpt-4o-mini at May-2026 prices: ~$0.0003 per 800-word post × 14 locales
- *   ≈ $0.004 per skin × 200 skins × 14 ≈ $11 to fully populate the blog once.
+ * Params:
+ *   topicId=<id>      — pick a specific topic from the keyword bank / catalog
+ *   categoryId=<slug> — random pick within a category (used by schedule-posts)
+ *   force=1           — overwrite an existing EN post
+ *   dryRun=1          — return the draft + gate report without committing
+ *   skipTranslate=1   — don't fan-out to translate-post
  */
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 const MODEL = 'gpt-4o-mini';
 const LOCALES = ['en', 'tr', 'de', 'es', 'pt', 'fr', 'it', 'ru', 'ar', 'zh', 'ja', 'ko', 'hi', 'id'] as const;
+const SCORE_THRESHOLD = Number(process.env.SEO_SCORE_THRESHOLD) || 80;
 
-const LANG_NAMES: Record<typeof LOCALES[number], string> = {
-  en: 'English', tr: 'Turkish', de: 'German', es: 'Spanish', pt: 'Portuguese (Brazilian)',
-  fr: 'French', it: 'Italian', ru: 'Russian', ar: 'Arabic (MSA)', zh: 'Simplified Chinese',
-  ja: 'Japanese', ko: 'Korean', hi: 'Hindi', id: 'Indonesian',
-};
-
-interface PromptOutput {
-  title: string;
-  description: string;
-  body: string;
-  tags: string[];
-}
-
-function buildPrompt(skin: Skin, lang: string) {
-  return `You are writing a "Skin Spotlight" blog post for Snake Online, a free multiplayer .io snake battle royale game with 200+ collectible skins and 5M+ players worldwide.
-
-Write the post entirely in ${lang}.
-
-Subject of this post — a snake skin:
-- Name: ${skin.name}
-- Rarity: ${skin.rarity}
-- Category: ${skin.isCountry ? 'Country flag skin' : 'Fantasy skin'}
-- Lore / description hint: ${skin.description}
-- Unlock method: ${skin.obtainHint}
-- Asset image URL (for reference, do NOT embed inline): /snakes/${skin.id}.png
-
-Requirements:
-1. Title — 50-65 chars, includes the skin name + a hook word. Avoid clickbait.
-2. Description — 140-160 chars, SEO-friendly, includes "Snake Online" once and the skin name once.
-3. Body (Markdown, 500-700 words). Structure:
-   - One opening paragraph (no h2 heading).
-   - Exactly FOUR h2 sections, in this order. The h2 HEADINGS THEMSELVES must be translated into ${lang} — do NOT keep English headings like "Lore & origin" or "Why it stands out". Translate the heading to a natural ${lang} equivalent of these topics:
-       i.   Lore / origin → 2-3 short paragraphs about the skin's backstory.
-       ii.  Why this skin stands out → bullet list of 3-5 design or mechanical highlights.
-       iii. How to unlock → concrete steps based on the unlock method above.
-       iv.  Where to use it (strategy tip) → reference 1-2 game mechanics (coil traps, boost economy, perimeter survival, leaderboard climbs).
-   - End with a single-sentence call to play.
-4. Tags — array of 4-6 short tags, all in ${lang}. Include the ${lang} equivalents of "snake online", "skin spotlight", the rarity tier, and the skin name. (Brand "Snake Online" stays English even inside a translated tag.)
-5. Do NOT include front-matter, just the four fields below in this exact JSON shape:
-
-{"title": "...", "description": "...", "body": "<markdown>", "tags": ["...", "..."]}
-
-Strict translation rules:
-- Output EVERY visible string (title, description, body, tags, h2 headings, bullet labels, intro/outro paragraphs) entirely in ${lang}.
-- The ONLY English allowed in the output:
-    "Snake Online" (brand name) and the literal skin name "${skin.name}" if it's a fantasy/legendary brand identifier.
-- For country skins, the country name should be in ${lang} (e.g. for German: "Deutschland" not "Germany").
-- No mixed-language sentences. No code-switching mid-paragraph.
-- If you're unsure how to translate a gaming-specific term (e.g. "boost", "coil trap"), use the most common ${lang}-gaming convention, never the English original.
-
-Tone: gaming-blog, confident, second-person ("you"), no marketing fluff, no emojis.
-Mention Snake Online by name at most twice in the body.
-Keep paragraphs to 2-4 sentences.
-`.trim();
-}
-
-async function generateForLocale(skin: Skin, locale: string, apiKey: string): Promise<PromptOutput | null> {
-  const langName = LANG_NAMES[locale as typeof LOCALES[number]] || 'English';
-  const prompt = buildPrompt(skin, langName);
-
+async function callOpenAI(system: string, user: string, apiKey: string, retryNote?: string): Promise<PromptOutput | null> {
   const res = await fetch(OPENAI_URL, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-    },
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
     body: JSON.stringify({
       model: MODEL,
       response_format: { type: 'json_object' },
       messages: [
-        { role: 'system', content: 'You write SEO-optimized blog posts. Output ONLY valid JSON matching the requested shape.' },
-        { role: 'user', content: prompt },
+        { role: 'system', content: system },
+        { role: 'user', content: retryNote ? `${user}\n\nRETRY NOTE: ${retryNote}` : user },
       ],
       temperature: 0.7,
-      max_tokens: 2000,
+      max_tokens: 2400,
     }),
   });
-
   if (!res.ok) {
-    const errBody = await res.text();
-    console.error(`OpenAI ${locale} → ${res.status}: ${errBody.slice(0, 300)}`);
+    const body = await res.text();
+    console.error(`OpenAI ${res.status}: ${body.slice(0, 300)}`);
     return null;
   }
-  const json = await res.json() as { choices?: { message?: { content?: string } }[] };
-  const content = json.choices?.[0]?.message?.content;
+  const j = await res.json() as { choices?: { message?: { content?: string } }[] };
+  const content = j.choices?.[0]?.message?.content;
   if (!content) return null;
   try {
     const parsed = JSON.parse(content) as PromptOutput;
     if (!parsed.title || !parsed.description || !parsed.body) return null;
+    parsed.tags = parsed.tags ?? [];
+    parsed.internalLinkSlugs = parsed.internalLinkSlugs ?? [];
     return parsed;
   } catch {
     return null;
   }
 }
 
-function buildFrontmatter(skin: Skin, post: PromptOutput, locale: string): string {
-  const date = new Date().toISOString();
-  const tags = (post.tags || []).map(t => `"${t.replace(/"/g, '\\"')}"`).join(', ');
-  return [
+function frontmatter(topic: Topic, draft: PromptOutput, gate: GateResult): string {
+  const tags = (draft.tags ?? []).map(t => `"${t.replace(/"/g, '\\"')}"`).join(', ');
+  const faqJson = JSON.stringify(draft.faq ?? []);
+  const fields: string[] = [
     '---',
-    `title: "${post.title.replace(/"/g, '\\"')}"`,
-    `description: "${post.description.replace(/"/g, '\\"')}"`,
-    `date: "${date}"`,
+    `title: "${draft.title.replace(/"/g, '\\"')}"`,
+    `description: "${draft.description.replace(/"/g, '\\"')}"`,
+    `date: "${new Date().toISOString()}"`,
     `author: "Snake Online Studio"`,
-    `category: "skin-spotlight"`,
+    `category: "${topic.categoryId}"`,
     `tags: [${tags}]`,
-    `cover: "/snakes/${skin.id}.png"`,
-    `coverSkinId: "${skin.id}"`,
-    `relatedSkinSlug: "${skin.slug}"`,
+    `topicId: "${topic.id}"`,
+    `primaryKeyword: "${topic.primary.replace(/"/g, '\\"')}"`,
     `isAiGenerated: true`,
-    'featured: false',
-    '---',
-    '',
-    post.body,
-    '',
-  ].join('\n');
+    `featured: false`,
+    `seoScore: ${gate.score}`,
+  ];
+  if (isSkinTopic(topic)) {
+    fields.push(`coverSkinId: "${topic.skin.id}"`);
+    fields.push(`cover: "/snakes/${topic.skin.id}.png"`);
+    fields.push(`relatedSkinSlug: "${topic.skin.slug}"`);
+  }
+  if (draft.faq && draft.faq.length > 0) {
+    fields.push(`faq: ${JSON.stringify(draft.faq)}`);
+  }
+  // Suggested slugs go into frontmatter so audit cron can verify them post-publish
+  if (draft.internalLinkSlugs && draft.internalLinkSlugs.length > 0) {
+    fields.push(`suggestedLinks: ${JSON.stringify(draft.internalLinkSlugs)}`);
+  }
+  fields.push('---', '', draft.body, '');
+  return fields.join('\n');
 }
 
-async function commitToGitHub(filePath: string, content: string, message: string): Promise<boolean> {
-  const token = process.env.GITHUB_TOKEN;
-  const repo = process.env.GITHUB_REPO; // e.g. "Mooxergames/snake-online-v2"
-  const branch = process.env.GITHUB_BRANCH || 'main';
-  if (!token || !repo) return false;
+interface GenerateBody {
+  topic: Topic;
+  draft: PromptOutput;
+  gate: GateResult;
+  slug: string;
+  relPath: string;
+  file: string;
+}
 
-  // Get current SHA if file already exists.
-  let sha: string | undefined;
+async function generateOne(topic: Topic, apiKey: string): Promise<{ ok: true; data: GenerateBody } | { ok: false; reason: string; gate?: GateResult; draft?: PromptOutput }> {
+  const { system, user } = buildPrompt(topic);
+  let draft = await callOpenAI(system, user, apiKey);
+  if (!draft) return { ok: false, reason: 'openai_empty' };
+
+  let gate = runSeoGate(draft, { primaryKeyword: topic.primary, threshold: SCORE_THRESHOLD });
+  if (!gate.ok) {
+    const note = gate.issues.slice(0, 5).map(i => `- ${i.code}: ${i.message}`).join('\n');
+    draft = await callOpenAI(system, user, apiKey, `Previous draft failed the SEO gate. Fix:\n${note}`);
+    if (!draft) return { ok: false, reason: 'openai_retry_empty', gate };
+    gate = runSeoGate(draft, { primaryKeyword: topic.primary, threshold: SCORE_THRESHOLD });
+  }
+  if (!gate.ok) return { ok: false, reason: 'seo_gate_failed', gate, draft };
+
+  const slug = topicToPostSlug(topic);
+  const relPath = `src/content/blog/en/${slug}.md`;
+  const file = frontmatter(topic, draft, gate);
+  return { ok: true, data: { topic, draft, gate, slug, relPath, file } };
+}
+
+async function maybeWriteLocal(relPath: string, file: string): Promise<void> {
   try {
-    const headRes = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}?ref=${branch}`, {
-      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
+    const abs = path.join(process.cwd(), relPath);
+    await fs.mkdir(path.dirname(abs), { recursive: true });
+    await fs.writeFile(abs, file, 'utf8');
+  } catch (e) {
+    console.warn(`Local FS write skipped: ${(e as Error).message}`);
+  }
+}
+
+async function dispatchTranslation(slug: string, locale: string, siteUrl: string, secret: string): Promise<void> {
+  try {
+    await fetch(`${siteUrl}/api/cron/translate-post?slug=${encodeURIComponent(slug)}&locale=${locale}`, {
+      method: 'POST',
+      headers: { 'x-cron-secret': secret },
     });
-    if (headRes.ok) {
-      const j = await headRes.json() as { sha?: string };
-      sha = j.sha;
-    }
-  } catch { /* file doesn't exist yet */ }
-
-  const res = await fetch(`https://api.github.com/repos/${repo}/contents/${filePath}`, {
-    method: 'PUT',
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: 'application/vnd.github+json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      message,
-      content: Buffer.from(content, 'utf8').toString('base64'),
-      branch,
-      ...(sha ? { sha } : {}),
-      committer: { name: 'Snake Online Bot', email: 'bot@snakeonline.io' },
-    }),
-  });
-
-  return res.ok;
+  } catch (e) {
+    console.warn(`translate-post dispatch failed (${locale}): ${(e as Error).message}`);
+  }
 }
 
 export async function POST(req: Request) {
@@ -195,108 +166,104 @@ export async function POST(req: Request) {
   if ((req.headers.get('x-cron-secret') || '').trim() !== secret) {
     return NextResponse.json({ error: 'forbidden' }, { status: 403 });
   }
-
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return NextResponse.json({ error: 'openai_key_missing' }, { status: 503 });
 
   const url = new URL(req.url);
-  const n = Math.min(20, Math.max(1, Number(url.searchParams.get('n')) || 1));
-  const useGit = process.env.GITHUB_TOKEN && process.env.GITHUB_REPO;
-  // `force=1` ignores the "already has English post" filter, so we can
-  // regenerate existing posts (e.g. after a prompt change).
-  // `slug=fantasy-dusk-83` targets a specific skin.
+  const topicId = url.searchParams.get('topicId');
+  const categoryId = url.searchParams.get('categoryId') as BlogCategorySlug | null;
+  const legacySlug = url.searchParams.get('slug');
   const force = url.searchParams.get('force') === '1';
-  const targetSlug = url.searchParams.get('slug');
+  const dryRun = url.searchParams.get('dryRun') === '1';
+  const skipTranslate = url.searchParams.get('skipTranslate') === '1';
 
-  const skins = getAllSkins();
-  const blogDir = path.join(process.cwd(), 'src', 'content', 'blog');
-  let candidates: typeof skins;
-  if (targetSlug) {
-    candidates = skins.filter(s => s.slug === targetSlug);
-  } else if (force) {
-    candidates = skins.slice();
-  } else {
-    candidates = skins.filter(s => !existsSync(path.join(blogDir, 'en', `skin-spotlight-${s.slug}.md`)));
+  // Resolve the topic.
+  let topic: Topic | undefined;
+  if (topicId) topic = await findTopic(topicId);
+  if (!topic && legacySlug) {
+    const all = await loadAllTopics();
+    topic = all.find(t => isSkinTopic(t) && (t as SkinTopic).skin.slug === legacySlug);
   }
-  // Shuffle so non-forced runs don't always start with the same skin.
-  if (!targetSlug) candidates.sort(() => Math.random() - 0.5);
-  const chosen = candidates.slice(0, n);
+  if (!topic && categoryId) {
+    const all = await loadAllTopics();
+    const inCat = all.filter(t => t.categoryId === categoryId);
+    if (inCat.length > 0) topic = inCat[Math.floor(Math.random() * inCat.length)];
+  }
+  if (!topic) {
+    const all = await loadAllTopics();
+    topic = all[Math.floor(Math.random() * all.length)];
+  }
+  if (!topic) return NextResponse.json({ error: 'no_topics' }, { status: 503 });
 
-  const results: Array<{ skin: string; locales: string[]; committed: boolean }> = [];
+  // Skip if EN post already exists (unless force).
+  const slug = topicToPostSlug(topic);
+  const relPath = `src/content/blog/en/${slug}.md`;
+  const abs = path.join(process.cwd(), relPath);
+  if (!force && existsSync(abs)) {
+    return NextResponse.json({ ok: true, skipped: 'already_exists', topicId: topic.id, slug });
+  }
 
-  for (const skin of chosen) {
-    // Fan out OpenAI requests for all 14 locales in parallel — was 70-140s
-    // sequential, now ~5-15s (Cloudflare's 100s edge timeout stays safe).
-    const posts = await Promise.all(
-      LOCALES.map(locale => generateForLocale(skin, locale, apiKey).then(post => ({ locale, post }))),
-    );
+  // Generate.
+  const result = await generateOne(topic, apiKey);
+  if (!result.ok) {
+    return NextResponse.json({ ok: false, reason: result.reason, gate: result.gate, topicId: topic.id }, { status: 422 });
+  }
+  const { data } = result;
 
-    // FS writes parallel — different file paths, no contention.
-    const writtenLocales: string[] = [];
-    const fsWrites = posts.map(async ({ locale, post }) => {
-      if (!post) return null;
-      const file = buildFrontmatter(skin, post, locale);
-      const relPath = `src/content/blog/${locale}/skin-spotlight-${skin.slug}.md`;
-      const absPath = path.join(process.cwd(), relPath);
-      try {
-        await fs.mkdir(path.dirname(absPath), { recursive: true });
-        await fs.writeFile(absPath, file, 'utf8');
-      } catch (e) {
-        console.error(`fs write failed for ${relPath}:`, (e as Error).message);
-      }
-      return { locale, file, relPath };
-    });
-    const written = (await Promise.all(fsWrites)).filter((x): x is NonNullable<typeof x> => x !== null);
-    for (const w of written) writtenLocales.push(w.locale);
-
-    // GitHub commits SEQUENTIAL. The Contents API serialises updates to the
-    // same branch and silently drops most concurrent PUTs (observed: 1/14
-    // landing under parallel fan-out). Sequential is fast enough (~150ms per
-    // call × 14 = ~2s) and 100% reliable.
-    const committedLocales: string[] = [];
-    if (useGit) {
-      for (const w of written) {
-        const ok = await commitToGitHub(
-          w.relPath,
-          w.file,
-          `blog: skin spotlight — ${skin.name} (${w.locale})`,
-        );
-        if (ok) committedLocales.push(w.locale);
-        else console.warn(`github commit failed for ${w.relPath}`);
-      }
-    }
-
-    results.push({
-      skin: skin.slug,
-      locales: writtenLocales,
-      committed: useGit ? committedLocales.length === writtenLocales.length : false,
+  if (dryRun) {
+    return NextResponse.json({
+      ok: true,
+      dryRun: true,
+      topicId: topic.id,
+      slug: data.slug,
+      title: data.draft.title,
+      description: data.draft.description,
+      gate: data.gate,
+      bodyPreview: data.draft.body.slice(0, 400),
     });
   }
 
-  // Best-effort: ping IndexNow with the new URLs (English only, the index will
-  // discover other locales via hreflang).
-  if (process.env.INDEXNOW_KEY) {
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://snakeonline.io';
-    const urls = chosen.map(s => `${siteUrl}/en/news/skin-spotlight-${s.slug}`);
+  // Write + commit EN only. Translations happen in /translate-post.
+  await maybeWriteLocal(data.relPath, data.file);
+  const env = readGitHubEnv();
+  let committed = false;
+  if (env) {
+    committed = await commitFile(env, data.relPath, data.file, `blog: ${topic.categoryId} — ${data.draft.title.slice(0, 60)}`);
+  }
+
+  // Fan-out translations.
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://snakeonline.io';
+  if (committed && !skipTranslate) {
+    // Don't await — fire-and-forget so we return promptly.
+    Promise.all(
+      LOCALES.filter(l => l !== 'en').map(l => dispatchTranslation(data.slug, l, siteUrl, secret)),
+    ).catch(() => { /* logged inside dispatchTranslation */ });
+  }
+
+  // IndexNow ping.
+  if (committed && process.env.INDEXNOW_KEY) {
     try {
       await fetch(`${siteUrl}/api/indexnow`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-indexnow-secret': process.env.INDEXNOW_KEY },
-        body: JSON.stringify({ urls }),
+        body: JSON.stringify({ urls: [`${siteUrl}/en/news/${data.slug}`] }),
       });
-    } catch { /* ignore */ }
+    } catch { /* non-fatal */ }
   }
 
   return NextResponse.json({
-    cronVersion: 'v4-seq-2026-05-17',
-    generated: chosen.length,
-    skipped: skins.length - candidates.length,
-    remaining: candidates.length - chosen.length,
-    results,
+    cronVersion: 'generate-post-v5-2026-05-22',
+    ok: true,
+    topicId: topic.id,
+    categoryId: topic.categoryId,
+    slug: data.slug,
+    committed,
+    seoScore: data.gate.score,
+    issues: data.gate.issues,
+    translationsDispatched: committed && !skipTranslate ? LOCALES.length - 1 : 0,
   });
 }
 
-/** GET version for cron services that only support GET (cron-job.org, Railway). */
 export async function GET(req: Request) {
   const url = new URL(req.url);
   if (url.searchParams.get('secret') !== process.env.CRON_SECRET) {

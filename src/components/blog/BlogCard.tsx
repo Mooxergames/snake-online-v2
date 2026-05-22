@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Clock, Sparkles, Target, Trophy, Bell, Users, BookOpen, Calendar } from 'lucide-react';
+import { Clock, Sparkles, Target, Trophy, Bell, Users, BookOpen, Calendar, Code2, History, Globe } from 'lucide-react';
 import type { BlogPost, BlogCategorySlug } from '@/lib/blog-data';
 import { fadeUp, inView } from '@/lib/motion';
 import { useTranslations } from 'next-intl';
@@ -13,6 +13,9 @@ const ICONS: Record<BlogCategorySlug, typeof Sparkles> = {
   'updates': Bell,
   'community': Users,
   'lore': BookOpen,
+  'tech-deep-dive': Code2,
+  'gaming-history': History,
+  'country-culture': Globe,
 };
 
 interface Props {
@@ -108,11 +111,14 @@ export default function BlogCard({ post, locale, size = 'md', index = 0 }: Props
 
 function getCategoryTier(slug: BlogCategorySlug) {
   switch (slug) {
-    case 'skin-spotlight': return 'mythic';
-    case 'strategy':       return 'legendary';
-    case 'comparisons':    return 'epic';
-    case 'updates':        return 'rare';
-    case 'community':      return 'common';
-    case 'lore':           return 'exclusive';
+    case 'skin-spotlight':  return 'mythic';
+    case 'strategy':        return 'legendary';
+    case 'comparisons':     return 'epic';
+    case 'updates':         return 'rare';
+    case 'community':       return 'common';
+    case 'lore':            return 'exclusive';
+    case 'tech-deep-dive':  return 'epic';
+    case 'gaming-history':  return 'legendary';
+    case 'country-culture': return 'rare';
   }
 }
